@@ -20,7 +20,7 @@ class BlogController extends Controller
      */
     public function index(Request $request)
     {
-        $table = resolve('blog-repo')->renderHtmlTable($this->getParamsForFilter($request));
+        $table = resolve('blog-repo')->renderHtmlTable($request);
         return view('admin.blog.blog_list', compact('table'));
     }
 
