@@ -83,7 +83,6 @@
                     </div>
                     <div class="col-md-8">
                         <div class="contact-right-side-content">
-
                             {!! Form::open([
                                 'url' => route('frontend.contact.store'),
                                 'method' => 'POST',
@@ -150,158 +149,205 @@
                                         <section class="range-slider" id="facet-price-range-slider">
                                             <input name="range1" value="3000" min="3000" max="50000"
                                                 step="1" type="range">
-                                            {{-- {!! Form::selectRange('range-1', 3000, 50000 )!!} --}}
                                             <input name="range2" value="50000" min="0" max="50000"
                                                 step="1" type="range">
                                         </section>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="mb-4 reveal">
                                 <h4>3.What Services ar you interested in?</h4>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        {!! Form::select('services', ['1' => 'Option 1', '2' => 'Option 2', '3' => 'Option 3'], '', [
+                                        {!! Form::select('services', ['Option 1' => 'Option 1', 'Option 2' => 'Option 2', '3' => 'Option 3'], '', [
                                             'class' => 'form-control dd',
                                         ]) !!}
                                         <span class="text-danger" style="font-size:15px">
                                             @error('services')
                                                 {{ $message }}
-                                            @enderror
-                                        </span>
-                                    </div>
-                                    <div class="col-md-12">
-                                        {!! Form::text('competitors', null, [
-                                            'class' => 'form-control',
-                                            'placeholder' => 'List-down Your Key Competitors',
-                                        ]) !!}
-                                        <span class="text-danger" style="font-size:15px">
-                                            @error('competitors')
-                                                {{ $message }}
-                                            @enderror
-                                        </span>
-                                    </div>
-                                    <div class="col-md-12">
-                                        {!! Form::text('reference', null, [
-                                            'class' => 'form-control',
-                                            'placeholder' => 'From where did you get to know about Buzzmakers?',
-                                        ]) !!}
-                                        <span class="text-danger" style="font-size:15px">
-                                            @error('reference')
-                                                {{ $message }}
-                                            @enderror
-                                        </span>
-                                    </div>
-                                    <div class="input-group">
-                                        {{ Form::label('inputGroupFile01', 'Attach Document (if Any)') }}
-                                        {!! Form::file('documents', ['class' => 'form-control d-none', 'id' => 'inputGroupFile01']) !!}
-                                        <span class="text-danger" style="font-size:15px">
-                                            @error('documents')
-                                                {{ $message }}
-                                            @enderror
-                                        </span>
+                                                @enderror
+                                            </span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            {!! Form::text('competitors', null, [
+                                                'class' => 'form-control',
+                                                'placeholder' => 'List-down Your Key Competitors',
+                                            ]) !!}
+                                            <span class="text-danger" style="font-size:15px">
+                                                @error('competitors')
+                                                    {{ $message }}
+                                                @enderror
+                                            </span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            {!! Form::text('reference', null, [
+                                                'class' => 'form-control',
+                                                'placeholder' => 'From where did you get to know about Buzzmakers?',
+                                            ]) !!}
+                                            <span class="text-danger" style="font-size:15px">
+                                                @error('reference')
+                                                    {{ $message }}
+                                                @enderror
+                                            </span>
+                                        </div>
+                                        <div class="input-group">
+                                            {{ Form::label('inputGroupFile01', 'Attach Document (if Any)') }}
+                                            {!! Form::file('documents', ['class' => 'form-control d-none', 'id' => 'inputGroupFile01']) !!}
+                                            <span class="text-danger" style="font-size:15px">
+                                                @error('documents')
+                                                    {{ $message }}
+                                                @enderror
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="mb-2 reveal">
+                                    <h4>4.Schedule a call with our tech expert. Get a detailed tech consultation for
+                                        free!</h4>
+                                    <div class="my-4">
+                                        <div id="radio-example">
 
-                            <div class="mb-2 reveal">
-                                <h4>4.Schedule a call with our tech expert. Get a detailed tech consultation for
-                                    free!</h4>
-                                <div class="my-4">
-                                    <div id="radio-example">
-                                        <label class="radioselect" for="radone">
-                                            <span>Mon</span><br>
-                                            <b>Mar 1</b>
-                                            <input type="radio" name="radio" id="radone">
+                                            @for ($day = 0; $day < 15; $day++)
+                                                @php
+                                                    $today = Carbon\Carbon::now();
+                                                    $date = $today->addDays($day);
+                                                    $radioId = $date->format('d');
+                                                    $value = $date->format('Y-m-d');
+                                                @endphp
+
+
+                                                <label class="radioselect" for={{ 'radio' . $radioId }}>
+                                                    <span>{{ $date->format('l') }}</span><br />
+                                                    <b>{{ $date->format('M d') }}</b>
+                                                    {{ Form::radio('schedule_date', $value, false, ['id' => 'radio' . $radioId]) }}
+                                                </label>
+                                            @endfor
+
+                                            <span class="text-danger" style="font-size:15px">
+                                                @error('schedule_date')
+                                                    {{ $message }}
+                                                @enderror
+                                            </span>
+                                            {{-- <label class="radioselect" for="radio1">
+                                          <span>Mon</span><br />
+                                          <b>Mar 1</b>
+                                          {{ Form::radio('radio', 'Y', false, ['id' => 'radio1']) }}                      
                                         </label>
-
-                                        <label class="radioselect" for="radtwo">
-                                            <span>Tue</span><br>
+                                        <label class="radioselect" for="radio2">
+                                            <span>Tue</span><br />
                                             <b>Mar 2</b>
-                                            <input type="radio" name="radio" id="radtwo">
-                                        </label>
+                                            <input type="radio" name="radio" id="radio2"/>
+                                          </label>
+                                          <label class="radioselect" for="radio3">
+                                            <span>Wed</span><br />
+                                            <b>Mar 3</b>
+                                            <input type="radio" name="radio" id="radio3"/>
+                                          </label>
+                                          <label class="radioselect" for="radio4">
+                                            <span>Thu</span><br />
+                                            <b>Mar 4</b>
+                                            <input type="radio" name="radio" id="radio4"/>
+                                          </label>
+                                          <label class="radioselect" for="radio5">
+                                            <span>Fri</span><br />
+                                            <b>Mar 5</b>
+                                            <input type="radio" name="radio" id="radio5"/>
+                                          </label>
+                                          <label class="radioselect" for="radio6">
+                                            <span>Sat</span><br />
+                                            <b>Mar 6</b>
+                                            <input type="radio" name="radio" id="radio6"/>
+                                          </label>
+                                          <label class="radioselect" for="radio7">
+                                            <span>Sun</span><br />
+                                            <b>Mar 7</b>
+                                            <input type="radio" name="radio" id="radio7"/>
+                                          </label>
+                                          <label class="radioselect" for="radio8">
+                                            <span>Mon</span><br />
+                                            <b>Mar 8</b>
+                                            <input type="radio" name="radio" id="radio8"/>
+                                          </label> --}}
 
-                                        <input type="radio" id="age1" name="age" value="30">
-                                        <label for="age1">0 - 30</label><br>
-                                        <input type="radio" id="age2" name="age" value="60">
-                                        <label for="age2">31 - 60</label><br>
-                                        <input type="radio" id="age3" name="age" value="100">
-                                        <label for="age3">61 - 100</label>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label>Time Zone</label>
+                                        <div class="col-md-4">
+                                            {!! Form::select('timezone', ['EST' => 'EST', 'IST' => 'IST', '31' => 'Option3'], null, [
+                                                'class' => 'form-control dd',
+                                            ]) !!}
+                                            {{-- <span class="timezone" style="font-size:15px">
+                                            @error('timezone')
+                                                {{ $message }}
+                                            @enderror
+                                        </span> --}}
+                                        </div>
+                                        <div class="col-md-8">
+                                            {!! Form::select(
+                                                'schedule_time',
+                                                [
+                                                    '10:00AM-12:00PM' => 'Scheduled at - 10:00AM to 12:00PM',
+                                                    '01:00PM-03:00PM' => 'Scheduled at - 01:00PM to 03:00PM',
+                                                    '3' => 'Scheduled at - 04:00PM to 06:00PM',
+                                                ],
+                                                null,
+                                                ['class' => 'form-control dd'],
+                                            ) !!}
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <label>Time Zone</label>
-                                    <div class="col-md-4">
-                                        {!! Form::select('select_timezone', ['1' => 'EST', '2' => 'IST', '3' => 'Option3'], '2', [
-                                            'class' => 'form-control dd',
-                                        ]) !!}
-                                    </div>
-                                    <div class="col-md-8">
-                                        {!! Form::select(
-                                            'select_time',
-                                            [
-                                                '1' => 'Scheduled at - 06:00PM to 07:00PM',
-                                                '2' => 'Scheduled at - 06:00PM to 07:00PM',
-                                                '3' => 'Scheduled at - 06:00PM to 07:00PM',
-                                            ],
-                                            '',
-                                            ['class' => 'form-control dd'],
-                                        ) !!}
-                                    </div>
+                                <div class="text-center reveal">
+                                    {{ Form::submit('Submit', ['class' => 'btn btn-buzz-connect']) }}
                                 </div>
+                                {{ Form::close() }}
                             </div>
-
-                            <div class="text-center reveal">
-                                {{ Form::submit('Submit', ['class' => 'btn btn-buzz-connect']) }}
-                            </div>
-                            {{ Form::close() }}
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- center form contact- page END -->
+        </section>
+        <!-- center form contact- page END -->
 
-    <!-- section address start -->
-    <section class="section-address responsive-container">
-        <div class="container">
-            <div class="row justify-content-end reveal">
-                <div class="col-md-5">
-                    <div class="box-address">
-                        <h5>Mumbai</h5>
-                        <p class="mb-0">Buzz Markers, Ascent Business Centre,<br>
-                            Office No.34, 3rd Floor, Sej Plaza Marve Road,<br>
-                            Off S.V.Road, Malad (W),Mumbai - 400064<br>
-                            +919890393090
-                        </p>
+        <!-- section address start -->
+        <section class="section-address responsive-container">
+            <div class="container">
+                <div class="row justify-content-end reveal">
+                    <div class="col-md-5">
+                        <div class="box-address">
+                            <h5>Mumbai</h5>
+                            <p class="mb-0">Buzz Markers, Ascent Business Centre,<br>
+                                Office No.34, 3rd Floor, Sej Plaza Marve Road,<br>
+                                Off S.V.Road, Malad (W),Mumbai - 400064<br>
+                                +919890393090
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box-address">
-                        <h5>Nagpur</h5>
-                        <p class="mb-0">Buzz Markers, Above Panino,<br>
-                            Wardhman Nagar Colony,<br>
-                            Nagpur - 440012<br>
-                            +919028999566
-                        </p>
+                    <div class="col-md-4">
+                        <div class="box-address">
+                            <h5>Nagpur</h5>
+                            <p class="mb-0">Buzz Markers, Above Panino,<br>
+                                Wardhman Nagar Colony,<br>
+                                Nagpur - 440012<br>
+                                +919028999566
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- section address ends -->
+        </section>
+        <!-- section address ends -->
 
-    @include('frontend.components.completefaqs')
-@endsection
+        @include('frontend.components.completefaqs')
+    @endsection
 
 @section('js')
     <script src="{{ asset('assets/frontend/js/rangeslider.js') }}"></script>
     {{-- <script src="{{ asset('assets/frontend/js/toastr.min.js') }}"></script> --}}
 @endsection
 @section('script')
-    $(document).ready(function () {
+    {{-- $(document).ready(function () {
     //change colour when radio is selected
     $('#radio-example input:radio').change(function () {
     // Only remove the class in the specific `box` that contains the radio
@@ -309,5 +355,11 @@
     // $(this).closest('.row').addClass('highlight');
     $(this).closest('.radioselect').addClass('highlight');
     });
-    });
+    }); --}}
+    <script>
+        $(".radioselect").click(function() {
+            $(".radioselect").removeClass("radioselect-yellow");
+            $(this).addClass("radioselect-yellow");
+        });
+    </script>
 @endsection

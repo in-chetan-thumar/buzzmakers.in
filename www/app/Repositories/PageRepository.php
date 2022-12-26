@@ -40,10 +40,21 @@ class PageRepository
         // return $page;
     }
 
-    public function renderHtmlTable() 
+    public function renderHtmlTable($params) 
     {
-        $tableData = DB::table('pages')->select('id','title','meta_keywords','meta_description','route_name')->paginate(10);
+        $tableData = $this->filter($params);
+    
         return view('admin.page.table', compact('tableData'))->render();
+    }
+
+
+    public function filter($params)
+    {
+
+        return $this->model
+            ->latest()
+            ->paginate(config('constants.PER_PAGE'), ['*'],'page',!empty($params['page'])? $params['page']:'')
+            ->setPath($params['path']);           
     }
 
 }

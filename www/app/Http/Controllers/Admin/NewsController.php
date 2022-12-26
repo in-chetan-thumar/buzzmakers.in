@@ -18,9 +18,9 @@ class NewsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $table = resolve('news-repo')->renderHtmlTable();
+        $table = resolve('news-repo')->renderHtmlTable($this->getParamsForFilter($request));
         return view('admin.news.news_list', compact('table'));
     }
 
@@ -206,9 +206,8 @@ class NewsController extends Controller
 
         if (request()->routeIs('news-list.index') || !isset($previousUrl['query'])) {
             $params['query_str'] = $request->query_str ?? '';
-            $params['role'] = $request->role;
             $params['page'] =  $request->page ?? 0;
-            $params['type'] =  $request->type ?? null;
+            $params['path'] =  url()->previous();
         } else {
             parse_str($previousUrl['query'], $params);
             $params['path'] =  url()->previous();

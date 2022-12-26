@@ -44,7 +44,7 @@ class ContactsRepository
 
     public function renderHtmlTable() 
     {
-        $tableData = DB::table('contacts')->select()->paginate(8);
+        $tableData = $this->model->select()->paginate(config('constants.PER_PAGE'));
         return view('admin.contacts.table', compact('tableData'))->render();
     }
 

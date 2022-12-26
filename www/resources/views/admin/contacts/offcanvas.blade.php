@@ -89,6 +89,34 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="col-6">
+                <div class="mb-3">
+                    <div class="form-group">
+                        {!! Form::label('schedule_date', 'Schedule Date', ['style' => 'justify-content: right']) !!}
+                        <br>
+                        {{ $contactData->schedule_date }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <div class="form-group">
+                        {!! Form::label('timezone', 'Time Zone', ['style' => 'justify-content: right']) !!}
+                        <br>
+                        {{ $contactData->timezone }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <div class="form-group">
+                        {!! Form::label('schedule_time', 'Schedule Time', ['style' => 'justify-content: right']) !!}
+                        <br>
+                        {{ $contactData->schedule_time }}
+                    </div>
+                </div>
+            </div>
             <div class="col-12">
                 <div class="mb-3">
                     <div class="form-group">
@@ -105,7 +133,6 @@
                             &nbsp;Download Document</a>
                     @endcan
                 @endif
-
             </div>
         </div>
     </div>

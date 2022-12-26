@@ -35,24 +35,26 @@ class BlogRepository
     public function update($params, $id)
     {
         return $this->findById($id)->update($params);
-        // $news = DB::table('blogs')->whereId($id)->limit(1) 
-        // ->update($params);
-        // return $news;
     }
 
     //Strore new data
     public function store($params)
     {
         return $this->model->create($params);
-        // $news = DB::table('blogs')->insert($params);
-        // return $news;
-
     }
 
-    public function renderHtmlTable() 
+    public function renderHtmlTable($params) 
     {
-        $tableData = DB::table('blogs')->select('id','title','description')->paginate(8);
+        $tableData = $this->filter($params);
         return view('admin.blog.table', compact('tableData'))->render();
+    }
+
+    public function filter($params)
+    {
+        return $this->model
+            ->latest()
+            ->paginate(config('constants.PER_PAGE'), ['*'],'page',!empty($params['page'])? $params['page']:'')
+            ->setPath($params['path']);           
     }
 
 }
