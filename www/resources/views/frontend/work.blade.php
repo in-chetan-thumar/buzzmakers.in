@@ -14,7 +14,7 @@
                     <img src={{ asset('assets/frontend/images/OurWork/pot.svg') }} class="img-one" alt="pot">
                 </div>
                 <div class="col-md-6">
-                    <img src={{ asset('assets/frontend/images/OurWork/work-header.svg') }} class="img-two"
+                    <img src={{ asset('assets/frontend/images/OurWork/work-header.svg') }} class="img-two box-animate"
                         alt="work-header">
                 </div>
             </div>

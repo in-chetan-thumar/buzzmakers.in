@@ -204,8 +204,8 @@
                                 <div class="mb-2 reveal">
                                     <h4>4.Schedule a call with our tech expert. Get a detailed tech consultation for
                                         free!</h4>
-                                    <div class="my-4">
-                                        <div id="radio-example">
+                                    <div class="my-4 radio-date-container">
+                                        <div id="radio-example" class="radio-date-scroll">
 
                                             @for ($day = 0; $day < 15; $day++)
                                                 @php
@@ -217,7 +217,7 @@
 
 
                                                 <label class="radioselect" for={{ 'radio' . $radioId }}>
-                                                    <span>{{ $date->format('l') }}</span><br />
+                                                    <span>{{ $date->format('D') }}</span><br />
                                                     <b>{{ $date->format('M d') }}</b>
                                                     {{ Form::radio('schedule_date', $value, false, ['id' => 'radio' . $radioId]) }}
                                                 </label>
