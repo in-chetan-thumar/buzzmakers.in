@@ -20,7 +20,7 @@
                             your<br>
                             project, request a quote or even<br> just to pick our brains.</h1><br>
                         <div class="text-center btn-contact">
-                            <a href="#" class="btn btn-buzz-connect-blue">Let's Connect</a>
+                            <a href={{ route('frontend.contact') }} class="btn btn-buzz-connect-blue">Let's Connect</a>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -165,201 +165,156 @@
                                         <span class="text-danger" style="font-size:15px">
                                             @error('services')
                                                 {{ $message }}
-                                                @enderror
-                                            </span>
-                                        </div>
-                                        <div class="col-md-12">
-                                            {!! Form::text('competitors', null, [
-                                                'class' => 'form-control',
-                                                'placeholder' => 'List-down Your Key Competitors',
-                                            ]) !!}
-                                            <span class="text-danger" style="font-size:15px">
-                                                @error('competitors')
-                                                    {{ $message }}
-                                                @enderror
-                                            </span>
-                                        </div>
-                                        <div class="col-md-12">
-                                            {!! Form::text('reference', null, [
-                                                'class' => 'form-control',
-                                                'placeholder' => 'From where did you get to know about Buzzmakers?',
-                                            ]) !!}
-                                            <span class="text-danger" style="font-size:15px">
-                                                @error('reference')
-                                                    {{ $message }}
-                                                @enderror
-                                            </span>
-                                        </div>
-                                        <div class="input-group">
-                                            {{ Form::label('inputGroupFile01', 'Attach Document (if Any)') }}
-                                            {!! Form::file('documents', ['class' => 'form-control d-none', 'id' => 'inputGroupFile01']) !!}
-                                            <span class="text-danger" style="font-size:15px">
-                                                @error('documents')
-                                                    {{ $message }}
-                                                @enderror
-                                            </span>
-                                        </div>
+                                            @enderror
+                                        </span>
+                                    </div>
+                                    <div class="col-md-12">
+                                        {!! Form::text('competitors', null, [
+                                            'class' => 'form-control',
+                                            'placeholder' => 'List-down Your Key Competitors',
+                                        ]) !!}
+                                        <span class="text-danger" style="font-size:15px">
+                                            @error('competitors')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                    </div>
+                                    <div class="col-md-12">
+                                        {!! Form::text('reference', null, [
+                                            'class' => 'form-control',
+                                            'placeholder' => 'From where did you get to know about Buzzmakers?',
+                                        ]) !!}
+                                        <span class="text-danger" style="font-size:15px">
+                                            @error('reference')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                    </div>
+                                    <div class="input-group">
+                                        {{ Form::label('inputGroupFile01', 'Attach Document (if Any)') }}
+                                        {!! Form::file('documents', ['class' => 'form-control d-none', 'id' => 'inputGroupFile01']) !!}
+                                        <span class="text-danger" style="font-size:15px">
+                                            @error('documents')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
                                     </div>
                                 </div>
-                                <div class="mb-2 reveal">
-                                    <h4>4.Schedule a call with our tech expert. Get a detailed tech consultation for
-                                        free!</h4>
-                                    <div class="my-4 radio-date-container">
-                                        <div id="radio-example" class="radio-date-scroll">
+                            </div>
+                            <div class="mb-2 reveal">
+                                <h4>4.Schedule a call with our tech expert. Get a detailed tech consultation for
+                                    free!</h4>
+                                <div class="my-4 radio-date-container">
+                                    <div id="radio-example" class="radio-date-scroll">
 
-                                            @for ($day = 0; $day < 15; $day++)
-                                                @php
-                                                    $today = Carbon\Carbon::now();
-                                                    $date = $today->addDays($day);
-                                                    $radioId = $date->format('d');
-                                                    $value = $date->format('Y-m-d');
-                                                @endphp
+                                        @for ($day = 0; $day < 15; $day++)
+                                            @php
+                                                $today = Carbon\Carbon::now();
+                                                $date = $today->addDays($day);
+                                                $radioId = $date->format('d');
+                                                $value = $date->format('Y-m-d');
+                                            @endphp
 
 
-                                                <label class="radioselect" for={{ 'radio' . $radioId }}>
-                                                    <span>{{ $date->format('D') }}</span><br />
-                                                    <b>{{ $date->format('M d') }}</b>
-                                                    {{ Form::radio('schedule_date', $value, false, ['id' => 'radio' . $radioId]) }}
-                                                </label>
-                                            @endfor
+                                            <label class="radioselect" for={{ 'radio' . $radioId }}>
+                                                <span>{{ $date->format('D') }}</span><br />
+                                                <b>{{ $date->format('M d') }}</b>
+                                                {{ Form::radio('schedule_date', $value, false, ['id' => 'radio' . $radioId]) }}
+                                            </label>
+                                        @endfor
 
-                                            <span class="text-danger" style="font-size:15px">
-                                                @error('schedule_date')
-                                                    {{ $message }}
-                                                @enderror
-                                            </span>
-                                            {{-- <label class="radioselect" for="radio1">
-                                          <span>Mon</span><br />
-                                          <b>Mar 1</b>
-                                          {{ Form::radio('radio', 'Y', false, ['id' => 'radio1']) }}                      
-                                        </label>
-                                        <label class="radioselect" for="radio2">
-                                            <span>Tue</span><br />
-                                            <b>Mar 2</b>
-                                            <input type="radio" name="radio" id="radio2"/>
-                                          </label>
-                                          <label class="radioselect" for="radio3">
-                                            <span>Wed</span><br />
-                                            <b>Mar 3</b>
-                                            <input type="radio" name="radio" id="radio3"/>
-                                          </label>
-                                          <label class="radioselect" for="radio4">
-                                            <span>Thu</span><br />
-                                            <b>Mar 4</b>
-                                            <input type="radio" name="radio" id="radio4"/>
-                                          </label>
-                                          <label class="radioselect" for="radio5">
-                                            <span>Fri</span><br />
-                                            <b>Mar 5</b>
-                                            <input type="radio" name="radio" id="radio5"/>
-                                          </label>
-                                          <label class="radioselect" for="radio6">
-                                            <span>Sat</span><br />
-                                            <b>Mar 6</b>
-                                            <input type="radio" name="radio" id="radio6"/>
-                                          </label>
-                                          <label class="radioselect" for="radio7">
-                                            <span>Sun</span><br />
-                                            <b>Mar 7</b>
-                                            <input type="radio" name="radio" id="radio7"/>
-                                          </label>
-                                          <label class="radioselect" for="radio8">
+                                        <span class="text-danger" style="font-size:15px">
+                                            @error('schedule_date')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                        {{-- <label class="radioselect" for="radio8">
                                             <span>Mon</span><br />
                                             <b>Mar 8</b>
                                             <input type="radio" name="radio" id="radio8"/>
                                           </label> --}}
 
 
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <label>Time Zone</label>
-                                        <div class="col-md-4">
-                                            {!! Form::select('timezone', ['EST' => 'EST', 'IST' => 'IST', '31' => 'Option3'], null, [
-                                                'class' => 'form-control dd',
-                                            ]) !!}
-                                            {{-- <span class="timezone" style="font-size:15px">
-                                            @error('timezone')
-                                                {{ $message }}
-                                            @enderror
-                                        </span> --}}
-                                        </div>
-                                        <div class="col-md-8">
-                                            {!! Form::select(
-                                                'schedule_time',
-                                                [
-                                                    '10:00AM-12:00PM' => 'Scheduled at - 10:00AM to 12:00PM',
-                                                    '01:00PM-03:00PM' => 'Scheduled at - 01:00PM to 03:00PM',
-                                                    '3' => 'Scheduled at - 04:00PM to 06:00PM',
-                                                ],
-                                                null,
-                                                ['class' => 'form-control dd'],
-                                            ) !!}
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="text-center reveal">
-                                    {{ Form::submit('Submit', ['class' => 'btn btn-buzz-connect']) }}
+                                <div class="row">
+                                    <label>Time Zone</label>
+                                    <div class="col-md-4">
+                                        {!! Form::select('timezone', ['EST' => 'EST', 'IST' => 'IST', '31' => 'Option3'], null, [
+                                            'class' => 'form-control dd',
+                                        ]) !!}
+                                    </div>
+                                    <div class="col-md-8">
+                                        {!! Form::select(
+                                            'schedule_time',
+                                            [
+                                                '10:00AM-12:00PM' => 'Scheduled at - 10:00AM to 12:00PM',
+                                                '01:00PM-03:00PM' => 'Scheduled at - 01:00PM to 03:00PM',
+                                                '3' => 'Scheduled at - 04:00PM to 06:00PM',
+                                            ],
+                                            null,
+                                            ['class' => 'form-control dd'],
+                                        ) !!}
+                                    </div>
                                 </div>
-                                {{ Form::close() }}
                             </div>
+                            <div class="text-center reveal">
+                                {{ Form::submit('Submit', ['class' => 'btn btn-buzz-connect']) }}
+                            </div>
+                            {{ Form::close() }}
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- center form contact- page END -->
+        </div>
+    </section>
+    <!-- center form contact- page END -->
 
-        <!-- section address start -->
-        <section class="section-address responsive-container">
-            <div class="container">
-                <div class="row justify-content-end reveal">
-                    <div class="col-md-5">
-                        <div class="box-address">
-                            <h5>Mumbai</h5>
-                            <p class="mb-0">Buzz Markers, Ascent Business Centre,<br>
-                                Office No.34, 3rd Floor, Sej Plaza Marve Road,<br>
-                                Off S.V.Road, Malad (W),Mumbai - 400064<br>
-                                +919890393090
-                            </p>
-                        </div>
+    <!-- section address start -->
+    <section class="section-address responsive-container">
+        <div class="container">
+            <div class="row justify-content-end reveal">
+                <div class="col-md-5">
+                    <div class="box-address">
+                        <h5>Mumbai</h5>
+                        <p class="mb-0">Buzz Markers, Ascent Business Centre,<br>
+                            Office No.34, 3rd Floor, Sej Plaza Marve Road,<br>
+                            Off S.V.Road, Malad (W),Mumbai - 400064<br>
+                            +919890393090
+                        </p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="box-address">
-                            <h5>Nagpur</h5>
-                            <p class="mb-0">Buzz Markers, Above Panino,<br>
-                                Wardhman Nagar Colony,<br>
-                                Nagpur - 440012<br>
-                                +919028999566
-                            </p>
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-address">
+                        <h5>Nagpur</h5>
+                        <p class="mb-0">Buzz Markers, Above Panino,<br>
+                            Wardhman Nagar Colony,<br>
+                            Nagpur - 440012<br>
+                            +919028999566
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- section address ends -->
+        </div>
+    </section>
+    <!-- section address ends -->
 
-        @include('frontend.components.completefaqs')
-    @endsection
+    {{-- @include('frontend.components.completefaqs') --}}
+
+    {!! $table !!}
+@endsection
 
 @section('js')
-    <script src="{{ asset('assets/frontend/js/rangeslider.js') }}"></script>
+    <script src={{ asset('assets/frontend/js/rangeslider.js') }}></script>
+    <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
     {{-- <script src="{{ asset('assets/frontend/js/toastr.min.js') }}"></script> --}}
 @endsection
 @section('script')
-    {{-- $(document).ready(function () {
-    //change colour when radio is selected
-    $('#radio-example input:radio').change(function () {
-    // Only remove the class in the specific `box` that contains the radio
-    $('div.highlight').removeClass('highlight');
-    // $(this).closest('.row').addClass('highlight');
-    $(this).closest('.radioselect').addClass('highlight');
-    });
-    }); --}}
     <script>
         $(".radioselect").click(function() {
             $(".radioselect").removeClass("radioselect-yellow");
             $(this).addClass("radioselect-yellow");
         });
     </script>
+    
 @endsection

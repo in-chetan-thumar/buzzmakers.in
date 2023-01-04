@@ -102,6 +102,9 @@
                             overriding our default variables. It's also worth noting that
                             just about any HTML can go within the .accordion-body, though
                             the transition does limit overflow.
+                            <div>
+                                <a href="https://www.linkedin.com/company/buzzmakersindia/jobs/" target="_blank" class="btn btn-buzz-connect-blue" style="margin-top: 1%;">Apply Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,6 +129,9 @@
                             overriding our default variables. It's also worth noting that
                             just about any HTML can go within the .accordion-body, though
                             the transition does limit overflow.
+                            <div>
+                                <a href="https://www.linkedin.com/company/buzzmakersindia/jobs/" target="_blank" class="btn btn-buzz-connect-blue" style="margin-top: 1%;">Apply Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>

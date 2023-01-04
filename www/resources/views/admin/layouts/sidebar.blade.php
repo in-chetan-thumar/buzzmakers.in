@@ -32,6 +32,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('faqs.index') }}" class="waves-effect">
+                        {{-- <i class="bx bx-home"></i> --}}
+                        <span>FAQs</span>
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('contacts.index') }}" class="waves-effect">
                         {{-- <i class="bx bx-home"></i> --}}
                         <span>Contacts</span>

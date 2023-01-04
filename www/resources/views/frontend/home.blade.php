@@ -160,7 +160,7 @@
                                     <span>Live Event Coverage</span>
                                 </div>
                                 <div>
-                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }}class="go-icon-five"
+                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }} class="go-icon-five"
                                         alt="yellow-arrow">
                                 </div>
                             </div>
@@ -192,7 +192,7 @@
                             <label>Content Writer</label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
-                        <a href="#" class="btn btn-buzz">Menu</a>
+                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
                         <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon" alt="title-point">
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                             <label>Graphic Designer</label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
-                        <a href="#" class="btn btn-buzz">Menu</a>
+                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
                         <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon" alt="title-point">
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                             <label>Content Writer</label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
-                        <a href="#" class="btn btn-buzz">Menu</a>
+                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
                         <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon"
                             alt="title-point">
                     </div>
@@ -234,5 +234,12 @@
     </section>
     <!-- end -->
 
-    @include('frontend.components.completefaqs')
+    {!! $table !!}
+
+    {{-- @include('frontend.components.completefaqs') --}}
 @endsection
+
+@section('js')
+    <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
+@endsection
+

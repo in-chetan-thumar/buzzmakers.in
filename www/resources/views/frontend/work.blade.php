@@ -8,7 +8,7 @@
         <div class="container text-center responsive-container">
             <h1 class="content-work">It is a long established fact<br> that a reader will be<br> distracted by the
                 readable</h1>
-            <a href="#" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Get in Touch</a>
+            <a href={{route('frontend.contact')}} class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Get in Touch</a>
             <div class="row w-100 img-container">
                 <div class="col-md-6">
                     <img src={{ asset('assets/frontend/images/OurWork/pot.svg') }} class="img-one" alt="pot">

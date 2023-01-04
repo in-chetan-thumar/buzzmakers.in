@@ -49,6 +49,9 @@ Route::group(['middleware' => 'auth'], function () {
     // Blog Controller
     Route::resource("blog-list", \App\Http\Controllers\Admin\BlogController::class);
 
+    //FAQs Controller
+    Route::resource('faqs', \App\Http\Controllers\Admin\FaqsController::class);
+
     // Contacts Controller
     Route::resource('contacts', \App\Http\Controllers\Admin\ContactsController::class);
     Route::get('/contacts-export', [\App\Http\Controllers\Admin\ContactsController::class, 'export'])->name('contacts.export');

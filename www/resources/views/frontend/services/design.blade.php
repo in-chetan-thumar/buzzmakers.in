@@ -15,7 +15,7 @@
                         <p>
                             We Keep Our Brand's Best Foot Forward Using The Power Of Great Designs!
                         </p>
-                        <a href="#" class="btn btn-buzz-connect">Let's Connect</a>
+                        <a href={{route('frontend.contact')}} class="btn btn-buzz-connect">Let's Connect</a>
                     </div>
                 </div>
                 <div class="col-md-6 design-img-container text-end">
@@ -106,7 +106,12 @@
 
     @include('frontend.components.testimonials')
 
-    @include('frontend.components.services_career')
+    {{-- @include('frontend.components.services_career') --}}
+    {!! $table !!}
+    {{-- @include('frontend.components.completefaqs') --}}
 
-    @include('frontend.components.completefaqs')
+@endsection
+
+@section('js')
+    <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
 @endsection
