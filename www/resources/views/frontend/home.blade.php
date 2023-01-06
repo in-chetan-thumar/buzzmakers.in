@@ -224,7 +224,7 @@
                             <label>Graphic Designer</label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
-                        <a href="#" class="btn btn-buzz">Menu</a>
+                        <a href="#" class="btn btn-buzz">Apply Now</a>
                         <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon"
                             alt="title-point">
                     </div>
