@@ -55,7 +55,7 @@
             </div>
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/stratey/brand-identity.svg') }} class="w-75"
+                    <img src={{ asset('assets/frontend/images/stratey/brand-identity.svg') }} style="width:60% "
                         alt="brand-identity">
                 </div>
                 <div class="col-md-7 content-strategy">

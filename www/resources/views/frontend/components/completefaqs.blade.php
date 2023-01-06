@@ -7,10 +7,10 @@
       <div class="container reveal">
 
           <div class="accordion" id="accordionExample">
-            @php
-                 $collapsed= true  ;
-            @endphp
 
+            @php
+                 $collapsed= true ;
+            @endphp
 
             @foreach ($tableData as $data)
             <div class="accordion-item" style="display: none">
@@ -31,11 +31,11 @@
             @php
                   $collapsed= false ;
             @endphp 
+
             @endforeach
 
           </div>
           <div>
-            {{-- <a href="#" id="loadMore">Load More</a> --}}
             <a href="#" class="text-white" id="loadMore">Load More FAQs<i class="bi bi-arrow-right ms-3"></i></a>
           </div>
           <div class="text-center text-white mb-3 fw-bold faq-content">
