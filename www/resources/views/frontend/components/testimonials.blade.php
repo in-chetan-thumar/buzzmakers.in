@@ -34,11 +34,11 @@
                 </div>
               </div>
             </div>
-            <div class="text-center">
+            {{-- <div class="text-center">
               <a href="#" class="arrow-on-hover">
                 <i class="bi bi-arrow-right-circle-fill"></i>
               </a>
-            </div>
+            </div> --}}
           </div>
         </div>
         <div>
@@ -61,11 +61,11 @@
                 </div>
               </div>
             </div>
-            <div class="text-center">
+            {{-- <div class="text-center">
               <a href="#" class="arrow-on-hover">
                 <i class="bi bi-arrow-right-circle-fill"></i>
               </a>
-            </div>
+            </div> --}}
           </div>
         </div>
         <div>
@@ -90,11 +90,11 @@
                 </div>
               </div>
             </div>
-            <div class="text-center">
+            {{-- <div class="text-center">
               <a href="#" class="arrow-on-hover">
                 <i class="bi bi-arrow-right-circle-fill"></i>
               </a>
-            </div>
+            </div> --}}
           </div>
         </div>
       </div>
