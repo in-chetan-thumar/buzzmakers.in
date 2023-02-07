@@ -27,6 +27,8 @@ Route::get('/contact', [\App\Http\Controllers\Frontend\ContactController::class,
 Route::post('/contact-store', [\App\Http\Controllers\Frontend\ContactController::class, 'store'])->name('frontend.contact.store');
 Route::get('/news', [\App\Http\Controllers\Frontend\NewsController::class, 'index'])->name('frontend.news');
 Route::get('/our-work', [\App\Http\Controllers\Frontend\WorkController::class, 'index'])->name('frontend.work');
+Route::get('/Poojaent', [\App\Http\Controllers\Frontend\PoojaentController::class, 'index'])->name('frontend.poojaent');
+Route::get('/jio', [\App\Http\Controllers\Frontend\JioController::class, 'index'])->name('frontend.jio');
 Route::get('/services-strategy', [\App\Http\Controllers\Frontend\Services\StrategyController::class, 'index'])->name('frontend.services.strategy');
 Route::get('/services-content', [\App\Http\Controllers\Frontend\Services\ContentController::class, 'index'])->name('frontend.services.content');
 Route::get('/services-technology', [\App\Http\Controllers\Frontend\Services\TechnologyController::class, 'index'])->name('frontend.services.technology');

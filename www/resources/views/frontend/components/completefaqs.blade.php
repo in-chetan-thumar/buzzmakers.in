@@ -38,6 +38,9 @@
           <div>
             <a href="#" class="text-white" id="loadMore">Load More FAQs<i class="bi bi-arrow-right ms-3"></i></a>
           </div>
+          <div>
+            <a href="#" class="text-white" style="display: none" id="lessMore">Less FAQs<i class="bi bi-arrow-right ms-3"></i></a>
+          </div>
           <div class="text-center text-white mb-3 fw-bold faq-content">
               <h2>Now that you've scrolled to the bottom of the page.</h2>
               <h2>We believe that we've got you excited.</h2>
