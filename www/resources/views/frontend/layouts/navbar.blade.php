@@ -71,30 +71,30 @@
           Services
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="strategy.html">Strategy</a></li>
-          <li><a class="dropdown-item" href="marketing.html">Marketing</a></li>
-          <li><a class="dropdown-item" href="technology.html">Technology</a></li>
-          <li><a class="dropdown-item" href="design.html">Design</a></li>
-          <li><a class="dropdown-item" href="studio.html">Buzz Studio</a></li>
+          <li><a class="dropdown-item" href={{route('frontend.services.strategy')}}>Strategy</a></li>
+          <li><a class="dropdown-item" href={{route('frontend.services.content')}}>Marketing</a></li>
+          <li><a class="dropdown-item" href={{route('frontend.services.technology')}}>Technology</a></li>
+          <li><a class="dropdown-item" href={{route('frontend.services.design')}}>Design</a></li>
+          <li><a class="dropdown-item" href={{route('frontend.services.studio')}}>Buzz Studio</a></li>
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="work.html">Our Work</a>
+        <a class="nav-link active" aria-current="page" href={{route('frontend.work')}}>Our Work</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href={{route('frontend.about')}}>About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href={{route('frontend.contact')}}>Contact</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="blogs.html">Blogs</a>
+        <a class="nav-link" href={{route('frontend.blog')}}>Blogs</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="news.html">News</a>
+        <a class="nav-link" href={{route('frontend.news')}}>News</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="careers.html">Careers</a>
+        <a class="nav-link" href={{route('frontend.careers')}}>Careers</a>
       </li>
       <li class="close-menu-btn">
         <a href="#" data-bs-toggle="collapse" data-bs-target="#buzzmenu" aria-expanded="false" aria-controls="buzzmenu"><i
