@@ -14,7 +14,7 @@ body {
 }
 
 .container-back-top-section{
-    background-image: url('../images/profile/jio/pattern-jio\ copy.png');
+    background-image: url('../images/profile/jio/pattern-jio-copy.webp');
     background-size: 100%;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .section-text {
-    background-image: url(../images/profile/jio/horn\ copy.png);
+    background-image: url(../images/profile/jio/horn-copy.webp);
     background-repeat: no-repeat;
     background-size: 15rem;
 }
@@ -110,17 +110,17 @@ body {
     background-image: none;
 }
 .box-mob-img:hover{
-    background-image: url(../images/profile/jio/mobile.png);
+    background-image: url(../images/profile/jio/mobile.webp);
     background-size: 100%;
 }
 
 .footer-line{
-    background-image: url(../images/profile/jio/bottom-line.png);
+    background-image: url(../images/profile/jio/bottom-line.webp);
 }
 
 /* reels-container */
 .reels-container{
-    background-image: url(../images/profile/jio/reelsback.jpg);
+    background-image: url(../images/profile/jio/reelsback.webp);
     background-repeat: no-repeat;
     background-position: center;
     padding: 80px 40px 80px 80px;

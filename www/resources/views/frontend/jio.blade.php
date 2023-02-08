@@ -54,7 +54,7 @@
                 <!-- <div class="container-fluid reveal"> -->
                 <div class="container pt-5">
                     <div class="img-header-container">
-                        <img src="{{ asset('assets/frontend/images/profile/jio/top-banner.png')}}" class="w-100" />
+                        <img src="{{ asset('assets/frontend/images/profile/jio/top-banner.webp')}}" class="w-100" />
                     </div>
                 </div>
             </section>
@@ -84,39 +84,39 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="post-box-design shadow">
                                     <div class="post-img-title-container p-1">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.png')}}" alt="title" class="w-50">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp')}}" alt="title" class="w-50">
                                     </div>
                                     <div class="post-img-container px-2">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg1.png')}}" alt="post" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg1.webp')}}" alt="post" class="w-100">
                                     </div>
                                     <div class="post-img-title-container">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.png')}}" alt="title" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.webp')}}" alt="title" class="w-100">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="post-box-design shadow">
                                     <div class="post-img-title-container p-1">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.png')}}" alt="title" class="w-50">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp')}}" alt="title" class="w-50">
                                     </div>
                                     <div class="post-img-container px-2">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg2.png')}}" alt="post" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg2.webp')}}" alt="post" class="w-100">
                                     </div>
                                     <div class="post-img-title-container">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.png')}}" alt="title" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.webp')}}" alt="title" class="w-100">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="post-box-design shadow">
                                     <div class="post-img-title-container p-1">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.png')}}" alt="title" class="w-50">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp')}}" alt="title" class="w-50">
                                     </div>
                                     <div class="post-img-container px-2">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg3.png')}}" alt="post" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg3.webp')}}" alt="post" class="w-100">
                                     </div>
                                     <div class="post-img-title-container">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.png')}}" alt="title" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.webp')}}" alt="title" class="w-100">
                                     </div>
                                 </div>
                             </div>
@@ -127,39 +127,39 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="post-box-design shadow">
                                     <div class="post-img-title-container p-1">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.png')}}" alt="title" class="w-50">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp')}}" alt="title" class="w-50">
                                     </div>
                                     <div class="post-img-container px-2">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg4.png')}}" alt="post" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg4.webp')}}" alt="post" class="w-100">
                                     </div>
                                     <div class="post-img-title-container">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.png')}}" alt="title" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.webp')}}" alt="title" class="w-100">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="post-box-design shadow">
                                     <div class="post-img-title-container p-1">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.png')}}" alt="title" class="w-50">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp')}}" alt="title" class="w-50">
                                     </div>
                                     <div class="post-img-container px-2">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg5.png')}}" alt="post" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg5.webp')}}" alt="post" class="w-100">
                                     </div>
                                     <div class="post-img-title-container">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.png')}}" alt="title" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.webp')}}" alt="title" class="w-100">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="post-box-design shadow">
                                     <div class="post-img-title-container p-1">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.png')}}" alt="title" class="w-50">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp')}}" alt="title" class="w-50">
                                     </div>
                                     <div class="post-img-container px-2">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg6.png')}}" alt="post" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/postimg6.webp')}}" alt="post" class="w-100">
                                     </div>
                                     <div class="post-img-title-container">
-                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.png')}}" alt="title" class="w-100">
+                                        <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.webp')}}" alt="title" class="w-100">
                                     </div>
                                 </div>
                             </div>
@@ -176,38 +176,38 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-3 box-mob-img-1">
                             <div class="box-mob-img-container">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/mob-post1.png')}}" class="w-100" alt="img-page">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.png')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/mob-post1.webp')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.webp')}}" class="w-100" alt="img-page">
                             </div>
                             <div class="mobile-phone-1 mobile-screen">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/mobile.png')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/mobile.webp')}}" class="w-100" alt="img-page">
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 box-mob-img-2">
                             <div class="box-mob-img-container">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/mob-post2.png')}}" class="w-100" alt="img-page">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.png')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/mob-post2.webp')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.webp')}}" class="w-100" alt="img-page">
                             </div>
                             <div class="mobile-phone-2 mobile-screen">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/mobile.png')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/mobile.webp')}}" class="w-100" alt="img-page">
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 box-mob-img-3">
                             <div class="box-mob-img-container">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/mob-post3.png')}}" class="w-100" alt="img-page">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.png')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/mob-post3.webp')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.webp')}}" class="w-100" alt="img-page">
                             </div>
                             <div class="mobile-phone-3 mobile-screen">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/mobile.png')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/mobile.webp')}}" class="w-100" alt="img-page">
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 box-mob-img-4">
                             <div class="box-mob-img-container">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/mob-post4.png')}}" class="w-100" alt="img-page">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.png')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/mob-post4.webp')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/actionbtn.webp')}}" class="w-100" alt="img-page">
                             </div>
                             <div class="mobile-phone-4 mobile-screen">
-                                <img src="{{ asset('assets/frontend/images/profile/jio/mobile.png')}}" class="w-100" alt="img-page">
+                                <img src="{{ asset('assets/frontend/images/profile/jio/mobile.webp')}}" class="w-100" alt="img-page">
                             </div>
                         </div>
                     </div>
@@ -222,22 +222,22 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="reel-photo-screen">
-                            <img src="{{ asset('assets/frontend/images/profile/jio/mobs1.png')}}" class="w-100" alt="">
+                            <img src="{{ asset('assets/frontend/images/profile/jio/mobs1.webp')}}" class="w-100" alt="">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="reel-photo-screen">
-                            <img src="{{ asset('assets/frontend/images/profile/jio/mobs2.png')}}" class="w-100" alt="">
+                            <img src="{{ asset('assets/frontend/images/profile/jio/mobs2.webp')}}" class="w-100" alt="">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="reel-photo-screen">
-                            <img src="{{ asset('assets/frontend/images/profile/jio/mobs3.png')}}" class="w-100" alt="">
+                            <img src="{{ asset('assets/frontend/images/profile/jio/mobs3.webp')}}" class="w-100" alt="">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="reel-photo-screen">
-                            <img src="{{ asset('assets/frontend/images/profile/jio/mobs4.png')}}" class="w-100" alt="">
+                            <img src="{{ asset('assets/frontend/images/profile/jio/mobs4.webp')}}" class="w-100" alt="">
                         </div>
                     </div>
                 </div>
