@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class LumarController extends Controller
+class LlumarController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class LumarController extends Controller
      */
     public function index()
     {
-        return view('frontend.lumar');
+        return view('frontend.llumar');
     }
 
     /**
