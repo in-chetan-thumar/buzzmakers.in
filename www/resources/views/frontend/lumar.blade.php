@@ -70,23 +70,104 @@
         </section>
     </div>
 
-
     <!-- section post -->
     <section class="responsive-container section-post">
 
         <div class="container text-center py-5">
             <h1 class="text-uppercase">Designing Premium Minimalism</h1>
         </div>
-        <div class="main-ent-container">
-            <div>
+
+        <div class="backround-square">
+            <div class="main-ent-container backround-square">
                 <img src="{{ asset('assets/frontend/images/profile/lumar/book.webp')}}" class="w-100" alt="">
             </div>
+
+            <!--  -->
+            <div class="sq-title m-auto my-5">
+                <h3 class="mb-0 py-3 text-center fw-bold">Space Branding</h3>
+            </div>
+
+            <div class="container">
+                <div>
+                    <img src="{{ asset('assets/frontend/images/profile/lumar/lumarbanner.webp')}}" class="w-100" alt="">
+                </div>
+                <div class="row my-5">
+                    <div class="col-lg-9">
+                        <img src="{{ asset('assets/frontend/images/profile/lumar/lumarbanner1.webp')}}" class="w-100" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="{{ asset('assets/frontend/images/profile/lumar/lumarbannersub2.webp')}}" class="w-100" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/lumar/lumarbannersub3.webp')}}" class="w-100" alt="">
+                    </div>
+                </div>
+                <div>
+                    <img src="{{ asset('assets/frontend/images/profile/lumar/lumarbanner2.webp')}}" class="w-100" alt="">
+                </div>
+            </div>
+
+            <div class="position-relative">
+                <img src="{{ asset('assets/frontend/images/profile/lumar/standee1.webp')}}" class="w-100" alt="">
+                <img src="{{ asset('assets/frontend/images/profile/lumar/standee2.webp')}}" class="standee-banner" alt="">
+                <h2 class="heading-standy">Out-Standee<br />Designs</h2>
+            </div>
+
+            <div class="sq-title m-auto my-5">
+                <h3 class="mb-0 py-3 text-center fw-bold">A Tint Of Creativity</h3>
+            </div>
+
+            <div class="yellow-back">
+                <div class="container inner-post-container">
+                    <div class="row g-5">
+                        <div class="col-lg-4">
+                            <div class="shadow-solid aspect-r-11">
+                                <img src="{{ asset('assets/frontend/images/profile/lumar/posts1.webp')}}" class="w-100" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="shadow-solid aspect-r-11">
+                                <img src="{{ asset('assets/frontend/images/profile/lumar/posts2.webp')}}" class="w-100" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="shadow-solid aspect-r-11">
+                                <img src="{{ asset('assets/frontend/images/profile/lumar/posts3.webp')}}" class="w-100" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="shadow-solid aspect-r-11">
+                                <img src="{{ asset('assets/frontend/images/profile/lumar/posts4.webp')}}" class="w-100" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="shadow-solid aspect-r-11">
+                                <img src="{{ asset('assets/frontend/images/profile/lumar/posts5.webp')}}" class="w-100" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="shadow-solid aspect-r-11">
+                                <img src="{{ asset('assets/frontend/images/profile/lumar/posts6.webp')}}" class="w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="{{ asset('assets/frontend/images/profile/lumar/video.webp')}}" class="w-100" alt="">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="{{ asset('assets/frontend/images/profile/lumar/video.webp')}}" class="w-100" alt="">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="{{ asset('assets/frontend/images/profile/lumar/video.webp')}}" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <!--  -->
-        <div class="btn-buzz w-25 m-auto my-5">
-            <h3 class="mb-0 py-3 text-center fw-bolder">Space Branding</h3>
-        </div>
     </section>
 
     <!-- footer section starts -->

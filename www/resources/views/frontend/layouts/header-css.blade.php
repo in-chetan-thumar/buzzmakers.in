@@ -6,4 +6,6 @@
 
 <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/poojaent.css') }}>
 <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/jio.css')}}>
+<link rel="stylesheet" href={{ asset('assets/frontend/profilescss/jio-responsive.css')}}>
 <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/lumar.css')}}>
+<link rel="stylesheet" href={{ asset('assets/frontend/profilescss/lumar-responsive.css')}}>
