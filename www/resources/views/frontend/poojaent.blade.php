@@ -4,6 +4,7 @@
 @endsection
 
 @section('main')
+
     <!-- collpase menu for mobile start -->
     {{-- <div class="collapse mobile-menu-area" id="buzzmenu">
         <img src="./images/logo.svg" style="width:125px;" alt="logo">
@@ -72,14 +73,14 @@
     
     <!-- section post -->
     <section class="responsive-container section-post">
-        <div class="img-eyes-left">
+        <div class="img-eyes-left container">
             <img src="{{ asset('assets/frontend/images/profile/poojaent/eyes-left.webp')}}" alt="">
         </div>
         <div class="container text-center py-5">
             <h1 class="text-uppercase">Content So coole-ie,<br />it had to be no.1</h1>
         </div>
         <div class="main-ent-container">
-            <div class="container mt-5 position-relative">
+            <div class="container position-relative">
                 <div class="top-hash-tag-container">
                     <div class="row g-0">
                         <div class="col-lg-3 col-md-3">
@@ -106,25 +107,25 @@
                     </div>
                 </div>
 
-                <div class="row pb-5 g-5">
-                    <div class="col-lg-4 col-md-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-5">
                         <div class="aspect-r-11">
                             <img src="{{ asset('assets/frontend/images/profile/poojaent/postfilmsub1.webp')}}" class="w-100" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 mb-5">
                         <div class="aspect-r-11">
                             <img src="{{ asset('assets/frontend/images/profile/poojaent/postfilmsub2.webp')}}" class="w-100" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 mb-5">
                         <div class="aspect-r-11">
                             <img src="{{ asset('assets/frontend/images/profile/poojaent/postfilmsub3.webp')}}" class="w-100" alt="">
                         </div>
                     </div>
 
                     <!--  -->
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 mb-5">
                         <div class="aspect-r-11 shadow-solid">
                             <img src="{{ asset('assets/frontend/images/profile/poojaent/posts1.webp')}}" class="w-100" alt="">
                         </div>
@@ -132,12 +133,12 @@
                             <img src="{{ asset('assets/frontend/images/profile/poojaent/eyes-riht-bottom.webp')}}" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 mb-5">
                         <div class="aspect-r-11 shadow-solid">
                             <img src="{{ asset('assets/frontend/images/profile/poojaent/posts2.webp')}}" class="w-100" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 mb-5">
                         <div class="aspect-r-11 shadow-solid">
                             <img src="{{ asset('assets/frontend/images/profile/poojaent/posts3.webp')}}" class="w-100" alt="">
                         </div>
@@ -148,7 +149,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 mb-5">
                         <div class="aspect-r-11 shadow-solid mt-5">
                             <img src="{{ asset('assets/frontend/images/profile/poojaent/posts4.webp')}}" class="w-100" alt="">
                         </div>
@@ -170,7 +171,7 @@
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 mb-5">
                         <div class="aspect-r-11 shadow-solid mt-5">
                             <img src="{{ asset('assets/frontend/images/profile/poojaent/posts7.webp')}}" class="w-100" alt="">
                         </div>

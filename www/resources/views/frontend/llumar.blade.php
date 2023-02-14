@@ -115,7 +115,7 @@
                 <h3 class="mb-0 py-3 text-center fw-bold">A Tint Of Creativity</h3>
             </div>
 
-            <div class="yellow-back">
+            {{-- <div class="yellow-back">
                 <div class="container inner-post-container">
                     <div class="row g-5">
                         <div class="col-lg-4">
@@ -164,12 +164,61 @@
                         </div>
                     </div>
                 </div>
+            </div> --}}
+            <div class="yellow-back">
+                <div class="container">
+                    <div class="inner-post-container">
+                        <div class="row">
+                            <div class="col-lg-4 mb-5">
+                                <div class="shadow-solid aspect-r-11">
+                                    <img src="{{ asset('assets/frontend/images/profile/lumar/posts1.webp')}}" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="shadow-solid aspect-r-11">
+                                    <img src="{{ asset('assets/frontend/images/profile/lumar/posts2.webp')}}" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="shadow-solid aspect-r-11">
+                                    <img src="{{ asset('assets/frontend/images/profile/lumar/posts3.webp')}}" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="shadow-solid aspect-r-11">
+                                    <img src="{{ asset('assets/frontend/images/profile/lumar/posts4.webp')}}" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="shadow-solid aspect-r-11">
+                                    <img src="{{ asset('assets/frontend/images/profile/lumar/posts5.webp')}}" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="shadow-solid aspect-r-11">
+                                    <img src="{{ asset('assets/frontend/images/profile/lumar/posts6.webp')}}" class="w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="{{ asset('assets/frontend/images/profile/lumar/video.webp')}}" class="w-100" alt="">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="{{ asset('assets/frontend/images/profile/lumar/video.webp')}}" class="w-100" alt="">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="{{ asset('assets/frontend/images/profile/lumar/video.webp')}}" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-
     </section>
-
     <!-- footer section starts -->
     <div class="footer-line p-3"></div>
 @endsection

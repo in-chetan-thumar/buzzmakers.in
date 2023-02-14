@@ -4,6 +4,7 @@
 @endsection
 
 @section('main')
+    
     <!-- section top header -->
     <div class="container-back-top-section">
         <section class="responsive-container">
@@ -35,7 +36,7 @@
             <div class="post-container">
                 <div class="post-container-inner-1">
                     <div class="row">
-                        <div class="col-lg-6 col-md-4">
+                        <div class="col-lg-4 col-md-12">
                             <div class="post-box-design shadow">
                                 <div class="post-img-title-container p-1">
                                     <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp') }}"
@@ -51,7 +52,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-4">
+                        <div class="col-lg-4 col-md-12">
                             <div class="post-box-design shadow">
                                 <div class="post-img-title-container p-1">
                                     <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp') }}"
@@ -67,7 +68,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-4">
+                        <div class="col-lg-4 col-md-12">
                             <div class="post-box-design shadow">
                                 <div class="post-img-title-container p-1">
                                     <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp') }}"
@@ -87,7 +88,7 @@
                 </div>
                 <div class="post-container-inner-2">
                     <div class="row">
-                        <div class="col-lg-6 col-md-4">
+                        <div class="col-lg-4 col-md-12">
                             <div class="post-box-design shadow">
                                 <div class="post-img-title-container p-1">
                                     <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp') }}"
@@ -103,7 +104,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-4">
+                        <div class="col-lg-4 col-md-12">
                             <div class="post-box-design shadow">
                                 <div class="post-img-title-container p-1">
                                     <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp') }}"
@@ -119,7 +120,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-4">
+                        <div class="col-lg-4 col-md-12">
                             <div class="post-box-design shadow">
                                 <div class="post-img-title-container p-1">
                                     <img src="{{ asset('assets/frontend/images/profile/jio/posttitle.webp') }}"
