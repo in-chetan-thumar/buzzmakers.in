@@ -12,3 +12,6 @@
 
 <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/lumar.css') }}>
 <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/lumar-responsive.css') }}>
+
+<link rel="stylesheet" href={{ asset('assets/frontend/profilescss/salvi.css')}}>
+<link rel="stylesheet" href={{ asset('assets/frontend/profilescss/salvi-responsive.css')}}>
