@@ -31,6 +31,8 @@ Route::get('/pooja-entertainment', [\App\Http\Controllers\Frontend\PoojaentContr
 Route::get('/jiomeet', [\App\Http\Controllers\Frontend\JioController::class, 'index'])->name('frontend.jio');
 Route::get('/llumar', [\App\Http\Controllers\Frontend\LlumarController::class, 'index'])->name('frontend.llumar');
 Route::get('/salvi-chemical', [\App\Http\Controllers\Frontend\SalviController::class, 'index'])->name('frontend.salvi');
+Route::get('/nutra-care', [\App\Http\Controllers\Frontend\NutraCareController::class, 'index'])->name('frontend.nutra');
+Route::get('/sarvotkarsh', [\App\Http\Controllers\Frontend\SarvotkarshController::class, 'index'])->name('frontend.sarvotkarsh');
 Route::get('/services-strategy', [\App\Http\Controllers\Frontend\Services\StrategyController::class, 'index'])->name('frontend.services.strategy');
 Route::get('/services-content', [\App\Http\Controllers\Frontend\Services\ContentController::class, 'index'])->name('frontend.services.content');
 Route::get('/services-technology', [\App\Http\Controllers\Frontend\Services\TechnologyController::class, 'index'])->name('frontend.services.technology');
