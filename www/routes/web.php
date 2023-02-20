@@ -33,6 +33,7 @@ Route::get('/llumar', [\App\Http\Controllers\Frontend\LlumarController::class, '
 Route::get('/salvi-chemical', [\App\Http\Controllers\Frontend\SalviController::class, 'index'])->name('frontend.salvi');
 Route::get('/nutra-care', [\App\Http\Controllers\Frontend\NutraCareController::class, 'index'])->name('frontend.nutra');
 Route::get('/sarvotkarsh', [\App\Http\Controllers\Frontend\SarvotkarshController::class, 'index'])->name('frontend.sarvotkarsh');
+Route::get('/purusham', [\App\Http\Controllers\Frontend\PurushamController::class, 'index'])->name('frontend.purusham');
 Route::get('/services-strategy', [\App\Http\Controllers\Frontend\Services\StrategyController::class, 'index'])->name('frontend.services.strategy');
 Route::get('/services-content', [\App\Http\Controllers\Frontend\Services\ContentController::class, 'index'])->name('frontend.services.content');
 Route::get('/services-technology', [\App\Http\Controllers\Frontend\Services\TechnologyController::class, 'index'])->name('frontend.services.technology');

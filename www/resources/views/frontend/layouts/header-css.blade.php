@@ -21,3 +21,6 @@
 
 <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/sarvotkarsh.css') }}>
 <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/sarvotkarsh-responsive.css') }}>
+
+<link rel="stylesheet" href={{ asset('assets/frontend/profilescss/purusham.css') }}>
+<link rel="stylesheet" href={{ asset('assets/frontend/profilescss/purusham-responsive.css') }}>
