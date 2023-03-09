@@ -27,6 +27,13 @@ Route::get('/contact', [\App\Http\Controllers\Frontend\ContactController::class,
 Route::post('/contact-store', [\App\Http\Controllers\Frontend\ContactController::class, 'store'])->name('frontend.contact.store');
 Route::get('/news', [\App\Http\Controllers\Frontend\NewsController::class, 'index'])->name('frontend.news');
 Route::get('/our-work', [\App\Http\Controllers\Frontend\WorkController::class, 'index'])->name('frontend.work');
+Route::get('/pooja-entertainment', [\App\Http\Controllers\Frontend\PoojaentController::class, 'index'])->name('frontend.poojaent');
+Route::get('/jiomeet', [\App\Http\Controllers\Frontend\JioController::class, 'index'])->name('frontend.jio');
+Route::get('/llumar', [\App\Http\Controllers\Frontend\LlumarController::class, 'index'])->name('frontend.llumar');
+Route::get('/salvi-chemical', [\App\Http\Controllers\Frontend\SalviController::class, 'index'])->name('frontend.salvi');
+Route::get('/nutra-care', [\App\Http\Controllers\Frontend\NutraCareController::class, 'index'])->name('frontend.nutra');
+Route::get('/sarvotkarsh', [\App\Http\Controllers\Frontend\SarvotkarshController::class, 'index'])->name('frontend.sarvotkarsh');
+Route::get('/purusham', [\App\Http\Controllers\Frontend\PurushamController::class, 'index'])->name('frontend.purusham');
 Route::get('/services-strategy', [\App\Http\Controllers\Frontend\Services\StrategyController::class, 'index'])->name('frontend.services.strategy');
 Route::get('/services-content', [\App\Http\Controllers\Frontend\Services\ContentController::class, 'index'])->name('frontend.services.content');
 Route::get('/services-technology', [\App\Http\Controllers\Frontend\Services\TechnologyController::class, 'index'])->name('frontend.services.technology');
@@ -48,6 +55,9 @@ Route::group(['middleware' => 'auth'], function () {
 
     // Blog Controller
     Route::resource("blog-list", \App\Http\Controllers\Admin\BlogController::class);
+
+    //FAQs Controller
+    Route::resource('faqs', \App\Http\Controllers\Admin\FaqsController::class);
 
     // Contacts Controller
     Route::resource('contacts', \App\Http\Controllers\Admin\ContactsController::class);

@@ -15,7 +15,7 @@
                         <p>
                             We Keep Our Brand's Best Foot Forward Using The Power Of Great Designs!
                         </p>
-                        <a href="#" class="btn btn-buzz-connect">Let's Connect</a>
+                        <a href={{route('frontend.contact')}} class="btn btn-buzz-connect">Let's Connect</a>
                     </div>
                 </div>
                 <div class="col-md-6 design-img-container text-end">
@@ -33,7 +33,7 @@
         <div class="container">
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/Design/uiux.svg') }} style="width:65% ;" alt="uiux">
+                    <img src={{ asset('assets/frontend/images/Design/uiux.svg') }} style="width:60% ;" alt="uiux">
                 </div>
                 <div class="col-md-7 content-design">
                     <h1>UIUX</h1>
@@ -52,7 +52,7 @@
             </div>
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/Design/graphic-designer.svg') }} style="width:65% ;"
+                    <img src={{ asset('assets/frontend/images/Design/graphic-designer.svg') }} style="width:60% ;"
                         alt="graphic-designer">
                 </div>
                 <div class="col-md-7 content-design">
@@ -72,7 +72,7 @@
             </div>
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/Design/packaging.svg') }} style="width:65% ;" alt="packaging">
+                    <img src={{ asset('assets/frontend/images/Design/packaging.svg') }} style="width:60% ;" alt="packaging">
                 </div>
                 <div class="col-md-7 content-design">
                     <h1>Packaging</h1>
@@ -106,7 +106,12 @@
 
     @include('frontend.components.testimonials')
 
-    @include('frontend.components.services_career')
+    {{-- @include('frontend.components.services_career') --}}
+    {!! $table !!}
+    {{-- @include('frontend.components.completefaqs') --}}
 
-    @include('frontend.components.completefaqs')
+@endsection
+
+@section('js')
+    <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
 @endsection

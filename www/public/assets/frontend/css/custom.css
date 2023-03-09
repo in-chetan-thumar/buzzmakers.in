@@ -23,17 +23,17 @@ body {
 @font-face {
     font-family: buzzlight;
     font-display: swap;
-    src: url(../fonts/Fontspring-DEMO-visbycf-regular.otf);
+    src: url(../fonts/VisbyCF-Regular.otf);
 }
 @font-face {
     font-family: buzzbold;
     font-display: swap;
-    src: url(../fonts/Fontspring-DEMO-visbycf-bold.otf);
+    src: url(../fonts/VisbyCF-Bold.otf);
 }
 @font-face {
     font-family: buzzhindi;
     font-display: swap;
-    src: url(../fonts/dev.ttf);
+    src: url(../fonts/PalanquinDark-Bold.ttf);
 }
 html {
     scroll-behavior: smooth;
@@ -255,11 +255,12 @@ h1 {
 }
 .sliderfeature img,
 .sliderfeature-secondary img {
-    margin: 0 20px;
+    margin: 0 10px;
     width: 120px;
-    filter: sepia(100%);
+    /* aspect-ratio:3/2; */
+    filter: grayscale(100%);
     transition: 0.3s;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 .sliderfeature img:hover,
 .sliderfeature-secondary img:hover {
@@ -272,6 +273,15 @@ h1 {
     margin: 0;
     padding: 0.9rem 0;
     list-style-type: none;
+}
+.nav-next-testimonial{
+    position: absolute;
+    bottom:8%;
+    right: 25%;
+}
+.nav-next-testimonial i{
+    font-size: 30px;
+    background-color: var(--white-color);
 }
 .services,
 .testimonials {
@@ -591,8 +601,8 @@ h1 {
 .list-content li {
     padding-left: 10px;
     margin-bottom: 10px;
-    font-weight: 700;
-    font-family: buzzlight;
+    /* font-weight: bolder; */
+    font-family: buzzbold;
 }
 .list-columns {
     margin-bottom: 50px;
@@ -900,15 +910,27 @@ h1 {
     padding-left: 20px;
 }
 [type="radio"]{
-    display: none;
+    display:none;
+}
+#radio-example{
+    gap: 20px;
+}
+.radio-date-container .slick-initialized .slick-slide{
+    margin-right: 10px;
 }
 
-[type="radio"]:checked .contact-right-side-content .radioselect {
+/* [type="radio"]:checked .radioselect {
     background: var(--yellow);
 }
-[type="radio"]:not(:checked) .contact-right-side-content .radioselect {
+[type="radio"]:not(:checked) .radioselect {
     background: var(--blue);
+} */
+
+.radioselect-yellow {
+    background: var(--yellow);
+    color: var(--black) !important;
 }
+
 
 .prices-min-max {
     display: flex;
@@ -1208,6 +1230,7 @@ h1 {
     text-align: center;
     background-color: var(--light-gray);
 }
+
 @keyframes bounce {
     from {
         transform: translateX(0);

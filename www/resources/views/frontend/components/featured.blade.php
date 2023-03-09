@@ -4,66 +4,131 @@
     <div class="container">
       <div class="sliderfeature-secondary">
         <div>          
-          <img src={{asset('assets/frontend/images/clients/fevicol.webp')}} loading="lazy" alt="fevicol">
+          <img src={{asset('assets/frontend/images/clients/Baaya.webp')}} loading="lazy" alt="Clients">
         </div>
         <div>          
-          <img src={{asset('assets/frontend/images/clients/indian-oil.webp')}} loading="lazy" alt="indian-oil">
+          <img src={{asset('assets/frontend/images/clients/bikgai.webp')}} loading="lazy" alt="Clients">
         </div>
         <div>
-          <img src={{asset('assets/frontend/images/clients/bharat-petroleum.webp')}} loading="lazy" alt="bharat-petroleum">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_01.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/union-bank.webp')}} loading="lazy" alt="union-bank">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_02.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/sbi.webp')}} loading="lazy" alt="sbi">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_03.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/bse.webp')}} loading="lazy" alt="bse">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_04.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/craftsvilla.webp')}} loading="lazy" alt="craftsvilla">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_05.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/gujarat-tourism.webp')}} loading="lazy" alt="gujarat-tourism">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_06.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/history.webp')}} loading="lazy" alt="history">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_07.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/asian-paint.webp')}} loading="lazy" alt="asian-paint">
-        </div>
-        <!--  -->
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_08.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/starplus.webp')}} loading="lazy" alt="starplus">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_10.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/sony.webp')}} loading="lazy" alt="sony">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_11.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/viacom.webp')}} loading="lazy" alt="viacom">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_13.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/ambuja.webp')}} loading="lazy" alt="ambuja">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_14.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/jiomeet.webp')}} loading="lazy" alt="jiomeet">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_15.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/nationalgeo.webp')}} loading="lazy" alt="nationalgeo">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_16.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/pooja-ent.webp')}} loading="lazy" alt="pooja-ent">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_17.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/yashraj.webp')}} loading="lazy" alt="yashraj">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_21.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/zee.webp')}} loading="lazy" alt="zee">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_22.webp')}} loading="lazy" alt="Clients">
+        </div>     
         <div>
-          <img src={{asset('assets/frontend/images/clients/hariyana.webp')}} loading="lazy" alt="hariyana">
-        </div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_24.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_25.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_29.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_30.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_31.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_32.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_33.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_34.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_35.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_36.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_37.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_38.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_39.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_40.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_41.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_42.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_43.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_44.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_45.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_46.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_47.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_48.webp')}} loading="lazy" alt="Clients">
+        </div>     
+        <div>
+          <img src={{asset('assets/frontend/images/clients/Clients-Logo-Collage_rev2_49.webp')}} loading="lazy" alt="Clients">
+        </div>     
       </div>
     </div>
   </section>

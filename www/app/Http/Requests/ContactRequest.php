@@ -25,7 +25,7 @@ class ContactRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'email' => 'required',
+            'email' => 'required|email',
             'phone' => 'required',
             'website' => 'required',
             'project' => 'required',
@@ -35,6 +35,9 @@ class ContactRequest extends FormRequest
             'competitors' => 'required',
             'reference' => 'required',
             'documents' => 'required|mimetypes:application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            'schedule_date' => 'required',
+            'timezone' => 'required',
+            'schedule_time' => 'required',
         ];
     }
 }

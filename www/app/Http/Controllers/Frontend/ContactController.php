@@ -23,13 +23,14 @@ class ContactController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
+        $table = resolve('home-repo')->renderHtmlTable($request);
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
-        return view('frontend.contact', compact('content'));
+        return view('frontend.contact', compact('content','table'));
     }
 
     /**
@@ -57,6 +58,7 @@ class ContactController extends Controller
 
         $data = $params = [];
         DB::beginTransaction();
+        // dd($request);
 
         try {
             if ($request->file('documents')) {
@@ -64,8 +66,8 @@ class ContactController extends Controller
                 $name = Str::random(16) . '.' . $file->getClientOriginalExtension();
                 $doc = $request->file('documents');
                 $doc->storeAs('public/documents/contacts', $name);
+                $params['documents'] = $name;
             }
-            $params = [];
             $params['name'] = $request->name;
             $params['email'] = $request->email;
             $params['phone'] = $request->phone;
@@ -75,7 +77,12 @@ class ContactController extends Controller
             $params['services'] = $request->services;
             $params['competitors'] = $request->competitors;
             $params['reference'] = $request->reference;
-            $params['documents'] = $name;
+            // if ($request->file('documents')) {               
+            //     $params['documents'] = $name;
+            // }
+            $params['schedule_date'] = $request->schedule_date;
+            $params['timezone'] = $request->timezone;
+            $params['schedule_time'] = $request->schedule_time;
 
             $page = Contact::create($params);
 

@@ -20,7 +20,7 @@
                             your<br>
                             project, request a quote or even<br> just to pick our brains.</h1><br>
                         <div class="text-center btn-contact">
-                            <a href="#" class="btn btn-buzz-connect-blue">Let's Connect</a>
+                            <a href={{ route('frontend.contact') }} class="btn btn-buzz-connect-blue">Let's Connect</a>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -83,7 +83,6 @@
                     </div>
                     <div class="col-md-8">
                         <div class="contact-right-side-content">
-
                             {!! Form::open([
                                 'url' => route('frontend.contact.store'),
                                 'method' => 'POST',
@@ -150,19 +149,17 @@
                                         <section class="range-slider" id="facet-price-range-slider">
                                             <input name="range1" value="3000" min="3000" max="50000"
                                                 step="1" type="range">
-                                            {{-- {!! Form::selectRange('range-1', 3000, 50000 )!!} --}}
                                             <input name="range2" value="50000" min="0" max="50000"
                                                 step="1" type="range">
                                         </section>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="mb-4 reveal">
                                 <h4>3.What Services ar you interested in?</h4>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        {!! Form::select('services', ['1' => 'Option 1', '2' => 'Option 2', '3' => 'Option 3'], '', [
+                                        {!! Form::select('services', ['Option 1' => 'Option 1', 'Option 2' => 'Option 2', '3' => 'Option 3'], '', [
                                             'class' => 'form-control dd',
                                         ]) !!}
                                         <span class="text-danger" style="font-size:15px">
@@ -204,54 +201,63 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="mb-2 reveal">
                                 <h4>4.Schedule a call with our tech expert. Get a detailed tech consultation for
                                     free!</h4>
-                                <div class="my-4">
-                                    <div id="radio-example">
-                                        <label class="radioselect" for="radone">
-                                            <span>Mon</span><br>
-                                            <b>Mar 1</b>
-                                            <input type="radio" name="radio" id="radone">
-                                        </label>
+                                <div class="my-4 radio-date-container">
+                                    <div id="radio-example" class="radio-date-scroll">
 
-                                        <label class="radioselect" for="radtwo">
-                                            <span>Tue</span><br>
-                                            <b>Mar 2</b>
-                                            <input type="radio" name="radio" id="radtwo">
-                                        </label>
+                                        @for ($day = 0; $day < 15; $day++)
+                                            @php
+                                                $today = Carbon\Carbon::now();
+                                                $date = $today->addDays($day);
+                                                $radioId = $date->format('d');
+                                                $value = $date->format('Y-m-d');
+                                            @endphp
 
-                                        <input type="radio" id="age1" name="age" value="30">
-                                        <label for="age1">0 - 30</label><br>
-                                        <input type="radio" id="age2" name="age" value="60">
-                                        <label for="age2">31 - 60</label><br>
-                                        <input type="radio" id="age3" name="age" value="100">
-                                        <label for="age3">61 - 100</label>
+
+                                            <label class="radioselect" for={{ 'radio' . $radioId }}>
+                                                <span>{{ $date->format('D') }}</span><br />
+                                                <b>{{ $date->format('M d') }}</b>
+                                                {{ Form::radio('schedule_date', $value, false, ['id' => 'radio' . $radioId]) }}
+                                            </label>
+                                        @endfor
+
+                                        <span class="text-danger" style="font-size:15px">
+                                            @error('schedule_date')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                        {{-- <label class="radioselect" for="radio8">
+                                            <span>Mon</span><br />
+                                            <b>Mar 8</b>
+                                            <input type="radio" name="radio" id="radio8"/>
+                                          </label> --}}
+
+
                                     </div>
                                 </div>
                                 <div class="row">
                                     <label>Time Zone</label>
                                     <div class="col-md-4">
-                                        {!! Form::select('select_timezone', ['1' => 'EST', '2' => 'IST', '3' => 'Option3'], '2', [
+                                        {!! Form::select('timezone', ['EST' => 'EST', 'IST' => 'IST', '31' => 'Option3'], null, [
                                             'class' => 'form-control dd',
                                         ]) !!}
                                     </div>
                                     <div class="col-md-8">
                                         {!! Form::select(
-                                            'select_time',
+                                            'schedule_time',
                                             [
-                                                '1' => 'Scheduled at - 06:00PM to 07:00PM',
-                                                '2' => 'Scheduled at - 06:00PM to 07:00PM',
-                                                '3' => 'Scheduled at - 06:00PM to 07:00PM',
+                                                '10:00AM-12:00PM' => 'Scheduled at - 10:00AM to 12:00PM',
+                                                '01:00PM-03:00PM' => 'Scheduled at - 01:00PM to 03:00PM',
+                                                '3' => 'Scheduled at - 04:00PM to 06:00PM',
                                             ],
-                                            '',
+                                            null,
                                             ['class' => 'form-control dd'],
                                         ) !!}
                                     </div>
                                 </div>
                             </div>
-
                             <div class="text-center reveal">
                                 {{ Form::submit('Submit', ['class' => 'btn btn-buzz-connect']) }}
                             </div>
@@ -293,21 +299,22 @@
     </section>
     <!-- section address ends -->
 
-    @include('frontend.components.completefaqs')
+    {{-- @include('frontend.components.completefaqs') --}}
+
+    {!! $table !!}
 @endsection
 
 @section('js')
-    <script src="{{ asset('assets/frontend/js/rangeslider.js') }}"></script>
+    <script src={{ asset('assets/frontend/js/rangeslider.js') }}></script>
+    <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
     {{-- <script src="{{ asset('assets/frontend/js/toastr.min.js') }}"></script> --}}
 @endsection
 @section('script')
-    $(document).ready(function () {
-    //change colour when radio is selected
-    $('#radio-example input:radio').change(function () {
-    // Only remove the class in the specific `box` that contains the radio
-    $('div.highlight').removeClass('highlight');
-    // $(this).closest('.row').addClass('highlight');
-    $(this).closest('.radioselect').addClass('highlight');
-    });
-    });
+    <script>
+        $(".radioselect").click(function() {
+            $(".radioselect").removeClass("radioselect-yellow");
+            $(this).addClass("radioselect-yellow");
+        });
+    </script>
+    
 @endsection

@@ -15,7 +15,7 @@
                         <p>
                             We "Tech" Our Brands To Greater Heights!
                         </p>
-                        <a href="#" class="btn btn-buzz-connect-blue">Let's Connect</a>
+                        <a href={{route('frontend.contact')}} class="btn btn-buzz-connect-blue">Let's Connect</a>
                     </div>
                 </div>
                 <div class="col-md-6 tech-img-container text-end">
@@ -33,7 +33,7 @@
         <div class="container">
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/Tech/web-development.svg') }} style="width:70% ;"
+                    <img src={{ asset('assets/frontend/images/Tech/web-development.svg') }} style="width:60% ;"
                         alt="web-development">
                 </div>
                 <div class="col-md-7 content-tech">
@@ -51,7 +51,7 @@
             </div>
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/Tech/app-development.svg') }} style="width:70% ;"
+                    <img src={{ asset('assets/frontend/images/Tech/app-development.svg') }} style="width:60% ;"
                         alt="app-development">
                 </div>
                 <div class="col-md-7 content-tech">
@@ -75,7 +75,7 @@
             </div>
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/Tech/seo.svg') }} style="width:70% ;" alt="seo">
+                    <img src={{ asset('assets/frontend/images/Tech/seo.svg') }} style="width:60% ;" alt="seo">
                 </div>
                 <div class="col-md-7 content-tech">
                     <h1>Search Engine Optimization</h1>
@@ -107,7 +107,12 @@
 
     @include('frontend.components.testimonials')
 
-    @include('frontend.components.services_career')
+    {{-- @include('frontend.components.services_career') --}}
+    {!! $table !!}
+    {{-- @include('frontend.components.completefaqs') --}}
 
-    @include('frontend.components.completefaqs')
+@endsection
+
+@section('js')
+    <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
 @endsection

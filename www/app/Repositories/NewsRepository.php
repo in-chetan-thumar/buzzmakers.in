@@ -41,15 +41,20 @@ class NewsRepository
     public function store($params)
     {
         return $this->model->create($params);
-
-        // $news = DB::table('news')->insert($params);
-        // return $news;
     }
 
-    public function renderHtmlTable() 
+    public function renderHtmlTable($params) 
     {
-        $tableData = DB::table('news')->select('id','title','description')->paginate(8);
+        $tableData = $this->filter($params);
         return view('admin.news.table', compact('tableData'))->render();
+    }
+    public function filter($params)
+    {
+
+        return $this->model
+            ->latest()
+            ->paginate(config('constants.PER_PAGE'), ['*'],'page',!empty($params['page'])? $params['page']:'')
+            ->setPath($params['path']);           
     }
 
 }

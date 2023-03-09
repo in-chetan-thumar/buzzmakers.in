@@ -15,7 +15,7 @@
                         <p>
                             We Keep Our Brand's Best Foot Forward Using The Power Of Great studios!
                         </p>
-                        <a href="#" class="btn btn-buzz-connect">Let's Connect</a>
+                        <a href={{route('frontend.contact')}} class="btn btn-buzz-connect">Let's Connect</a>
                     </div>
                 </div>
                 <div class="col-md-6 studio-img-container text-end">
@@ -33,7 +33,7 @@
         <div class="container">
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/Studio/video-explainer.svg') }} style="width:65%;"
+                    <img src={{ asset('assets/frontend/images/Studio/video-explainer.svg') }} style="width:60%;"
                         alt="video-explainer">
                 </div>
                 <div class="col-md-7 content-studio">
@@ -103,7 +103,12 @@
 
     @include('frontend.components.testimonials')
 
-    @include('frontend.components.services_career')
+    {{-- @include('frontend.components.services_career') --}}
+    {!! $table !!}
+    {{-- @include('frontend.components.completefaqs') --}}
+    
+@endsection
 
-    @include('frontend.components.completefaqs')
+@section('js')
+    <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
 @endsection

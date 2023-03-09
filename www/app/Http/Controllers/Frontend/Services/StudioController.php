@@ -17,13 +17,14 @@ class StudioController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $content = Page::select('id','title','meta_keywords','meta_description')->whereRouteName(Route::currentRouteName())->first();
+        $table = resolve('studio-repo')->renderHtmlTable($request);
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
-        return view('frontend.services.studio',compact('content'));
+        return view('frontend.services.studio',compact('content','table'));
     }
 
     /**

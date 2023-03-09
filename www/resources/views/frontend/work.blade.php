@@ -8,13 +8,13 @@
         <div class="container text-center responsive-container">
             <h1 class="content-work">It is a long established fact<br> that a reader will be<br> distracted by the
                 readable</h1>
-            <a href="#" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Get in Touch</a>
+            <a href={{route('frontend.contact')}} class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Get in Touch</a>
             <div class="row w-100 img-container">
                 <div class="col-md-6">
                     <img src={{ asset('assets/frontend/images/OurWork/pot.svg') }} class="img-one" alt="pot">
                 </div>
                 <div class="col-md-6">
-                    <img src={{ asset('assets/frontend/images/OurWork/work-header.svg') }} class="img-two"
+                    <img src={{ asset('assets/frontend/images/OurWork/work-header.svg') }} class="img-two box-animate"
                         alt="work-header">
                 </div>
             </div>
@@ -26,16 +26,16 @@
         <div class="container relative">
             <div class="row g-3 mt-5">
                 <div class="col-md-6">
-                    <img src={{ asset('assets/frontend/images/OurWork/snap.webp') }} class="w-100" alt="snap">
+                    <a href={{route('frontend.jio')}}><img src={{ asset('assets/frontend/images/OurWork/snap.webp') }} class="w-100" alt="snap"></a>
                 </div>
                 <div class="col-md-6">
-                    <img src={{ asset('assets/frontend/images/OurWork/snap1.webp') }} class="w-100" alt="snap1">
+                    <a href={{route('frontend.poojaent')}}><img src={{ asset('assets/frontend/images/OurWork/snap1.webp') }} class="w-100" alt="snap1"></a>
                 </div>
                 <div class="col-md-6">
-                    <img src={{ asset('assets/frontend/images/OurWork/snap.webp') }} class="w-100" alt="snap">
+                    <a href={{route('frontend.jio')}}><img src={{ asset('assets/frontend/images/OurWork/snap.webp') }} class="w-100" alt="snap"></a>
                 </div>
                 <div class="col-md-6">
-                    <img src={{ asset('assets/frontend/images/OurWork/snap1.webp') }} class="w-100" alt="snap1">
+                    <a href={{route('frontend.poojaent')}}><img src={{ asset('assets/frontend/images/OurWork/snap1.webp') }} class="w-100" alt="snap1"></a>
                 </div>
             </div>
 
@@ -53,16 +53,16 @@
 
             <div class="row g-3 mt-5 reveal">
                 <div class="col-md-6">
-                    <img src={{ asset('assets/frontend/images/OurWork/snap.webp') }} class="w-100" alt="snap">
+                    <a href={{route('frontend.jio')}}><img src={{ asset('assets/frontend/images/OurWork/snap.webp') }} class="w-100" alt="snap"></a>
                 </div>
                 <div class="col-md-6">
-                    <img src={{ asset('assets/frontend/images/OurWork/snap1.webp') }} class="w-100" alt="snap1">
+                    <a href={{route('frontend.poojaent')}}><img src={{ asset('assets/frontend/images/OurWork/snap1.webp') }} class="w-100" alt="snap1"></a>
                 </div>
                 <div class="col-md-6">
-                    <img src={{ asset('assets/frontend/images/OurWork/snap.webp') }} class="w-100" alt="snap">
+                    <a href={{route('frontend.jio')}}><img src={{ asset('assets/frontend/images/OurWork/snap.webp') }} class="w-100" alt="snap"></a>
                 </div>
                 <div class="col-md-6">
-                    <img src={{ asset('assets/frontend/images/OurWork/snap1.webp') }} class="w-100" alt="snap1">
+                    <a href={{route('frontend.poojaent')}}><img src={{ asset('assets/frontend/images/OurWork/snap1.webp') }} class="w-100" alt="snap1"></a>
                 </div>
             </div>
         </div>

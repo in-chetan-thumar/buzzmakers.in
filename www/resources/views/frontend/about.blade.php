@@ -13,7 +13,7 @@
                         </h1>
                     </div>
                     <div class="col-md-5">
-                        <div class="pattern-about-page">
+                        <div class="pattern-about-page box-animate">
                             <img src={{ asset('assets/frontend/images/top.webp') }} alt="about-top">
                         </div>
                     </div>

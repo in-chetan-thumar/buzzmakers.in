@@ -16,7 +16,7 @@
                             It is A Long Established Fact That A Reader Will Be Distracted
                             By The Readable Content Of A Page When Looking At Its Layout.
                         </p>
-                        <a href="#" class="btn btn-buzz-connect-blue">Let's Connect</a>
+                        <a href={{route('frontend.contact')}} class="btn btn-buzz-connect-blue">Let's Connect</a>
                     </div>
                 </div>
                 <div class="col-md-6 marketing-img-container text-end">
@@ -55,7 +55,7 @@
             </div>
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/Marketing/influencer-marketing.svg') }} style="width:65% ;"
+                    <img src={{ asset('assets/frontend/images/Marketing/influencer-marketing.svg') }} style="width:60% ;"
                         alt="influencer-marketing">
                 </div>
                 <div class="col-md-7 content-marketing">
@@ -108,7 +108,11 @@
 
     @include('frontend.components.testimonials')
 
-    @include('frontend.components.services_career')
+    {{-- @include('frontend.components.services_career') --}}
+    {!! $table !!}
+    {{-- @include('frontend.components.completefaqs') --}}
+@endsection
 
-    @include('frontend.components.completefaqs')
+@section('js')
+    <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
 @endsection
