@@ -45,7 +45,7 @@ function backToTop() {
 //LOADER
 
   $(window).on('load', function(){
-
+    
     $("#preloader").removeClass("loader_show");
 
     $("#preloader").addClass("hide");

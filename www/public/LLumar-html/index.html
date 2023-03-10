@@ -5,7 +5,17 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-      <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+      
+      <!-- FAVICON -->
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+
+      <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> -->
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
       <link href="css/animate.css" rel="stylesheet" type="text/css">
       <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -19,7 +29,9 @@
       <div id="preloader" class="loader_show">
          <div class="loader-wrap">
             <div class="loader fadeout">
-               <div class="loader-inner"></div>
+               <div class="loader-inner">
+                  <img src="images/loader.gif" alt="Loader...">
+               </div>
             </div>
          </div>
       </div>
@@ -36,7 +48,7 @@
                   </div>
                   <div class="header_info">
                      <ul>
-                        <li><a target="_blank" href="https://wa.me/07400480852?text="><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <li><a target="_blank" href="https://wa.me/07400480852?text=Hello, I want to get my vehicle protected with LLumar PPF. Kindly let me know how to go ahead."><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                            <path d="M17.05 2.91C16.1332 1.98392 15.0412 1.24967 13.8377 0.75005C12.6341 0.250433 11.3432 -0.00454115 10.04 -1.46553e-06C4.58005 -1.46553e-06 0.130049 4.45 0.130049 9.91C0.130049 11.66 0.590049 13.36 1.45005 14.86L0.0500488 20L5.30005 18.62C6.75005 19.41 8.38005 19.83 10.04 19.83C15.5 19.83 19.9501 15.38 19.9501 9.92C19.9501 7.27 18.92 4.78 17.05 2.91ZM10.04 18.15C8.56005 18.15 7.11005 17.75 5.84005 17L5.54005 16.82L2.42005 17.64L3.25005 14.6L3.05005 14.29C2.2278 12.977 1.79119 11.4592 1.79005 9.91C1.79005 5.37 5.49005 1.67 10.03 1.67C12.23 1.67 14.3 2.53 15.85 4.09C16.6175 4.85396 17.2257 5.76266 17.6394 6.76342C18.0531 7.76419 18.2641 8.83711 18.26 9.92C18.2801 14.46 14.58 18.15 10.04 18.15ZM14.56 11.99C14.31 11.87 13.09 11.27 12.87 11.18C12.64 11.1 12.48 11.06 12.31 11.3C12.14 11.55 11.67 12.11 11.53 12.27C11.39 12.44 11.24 12.46 10.99 12.33C10.74 12.21 9.94005 11.94 9.00005 11.1C8.26005 10.44 7.77005 9.63 7.62005 9.38C7.48005 9.13 7.60005 9 7.73005 8.87C7.84005 8.76 7.98005 8.58 8.10005 8.44C8.22005 8.3 8.27005 8.19 8.35005 8.03C8.43005 7.86 8.39005 7.72 8.33005 7.6C8.27005 7.48 7.77005 6.26 7.57005 5.76C7.37005 5.28 7.16005 5.34 7.01005 5.33H6.53005C6.36005 5.33 6.10005 5.39 5.87005 5.64C5.65005 5.89 5.01005 6.49 5.01005 7.71C5.01005 8.93 5.90005 10.11 6.02005 10.27C6.14005 10.44 7.77005 12.94 10.25 14.01C10.84 14.27 11.3 14.42 11.66 14.53C12.25 14.72 12.79 14.69 13.22 14.63C13.7 14.56 14.69 14.03 14.89 13.45C15.1 12.87 15.1 12.38 15.03 12.27C14.96 12.16 14.81 12.11 14.56 11.99Z" fill="#D9272E"/>
                         </svg> 07400480852</a></li>
 
@@ -80,7 +92,7 @@
                                     <div class="form-group input-box select-box">
                                        <div class="autocomplete-drop-down">
                                         <div class="countries-input-container">
-                                         <input class="countries-input form-control input" placeholder="Search Brand" type="text">
+                                         <input class="countries-input form-control input" placeholder="Select Brand" type="text">
                                          <span class="input-arrow">&#9662;</div>
                                          </div>
 
@@ -95,7 +107,7 @@
                                     <div class="form-group input-box select-box">
                                        <div class="autocomplete-drop-down">
                                         <div class="locations-input-container">
-                                         <input class="locations-input form-control input" placeholder="Search Pincode" type="text">
+                                         <input class="locations-input form-control input" placeholder="Select State" type="text">
                                          <span class="input-arrow">&#9662;</div>
                                          </div>
 
@@ -825,32 +837,81 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </script>
 <script>
    const countriesByAbbreviation = [
-  {
-    country: "MBW",
-    abbreviation: "images/bmw.png",
-    imagelogo: "images/bmw.png"
-  },
-  {
-    country: "Maruti Suzuki",
-    abbreviation: "images/maruti.png",
-    imagelogo: "images/maruti.png"
-  },
-  {
-    country: "Hyundai",
-    imagelogo: "images/hyundai.png"
-  },
-  {
-    country: "Tata",
-    imagelogo: "images/tata.png"
-  },
-  {
-    country: "Mahindra",
-    imagelogo: "images/mahindra.png"
-  },
-  {
-    country: "Mini Cooper",
-    imagelogo: "images/minicooper.png"
-  },
+//   {
+//     country: "MBW",
+//     abbreviation: "images/bmw.png",
+//     imagelogo: "images/bmw.png"
+//   }
+{
+  country: "BMW",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Jaguar",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Hyundai",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Kia",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Lamborghini",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Lexus",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Mahindra",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Maruti",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Mercedes",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Porsche",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Range Rover",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Tata",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Toyota",
+  abbreviation: "",
+  imagelogo: ""
+},
+{
+  country: "Other",
+  abbreviation: "",
+  imagelogo: ""
+}
 ];
 
 const filterCountriesOnChange = (event) => {
@@ -891,8 +952,11 @@ const addEventListenerToCountries = () => {
   }
 }
 
+// const createCountryListItem = ({ imagelogo = '', country = '', abbreviation = '' }) => (
+//   `<li class="country" data-value="${imagelogo} ${abbreviation} ${country}"><span class="country--imagelogo"><img src="${imagelogo}" /></span> <span class="country--abbreviation"><img src="${abbreviation}" /></span> <span class="country--name">${country}</span></li>`
+// );
 const createCountryListItem = ({ imagelogo = '', country = '', abbreviation = '' }) => (
-  `<li class="country" data-value="${imagelogo} ${abbreviation} ${country}"><span class="country--imagelogo"><img src="${imagelogo}" /></span> <span class="country--abbreviation"><img src="${abbreviation}" /></span> <span class="country--name">${country}</span></li>`
+  `<li class="country" data-value="${abbreviation} ${country}"><span class="country--name">${country}</span></li>`
 );
 
 const generateCountriesList = (countriesArray) => {
@@ -952,24 +1016,42 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 <script>
    const locationsByAbbreviation = [
-  {
-    location: "Bangalore",
-  },
-  {
-    location: "Mumbai",
-  },
-  {
-    location: "Delhi",
-  },
-  {
-    location: "Kolkata",
-  },
-  {
-    location: "Hyderabad",
-  },
-  {
-    location: "Nagpur",
-  },
+      {location:"Andhra Pradesh"},
+{location:"Andaman and Nicobar Islands"},
+{location:"Arunachal Pradesh"},
+{location:"Assam"},
+{location:"Bihar"},
+{location:"Chandigarh"},
+{location:"Chhattisgarh"},
+{location:"Dadra and Nagar Haveli and Daman & Diu"},
+{location:"Goa"},
+{location:"Gujarat"},
+{location:"Haryana"},
+{location:"Himachal Pradesh"},
+{location:"Jammu & Kashmir"},
+{location:"Jharkhand"},
+{location:"Karnataka"},
+{location:"Kerala"},
+{location:"Ladakh"},
+{location:"Lakshadweep"},
+{location:"Madhya Pradesh"},
+{location:"Maharashtra"},
+{location:"Manipur"},
+{location:"Meghalaya"},
+{location:"Mizoram"},
+{location:"Nagaland"},
+{location:"Odisha"},
+{location:"Puducherry"},
+{location:"Punjab"},
+{location:"Rajasthan"},
+{location:"Sikkim"},
+{location:"Tamil Nadu"},
+{location:"Telangana"},
+{location:"The Government of NCT of Delhi"},
+{location:"Tripura"},
+{location:"Uttarakhand"},
+{location:"Uttar Pradesh"},
+{location:"West Bengal"}
 ];
 
 const filterLocationsOnChange = (event) => {
