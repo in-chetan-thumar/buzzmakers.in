@@ -5,13 +5,12 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
       <link href="css/animate.css" rel="stylesheet" type="text/css">
       <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
       <link href="css/fonts.css" rel="stylesheet" type="text/css">
       <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
-      <link href="css/webslidemenu.css" rel="stylesheet" type="text/css">
-      <link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
       <link href="css/style.css" rel="stylesheet" type="text/css">
       <link href="css/responsive.css" rel="stylesheet" type="text/css">
    </head>
@@ -79,96 +78,32 @@
                                  </div>
                                  <div class="col-6 col-xxl-6 col-lg-6 col-md-6">
                                     <div class="form-group input-box select-box">
-                                       <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M3.67773 4L0.213633 0.25L7.14184 0.25L3.67773 4Z" fill="black"/>
-                                       </svg>
-                                       <form>
-                                         <input class="form-control input" type="search" id="brand-filter" placeholder="Search Brand" name="brands" data-list="brands-list" autocomplete="off" required />
-                                         <label for="brand-filter"></label>
-                                         <datalist id="brands-list">
-                                          <select>
-                                             <option value="BMW" />
-                                             <option value="Maruti Suzuki" />
-                                             <option value="Hyundai" />
-                                             <option value="Tata" />
-                                             <option value="Mahindra" />
-                                             <option value="Mini Cooper" />
-                                             <option value="Comme Des Garcons" />
-                                             <option value="Diesel" />
-                                             <option value="DKNY" />
-                                             <option value="Dolce & Gabbana" />
-                                             <option value="Dries Van Noten" />
-                                             <option value="Etro" />
-                                             <option value="Fred Perry" />
-                                             <option value="Hugo Boss" />
-                                             <option value="Helmet Lang" />
-                                             <option value="Jil Sander" />
-                                             <option value="Louis Vuitton" />
-                                             <option value="Marc Jacobs" />
-                                             <option value="Margaret Howell" />
-                                             <option value="Marni" />
-                                             <option value="Missoni" />
-                                             <option value="Moncler" />
-                                             <option value="Nike" />
-                                             <option value="Paul Smith" />
-                                             <option value="Prada" />
-                                             <option value="Puma" />
-                                             <option value="Raf Simons" />
-                                             <option value="Rag & Bone" />
-                                             <option value="Rick Owens" />
-                                             <option value="Sacai" />
-                                             <option value="Stone Island" />
-                                             <option value="Yohji Yamamoto" />
-                                          </select>
-                                       </datalist>
-                                    </form>
-                                 </div>
+                                       <div class="autocomplete-drop-down">
+                                        <div class="countries-input-container">
+                                         <input class="countries-input form-control input" placeholder="Search Brand" type="text">
+                                         <span class="input-arrow">&#9662;</div>
+                                         </div>
+
+                                         <div class="countries-list-container">
+                                            <ul class="countries-list">
+                                             <li>&nbsp;</li>
+                                          </ul>
+                                       </div>
+                                    </div>
                                  </div>
                                  <div class="col-6 col-xxl-6 col-lg-6 col-md-6">
                                     <div class="form-group input-box select-box">
-                                       <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M3.67773 4L0.213633 0.25L7.14184 0.25L3.67773 4Z" fill="black"/>
-                                       </svg>
-                                       <form>
-                                         <input class="form-control input" type="search" id="location-filter" placeholder="Search with Pincode" name="location" data-list="locations-list" autocomplete="off" required />
-                                         <label for="location-filter"></label>
-                                         <datalist id="locations-list">
-                                          <select>
-                                             <option value="Bangalore" />
-                                             <option value="Mumbai" />
-                                             <option value="Delhi" />
-                                             <option value="Kolkata" />
-                                             <option value="Hyderabad" />
-                                             <option value="Nagpur" />
-                                             <option value="Comme Des Garcons" />
-                                             <option value="Diesel" />
-                                             <option value="DKNY" />
-                                             <option value="Dolce & Gabbana" />
-                                             <option value="Dries Van Noten" />
-                                             <option value="Etro" />
-                                             <option value="Fred Perry" />
-                                             <option value="Hugo Boss" />
-                                             <option value="Helmet Lang" />
-                                             <option value="Jil Sander" />
-                                             <option value="Louis Vuitton" />
-                                             <option value="Marc Jacobs" />
-                                             <option value="Margaret Howell" />
-                                             <option value="Marni" />
-                                             <option value="Missoni" />
-                                             <option value="Moncler" />
-                                             <option value="Nike" />
-                                             <option value="Paul Smith" />
-                                             <option value="Prada" />
-                                             <option value="Puma" />
-                                             <option value="Raf Simons" />
-                                             <option value="Rag & Bone" />
-                                             <option value="Rick Owens" />
-                                             <option value="Sacai" />
-                                             <option value="Stone Island" />
-                                             <option value="Yohji Yamamoto" />
-                                          </select>
-                                       </datalist>
-                                    </form>
+                                       <div class="autocomplete-drop-down">
+                                        <div class="locations-input-container">
+                                         <input class="locations-input form-control input" placeholder="Search Pincode" type="text">
+                                         <span class="input-arrow">&#9662;</div>
+                                         </div>
+
+                                         <div class="locations-list-container">
+                                            <ul class="locations-list">
+                                             <li>&nbsp;</li>
+                                          </ul>
+                                       </div>
                                     </div>
                                  </div>
                                  <div class="col-xxl-12 col-lg-12 col-md-12">
@@ -296,31 +231,16 @@
                   <figcaption>
                      <h2 class=" wow fadeInRight" data-wow-delay="0.2s">How it works?</h2>
                      <p class=" wow fadeInRight" data-wow-delay="0.4s">Watch a walkthrough video of Ramesh Somani, Chief Editor at BBC TopGear India, where he talks about what this film is, how it protects your car and why you must invest in it.</p>
-                     <a href="#" class="btn_more wow fadeInRight" data-wow-delay="0.6s">Watch the video <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <div class="play_btn btn_play">
+                     <a id="play_video_one" class="btn_more play_video wow fadeInRight" data-wow-delay="0.6s" title="Play">Watch the video <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.4249 5.01161L9.9999 0.761612C9.86657 0.528278 9.89157 0.323944 10.0749 0.148611C10.2582 -0.0260552 10.4666 -0.0467203 10.6999 0.0866129L18.6749 5.16161C18.9916 5.36161 19.1499 5.64495 19.1499 6.01161C19.1499 6.37828 18.9916 6.66161 18.6749 6.86161L10.6999 11.9366C10.4666 12.0699 10.2582 12.0493 10.0749 11.8746C9.89157 11.6993 9.86657 11.4949 9.9999 11.2616L12.4249 7.01161L0.999903 7.01161C0.71657 7.01161 0.479237 6.91595 0.287903 6.72461C0.0959039 6.53261 -9.6774e-05 6.29494 -9.67492e-05 6.01161C-9.67245e-05 5.72828 0.095904 5.49095 0.287903 5.29961C0.479237 5.10761 0.716571 5.01161 0.999903 5.01161L12.4249 5.01161Z"/>
                      </svg>
                   </a>
+                     </div>
                </figcaption>
             </div>
             </div>
-            <!-- <div class="screen_box">
-                     <div class="video_wrapper">
-                        <div class="play_btn btn_play video_icon">
-                           <a id="play_video_two" class="play_video" title="Play">
-                              <img src="images/play-circle-regular.png" /></a>
-                           </div>
-                          
-                           <div class="video_sub">
-                              <div class="video">
-                                 <div class="video_thumbnail">
-                                    <img src="images/video_img.jpg" alt="">
-                                 </div>
-                                    <iframe id="Video1" preload=""  loop="loop" onclick="this.play()" width="420" height="315" src="https://www.youtube.com/embed/n3XnqbxQF_E" frameborder="0" allowfullscreen></iframe>
-                                 </div>
-                              </div>
-                           </div>
-                           
-                        </div> -->
+  
 
 
 
@@ -369,7 +289,7 @@
                                  
 
  
-                                 <iframe id="Video1"  class="youtube-video" width="100%" height="700" data-src="https://www.youtube.com/embed/n3XnqbxQF_E" modestbranding="0"  controls="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                 <iframe id="Video1"  class="youtube-video" width="100%" height="700" data-src="https://www.youtube.com/embed/Kr4SVDffpZk" modestbranding="0"  controls="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    
                                  </div>
                                 
@@ -640,7 +560,7 @@
          <section class="faq cms_page pt0">
             <div class="container">
                <div class="title_1">
-                  <div class="title_main wow fadeInUp" data-wow-delay="0.2s">FAQ</div>
+                  <div class="title_main wow fadeInUp" data-wow-delay="0.2s">FAQs</div>
                </div>
                      <div class="accordion" id="accordionExample">
   <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
@@ -703,26 +623,29 @@ The Manufacturer warrants professionally sold and applied LLumar Paint Protectio
       <ul>
          <li>Brought to India by</li>
          <li><img src="images/footer_img.png" alt=""></li>
-      </ul>
+      </ul><br>
+      <p>Handcrafted with ❤ by <a href="https://www.buzzmakers.in/" target="_blank">Buzz Makers.</a>.</p>
    </div>
 </footer>
 
 
-         <button type="button" class="btn_back_top" id="btn-back-to-top">Top</button>
+         <button type="button" class="btn_back_top" id="btn-back-to-top"><svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    viewBox="0 0 330 330" xml:space="preserve">
+<path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+   l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+   C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+</svg></button>
 
       </div>
 
       <script src="js/jquery-2.2.4.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/wow.min.js"></script>
-      <script src="js/jquery.fancybox.min.js"></script>
       <script src="js/swiper.min.js"></script>
-      <script src="js/jquery-ui.min.js"></script>
       <script src="js/custom.js"></script>
 
    </body>
 </html>
-
 
 
 
@@ -744,14 +667,14 @@ $("#video")[0].src += "&autoplay=1";
 ev.preventDefault();
 
 });
-});
 
 
 jQuery( "#play_video_one" ).click(function() {
    // $("#yt")[0].src += "?autoplay=1";
+   jQuery('#Video1').attr('src', jQuery('#Video1').attr('data-src')+'?autoplay=1&mute=1');
 jQuery('#Video1').get(0).play();
    });
-   jQuery( "#play_video_two" ).click(function() {
+   jQuery( ".video_icon" ).click(function() {
    //$("#yt")[0].src += "?autoplay=1";
   
    jQuery('#Video1').attr('src', jQuery('#Video1').attr('data-src')+'?autoplay=1&mute=1');
@@ -781,7 +704,10 @@ $(".video_close").click(function(e) {
    $(".video_close").hide();
    $(".screen_box").toggleClass("in");
    
-});                 
+}); 
+
+});
+                
 </script>  
 <script>
       $(document).ready(function() {
@@ -799,61 +725,9 @@ $('a.pause-video').click(function(){
 });
 </script>
 
-
 <script>
-  var review_swiper = new Swiper('.review-container', {
-     
-      slidesPerView: 5,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: '.swiper-button-next-review',
-        prevEl: '.swiper-button-prev-review',
-      },
-      breakpoints: {
-        1600: {
-         spaceBetween: 30,
-        },
-        1400: {
-         slidesPerView: 4,
-         spaceBetween: 30,
-        },
-        991: {
-         slidesPerView: 4,
-         spaceBetween: 20,
-        },
-        767: {
-          slidesPerView: 3,
-         spaceBetween: 20,
-        },
-        575: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        380: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        0: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-    }
-    });
 
 
-</script>         
-
-
-
-
-
-
-
-<script>
 const videoElement = document.querySelector('video');
 const playPauseButton = document.querySelector('button');
 
@@ -949,3 +823,304 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 </script>
+<script>
+   const countriesByAbbreviation = [
+  {
+    country: "MBW",
+    abbreviation: "images/bmw.png",
+    imagelogo: "images/bmw.png"
+  },
+  {
+    country: "Maruti Suzuki",
+    abbreviation: "images/maruti.png",
+    imagelogo: "images/maruti.png"
+  },
+  {
+    country: "Hyundai",
+    imagelogo: "images/hyundai.png"
+  },
+  {
+    country: "Tata",
+    imagelogo: "images/tata.png"
+  },
+  {
+    country: "Mahindra",
+    imagelogo: "images/mahindra.png"
+  },
+  {
+    country: "Mini Cooper",
+    imagelogo: "images/minicooper.png"
+  },
+];
+
+const filterCountriesOnChange = (event) => {
+  const value = event.target.value.toLowerCase();
+
+  const result = countriesByAbbreviation.filter((countryObject) => {
+    const abbreviation = countryObject.abbreviation || '';
+    const imagelogo = countryObject.imagelogo || '';
+    const country = countryObject.country || '';
+    const countryString = `${imagelogo} ${abbreviation} ${country}`;
+
+    return countryString.toLowerCase().includes(value);
+  });
+  
+  generateCountriesList(result);
+};
+
+const addEventListenerToCountries = () => {
+  const countriesInput = document.querySelector('.countries-input');
+  const countryListItems = document.querySelectorAll('.country');
+  let countryListItemIndex = 0;
+  const countryListItemILength = countryListItems.length;
+
+  for (countryListItemIndex; countryListItemIndex < countryListItemILength; countryListItemIndex++) {
+    const countryListItem = countryListItems[countryListItemIndex];
+
+    countryListItem.addEventListener('mousedown', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      const value = event.currentTarget.innerText;
+      countriesInput.value = value;
+
+      filterCountriesOnChange({ target: { value } });
+
+      countriesInput.focus();
+    });
+  }
+}
+
+const createCountryListItem = ({ imagelogo = '', country = '', abbreviation = '' }) => (
+  `<li class="country" data-value="${imagelogo} ${abbreviation} ${country}"><span class="country--imagelogo"><img src="${imagelogo}" /></span> <span class="country--abbreviation"><img src="${abbreviation}" /></span> <span class="country--name">${country}</span></li>`
+);
+
+const generateCountriesList = (countriesArray) => {
+  const countriesList = document.querySelector('.countries-list');
+  countriesList.innerHTML = '';
+  
+  const countriesLength = countriesArray.length;
+
+  for (let countryIndex = 0; countryIndex < countriesLength; countryIndex++) {
+    countriesList.innerHTML += createCountryListItem(countriesArray[countryIndex]);
+  }
+  
+  addEventListenerToCountries();
+};
+
+document.addEventListener("DOMContentLoaded", () =>{
+  const countriesInput = document.querySelector('.countries-input');
+
+  generateCountriesList(countriesByAbbreviation);
+  
+  countriesInput.addEventListener('keyup', filterCountriesOnChange);
+
+  countriesInput.addEventListener('focus', () => {
+    const countriesList = document.querySelector('.countries-list-container');
+    countriesList.classList.add('visible');
+  });
+
+  countriesInput.addEventListener('blur', (event) => {
+    const countriesList = document.querySelector('.countries-list-container');
+    countriesList.classList.remove('visible');
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+   const locationsByAbbreviation = [
+  {
+    location: "Bangalore",
+  },
+  {
+    location: "Mumbai",
+  },
+  {
+    location: "Delhi",
+  },
+  {
+    location: "Kolkata",
+  },
+  {
+    location: "Hyderabad",
+  },
+  {
+    location: "Nagpur",
+  },
+];
+
+const filterLocationsOnChange = (event) => {
+  const value = event.target.value.toLowerCase();
+
+  const result = locationsByAbbreviation.filter((locationObject) => {
+    const abbreviation = locationObject.abbreviation || '';
+    const imagelogo = locationObject.imagelogo || '';
+    const location = locationObject.location || '';
+    const locationString = `${imagelogo} ${abbreviation} ${location}`;
+
+    return locationString.toLowerCase().includes(value);
+  });
+  
+  generateLocationsList(result);
+};
+
+const addEventListenerToLocations = () => {
+  const locationsInput = document.querySelector('.locations-input');
+  const locationListItems = document.querySelectorAll('.location');
+  let locationListItemIndex = 0;
+  const locationListItemILength = locationListItems.length;
+
+  for (locationListItemIndex; locationListItemIndex < locationListItemILength; locationListItemIndex++) {
+    const locationListItem = locationListItems[locationListItemIndex];
+
+    locationListItem.addEventListener('mousedown', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      const value = event.currentTarget.innerText;
+      locationsInput.value = value;
+
+      filterLocationsOnChange({ target: { value } });
+
+      locationsInput.focus();
+    });
+  }
+}
+
+const createLocationListItem = ({ imagelogo = '', location = '', abbreviation = '' }) => (
+  `<li class="location" data-value="${imagelogo} ${abbreviation} ${location}"><span class="location--abbreviation"><img src="${abbreviation}" /></span> <span class="location--name">${location}</span></li>`
+);
+
+const generateLocationsList = (locationsArray) => {
+  const locationsList = document.querySelector('.locations-list');
+  locationsList.innerHTML = '';
+  
+  const locationsLength = locationsArray.length;
+
+  for (let locationIndex = 0; locationIndex < locationsLength; locationIndex++) {
+    locationsList.innerHTML += createLocationListItem(locationsArray[locationIndex]);
+  }
+  
+  addEventListenerToLocations();
+};
+
+document.addEventListener("DOMContentLoaded", () =>{
+  const locationsInput = document.querySelector('.locations-input');
+
+  generateLocationsList(locationsByAbbreviation);
+  
+  locationsInput.addEventListener('keyup', filterLocationsOnChange);
+
+  locationsInput.addEventListener('focus', () => {
+    const locationsList = document.querySelector('.locations-list-container');
+    locationsList.classList.add('visible');
+  });
+
+  locationsInput.addEventListener('blur', (event) => {
+    const locationsList = document.querySelector('.locations-list-container');
+    locationsList.classList.remove('visible');
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var review_swiper = new Swiper('.review-container', {
+     
+      slidesPerView: 5,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next-review',
+        prevEl: '.swiper-button-prev-review',
+      },
+      breakpoints: {
+        1600: {
+         spaceBetween: 30,
+        },
+        1400: {
+         slidesPerView: 4,
+         spaceBetween: 30,
+        },
+        991: {
+         slidesPerView: 4,
+         spaceBetween: 20,
+        },
+        767: {
+          slidesPerView: 4,
+         spaceBetween: 20,
+         centeredSlides: true,
+        },
+        575: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+          centeredSlides: true,
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+          centeredSlides: true,
+        },
+        380: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+          centeredSlides: true,
+        },
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          centeredSlides: true,
+        },
+    }
+    });
+
+
+</script>         
+
+
+
+
+
+
+
