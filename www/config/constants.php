@@ -12,4 +12,8 @@ return [
     'LOGO_FILE_NAME' => 'logo-dark.png',
     'DEVELOPED_BY' => 'Zero technology',
     'FAQS_CATEGORIES'=>['home' => 'Home', 'strategy' => 'Strategy', 'content' => 'Content', 'technology' => 'Technology', 'design' => 'Design', 'studio' => 'Studio'],
+    //NEWS IMAGE
+    'NEWS_DOC_PATH' =>'public'.DIRECTORY_SEPARATOR."images",
+    'NEWS_DOC_URL' =>'storage'.DIRECTORY_SEPARATOR."images",
+
 ];

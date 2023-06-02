@@ -8,6 +8,8 @@ use App\Models\Blog;
 use Buglinjo\LaravelWebp\Facades\Webp;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 
@@ -57,25 +59,36 @@ class BlogController extends Controller
         $data = $params = [];
         DB::beginTransaction();
         try {
-            $validator = Validator::make($request->all(), ['image' => 'mimetypes:image/jpeg']);
-            if ($validator->fails()) {
-                $data['error'] = true;
-                $data['message'] =  $validator->errors()->first();
-                return response()->json($data);
-            }
-            // if ($request->file('img') != null ) {
-            $webp = Webp::make($request->file('image'))->quality(70);
-            $name = Str::random(16) . '.webp';
+//            $validator = Validator::make($request->all(), ['image' => 'mimetypes:image/jpeg']);
+//            if ($validator->fails()) {
+//                $data['error'] = true;
+//                $data['message'] =  $validator->errors()->first();
+//                return response()->json($data);
+//            }
+//            // if ($request->file('img') != null ) {
+//            $webp = Webp::make($request->file('image'))->quality(70);
+//            $name = Str::random(16) . '.webp';
+//
+//            if ($webp->save(storage_path('app/public/images/blogs/' . $name))) {
 
-            if ($webp->save(storage_path('app/public/images/blogs/' . $name))) {
-                $params = [];
-                $params['title'] = $request->title;
-                $params['description'] = $request->description;
-                $params['cover_photo'] = $name;
-                $params['is_article'] = $request->is_article == 'Y' ? 'Y' : 'N';
-                $params['is_featured'] = $request->is_featured == 'Y' ? 'Y' : 'N';
-                $params['is_conversation'] = $request->is_conversation == 'Y' ? 'Y' : 'N';
-                $page = resolve('blog-repo')->store($params);
+            if ($request->has('image')) {
+
+                $fileDir = config('constants.NEWS_DOC_PATH') . DIRECTORY_SEPARATOR.'blogs'.DIRECTORY_SEPARATOR;
+                if (!File::exists($fileDir)) {
+
+                    Storage::makeDirectory($fileDir, 0777);
+                    $params = [];
+                    $params['title'] = $request->title;
+                    $params['description'] = $request->description;
+                    $params['cover_photo'] = basename($request->file('image')->store($fileDir));
+                    $params['is_article'] = $request->is_article == 'Y' ? 'Y' : 'N';
+                    $params['is_featured'] = $request->is_featured == 'Y' ? 'Y' : 'N';
+                    $params['is_conversation'] = $request->is_conversation == 'Y' ? 'Y' : 'N';
+                    $page = resolve('blog-repo')->store($params);
+
+                }
+            }
+
                 if (!empty($page)) {
 
                     $data['error'] = false;
@@ -84,7 +97,7 @@ class BlogController extends Controller
                     DB::commit();
                     return response()->json($data);
                 }
-            }
+
         } catch (\Exception $e) {
             DB::rollBack();
             $data['error'] = true;
@@ -138,29 +151,45 @@ class BlogController extends Controller
         $data = $params = [];
         DB::beginTransaction();
         try {
-            $validator = Validator::make($request->all(), ['image' => 'mimetypes:image/jpeg,image/png,image/webp'], ['image.mimetypes' => 'Select an image type of jpg,png only']);
-            if ($validator->fails()) {
-                $data['error'] = true;
-                $data['message'] =  $validator->errors()->first();
-                return response()->json($data);
+//            $validator = Validator::make($request->all(), ['image' => 'mimetypes:image/jpeg,image/png,image/webp'], ['image.mimetypes' => 'Select an image type of jpg,png only']);
+//            if ($validator->fails()) {
+//                $data['error'] = true;
+//                $data['message'] =  $validator->errors()->first();
+//                return response()->json($data);
+//            }
+//
+//            // Update page
+//            $params = [];
+//            $params['title'] = $request->title;
+//            $params['description'] = $request->description;
+//            $params['is_article'] = $request->is_article == 'Y' ? 'Y' : 'N';
+//            $params['is_featured'] = $request->is_featured == 'Y' ? 'Y' : 'N';
+//            $params['is_conversation'] = $request->is_conversation == 'Y' ? 'Y' : 'N';
+//
+//            if ($request->file('image')) {
+//                $webp = Webp::make($request->file('image'))->quality(70);
+//                $name = Str::random(16) . '.webp';
+//                $webp->save(storage_path('app/public/images/blogs/' . $name));
+//                $params['cover_photo'] = $name;
+//            }
+            if ($request->has('image')) {
+
+                $fileDir = config('constants.NEWS_DOC_PATH') . DIRECTORY_SEPARATOR.'blogs'.DIRECTORY_SEPARATOR;
+                if (!File::exists($fileDir)) {
+
+                    Storage::makeDirectory($fileDir, 0777);
+                    $params = [];
+                    $params['title'] = $request->title;
+                    $params['description'] = $request->description;
+                    $params['cover_photo'] = basename($request->file('image')->store($fileDir));
+                    $params['is_article'] = $request->is_article == 'Y' ? 'Y' : 'N';
+                    $params['is_featured'] = $request->is_featured == 'Y' ? 'Y' : 'N';
+                    $params['is_conversation'] = $request->is_conversation == 'Y' ? 'Y' : 'N';
+                    $news = resolve('blog-repo')->update($params, $id);
+
+                }
             }
 
-            // Update page
-            $params = [];
-            $params['title'] = $request->title;
-            $params['description'] = $request->description;
-            $params['is_article'] = $request->is_article == 'Y' ? 'Y' : 'N';
-            $params['is_featured'] = $request->is_featured == 'Y' ? 'Y' : 'N';
-            $params['is_conversation'] = $request->is_conversation == 'Y' ? 'Y' : 'N';
-
-            if ($request->file('image')) {
-                $webp = Webp::make($request->file('image'))->quality(70);
-                $name = Str::random(16) . '.webp';
-                $webp->save(storage_path('app/public/images/blogs/' . $name));
-                $params['cover_photo'] = $name;
-            }
-
-            $news = resolve('blog-repo')->update($params, $id);
 
             if (!empty($news)) {
 
@@ -168,7 +197,7 @@ class BlogController extends Controller
                 // toastr()->success('Blog update successfully..!');
                 $data['message'] = 'Blog update successfully.';
                 $data['view'] = resolve('blog-repo')->renderHtmlTable($this->getParamsForFilter($request));
-                
+
                 DB::commit();
                 return response()->json($data);
                 return redirect()->route('blog-list.index');

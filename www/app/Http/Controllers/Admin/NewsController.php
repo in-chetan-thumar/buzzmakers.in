@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\DB;
 use Buglinjo\LaravelWebp\Facades\Webp;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class NewsController extends Controller
 {
@@ -56,23 +58,34 @@ class NewsController extends Controller
         $data = $params = [];
         DB::beginTransaction();
         try {
-            $validator = Validator::make($request->all(), ['image' => 'mimetypes:image/jpeg,image/webp']);
-            if ($validator->fails()) {
-                $data['error'] = true;
-                $data['message'] =  $validator->errors()->first();
-                return response()->json($data);
+//            $validator = Validator::make($request->all(), ['image' => 'mimetypes:image/jpeg,image/webp']);
+//            if ($validator->fails()) {
+//                $data['error'] = true;
+//                $data['message'] =  $validator->errors()->first();
+//                return response()->json($data);
+//            }
+//
+//            $webp = Webp::make($request->file('image'))->quality(70);
+//            $name = Str::random(16) . '.webp';
+ //           if ($webp->save(storage_path('app/public/images/news/app/' . $name))) {
+
+            if ($request->has('image')) {
+
+                $fileDir = config('constants.NEWS_DOC_PATH') . DIRECTORY_SEPARATOR.'news'.DIRECTORY_SEPARATOR;
+                if (!File::exists($fileDir)) {
+
+                    Storage::makeDirectory($fileDir, 0777);
+
+                    $params = [];
+                    $params['title'] = $request->title;
+                    $params['description'] = $request->description;
+
+                    $params['cover_photo'] = basename($request->file('image')->store($fileDir));
+                    $page = resolve('news-repo')->store($params);
+
+                }
             }
-
-            $webp = Webp::make($request->file('image'))->quality(70);
-            $name = Str::random(16) . '.webp';
-
-            if ($webp->save(storage_path('app/public/images/news/' . $name))) {
-                $params = [];
-                $params['title'] = $request->title;
-                $params['description'] = $request->description;
-                $params['cover_photo'] = $name;
-
-                $page = resolve('news-repo')->store($params);
+               // $params['cover_photo'] = $name;
                 if (!empty($page)) {
 
                     $data['error'] = false;
@@ -81,7 +94,7 @@ class NewsController extends Controller
                     DB::commit();
                     return response()->json($data);
                 }
-            }
+
         } catch (\Exception $e) {
             DB::rollBack();
             $data['error'] = true;
@@ -134,29 +147,46 @@ class NewsController extends Controller
     {
         $data = $params = [];
         DB::beginTransaction();
+
         try {
-            $validator = Validator::make($request->all(), ['image' => 'mimes:png,jpg,webp']);
-            // $validator = Validator::make($request->all(),['image'=>'mimetypes:image/webp |max:200'],['image.mimetypes'=>'Select an image type of jpg,png&webp only']);           
-            // $validator = Validator::make($request->all(),['image'=>'mimetypes:image/jpeg,image/png,image/webp'],['image.mimetypes'=>'Select an image type of jpg,png&webp only']);           
-            if ($validator->fails()) {
-                $data['error'] = true;
-                $data['message'] =  $validator->errors()->first();
-                return response()->json($data);
-            }
+//            $validator = Validator::make($request->all(), ['image' => 'mimes:png,jpg,webp']);
+//            // $validator = Validator::make($request->all(),['image'=>'mimetypes:image/webp |max:200'],['image.mimetypes'=>'Select an image type of jpg,png&webp only']);
+//            // $validator = Validator::make($request->all(),['image'=>'mimetypes:image/jpeg,image/png,image/webp'],['image.mimetypes'=>'Select an image type of jpg,png&webp only']);
+//            if ($validator->fails()) {
+//                $data['error'] = true;
+//                $data['message'] =  $validator->errors()->first();
+//                return response()->json($data);
+//            }
 
             // Update page
-            $params = [];
-            $params['title'] = $request->title;
-            $params['description'] = $request->description;
-            if ($request->file('image')) {
-                $webp = Webp::make($request->file('image'))->quality(70);
-                $name = Str::random(16) . '.webp';
-                $webp->save(storage_path('app/public/images/news/' . $name));
-                $params['cover_photo'] = $name;
+//            $params = [];
+//            $params['title'] = $request->title;
+//            $params['description'] = $request->description;
+//            if ($request->file('image')) {
+//                $webp = Webp::make($request->file('image'))->quality(70);
+//                $name = Str::random(16) . '.webp';
+//                $webp->save(storage_path('app/public/images/news/' . $name));
+//                $params['cover_photo'] = $name;
+//            }
+
+            if ($request->has('image')) {
+
+                $fileDir = config('constants.NEWS_DOC_PATH') . DIRECTORY_SEPARATOR.'news'.DIRECTORY_SEPARATOR;
+                if (!File::exists($fileDir)) {
+
+                    Storage::makeDirectory($fileDir, 0777);
+
+                    $params = [];
+                    $params['title'] = $request->title;
+                    $params['description'] = $request->description;
+
+                    $params['cover_photo'] = basename($request->file('image')->store($fileDir));
+                    $news = resolve('news-repo')->update($params, $id);
+
+                }
             }
 
-            $news = resolve('news-repo')->update($params, $id);
-             
+
             if ($news) {
 
                 $data['error'] = false;
@@ -166,7 +196,7 @@ class NewsController extends Controller
                 DB::commit();
                 return response()->json($data);
             }
-            
+
         } catch (\Exception $e) {
             DB::rollBack();
             $data['error'] = true;
