@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Frontend\HomeController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -80,5 +81,14 @@ Route::group(['middleware' => 'auth'], function () {
     // Role Controller
     Route::resource('roles', \App\Http\Controllers\Admin\RoleController::class);
     Route::get('/status/{id}', [\App\Http\Controllers\Admin\RoleController::class, 'changeStatus'])->name('role.status');
+
+    Route::get('/run-artisan/{type}/{action}', function ($type, $action) {
+        if (in_array($type, ['view', 'route', 'config', 'cache', 'storage']) and in_array($action, ['clear', 'cache', 'link'])) {
+            Artisan::call($type . ':' . $action); // this will do the command line job
+            dd("success");
+        } else {
+            abort(404);
+        }
+    });
 
 });
