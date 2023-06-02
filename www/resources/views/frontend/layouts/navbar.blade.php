@@ -12,6 +12,10 @@
         </div>
         <div class="desktop-menu">
           <ul class="navbar-nav ms-auto mb-lg-0">
+            
+            <li class="nav-item">
+              <a class="nav-link" href={{route('frontend.about')}}>About Us</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -42,20 +46,16 @@
               <a class="nav-link active" aria-current="page" href={{route('frontend.work')}}>Our Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href={{route('frontend.about')}}>About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href={{route('frontend.contact')}}>Contact</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href={{route('frontend.blog')}}>Blogs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href={{route('frontend.news')}}>News</a>
-              {{-- <a class="nav-link" href={{route('news')}}>News</a> --}}
+              <a class="nav-link" href={{route('frontend.news')}}>News & Media</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href={{route('frontend.careers')}}>Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href={{route('frontend.contact')}}>Contact</a>
             </li>
           </ul>
         </div>
