@@ -26,7 +26,7 @@
                     <div class="col-md-4">
                         <img src={{ asset("storage/images/blogs/$blog->cover_photo") }} class="w-100" alt="post1">
                         <p>{{ $blog->title }}</p>
-                        <a href="#"><img src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
+                        <a href="{{route('blogs.content',$blog->id)}}"><img src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
                                 class="arrow-img"></a>
                     </div>
                 @endforeach
@@ -51,7 +51,7 @@
                     <div class="col-md-6">
                         <img src={{ asset("storage/images/blogs/$blog->cover_photo") }} class="w-100" alt="blog1">
                         <p>{{ $blog->title }}</p>
-                        <a href="#"><img src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
+                        <a href="{{route('blogs.content',$blog->id)}}"><img src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
                                 class="arrow-img"></a>
                     </div>
                 @endforeach

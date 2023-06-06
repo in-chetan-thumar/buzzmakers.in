@@ -9,7 +9,7 @@ return [
     'USER_DOC_URL' => 'storage' . DIRECTORY_SEPARATOR,
     // APP VERSION
     'APP_VERSION' => env('APP_VERSION', '1.0'),
-    'LOGO_FILE_NAME' => 'logo-dark.png',
+    'LOGO_FILE_NAME' => 'logo.svg',
     'DEVELOPED_BY' => 'Zero technology',
     'FAQS_CATEGORIES'=>['home' => 'Home', 'strategy' => 'Strategy', 'content' => 'Content', 'technology' => 'Technology', 'design' => 'Design', 'studio' => 'Studio'],
     //NEWS IMAGE

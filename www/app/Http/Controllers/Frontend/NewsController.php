@@ -20,7 +20,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $newsContent = News::select('title','description','cover_photo')->orderBy('id', 'desc')->get();
+        $newsContent = News::select('id','title','description','cover_photo')->orderBy('id', 'desc')->get();
         $content = Page::select('id','title','meta_keywords','meta_description')->whereRouteName(Route::currentRouteName())->first();
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
@@ -92,5 +92,10 @@ class NewsController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function newsContent($id){
+        $news=resolve('news-repo')->findByID($id);
+
+        return view('frontend.news_content',compact('news'));
     }
 }

@@ -12,7 +12,7 @@
         </div>
         <div class="desktop-menu">
           <ul class="navbar-nav ms-auto mb-lg-0">
-            
+
             <li class="nav-item">
               <a class="nav-link" href={{route('frontend.about')}}>About Us</a>
             </li>

@@ -15,31 +15,30 @@
 
                 <li>
                     <a href="{{ route('page-list.index') }}" class="waves-effect">
-                        {{-- <i class="bx bx-home"></i> --}}
+                         <i class="bx bx-book-open"></i>
                         <span>Pages</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('news-list.index') }}" class="waves-effect">
-                        {{-- <i class="bx bx-home"></i> --}}
+                         <i class="bx bxs-news"></i>
                         <span>News</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('blog-list.index') }}" class="waves-effect">
-                        {{-- <i class="bx bx-home"></i> --}}
-                        <span>Blogs</span>
+                        <i class="fa fa-blog"></i>                        <span>Blogs</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('faqs.index') }}" class="waves-effect">
-                        {{-- <i class="bx bx-home"></i> --}}
+                        <i class="fa fa-question-circle" ></i>
                         <span>FAQs</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('contacts.index') }}" class="waves-effect">
-                        {{-- <i class="bx bx-home"></i> --}}
+                        <i class="bx bxs-contact"></i>
                         <span>Contacts</span>
                     </a>
                 </li>

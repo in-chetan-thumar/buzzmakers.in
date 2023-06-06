@@ -2,6 +2,12 @@
 @section('title')
     News
 @endsection
+<style>
+    #more {
+        display: none;
+    }
+
+</style>
 @section('main')
     <!-- section header-image -->
     <section class="header-hero-section-news">
@@ -26,10 +32,11 @@
                     <div class="col-md-4">
                         <a href="#">
                             <img src={{ asset("storage/images/news/$latestnews->cover_photo") }} class="w-100"
-                                alt="news1">
+                                 alt="news1">
                             <p>{{ $latestnews->title }}</p>
-                            <img src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
-                                class="arrow-img">
+                            <a href="{{route('news.content',$latestnews->id)}}"><img
+                                    src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
+                                    class="arrow-img"></a>
                         </a>
                     </div>
                 @endforeach
@@ -65,11 +72,21 @@
                     </div>
                     <div class="col-md-8">
                         <h3>{{ $news->title }}</h3>
-                        <p>{{ $news->description }}........</p>
-                        <a href="#"><img src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
+                        <p>{{ Str::limit($news->description, 250) }}</p>
+                        <a href="{{route('news.content',$news->id)}}"><img
+                                src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
                                 class="arrow-img"></a>
+                        {{--                        <p style="white-space: pre-line;">--}}
+                        {{--                            {{ Str::limit($news->description, 250) }}--}}
+                        {{--                            @if (strlen($news->description) > 100)--}}
+                        {{--                                <span id="dots-{{$news->id}}"></span>--}}
+                        {{--                                <span id="more-{{$news->id}}" style="display: none;">{{ substr($news->description, 100) }}</span>--}}
+                        {{--                            @endif--}}
+                        {{--                        </p>--}}
+                        {{--                        <button onclick="myFunction({{$news->id}})" id="myBtn"  >Read more</button>--}}
                     </div>
                 </div>
+
             @endforeach
 
             {{-- <div class="row mb-5">
@@ -149,3 +166,23 @@
 
     @include('frontend.components.faqs')
 @endsection
+{{--<script>--}}
+{{--    function myFunction(id) {--}}
+
+{{--        var dots = document.getElementById("dots-" + id);--}}
+{{--        var moreText = document.getElementById("more-" + id);--}}
+{{--        var btnText = document.getElementById("myBtn");--}}
+
+{{--        if (moreText.style.display === "none") {--}}
+{{--            moreText.style.display = "inline";--}}
+{{--            btnText.innerHTML = "Read more";--}}
+
+{{--            dots.style.display = "none";--}}
+{{--        } else {--}}
+{{--            moreText.style.display = "none";--}}
+{{--            btnText.innerHTML = "Read less";--}}
+
+{{--            dots.style.display = "inline";--}}
+{{--        }--}}
+{{--    }--}}
+{{--</script>--}}

@@ -17,12 +17,12 @@ class BlogController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     * 
+     *
      * if($request->blog_type=='is_article'){
      */
     public function index()
     {
-        $blogContent=Blog::select('title','description','cover_photo','is_article','is_featured','is_conversation')->orderBy('id', 'desc')->get();
+        $blogContent=Blog::select('id','title','description','cover_photo','is_article','is_featured','is_conversation')->orderBy('id', 'desc')->get();
         $content =Page::select('id','title','meta_keywords','meta_description')->whereRouteName(Route::currentRouteName())->first();
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
@@ -94,5 +94,10 @@ class BlogController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function blogsContent($id){
+        $blog=resolve('blog-repo')->findByID($id);
+
+        return view('frontend.blog_content',compact('blog'));
     }
 }

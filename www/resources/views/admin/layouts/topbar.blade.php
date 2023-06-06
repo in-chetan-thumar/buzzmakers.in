@@ -5,23 +5,23 @@
             <div class="navbar-brand-box">
                 <a href="index" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{asset('assets/images').DIRECTORY_SEPARATOR.config('constants.LOGO_FILE_NAME')}}"
+                        <img src="{{asset('assets/frontend/images/logo.svg')}}"
                              alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{asset('assets/images').DIRECTORY_SEPARATOR.config('constants.LOGO_FILE_NAME')}}"
+                        <img src="{{asset('assets/frontend/images/logo.svg')}}"
                              alt="" height="17">
                     </span>
                 </a>
 
                 <a href="index" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{asset('assets/images').DIRECTORY_SEPARATOR.config('constants.LOGO_FILE_NAME')}}"
+                        <img src="{{asset('assets/frontend/images/logo.svg')}}"
                              alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{asset('assets/images').DIRECTORY_SEPARATOR.config('constants.LOGO_FILE_NAME')}}"
-                             alt="" height="19">
+                        <img src="{{asset('assets/frontend/images/logo.svg')}}"
+                             alt="" height="50">
                     </span>
                 </a>
             </div>
@@ -324,9 +324,8 @@
 {{--            </div>--}}
 
             <div class="dropdown d-none d-lg-inline-block ms-1">
-                <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                <button type="button" class="btn header-item noti-icon waves-effect" onclick="toggleFullScreen();" data-toggle="fullscreen" id="screenbtn"  title="Full Screen">
                     <i class="bx bx-fullscreen"></i>
-                </button>
             </div>
 
 {{--            <div class="dropdown d-inline-block">--}}
@@ -454,3 +453,29 @@
         </div>
     </div>
 </header>
+<script>
+    function toggleFullScreen() {
+        if ((document.fullScreenElement && document.fullScreenElement !== null) ||
+            (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+            if (document.documentElement.requestFullScreen) {
+                document.documentElement.requestFullScreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullScreen) {
+                document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+
+            document.getElementById("screenbtn").title = "Normal Screen";
+        } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+            document.getElementById("screenbtn").title =  "Full Screen";
+        }
+    }
+
+</script>

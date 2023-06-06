@@ -23,10 +23,12 @@ Auth::routes();
 Route::get('/', [\App\Http\Controllers\Frontend\HomeController::class, 'index'])->name('frontend.home');
 Route::get('/about', [\App\Http\Controllers\Frontend\AboutController::class, 'index'])->name('frontend.about');
 Route::get('/blogs', [\App\Http\Controllers\Frontend\BlogController::class, 'index'])->name('frontend.blog');
+Route::get('/blogs-content/{id}',[\App\Http\Controllers\Frontend\BlogController::class,'blogsContent'])->name('blogs.content');
 Route::get('/career', [\App\Http\Controllers\Frontend\CareersController::class, 'index'])->name('frontend.careers');
 Route::get('/contact', [\App\Http\Controllers\Frontend\ContactController::class, 'index'])->name('frontend.contact');
 Route::post('/contact-store', [\App\Http\Controllers\Frontend\ContactController::class, 'store'])->name('frontend.contact.store');
 Route::get('/news', [\App\Http\Controllers\Frontend\NewsController::class, 'index'])->name('frontend.news');
+Route::get('/news-content/{id}',[\App\Http\Controllers\Frontend\NewsController::class,'newsContent'])->name('news.content');
 Route::get('/our-work', [\App\Http\Controllers\Frontend\WorkController::class, 'index'])->name('frontend.work');
 Route::get('/pooja-entertainment', [\App\Http\Controllers\Frontend\PoojaentController::class, 'index'])->name('frontend.poojaent');
 Route::get('/jiomeet', [\App\Http\Controllers\Frontend\JioController::class, 'index'])->name('frontend.jio');
@@ -49,6 +51,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     // News Controller
     Route::resource("news-list", \App\Http\Controllers\Admin\NewsController::class);
+
 
     // Pagelist Controller
     Route::resource('page-list', \App\Http\Controllers\Admin\PageController::class);

@@ -172,24 +172,25 @@ class BlogController extends Controller
 //                $webp->save(storage_path('app/public/images/blogs/' . $name));
 //                $params['cover_photo'] = $name;
 //            }
+            $params = [];
+            $params['title'] = $request->title;
+            $params['description'] = $request->description;
             if ($request->has('image')) {
 
                 $fileDir = config('constants.NEWS_DOC_PATH') . DIRECTORY_SEPARATOR.'blogs'.DIRECTORY_SEPARATOR;
                 if (!File::exists($fileDir)) {
 
                     Storage::makeDirectory($fileDir, 0777);
-                    $params = [];
-                    $params['title'] = $request->title;
-                    $params['description'] = $request->description;
+
                     $params['cover_photo'] = basename($request->file('image')->store($fileDir));
-                    $params['is_article'] = $request->is_article == 'Y' ? 'Y' : 'N';
-                    $params['is_featured'] = $request->is_featured == 'Y' ? 'Y' : 'N';
-                    $params['is_conversation'] = $request->is_conversation == 'Y' ? 'Y' : 'N';
-                    $news = resolve('blog-repo')->update($params, $id);
+
 
                 }
             }
-
+            $params['is_article'] = $request->is_article == 'Y' ? 'Y' : 'N';
+            $params['is_featured'] = $request->is_featured == 'Y' ? 'Y' : 'N';
+            $params['is_conversation'] = $request->is_conversation == 'Y' ? 'Y' : 'N';
+            $news = resolve('blog-repo')->update($params, $id);
 
             if (!empty($news)) {
 

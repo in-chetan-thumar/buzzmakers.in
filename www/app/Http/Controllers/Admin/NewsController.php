@@ -168,7 +168,9 @@ class NewsController extends Controller
 //                $webp->save(storage_path('app/public/images/news/' . $name));
 //                $params['cover_photo'] = $name;
 //            }
-
+            $params = [];
+            $params['title'] = $request->title;
+            $params['description'] = $request->description;
             if ($request->has('image')) {
 
                 $fileDir = config('constants.NEWS_DOC_PATH') . DIRECTORY_SEPARATOR.'news'.DIRECTORY_SEPARATOR;
@@ -176,15 +178,12 @@ class NewsController extends Controller
 
                     Storage::makeDirectory($fileDir, 0777);
 
-                    $params = [];
-                    $params['title'] = $request->title;
-                    $params['description'] = $request->description;
-
                     $params['cover_photo'] = basename($request->file('image')->store($fileDir));
-                    $news = resolve('news-repo')->update($params, $id);
 
                 }
             }
+            $news = resolve('news-repo')->update($params, $id);
+
 
 
             if ($news) {
@@ -244,4 +243,5 @@ class NewsController extends Controller
         }
         return $params;
     }
+
 }
