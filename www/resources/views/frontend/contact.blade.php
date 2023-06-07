@@ -277,9 +277,12 @@
                 <div class="col-md-5">
                     <div class="box-address">
                         <h5>Mumbai</h5>
-                        <p class="mb-0">Buzz Markers, Ascent Business Centre,<br>
-                            Office No.34, 3rd Floor, Sej Plaza Marve Road,<br>
-                            Off S.V.Road, Malad (W),Mumbai - 400064<br>
+                       
+                        <p class="mb-0">Conwood Paragon,
+                            Opp Indian Oil Petrol Pump,<br>
+                            Near Cama Industrial Estate,
+                            Goregaon East,<br>
+                            Mumbai, Maharashtra - 400063<br>
                             +919890393090
                         </p>
                     </div>
@@ -316,5 +319,5 @@
             $(this).addClass("radioselect-yellow");
         });
     </script>
-    
+
 @endsection
