@@ -2,7 +2,7 @@
   <!-- our process starts -->
   <section class="our-process">
     <div class="container">
-      <h1>Our Process</h1>
+      <h1 class="font-blue">Our Process</h1>
       <div class="position-relative reveal">
         <img src={{asset('assets/frontend/images/stratey/our-process.webp')}} class="w-100 pc-process" alt="our-process">
 

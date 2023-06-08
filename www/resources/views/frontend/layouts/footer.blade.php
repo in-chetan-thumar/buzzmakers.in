@@ -8,10 +8,10 @@
         <div class="col-md-6">
           <div class="text-end">
             <ul class="footer-menu">
-              <li><a href="#">Home</a></li>
+              <li><a href="{{route('frontend.home')}}">Home</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Case Studies</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="{{route('frontend.contact')}}">Contact</a></li>
             </ul>
           </div>
           <div class="social-icons text-end">

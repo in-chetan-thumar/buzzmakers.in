@@ -25,9 +25,9 @@
     src: url(../css/fonts/VisbyCF-Bold.otf);
 }
 
-body {
-    background-color: var(--light-skin);
-}
+/*body {*/
+/*    background-color: var(--light-skin);*/
+/*}*/
 h1,h2,h3,h4,h5,h6{
     color: var(--black);
     font-family: buzzbold;

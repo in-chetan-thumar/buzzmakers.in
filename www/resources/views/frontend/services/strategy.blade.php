@@ -40,8 +40,8 @@
                         alt="brand-strategy">
                 </div>
                 <div class="col-md-7 content-strategy">
-                    <h1>Brand Strategy</h1>
-                    <p>
+                    <h1 class="font-blue">Brand Strategy</h1>
+                    <p class="font-blue">
                         We believe that a powerful brand is the result of a powerful
                         strategy. The key is to find way into the hearts and minds of your
                         customers, redefine and own the conversation in your industry, and
@@ -61,8 +61,8 @@
                         alt="brand-identity">
                 </div>
                 <div class="col-md-7 content-strategy">
-                    <h1>Brand Identity Design</h1>
-                    <p>
+                    <h1 class="font-blue">Brand Identity Design</h1>
+                    <p class="font-blue">
                         The Identity of the brand is the most important visible symbol
                         representing the very values of the brand. It goes beyond the
                         logo, and manifests itself in every Graphic, every element, tone
@@ -82,8 +82,8 @@
                         alt="brand-management">
                 </div>
                 <div class="col-md-7 content-strategy">
-                    <h1>Brand Management</h1>
-                    <p>
+                    <h1 class="font-blue">Brand Management</h1>
+                    <p class="font-blue">
                         Helping companies monitor, plan and review their brands over a
                         longer period of time and ensuring that there is a synergy in
                         everything that goes out. We operate like an offshoot of the

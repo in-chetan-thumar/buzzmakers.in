@@ -3,7 +3,7 @@
 <section class="featured responsive-container">
     <div class="container">
       <h2 class="hindi2"><span>#</span>रोटीकपडाऔरमकान</h2>
-      <h1>The Buzz Brands</h1>
+      <h1 class="font-blue">The Buzz Brands</h1>
       <div>
         <p class="title-tags">
             Businesses that started as clients and<br > ended up becoming our best applauders.

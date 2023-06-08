@@ -31,7 +31,7 @@ class ContentRepository
 
 
 
-    public function renderHtmlTable($params) 
+    public function renderHtmlTable($params)
     {
         $tableData = $this->filter($params);
 
@@ -39,12 +39,12 @@ class ContentRepository
         return view('frontend.components.completefaqs', compact('tableData'))->render();
     }
 
- 
+
 
     public function filter($params)
     {
         return $this->model
             ->all()
-            ->where('category','content' )->where('is_active','Y' )->take(20);       
+            ->where('category','home' )->where('is_active','Y' )->take(20);
     }
 }

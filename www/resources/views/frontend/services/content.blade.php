@@ -40,8 +40,8 @@
                         alt="social-media-marketing">
                 </div>
                 <div class="col-md-7 content-marketing">
-                    <h1>Social Media marketing</h1>
-                    <p>
+                    <h1 class="font-blue">Social Media marketing</h1>
+                    <p class="font-blue">
                         We craft social-first strategies for our brands. Through social
                         listening, in-house research and community engagement we stay
                         ahead of the ever-changing landscape and deliver an unparalleled
@@ -61,8 +61,8 @@
                         alt="influencer-marketing">
                 </div>
                 <div class="col-md-7 content-marketing">
-                    <h1>Influencer Marketing</h1>
-                    <p>
+                    <h1 class="font-blue">Influencer Marketing</h1>
+                    <p class="font-blue">
                         Right selection of influencers with the correct communication
                         strategy can do wonders for your social reach.We help brands do
                         just that! We select the right influencers using various
@@ -83,8 +83,8 @@
                         alt="performance-marketing">
                 </div>
                 <div class="col-md-7 content-marketing">
-                    <h1>Performance Marketing</h1>
-                    <p>
+                    <h1 class="font-blue">Performance Marketing</h1>
+                    <p class="font-blue">
                         Using our vast experience in running performance campaigns, we
                         provide an array of services to use the most popular platforms &
                         tactics to achieve leads and conversations for your business.

@@ -1275,3 +1275,6 @@ h1 {
 .image-radius{
     border-radius: 25px;
 }
+.font-blue{
+    color: var(--blue);;
+}

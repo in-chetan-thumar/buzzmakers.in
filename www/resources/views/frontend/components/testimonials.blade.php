@@ -3,7 +3,7 @@
 <section class="testimonials responsive-container">
     <div class="text-center mb-5 reveal">
       <h2 class="hindi2"><span>#</span>क्या कहना</h2>
-      <h1> As they Say</h1>
+      <h1 class="font-blue" > As they Say</h1>
       <div class="testimonials-content">
         <p class="title-tags">
 {{--          We love to buzz, they love the buzz! Client love is the reason<br >--}}

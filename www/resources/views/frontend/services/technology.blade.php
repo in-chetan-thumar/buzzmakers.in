@@ -39,8 +39,8 @@
                         alt="web-development">
                 </div>
                 <div class="col-md-7 content-tech">
-                    <h1>Website Development</h1>
-                    <p>
+                    <h1 class="font-blue">Website Development</h1>
+                    <p class="font-blue">
                         Buzz Makers utilizes web development technologies that are both proven and practical. With the
                         options available in the
                         market today, we can help you determine what is best for your needs.
@@ -57,8 +57,8 @@
                         alt="app-development">
                 </div>
                 <div class="col-md-7 content-tech">
-                    <h1>Mobile App Development</h1>
-                    <p>
+                    <h1 class="font-blue">Mobile App Development</h1>
+                    <p class="font-blue">
                         Our team of expert software engineers and developers craft Scalable and reliable mobile app
                         solutionsto improve your business
                         capabilities.We have powered several B2B applications by integrating modern technologies like
@@ -80,8 +80,8 @@
                     <img src={{ asset('assets/frontend/images/Tech/seo.svg') }} style="width:60% ;" alt="seo">
                 </div>
                 <div class="col-md-7 content-tech">
-                    <h1>Search Engine Optimization</h1>
-                    <p>
+                    <h1 class="font-blue">Search Engine Optimization</h1>
+                    <p class="font-blue">
                         With Buzz Makers, you will not be outsourcing your SEO Project but will be getting a Search Engine
                         Optimization(SEO) Partner
                         to work with you and help you indentify the right internet marketing plan.

@@ -39,8 +39,8 @@
                         alt="video-explainer">
                 </div>
                 <div class="col-md-7 content-studio">
-                    <h1>Explainer Video</h1>
-                    <p>
+                    <h1 class="font-blue">Explainer Video</h1>
+                    <p class="font-blue">
                         From product awareness to demand generation, our animated explainer video production helps you tell
                         great
                         stories to simplify your
@@ -59,7 +59,7 @@
                     <!-- <img src="images/Studio/Group 5504.svg" width="65%" /> -->
                 </div>
                 <div class="col-md-7 content-studio">
-                    <h1>Motion Graphic Video</h1>
+                    <h1 class="font-blue">Motion Graphic Video</h1>
                     <!-- <p>
                   From product awareness to demand generation, our animated explainer video production helps you tell great stories to simplify your
                   message and connect with your audience in a whole new way!
@@ -77,7 +77,7 @@
                     <!-- <img src="images/Studio/Group 5504.svg" width="65%" /> -->
                 </div>
                 <div class="col-md-7 content-studio">
-                    <h1>Shoot & Edit</h1>
+                    <h1 class="font-blue">Shoot & Edit</h1>
                     <!-- <p>
                   From product awareness to demand generation, our animated explainer video production helps you tell great stories to simplify your
                   message and connect with your audience in a whole new way!

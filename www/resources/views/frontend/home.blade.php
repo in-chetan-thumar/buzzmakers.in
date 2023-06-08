@@ -10,25 +10,39 @@
         <div class="home-header">
             <div class="project-screens">
                 <div class="proj-1">
+                    <a href="{{route('frontend.nutra')}}">
                     <img src={{ asset('assets/frontend/images/projects/proj4.webp') }} class="w-100 h-100" alt="proj4">
+                    </a>
                 </div>
                 <div class="proj-2">
+                    <a href="{{route('frontend.poojaent')}}">
                     <img src={{ asset('assets/frontend/images/projects/proj1.webp') }} class="w-100 h-100" alt="proj1">
+                    </a>
                 </div>
                 <div class="proj-3">
+                    <a href="{{route('frontend.salvi')}}">
                     <img src={{ asset('assets/frontend/images/projects/proj5.webp') }} class="w-100 h-100" alt="proj5">
+                    </a>
                 </div>
                 <div class="proj-4">
+                    <a href="{{route('frontend.jio')}}">
                     <img src={{ asset('assets/frontend/images/projects/proj2.webp') }} class="w-100 h-100" alt="proj2">
+                    </a>
                 </div>
                 <div class="proj-5">
+                    <a href="{{route('frontend.jio')}}">
                     <img src={{ asset('assets/frontend/images/projects/proj2.webp') }} class="w-100 h-100" alt="proj2">
+                    </a>
                 </div>
                 <div class="proj-6">
+                    <a href="{{route('frontend.purusham')}}">
                     <img src={{ asset('assets/frontend/images/projects/proj6.webp') }} class="w-100 h-100" alt="proj6">
+                    </a>
                 </div>
                 <div class="proj-7">
+                    <a href="{{route('frontend.llumar')}}">
                     <img src={{ asset('assets/frontend/images/projects/proj3.webp') }} class="w-100 h-100" alt="proj3">
+                    </a>
                 </div>
             </div>
         </div>
@@ -37,12 +51,12 @@
 
     @include('frontend.components.home_featured')
 
-    <!-- section services -->
+    <!-- section services -->header-hero-section-tech .content-of-tech
     <section class="services responsive-container">
         <div class="container reveal">
             <div class="text-center mb-5">
-                <h2 class="hindi2"><span>#</span>बाजार</h2>
-                <h1>The Buzz Menu</h1>
+                <h2 class="hindi2 "><span>#</span>बाजार</h2>
+                <h1 class="font-blue">The Buzz Menu</h1>
                 <div>
                     <p class="title-tags">
                         Pick a service to download your success.
@@ -179,7 +193,7 @@
     <section class="careers">
         <div class="text-center mt-3 reveal">
             <h2 class="hindi2"><span>#</span>उड़ान</h2>
-            <h1> The Buzz Dream</h1>
+            <h1 class="font-blue"> The Buzz Dream</h1>
             <div class="careers-content">
                 <p class="title-tags">
                     Think you got what it takes to get buzzing with us? Apply Now!

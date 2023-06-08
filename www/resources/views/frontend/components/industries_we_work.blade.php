@@ -1,7 +1,7 @@
   <!-- Industries we works starts -->
   <section class="ind-works">
     <div class="text-center container reveal">
-      <h1>Industries We Work</h1>
+      <h1 class="font-blue">Industries We Work</h1>
       <div class="ind-content">
         <p>
           There are many variations of passages of Lorem Ipsum available, but
