@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Page;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 
 use Artesaos\SEOTools\Facades\SEOTools;
@@ -16,21 +17,19 @@ class HomeController extends Controller
 {
 
 
-    
-    
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
-    {      
-        $content = Page::select('id','title','meta_keywords','meta_description')->whereRouteName(Route::currentRouteName())->first();
+    {
+        $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
         $table = resolve('home-repo')->renderHtmlTable($request);
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
-        return view('frontend.home',compact('content','table'));
+        return view('frontend.home', compact('content', 'table'));
 
 
         // return view('admin.news.news_list', compact('table'));
@@ -49,7 +48,7 @@ class HomeController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -60,7 +59,7 @@ class HomeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -71,7 +70,7 @@ class HomeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -82,8 +81,8 @@ class HomeController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -94,11 +93,71 @@ class HomeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
         //
+    }
+
+    public function signatureName($name)
+    {
+        $array = ([
+            'krishnajajoo' => [
+                "name" => "Krishnaa D Jajoo",
+                "Designation"=>"Founder & Intern",
+                "Number" => "+919890393090",
+                "Whatsapp"=>"https://wa.me/+919890393090"
+            ],
+            'bhaktikothari' => [
+                "name" => "Bhakti Kothari",
+                "Designation"=>"Performance & Social Media Executive",
+                "Number" => "+918976365578",
+                "Whatsapp"=>"https://wa.me/+918976365578 "
+            ],
+            'tanmaydeshpande' => [
+                "name" => "Tanmay Deshpande",
+                "Designation"=>"Social Media Executive",
+                "Number" => "+917276159703",
+                "Whatsapp"=>"https://wa.me/+917276159703 "
+            ],
+            'rahuljain' => [
+                "name" => "Rahul Jain",
+                "Designation"=>"Social Media Manager",
+                "Number" => "+917249032020",
+                "Whatsapp"=>"https://wa.me/+917249032020"
+            ],
+            'jahnvivira' => [
+                "name" => "Jahnvi Vira",
+                "Designation"=>"Content & Client Servicing Executive",
+                "Number" => "+919967402437",
+                "Whatsapp"=>"https://wa.me/+919967402437"
+            ],
+            'amolthotam' => [
+                "name" => "Amol Thotam",
+                "Designation"=>"Motion Graphic & Video Editor",
+                "Number" => "  ",
+                "Whatsapp"=>"  "
+            ],
+            'abdulkhan' => [
+                "name" => "Abdul Khan",
+                "Designation"=>"Copywriter",
+                "Number" => "+917738260090",
+                "Whatsapp"=>"https://wa.me/+917738260090"
+            ],
+            'kinalborana' => [
+                "name" => "Kinal Borana",
+                "Designation"=>"Social Media Executive",
+                "Number" => "+917249031818",
+                "Whatsapp"=>"https://wa.me/+917249031818"
+            ],
+        ]);
+
+        $details = Arr::where($array, function ($value, $key) use ($name) {
+            return $key == $name;
+        });
+
+        return view('frontend.buzz_signature', compact('details'));
     }
 }

@@ -42,6 +42,8 @@ Route::get('/services-content', [\App\Http\Controllers\Frontend\Services\Content
 Route::get('/services-technology', [\App\Http\Controllers\Frontend\Services\TechnologyController::class, 'index'])->name('frontend.services.technology');
 Route::get('/services-design', [\App\Http\Controllers\Frontend\Services\DesignController::class, 'index'])->name('frontend.services.design');
 Route::get('/services-studio', [\App\Http\Controllers\Frontend\Services\StudioController::class, 'index'])->name('frontend.services.studio');
+Route::get('signature/{name}',[\App\Http\Controllers\Frontend\HomeController::class, 'signatureName'])->name('signature.name');
+
 // End Front End Route
 
 
