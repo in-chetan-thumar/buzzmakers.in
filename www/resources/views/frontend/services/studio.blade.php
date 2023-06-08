@@ -13,7 +13,9 @@
                     <div class="content-of-studio text-white">
                         <h1>Studio</h1>
                         <p>
-                            We Keep Our Brand's Best Foot Forward Using The Power Of Great studios!
+                            Our very own creative playground where ideas come to life and imagination is transformed into visual experiences with lights, cameras, and action.
+
+                            {{--                            We Keep Our Brand's Best Foot Forward Using The Power Of Great studios!--}}
                         </p>
                         <a href={{route('frontend.contact')}} class="btn btn-buzz-connect">Let's Connect</a>
                     </div>
@@ -106,7 +108,7 @@
     {{-- @include('frontend.components.services_career') --}}
     {!! $table !!}
     {{-- @include('frontend.components.completefaqs') --}}
-    
+
 @endsection
 
 @section('js')

@@ -13,8 +13,10 @@
                     <div class="content-of-marketing text-white">
                         <h1>Marketing</h1>
                         <p>
-                            It is A Long Established Fact That A Reader Will Be Distracted
-                            By The Readable Content Of A Page When Looking At Its Layout.
+
+                            To reach success, you need to reach your audience, and to get to them, you need the right driving force. Safe to say, marketing is the key here.
+
+
                         </p>
                         <a href={{route('frontend.contact')}} class="btn btn-buzz-connect-blue">Let's Connect</a>
                     </div>

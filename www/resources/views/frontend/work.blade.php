@@ -6,8 +6,10 @@
     <!-- section header-image -->
     <section class="header-hero-section-work">
         <div class="container text-center responsive-container">
-            <h1 class="content-work">It is a long established fact<br> that a reader will be<br> distracted by the
-                readable</h1>
+            <h1 class="content-work">What’s a commitment without action,<br> and what’s a pitch without proof?<br>
+
+                Well, here is ours.
+            </h1>
             <a href={{route('frontend.contact')}} class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Get in Touch</a>
             <div class="row w-100 img-container">
                 <div class="col-md-6">
@@ -26,16 +28,16 @@
         <div class="container relative">
             <div class="row g-3 mt-5">
                 <div class="col-md-6">
-                    <a href={{route('frontend.jio')}}><img src={{ asset('assets/frontend/images/OurWork/jiomeet.jpg') }} class="w-100" alt="snap"></a>
+                    <a href={{route('frontend.jio')}}><img src="{{ asset('assets/frontend/images/OurWork/jiomeet.jpg') }}" class="w-100 image-radius" alt="snap"></a>
                 </div>
                 <div class="col-md-6">
-                    <a href={{route('frontend.poojaent')}}><img src={{ asset('assets/frontend/images/OurWork/pooja.jpg') }} class="w-100" alt="snap1"></a>
+                    <a href={{route('frontend.poojaent')}}><img src="{{ asset('assets/frontend/images/OurWork/pooja.jpg') }}" class="w-100 image-radius" alt="snap1"></a>
                 </div>
                 <div class="col-md-6">
-                    <a href={{route('frontend.llumar')}}><img src={{ asset('assets/frontend/images/OurWork/llumar.jpg') }} class="w-100" alt="snap"></a>
+                    <a href={{route('frontend.llumar')}}><img src="{{ asset('assets/frontend/images/OurWork/llumar.jpg') }}" class="w-100 image-radius" alt="snap"></a>
                 </div>
                 <div class="col-md-6">
-                    <a href={{route('frontend.nutra')}}><img src={{ asset('assets/frontend/images/OurWork/nutra.jpg') }} class="w-100" alt="snap1"></a>
+                    <a href={{route('frontend.nutra')}}><img src="{{ asset('assets/frontend/images/OurWork/nutra.jpg') }}" class="w-100 image-radius" alt="snap1"></a>
                 </div>
             </div>
 
@@ -44,19 +46,19 @@
             </div>
 
             <div class="text-center mt-5 reveal">
-                <img src={{ asset('assets/frontend/images/OurWork/snap2.webp') }} style="width:85% ;" alt="snap2">
+                <img src="{{ asset('assets/frontend/images/OurWork/snap2.webp') }}" style="width:85% ;" alt="snap2">
             </div>
 
             <div class="content-pattern-img-ribbon">
-                <img src={{ asset('assets/frontend/images/green-ribbon.webp') }} alt="green-ribbon">
+                <img src="{{ asset('assets/frontend/images/green-ribbon.webp') }}" alt="green-ribbon ">
             </div>
 
             <div class="row g-3 mt-5 reveal">
                 <div class="col-md-6">
-                    <a href={{route('frontend.purusham')}}><img src={{ asset('assets/frontend/images/OurWork/purusham.jpg') }} class="w-100" alt="snap"></a>
+                    <a href={{route('frontend.purusham')}}><img src="{{ asset('assets/frontend/images/OurWork/purusham.jpg') }}" class="w-100 image-radius" alt="snap"></a>
                 </div>
                 <div class="col-md-6">
-                    <a href={{route('frontend.salvi')}}><img src={{ asset('assets/frontend/images/OurWork/salvi.jpg') }} class="w-100" alt="snap1"></a>
+                    <a href={{route('frontend.salvi')}}><img src="{{ asset('assets/frontend/images/OurWork/salvi.jpg') }}" class="w-100 image-radius" alt="snap1" ></a>
                 </div>
 
                 </div>

@@ -108,9 +108,13 @@
         </div> -->
 
       <div class="text-center text-white mb-3 fw-bold faq-content-blog reveal">
-        <h2>Now that you've scrolled to the bottom of the page.</h2>
-        <h2>We believe that we've got you excited.</h2>
-        <h2>Let's get your brand buzzing?</h2>
+          <h2>Now that you have seen some of our work in action, </br> here is a call to action to kickstart your journey with us.</h2>
+
+          <h2>Let’s talk!</h2>
+
+          {{--        <h2>Now that you've scrolled to the bottom of the page.</h2>--}}
+{{--        <h2>We believe that we've got you excited.</h2>--}}
+{{--        <h2>Let's get your brand buzzing?</h2>--}}
         <a href={{route('frontend.contact')}} class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Get in Touch</a>
       </div>
       <img src={{asset('assets/frontend/images/announcement.webp')}} class="oneside-speaker-img-pc" alt="announcement">

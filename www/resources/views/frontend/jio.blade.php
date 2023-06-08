@@ -206,28 +206,28 @@
             <h1 class="mb-4">A Reel Outlook</h1>
 
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="reel-photo-screen">
                         <a href="https://www.instagram.com/reel/CaMtXFgKcTa/?utm_source=ig_web_copy_link" target="_blank">
                         <img src="{{ asset('assets/frontend/images/profile/jio/mobs1.webp') }}" class="w-100"
                              alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="reel-photo-screen">
                         <a href="https://www.instagram.com/reel/CYWZqQXKIIx/?utm_source=ig_web_copy_link" target="_blank">
                         <img src="{{ asset('assets/frontend/images/profile/jio/mobs2.webp') }}" class="w-100"
                             alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="reel-photo-screen">
                         <a href="https://www.instagram.com/reel/CWlCY9xIyac/?utm_source=ig_web_copy_link" target="_blank">
                         <img src="{{ asset('assets/frontend/images/profile/jio/mobs3.webp') }}" class="w-100"
                             alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="reel-photo-screen">
                         <a href="https://www.instagram.com/reel/Cda7KMQjD4A/?utm_source=ig_web_copy_link" target="_blank">
                         <img src="{{ asset('assets/frontend/images/profile/jio/mobs4.webp') }}" class="w-100"

@@ -3,11 +3,13 @@
 <section class="featured responsive-container">
     <div class="container">
       <h2 class="hindi2"><span>#</span>रोटीकपडाऔरमकान</h2>
-      <h1>Featured Engagements</h1>
+      <h1>The Buzz Brands</h1>
       <div>
         <p class="title-tags">
-          Buzz Means Business Like a perfect cocktail of<br >
-          creativity and effectiveness to get high ROI
+            Businesses that started as clients and<br > ended up becoming our best applauders.
+
+{{--            Buzz Means Business Like a perfect cocktail of--}}
+{{--          creativity and effectiveness to get high ROI--}}
         </p>
       </div>
 

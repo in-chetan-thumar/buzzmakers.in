@@ -26,7 +26,7 @@
                             class="accordion-collapse collapse {{ $collapsed ? 'show' : '' }}"
                             aria-labelledby="heading{{ $data->id }}" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                {{ $data->description }}
+                                {!!  $data->description  !!}
                             </div>
                         </div>
                     </div>
@@ -49,11 +49,14 @@
 
 
             <div class="text-center text-white mb-3 fw-bold faq-content">
-                <h2>Now that you've scrolled to the bottom of the page.</h2>
-                <h2>We believe that we've got you excited.</h2>
-                <h2>Let's get your brand buzzing?</h2>
+                <h2>Now that you’ve scrolled to the bottom of the page,<br> we’d love to translate this conversion into a conversation.</h2>
+
+                <h2>Let’s talk!</h2>
+{{--                <h2>Now that you've scrolled to the bottom of the page.</h2>--}}
+{{--                <h2>We believe that we've got you excited.</h2>--}}
+{{--                <h2>Let's get your brand buzzing?</h2>--}}
                 <a href={{ route('frontend.contact') }} class="btn btn-buzz mt-2"
-                    style="padding: 7px 20px !important">Get in Touch</a>
+                    style="padding: 7px 20px !important">CTA copy</a>
             </div>
         </div>
     </section>

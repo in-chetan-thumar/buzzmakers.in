@@ -42,12 +42,14 @@
         <div class="container reveal">
             <div class="text-center mb-5">
                 <h2 class="hindi2"><span>#</span>बाजार</h2>
-                <h1>Our Services</h1>
+                <h1>The Buzz Menu</h1>
                 <div>
                     <p class="title-tags">
-                        Master of all, jack of none<br>
-                        We've mastered the art of buzz through a holistic approach to<br>
-                        branding and marketing.Pick a service to get buzzing!
+                        Pick a service to download your success.
+
+                        {{--                        Master of all, jack of none<br>--}}
+{{--                        We've mastered the art of buzz through a holistic approach to<br>--}}
+{{--                        branding and marketing.Pick a service to get buzzing!--}}
                     </p>
                 </div>
             </div>
@@ -177,7 +179,7 @@
     <section class="careers">
         <div class="text-center mt-3 reveal">
             <h2 class="hindi2"><span>#</span>उड़ान</h2>
-            <h1>Careers</h1>
+            <h1> The Buzz Dream</h1>
             <div class="careers-content">
                 <p class="title-tags">
                     Think you got what it takes to get buzzing with us? Apply Now!

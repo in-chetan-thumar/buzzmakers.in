@@ -13,7 +13,9 @@
                     <div class="content-of-design text-white">
                         <h1>Design</h1>
                         <p>
-                            We Keep Our Brand's Best Foot Forward Using The Power Of Great Designs!
+                            We don’t just create a design, we power up our designs to speak, touch, and render a performance. And we all know what emotive design brings—engagement.
+
+                            {{--                            We Keep Our Brand's Best Foot Forward Using The Power Of Great Designs!--}}
                         </p>
                         <a href={{route('frontend.contact')}} class="btn btn-buzz-connect">Let's Connect</a>
                     </div>

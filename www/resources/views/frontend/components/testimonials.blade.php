@@ -1,13 +1,15 @@
 <!-- section testimonials -->
-  
+
 <section class="testimonials responsive-container">
     <div class="text-center mb-5 reveal">
       <h2 class="hindi2"><span>#</span>क्या कहना</h2>
-      <h1>Testimonials</h1>
+      <h1> As they Say</h1>
       <div class="testimonials-content">
         <p class="title-tags">
-          We love to buzz, they love the buzz! Client love is the reason<br >
-          why we love to do what we do.
+{{--          We love to buzz, they love the buzz! Client love is the reason<br >--}}
+{{--          why we love to do what we do.--}}
+            We’ll let their words pitch us to you.
+
         </p>
         <div class="yellow-box-ui"></div>
       </div>

@@ -13,7 +13,9 @@
                     <div class="content-of-tech text-white">
                         <h1>Tech</h1>
                         <p>
-                            We "Tech" Our Brands To Greater Heights!
+                            To stay in the game, your business must stay relevant, constantly catching up to the world, and that my friend, is where tech enters the game. Don’t ‘tech’ this for granted.
+
+                            {{--                            We "Tech" Our Brands To Greater Heights!--}}
                         </p>
                         <a href={{route('frontend.contact')}} class="btn btn-buzz-connect-blue">Let's Connect</a>
                     </div>

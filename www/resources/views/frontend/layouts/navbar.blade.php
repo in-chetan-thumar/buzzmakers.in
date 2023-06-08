@@ -29,7 +29,7 @@
                   <a class="dropdown-item" href={{route('frontend.services.strategy')}}>Strategy</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href={{route('frontend.services.content')}}>Content</a>
+                  <a class="dropdown-item" href={{route('frontend.services.content')}}>Marketing</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href={{route('frontend.services.technology')}}>Technology</a>
