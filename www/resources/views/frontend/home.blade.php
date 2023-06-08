@@ -51,7 +51,7 @@
 
     @include('frontend.components.home_featured')
 
-    <!-- section services -->header-hero-section-tech .content-of-tech
+    <!-- section services -->
     <section class="services responsive-container">
         <div class="container reveal">
             <div class="text-center mb-5">
