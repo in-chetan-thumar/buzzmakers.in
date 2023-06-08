@@ -1,7 +1,7 @@
     <!-- faqs -->
     <section class="faqs">
         <div class="text-center text-white mb-5 reveal">
-            <h2 class="hindi2"><span>#</span>गहराइयाँ</h2>
+            <h2 class="hindi2 text-white"><span>#</span>गहराइयाँ</h2>
             <h1 class="text-white">FAQ's</h1>
         </div>
         <div class="container reveal">
@@ -48,10 +48,10 @@
             </div>
             <br><br><br><br><br>
 
-            <div class="text-center text-white mb-3 fw-bold faq-content">
-                <h2>Now that you’ve scrolled to the bottom of the page,<br> we’d love to translate this conversion into a conversation.</h2>
+            <div class="text-center mb-3 fw-bold faq-content  text-white">
+                <h2 class=" text-white">Now that you’ve scrolled to the bottom of the page,<br> we’d love to translate this conversion into a conversation.</h2>
 
-                <h2>Let’s talk!</h2>
+                <h2 class=" text-white">Let’s talk!</h2>
 {{--                <h2>Now that you've scrolled to the bottom of the page.</h2>--}}
 {{--                <h2>We believe that we've got you excited.</h2>--}}
 {{--                <h2>Let's get your brand buzzing?</h2>--}}

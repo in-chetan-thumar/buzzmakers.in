@@ -33,7 +33,8 @@ body {
 @font-face {
     font-family: buzzhindi;
     font-display: swap;
-    src: url(../fonts/PalanquinDark-Bold.ttf);
+    /*src: url(../fonts/Fontspring-DEMO-visbycf-bold.otf);*/
+    src: url(../fonts/Fontspring-DEMO-visbycf-bold.otf);
 }
 html {
     scroll-behavior: smooth;
@@ -52,7 +53,7 @@ h1 {
 }
 .hindi2 {
     font-family: buzzhindi;
-    font-weight: bolder;
+    font-weight: bold;
 }
 .btn-buzz,
 .btn-buzz-connect,

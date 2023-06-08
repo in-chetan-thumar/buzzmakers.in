@@ -20,7 +20,7 @@
 
     <div class="float-end">
 
-        <a href="{{URL::previous()}}">
+        <a href="{{ route('frontend.blog') }}">
             <img
                 src={{ asset('assets/frontend/images/Blogs/arrow_back.png') }} alt="arrow"
                 class="arrow-img" title="Back" style="padding: 20px;">
