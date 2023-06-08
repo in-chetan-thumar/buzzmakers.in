@@ -4,6 +4,7 @@
 @endsection
 
 @section('main')
+    <div class="body-color">
     {{-- <!-- collpase menu for mobile start -->
     <div class="collapse mobile-menu-area" id="buzzmenu">
         <img src="./images/logo.svg" style="width:125px;" alt="logo">
@@ -299,4 +300,5 @@
 
     <!-- footer section starts -->
     <div class="footer-line p-3"></div>
+    </div>
 @endsection
