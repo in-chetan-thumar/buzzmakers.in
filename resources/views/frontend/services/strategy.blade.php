@@ -13,7 +13,7 @@
                     <div class="content-of-strategy text-white">
                         <h1>Strategy</h1>
                         <p>
-                            You can create a masterpiece worth millions, but it is the right branding, that distinct identity that will lead it to leave a lasting impression.
+                            You can create a masterpiece worth millions, but it is the right branding, that distinct identity that will lead it to leave a lasting impression
 
                             {{--                            It is A Long Established Fact That A Reader Will Be Distracted--}}
 {{--                            By The Readable Content Of A Page When Looking At Its Layout.--}}

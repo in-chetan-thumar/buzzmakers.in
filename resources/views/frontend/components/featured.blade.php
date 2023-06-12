@@ -3,24 +3,18 @@
 <section class="featured-secondary-slider mt-5  responsive-container">
     <div class="container">
       <div class="sliderfeature-secondary">
-          <div>
-              <img src={{asset('assets/frontend/images/clients/Actors_Apply.png')}} loading="lazy" alt="Clients">
-          </div>
+
           <div>
               <img src={{asset('assets/frontend/images/clients/Aegon_Life(1).png')}} loading="lazy" alt="Clients">
           </div>
           <div>
               <img src={{asset('assets/frontend/images/clients/Amdavad_Films_copy.png')}} loading="lazy" alt="Clients">
           </div>
-          <div>
-              <img src={{asset('assets/frontend/images/clients/Baaya_copy.png')}} loading="lazy" alt="Clients">
-          </div>
+
           <div>
               <img src={{asset('assets/frontend/images/clients/Bereilly_Ki_Barfi.png')}} loading="lazy" alt="Clients">
           </div>
-          <div>
-              <img src={{asset('assets/frontend/images/clients/Bikgai_copy.png')}} loading="lazy" alt="Clients">
-          </div>
+
           <div>
               <img src={{asset('assets/frontend/images/clients/Craftsvilla.png')}} loading="lazy" alt="Clients">
           </div>
@@ -30,9 +24,7 @@
           <div>
               <img src={{asset('assets/frontend/images/clients/Gajera_Trust.png')}} loading="lazy" alt="Clients">
           </div>
-          <div>
-              <img src={{asset('assets/frontend/images/clients/Gaysons_logo.png')}} loading="lazy" alt="Clients">
-          </div>
+}}
           <div>
               <img src={{asset('assets/frontend/images/clients/Huts_and_Looms.png')}} loading="lazy" alt="Clients">
           </div>
@@ -57,9 +49,7 @@
           <div>
               <img src={{asset('assets/frontend/images/clients/Junglee_Pictures.png')}} loading="lazy" alt="Clients">
           </div>
-          <div>
-              <img src={{asset('assets/frontend/images/clients/Kansa_Veda.png')}} loading="lazy" alt="Clients">
-          </div>
+
           <div>
               <img src={{asset('assets/frontend/images/clients/Karma_Media.png')}} loading="lazy" alt="Clients">
           </div>
@@ -120,12 +110,7 @@
           <div>
               <img src={{asset('assets/frontend/images/clients/Viacom18_Motiom_Pictures.png')}} loading="lazy" alt="Clients">
           </div>
-          <div>
-              <img src={{asset('assets/frontend/images/clients/Vividh_Fine_Dine.png')}} loading="lazy" alt="Clients">
-          </div>
-          <div>
-              <img src={{asset('assets/frontend/images/clients/Yuvraj_Entertainment.png')}} loading="lazy" alt="Clients">
-          </div>
+
           <div>
               <img src={{asset('assets/frontend/images/clients/Zee5.png')}} loading="lazy" alt="Clients">
           </div>

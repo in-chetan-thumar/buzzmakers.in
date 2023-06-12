@@ -13,7 +13,7 @@
                     <div class="content-of-design text-white">
                         <h1 class="font-blue">Design</h1>
                         <p class="font-blue">
-                            We don’t just create a design, we power up our designs to speak, touch, and render a performance. And we all know what emotive design brings—engagement.
+                            We don’t just create a design, we power up our designs to speak, touch, and render a performance. And we all know what emotive design brings—engagement
 
                             {{--                            We Keep Our Brand's Best Foot Forward Using The Power Of Great Designs!--}}
                         </p>

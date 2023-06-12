@@ -8,7 +8,7 @@
         <div class="container text-center responsive-container">
             <h1 class="content-work">What’s a commitment without action,<br> and what’s a pitch without proof?<br>
 
-                Well, here is ours.
+                Well, here is ours
             </h1>
             <a href={{route('frontend.contact')}} class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Get in Touch</a>
             <div class="row w-100 img-container">

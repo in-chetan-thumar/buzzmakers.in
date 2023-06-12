@@ -14,7 +14,7 @@
                         <h1>Marketing</h1>
                         <p>
 
-                            To reach success, you need to reach your audience, and to get to them, you need the right driving force. Safe to say, marketing is the key here.
+                            To reach success, you need to reach your audience, and to get to them, you need the right driving force. Safe to say, marketing is the key here
 
 
                         </p>

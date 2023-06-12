@@ -16,7 +16,7 @@
                     <p>Our 95 designers, developers and strategists work from six creative hubs around the world. Our
                         indepedent
                         ownership and 40 year
-                        heritage of trasforming.
+                        heritage of trasforming
                     </p>
                 </div>
                 <div class="col-md-2 img-news">

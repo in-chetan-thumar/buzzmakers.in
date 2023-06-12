@@ -13,7 +13,7 @@
                     <div class="content-of-studio text-white">
                         <h1>Studio</h1>
                         <p>
-                            Our very own creative playground where ideas come to life and imagination is transformed into visual experiences with lights, cameras, and action.
+                            Our very own creative playground where ideas come to life and imagination is transformed into visual experiences with lights, cameras, and action
 
                             {{--                            We Keep Our Brand's Best Foot Forward Using The Power Of Great studios!--}}
                         </p>

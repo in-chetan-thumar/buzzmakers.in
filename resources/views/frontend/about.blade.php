@@ -9,7 +9,7 @@
             <div class="container position-relative">
                 <div class="row">
                     <div class="col-md-7">
-                        <h1 class="text-white">Movers & shakers of the digital marketing hive, as they call us.
+                        <h1 class="text-white">Movers & shakers of the digital marketing hive, as they call us
                         </h1>
                     </div>
                     <div class="col-md-5">
