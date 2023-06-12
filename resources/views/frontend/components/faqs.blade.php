@@ -115,7 +115,7 @@
           {{--        <h2>Now that you've scrolled to the bottom of the page.</h2>--}}
 {{--        <h2>We believe that we've got you excited.</h2>--}}
 {{--        <h2>Let's get your brand buzzing?</h2>--}}
-        <a href="{{route('frontend.contact')}}" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Get in Touch</a>
+        <a href="{{route('frontend.contact')}}" class="btn btn-buzz mt-2" style="padding: 7px 20px !important" target="_blank">Get in Touch</a>
       </div>
       <img src="{{asset('assets/frontend/images/announcement.webp')}}" class="oneside-speaker-img-pc" alt="announcement">
       <img src={{asset('assets/frontend/images/speakerfaqs.webp')}} class="oneside-speaker-img-mobile" alt="speakerfaqs">

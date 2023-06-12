@@ -54,7 +54,7 @@
                             </div>
                             <div class="mt-5 row">
                                 <div class="col-1">
-                                    <div class="h-75 side-pattern-border">
+                                    <div class="h-100 side-pattern-border">
                                         <span class="dot-sign-one"><img src="images/Contact/dot.webp" style="width:18px ;"
                                                 alt=""></span>
                                         <span class="dot-sign-two"><img src="images/Contact/dot.webp" style="width:18px ;"
@@ -65,22 +65,27 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="mb-5">
-                                        <h5>1.Free Technical Consultation</h5>
-                                        <p>Detailed tech plan includes things like what tech stack to use, tech timeline
-                                            for
-                                            your project.</p>
+                                        <h5>1.Tell Us About You</h5>
+                                        <p>Share a little about yourself, your business, and your goals with us.
+                                        </p>
                                     </div>
                                     <div class="mb-5">
-                                        <h5>2.Connect With The Tech Team</h5>
-                                        <p>Over a series of calls, our tech team discusses how different technologies
-                                            and frameworks will bring
-                                            your vision to life.
+                                        <h5>2.Schedule a Call
+                                        </h5>
+                                        <p>Our team will hop on a detailed call with you to dig deeper into your marketing needs and goals.
+
                                         </p>
                                     </div>
                                     <div>
-                                        <h5>3.Onboarding The Team</h5>
-                                        <p>As soon as you sign-off on the team, they'll be ready to integrate into your
-                                            team just like in-house employees.</p>
+                                        <h5>3.Seal the Deal
+                                        </h5>
+                                        <p>A few more discussions until we all are convinced of the action plan. Next thing, we just put them in motion with a contract.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h5>4.Feel the Buzz
+                                        </h5>
+                                        <p>Once you seal the deal, you sit back as our team moves things around to lead your business into the limelight. </p>
                                     </div>
                                 </div>
                             </div>

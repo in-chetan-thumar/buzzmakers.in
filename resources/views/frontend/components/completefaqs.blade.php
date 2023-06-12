@@ -56,7 +56,7 @@
 {{--                <h2>We believe that we've got you excited.</h2>--}}
 {{--                <h2>Let's get your brand buzzing?</h2>--}}
                 <a href="{{ route('frontend.contact') }}" class="btn btn-buzz mt-2"
-                    style="padding: 7px 20px !important">Contact Us</a>
+                    style="padding: 7px 20px !important" target="_blank">Contact Us</a>
             </div>
         </div>
     </section>
