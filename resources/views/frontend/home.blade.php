@@ -30,8 +30,8 @@
                     </a>
                 </div>
                 <div class="proj-5">
-                    <a href="{{route('frontend.jio')}}">
-                    <img src={{ asset('assets/frontend/images/projects/proj2.webp') }} class="w-100 h-100" alt="proj2">
+                    <a href="{{route('frontend.sarvotkarsh')}}">
+                    <img src="{{ asset('assets/frontend/images/projects/proj7.png') }}" class="w-100 h-100" alt="proj7">
                     </a>
                 </div>
                 <div class="proj-6">

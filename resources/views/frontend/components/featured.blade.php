@@ -62,9 +62,7 @@
           <div>
               <img src={{asset('assets/frontend/images/clients/Mirtillo.png')}} loading="lazy" alt="Clients">
           </div>
-          <div>
-              <img src={{asset('assets/frontend/images/clients/Mundhada_Brothers.png')}} loading="lazy" alt="Clients">
-          </div>
+
           <div>
               <img src={{asset('assets/frontend/images/clients/Nutra_Care.png')}} loading="lazy" alt="Clients">
           </div>

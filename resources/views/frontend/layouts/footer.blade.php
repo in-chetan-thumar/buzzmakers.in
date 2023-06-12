@@ -19,7 +19,7 @@
             <a href="https://twitter.com/buzzmakersindia" target="_blank"><i class="bi bi-twitter"></i></a>
             <a href="https://www.instagram.com/buzzmakersindia/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://www.linkedin.com/company/buzzmakersindia/?viewAsMember=true" target="_blank"><i class="bi bi-linkedin"></i></a>
-              <a href="https://www.youtube.com/@BuzzMakersIndia" target="_blank">YT</a>
+              <a href="https://www.youtube.com/@BuzzMakersIndia" target="_blank"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
       </div>
