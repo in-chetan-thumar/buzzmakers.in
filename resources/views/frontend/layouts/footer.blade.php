@@ -3,13 +3,13 @@
       <div class="row justify-content-between py-4">
         <div class="col-md-6 footer-logo">
           <a href={{route('frontend.home')}}><img src={{asset('assets/frontend/images/logo.svg')}} style="width:20% ;" alt="logo"></a><br >
-          <label>info@buzzmakers.in</label>
+{{--          <label>info@buzzmakers.in</label>--}}
         </div>
         <div class="col-md-6">
           <div class="text-end">
             <ul class="footer-menu">
               <li><a href="{{route('frontend.home')}}">Home</a></li>
-              <li><a href="#">About Us</a></li>
+              <li><a href="{{route('frontend.about')}}">About Us</a></li>
               <li><a href="#">Case Studies</a></li>
               <li><a href="{{route('frontend.contact')}}">Contact</a></li>
             </ul>

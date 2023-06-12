@@ -6,7 +6,7 @@
       <h1 class="font-blue">The Buzz Brands</h1>
       <div>
         <p class="title-tags">
-            Businesses that started as clients and<br > ended up becoming our best applauders.
+            Businesses that started as clients and<br > ended up becoming our best applauders
 
 {{--            Buzz Means Business Like a perfect cocktail of--}}
 {{--          creativity and effectiveness to get high ROI--}}

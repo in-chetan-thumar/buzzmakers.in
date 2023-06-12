@@ -8,7 +8,7 @@
         <p class="title-tags">
 {{--          We love to buzz, they love the buzz! Client love is the reason<br >--}}
 {{--          why we love to do what we do.--}}
-            We’ll let their words pitch us to you.
+            We’ll let their words pitch us to you
 
         </p>
         <div class="yellow-box-ui"></div>
@@ -31,8 +31,8 @@
                 </p>
                 <div class="testimonial-author">
                   <label>Sufiyan Khan</label><br >
-                  <span>Sr.Marketing Manager</span><br >
-                  <span>Jungle Pictures</span>
+                  <span>Ex. Sr.Marketing Manager</span><br >
+                  <span>Junglee Pictures</span>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@
                 </p>
                 <div class="testimonial-author">
                   <label>Pratik Shah</label><br >
-                  <span>Head of Global Marketing</span><br >
+                  <span>Ex. Head of Global Marketing</span><br >
                   <span>InstaRem</span>
                 </div>
               </div>
@@ -87,7 +87,7 @@
                 </p>
                 <div class="testimonial-author">
                   <label>Parvathy Raja</label><br >
-                  <span>Associate Marketing Director</span><br >
+                  <span>Ex. Associate Marketing Director</span><br >
                   <span>Craftsvilla</span>
                 </div>
               </div>

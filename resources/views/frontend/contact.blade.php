@@ -14,11 +14,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-                        <h1><img src={{ asset('assets/frontend/images/Contact/smiley.webp') }} style="width:45px ;"
-                                class="smiley" alt=""> Get in
-                            touch to discuss
-                            your<br>
-                            project, request a quote or even<br> just to pick our brains.</h1><br>
+{{--                        <h1><img src="{{ asset('assets/frontend/images/Contact/smiley.webp') }}" style="width:45px ;"--}}
+{{--                                class="smiley" alt=""> Get in--}}
+{{--                            touch to discuss--}}
+{{--                            your<br>--}}
+{{--                            project, request a quote or even<br> just to pick our brains.</h1><br>--}}
+                        <h1>We only love the buzz and traffic when <br>it is driving towards your business.<br>
+                            Let’s discuss the pathway?
+                        </h1><br>
                         <div class="text-center btn-contact">
                             <a href={{ route('frontend.contact') }} class="btn btn-buzz-connect-blue">Let's Connect</a>
                         </div>
@@ -44,8 +47,10 @@
                     <div class="col-md-4">
                         <div class="contact-left-side-content reveal">
                             <div>
-                                <h3>What Will Happen Next?</h3>
-                                <p>You are a step closer to building great software</p>
+                                <h3>How to get started?
+                                </h3>
+                                <p>A few clicks and your job is done here.
+                                </p>
                             </div>
                             <div class="mt-5 row">
                                 <div class="col-1">
@@ -277,7 +282,7 @@
                 <div class="col-md-5">
                     <div class="box-address">
                         <h5>Mumbai</h5>
-                       
+
                         <p class="mb-0">Conwood Paragon,
                             Opp Indian Oil Petrol Pump,<br>
                             Near Cama Industrial Estate,

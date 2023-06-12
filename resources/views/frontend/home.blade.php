@@ -59,7 +59,7 @@
                 <h1 class="font-blue">The Buzz Menu</h1>
                 <div>
                     <p class="title-tags">
-                        Pick a service to download your success.
+                        Pick a service to download your success
 
                         {{--                        Master of all, jack of none<br>--}}
 {{--                        We've mastered the art of buzz through a holistic approach to<br>--}}
@@ -205,7 +205,7 @@
                 <div>
                     <div class="careers-box mb-5 img-ui-icon-pen">
                         <div class="career-author">
-                            <label>Content Writer</label><br>
+                            <label>Sr. Graphic Designer</label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
                         <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
@@ -215,7 +215,7 @@
                 <div>
                     <div class="careers-box mb-5 img-ui-icon-camera">
                         <div class="career-author">
-                            <label>Graphic Designer</label><br>
+                            <label>Sr. Social Media</label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
                         <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
@@ -226,7 +226,7 @@
                 <div>
                     <div class="careers-box mb-5 img-ui-icon-pen">
                         <div class="career-author">
-                            <label>Content Writer</label><br>
+                            <label>Sr. Content Writer</label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
                         <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
