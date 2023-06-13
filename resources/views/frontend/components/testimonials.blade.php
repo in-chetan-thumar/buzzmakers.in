@@ -20,7 +20,8 @@
           <div class="testimonial-box mb-5">
             <div class="row">
               <div class="col-md-3 col-3">
-                <img src={{asset('assets/frontend/images/admin.webp')}} class="test-photo" alt="admin">
+                  <img src="{{asset('assets/frontend/images/clients/Junglee_Pictures.png')}}"class="test-photo" alt="admin">
+{{--                <img src={{asset('assets/frontend/images/admin.webp')}} class="test-photo" alt="admin">--}}
               </div>
               <div class="col-md-9 col-9">
                 <p>
@@ -47,7 +48,9 @@
           <div class="testimonial-box mb-5">
             <div class="row">
               <div class="col-md-3 col-3">
-                <img src={{asset('assets/frontend/images/admin.webp')}} class="test-photo" alt="admin">
+                  <img src="{{asset('assets/frontend/images/clients/Superbids.png')}}" class="test-photo" alt="admin">
+
+{{--                  <img src={{asset('assets/frontend/images/admin.webp')}} class="test-photo" alt="admin">--}}
               </div>
               <div class="col-md-9 col-9">
                 <p>
@@ -74,7 +77,8 @@
           <div class="testimonial-box mb-5">
             <div class="row">
               <div class="col-md-3 col-3">
-                <img src={{asset('assets/frontend/images/admin.webp')}} class="test-photo" alt="admin">
+                  <img src="{{asset('assets/frontend/images/clients/Craftsvilla.png')}}" class="test-photo" alt="admin">
+{{--                <img src={{asset('assets/frontend/images/admin.webp')}} class="test-photo" alt="admin">--}}
               </div>
               <div class="col-md-9 col-9">
                 <p>
