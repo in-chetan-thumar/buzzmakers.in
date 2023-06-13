@@ -10,7 +10,8 @@
 
                 Well, here is ours
             </h1>
-            <a href={{route('frontend.contact')}} class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Get in Touch</a>
+
+            <a href="{{route('frontend.contact')}}" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Get in Touch</a>
             <div class="row w-100 img-container">
                 <div class="col-md-6">
                     <img src={{ asset('assets/frontend/images/OurWork/pot.svg') }} class="img-one" alt="pot">

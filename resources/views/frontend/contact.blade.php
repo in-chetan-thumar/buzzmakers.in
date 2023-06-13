@@ -19,7 +19,8 @@
 {{--                            touch to discuss--}}
 {{--                            your<br>--}}
 {{--                            project, request a quote or even<br> just to pick our brains.</h1><br>--}}
-                        <h1>We only love the buzz and traffic when <br>it is driving towards your business.<br>
+                        <h1 class="font-blue"><img src="{{ asset('assets/frontend/images/Contact/smiley.webp') }}" style="width:45px ;"
+                                 class="smiley" alt="">We only love the buzz and traffic when <br>it is driving towards your business.<br>
                             Let’s discuss the pathway?
                         </h1><br>
                         <div class="text-center btn-contact">
@@ -99,8 +100,8 @@
                                 'id' => 'contact-form',
                                 'files' => true,
                             ]) !!}
-                            <div class="mb-4 reveal">
-                                <h4>1.Tell us about your company</h4>
+                            <div class="mb-4 reveal ">
+                                <h4 class="text-white">1. Tell us about your company</h4>
                                 <div class="row">
                                     <div class="col-md-12">
                                         {{-- <input type="text" class="form-control" placeholder="Your Name"> --}}
@@ -142,7 +143,7 @@
                             </div>
 
                             <div class="mb-4 reveal">
-                                <h4>2.What are you looking to work on?</h4>
+                                <h4 class="text-white">2. What are you looking to work on?</h4>
                                 <div class="row">
                                     <div class="col-md-12">
                                         {{-- <input type="text" class="form-control" placeholder="Describe Your Project"> --}}
@@ -166,7 +167,7 @@
                                 </div>
                             </div>
                             <div class="mb-4 reveal">
-                                <h4>3.What Services ar you interested in?</h4>
+                                <h4 class="text-white">3. What Services ar you interested in?</h4>
                                 <div class="row">
                                     <div class="col-md-12">
                                         {!! Form::select('services', ['Option 1' => 'Option 1', 'Option 2' => 'Option 2', '3' => 'Option 3'], '', [
@@ -212,7 +213,7 @@
                                 </div>
                             </div>
                             <div class="mb-2 reveal">
-                                <h4>4.Schedule a call with our tech expert. Get a detailed tech consultation for
+                                <h4 class="text-white">4. Schedule a call with our tech expert. Get a detailed tech consultation for
                                     free!</h4>
                                 <div class="my-4 radio-date-container">
                                     <div id="radio-example" class="radio-date-scroll">

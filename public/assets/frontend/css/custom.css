@@ -245,7 +245,7 @@ h1 {
 .featured {
     background-color: var(--white-color);
     text-align: center;
-    padding: 60px 0;
+    padding: 0px 0;
     background-image: url(../images/file-1.webp), url(../images/speaker.webp);
     background-size: 15rem, 20rem;
     background-position: left 10% top -10%, right bottom;
@@ -394,7 +394,7 @@ h1 {
 .testimonials {
     background-image: url("../images/layer33.webp"), url("../images/layer333.webp"), url("../images/file-1copy.webp");
     background-size: 6rem, 4rem, 25rem;
-    background-position: top left 20%, bottom 5% right 40%, right -8% top;
+    background-position: top left 20%, bottom 1% right 40%, right -8% top;
 }
 .testimonials-content {
     position: relative;

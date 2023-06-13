@@ -46,8 +46,7 @@
                 <a href="#" class="text-white" style="display: none" id="lessfaqs">Less FAQs<i
                         class="bi bi-arrow-right ms-3"></i></a>
             </div>
-            <br><br><br><br><br>
-
+            <br><br>
             <div class="text-center mb-3 fw-bold faq-content  text-white">
                 <h2 class=" text-white">Now that you’ve scrolled to the bottom of the page,<br> we’d love to translate this conversion into a conversation.</h2>
 
