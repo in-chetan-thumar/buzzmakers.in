@@ -24,7 +24,7 @@
 
 <table cellpadding="10">
     <tr>
-        <td><img src="{{ asset('assets/images/signature/logo.svg') }}" class="logo" style="height: 90px">
+        <td><img src="http://lc.buzzmakers.in/assets/images/signature/logoold.png" class="logo" style="height: 90px">
 
         </td>
 
