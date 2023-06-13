@@ -755,7 +755,7 @@ h1 {
 }
 .img-container {
     position: relative;
-    margin-top: -5%;
+    /*margin-top: -5%;*/
 }
 .header-hero-section-work .img-one {
     width: 10%;
@@ -790,6 +790,12 @@ h1 {
 .content-pattern-img-ribbon img,
 .content-pattern-img-steps img {
     width: 50%;
+}
+.content-pattern-img-1 img  {
+    position: absolute;
+   width: 90px;
+    transform: rotate(35deg);
+    margin-top: 9%;
 }
 .content-pattern-img-ribbon {
     position: absolute;

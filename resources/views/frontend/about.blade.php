@@ -14,9 +14,14 @@
                     </div>
                     <div class="col-md-5">
                         <div class="pattern-about-page box-animate">
-                            <img src="{{ asset('assets/frontend/images/orange-ribbon.webp') }}" style="width:15% ; transform: rotate(35deg);"
-                             alt="orange-ribbon">
-                            <img src={{ asset('assets/frontend/images/top.webp') }} alt="about-top">
+{{--                            <img src="{{ asset('assets/frontend/images/orange-ribbon.webp') }}" style="width:15% ; transform: rotate(35deg);"--}}
+{{--                             alt="orange-ribbon">--}}
+                            <img src="{{ asset('assets/frontend/images/top.webp') }}" alt="about-top">
+                        </div>
+{{--                            <div class="content-pattern-img-1">--}}
+{{--                                <img src="{{ asset('assets/frontend/images/orange-ribbon.webp') }} "alt="orange-ribbon" >--}}
+{{--                            </div>--}}
+
                         </div>
                     </div>
                 </div>
