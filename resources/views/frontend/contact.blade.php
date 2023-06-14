@@ -56,12 +56,14 @@
                             <div class="mt-5 row">
                                 <div class="col-1">
                                     <div class="h-100 side-pattern-border">
-                                        <span class="dot-sign-one"><img src="images/Contact/dot.webp" style="width:18px ;"
+                                        <span class="dot-sign-one"><img src="{{asset('assets/frontend/images/Contact/dot.webp')}}" style="width:18px ;"
                                                 alt=""></span>
-                                        <span class="dot-sign-two"><img src="images/Contact/dot.webp" style="width:18px ;"
+                                        <span class="dot-sign-two"><img src="{{asset('assets/frontend/images/Contact/dot.webp')}}" style="width:18px ;"
                                                 alt=""></span>
-                                        <span class="dot-sign-three"><img src="images/Contact/dot.webp" style="width:18px ;"
+                                        <span class="dot-sign-three"><img src="{{asset('assets/frontend/images/Contact/dot.webp')}}" style="width:18px ;"
                                                 alt=""></span>
+                                        <span class="dot-sign-four"><img src="{{asset('assets/frontend/images/Contact/dot.webp')}}" style="width:18px ;"
+                                                                          alt=""></span>
                                     </div>
                                 </div>
                                 <div class="col-11">

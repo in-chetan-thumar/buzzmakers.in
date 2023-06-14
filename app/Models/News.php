@@ -16,6 +16,7 @@ class News extends Model
         'title',
         'description',
         'cover_photo',
+        'link',
         'created_at',
         'created_by',
         'updated_at',

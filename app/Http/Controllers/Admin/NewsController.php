@@ -79,7 +79,7 @@ class NewsController extends Controller
                     $params = [];
                     $params['title'] = $request->title;
                     $params['description'] = $request->description;
-
+                    $params['link']=$request->link;
                     $params['cover_photo'] = basename($request->file('image')->store($fileDir));
                     $page = resolve('news-repo')->store($params);
 
@@ -170,6 +170,7 @@ class NewsController extends Controller
 //            }
             $params = [];
             $params['title'] = $request->title;
+            $params['link']=$request->link;
             $params['description'] = $request->description;
             if ($request->has('image')) {
 

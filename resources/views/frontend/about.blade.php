@@ -13,14 +13,12 @@
                         </h1>
                     </div>
                     <div class="col-md-5">
-                        <div class="pattern-about-page box-animate">
-{{--                            <img src="{{ asset('assets/frontend/images/orange-ribbon.webp') }}" style="width:15% ; transform: rotate(35deg);"--}}
-{{--                             alt="orange-ribbon">--}}
-                            <img src="{{ asset('assets/frontend/images/top.webp') }}" alt="about-top">
+                        <div class="pattern-about-page ">
+                            <img src="{{ asset('assets/frontend/images/top.webp') }}" class="box-animate" alt="about-top">
                         </div>
-{{--                            <div class="content-pattern-img-1">--}}
-{{--                                <img src="{{ asset('assets/frontend/images/orange-ribbon.webp') }} "alt="orange-ribbon" >--}}
-{{--                            </div>--}}
+                            <div class="content-pattern-img-1">
+                                <img src="{{ asset('assets/frontend/images/orange-ribbon.webp') }} "alt="orange-ribbon"  >
+                            </div>
 
                         </div>
                     </div>
@@ -42,7 +40,7 @@
                     <div class="col-md-8 px-0">
                         <div class="about-content-yellow-bg reveal">
                             <div>
-                                <h1>Born to Leave an Impression, Raised with Experiences
+                                <h1 class="font-blue">Born to Leave an Impression, Raised with Experiences
                                 </h1>
                                 <p>
                                     Experiences from the grassroots of India, magnanimous dreams, and an insatiable<br> interest in stories that make brands vividly alive—this is what our leadership <br>team brought to the city some years ago. And this is also what forms <br>the backbone of Buzz Makers today.
@@ -102,7 +100,7 @@
                         alt="establishment-spring-arrow">
                 </div>
                 <div class="col-md-8 reveal">
-                    <h1> Making the Foundation, the Buzz, and Everything in Between
+                    <h1 class="font-blue"> Making the Foundation, the Buzz, and Everything in Between
                     </h1>
                     <p>
                         With a common love for personal storytelling, every team member here shares an interest in all the sweat  <br>and soul that make a business a buzzing one. We are known to take that very raw essence of a brand <br> and use that to break the ceiling and how! In a nutshell, by offering end-to-end digital marketing  <br>services, we not only lead your business in the right direction but also make that journey<br> count.  We believe that to create a buzz in the industry, you must have<br>  a strong digital presence that speaks before you do.

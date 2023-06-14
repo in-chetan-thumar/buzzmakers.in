@@ -29,6 +29,7 @@ class NewsRequest extends FormRequest
                 'title' => 'required',
                 'description' => 'required',
                 'image' => 'required',
+                'link'=>'required',
             ];
         }
 
@@ -36,6 +37,7 @@ class NewsRequest extends FormRequest
             'title' => 'required',
             'description' => 'required',
             'image' => 'nullable',
+            'link'=>'required',
         ];
     }
     // public function messages()

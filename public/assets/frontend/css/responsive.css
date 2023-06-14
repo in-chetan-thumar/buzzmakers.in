@@ -674,6 +674,13 @@
         right: 6rem;
         top: 4rem;
     }
+    .content-pattern-img-1   {
+        position: absolute;
+        width: 70px;
+        left: 20%;
+
+        margin-top: 11%;
+    }
     .about-header h1 {
         font-size: 1.3rem;
     }

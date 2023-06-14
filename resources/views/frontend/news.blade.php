@@ -34,7 +34,7 @@
                             <img src={{ asset("storage/images/news/$latestnews->cover_photo") }} class="w-100"
                                  alt="news1">
                             <p>{{ $latestnews->title }}</p>
-                            <a href="{{route('news.content',$latestnews->id)}}"><img
+                            <a href="{{ $latestnews->link }}"><img
                                     src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
                                     class="arrow-img"></a>
                         </a>
@@ -73,7 +73,8 @@
                     <div class="col-md-8">
                         <h3>{{ $news->title }}</h3>
                         <p>{{ Str::limit($news->description, 250) }}</p>
-                        <a href="{{route('news.content',$news->id)}}"><img
+
+                        <a href="{{ $news->link }}" target="_blank"><img
                                 src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
                                 class="arrow-img"></a>
                         {{--                        <p style="white-space: pre-line;">--}}

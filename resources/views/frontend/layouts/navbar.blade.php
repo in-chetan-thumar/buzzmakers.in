@@ -17,10 +17,10 @@
               <a class="nav-link" href={{route('frontend.about')}}>About Us</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false" disabled>
-                Services
-              </a>
+{{--              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"--}}
+{{--                aria-expanded="false" >--}}
+{{--                Services--}}
+{{--              </a>--}}
               <ul class="dropdown-menu">
                 <li class="arrow-up">
                   <div></div>
@@ -52,7 +52,7 @@
               <a class="nav-link" href={{route('frontend.news')}}>News & Media</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Careers</a>
+              <a class="nav-link" href="{{route('frontend.careers')}}">Careers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href={{route('frontend.contact')}}>Contact</a>

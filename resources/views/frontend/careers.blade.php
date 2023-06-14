@@ -12,7 +12,7 @@
                         alt="cross">
                 </div>
                 <div class="col-md-8">
-                    <h1 class="content-news fw-bold">It is a long established fact that<br> a reader will be Distracted</h1>
+                    <h1 class="content-news fw-bold font-blue">It is a long established fact that<br> a reader will be Distracted</h1>
                     <p>Our 95 designers, developers and strategists work from six creative hubs around the world. Our
                         indepedent
                         ownership and 40 year

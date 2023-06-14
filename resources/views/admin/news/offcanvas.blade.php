@@ -64,6 +64,22 @@
                 </div>
             </div>
         </div>
+            <div class="col-12">
+                <div class="mb-3">
+                    <div class="form-group">
+                        {!! Form::label('link', 'Link', ['style' => 'justify-content: right']) !!}<span class="required">*</span>
+                        {!! Form::text('link', isset($newsdata) ? $newsdata->link : old('link'), [
+                            'class' => 'form-control',
+                        ]) !!}
+                        @error('link')
+                        <span style="color:red">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+            </div>
+
         <div class="row">
             <div class="col-md-12">
                 {!! Form::submit('Submit', ['class' => 'btn btn-primary']) !!}
@@ -98,7 +114,7 @@
                         $('#status').hide();
                         $('#preloader').hide();
                         $(".divtable").html(data.view);
-                    
+
                         toastr.success(data.message);
                         let closeCanvas = document.querySelector('[data-bs-dismiss="offcanvas"]');
                         closeCanvas.click();
