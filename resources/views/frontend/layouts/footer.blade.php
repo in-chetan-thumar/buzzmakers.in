@@ -12,6 +12,7 @@
               <li><a href="{{route('frontend.about')}}">About Us</a></li>
               <li><a href="#">Case Studies</a></li>
               <li><a href="{{route('frontend.contact')}}">Contact</a></li>
+
             </ul>
           </div>
           <div class="social-icons text-end">

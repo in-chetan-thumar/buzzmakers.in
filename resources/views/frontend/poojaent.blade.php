@@ -2,7 +2,10 @@
 @section('title')
     Pooja
 @endsection
-
+@section('css')
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/poojaent.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/pooja-responsive.css') }}>
+@endsection
 @section('main')
 
     <!-- collpase menu for mobile start -->

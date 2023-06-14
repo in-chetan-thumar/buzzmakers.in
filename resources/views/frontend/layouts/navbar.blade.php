@@ -51,9 +51,9 @@
             <li class="nav-item">
               <a class="nav-link" href={{route('frontend.news')}}>News & Media</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{route('frontend.careers')}}">Careers</a>
-            </li>
+{{--            <li class="nav-item">--}}
+{{--              <a class="nav-link" href="{{route('frontend.careers')}}">Careers</a>--}}
+{{--            </li>--}}
             <li class="nav-item">
               <a class="nav-link" href={{route('frontend.contact')}}>Contact</a>
             </li>

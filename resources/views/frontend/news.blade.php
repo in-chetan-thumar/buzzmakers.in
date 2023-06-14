@@ -31,10 +31,12 @@
                 @foreach ($newsContent->take(3) as $latestnews)
                     <div class="col-md-4">
                         <a href="#">
+                            <a href="{{ $latestnews->link }}" target="_blank">
                             <img src={{ asset("storage/images/news/$latestnews->cover_photo") }} class="w-100"
                                  alt="news1">
+                            </a>
                             <p>{{ $latestnews->title }}</p>
-                            <a href="{{ $latestnews->link }}"><img
+                            <a href="{{ $latestnews->link }}" target="_blank"><img
                                     src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
                                     class="arrow-img"></a>
                         </a>
@@ -68,7 +70,9 @@
             @foreach ($newsContent->skip(3) as $news)
                 <div class="row mb-5">
                     <div class="col-md-4">
+                        <a href="{{ $news->link }}" target="_blank">
                         <img src={{ asset("storage/images/news/$news->cover_photo") }} class="w-100" alt="post1">
+                        </a>
                     </div>
                     <div class="col-md-8">
                         <h3>{{ $news->title }}</h3>

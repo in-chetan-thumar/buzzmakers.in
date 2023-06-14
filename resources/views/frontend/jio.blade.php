@@ -2,7 +2,10 @@
 @section('title')
     JioMeet
 @endsection
-
+@section('css')
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/jio.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/jio-responsive.css') }}>
+@endsection
 @section('main')
 
     <!-- section top header -->

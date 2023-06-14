@@ -2,7 +2,12 @@
 @section('title')
     Nutra Care
 @endsection
+@section('css')
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/nutra.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/nutra-responsive.css') }}>
 
+
+@endsection
 @section('main')
     {{-- <!-- collpase menu for mobile start -->
     <div class="collapse mobile-menu-area" id="buzzmenu">

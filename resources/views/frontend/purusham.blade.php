@@ -2,6 +2,12 @@
 @section('title')
     Purusham
 @endsection
+@section('css')
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/purusham.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/purusham-responsive.css') }}>
+
+@endsection
+
 
 @section('main')
     <div class="body-color">

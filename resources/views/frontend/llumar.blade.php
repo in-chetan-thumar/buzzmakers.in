@@ -2,7 +2,10 @@
 @section('title')
     Lumar
 @endsection
-
+@section('css')
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/lumar.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/lumar-responsive.css') }}>
+@endsection
 @section('main')
     <!-- collpase menu for mobile start -->
     {{-- <div class="collapse mobile-menu-area" id="buzzmenu">

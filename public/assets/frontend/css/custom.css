@@ -434,6 +434,7 @@ h1 {
 }
 .testimonial-box {
     padding: 20px 25px;
+    min-height: 235px;
 }
 .testimonial-box p {
     font-family: buzzlight !important;
@@ -442,7 +443,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     line-clamp: 3;
     -webkit-box-orient: vertical;
 }
@@ -541,7 +542,7 @@ h1 {
 }
 .accordion-item .accordion-body {
     padding-top: 0;
-    font-size: 14px;
+    font-size: 13px;
     color: var(--white-color);
 }
 .faq-content {
@@ -619,8 +620,9 @@ h1 {
     background-size: 10rem;
 }
 .featured-secondary-slider {
+    width: 80%;
     text-align: center;
-    padding: 100px 0;
+    /*padding: 100px 0;*/
     margin-top: 5%;
     /*background-image: url("../images/file-1copy.webp");*/
     background-size: 10rem;
@@ -1287,6 +1289,6 @@ h1 {
 .image-radius{
     border-radius: 25px;
 }
-.font-blue{
-    color: var(--blue);;
-}
+/*.font-blue{*/
+/*    color: var(--blue);;*/
+/*}*/

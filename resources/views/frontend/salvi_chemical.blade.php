@@ -2,7 +2,10 @@
 @section('title')
     Salvi Chemical
 @endsection
-
+@section('css')
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/salvi.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/salvi-responsive.css') }}>
+@endsection
 @section('main')
     {{-- <!-- collpase menu for mobile start -->
     <div class="collapse mobile-menu-area" id="buzzmenu">

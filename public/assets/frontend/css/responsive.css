@@ -355,9 +355,10 @@
     .featured {
         padding: 60px 0;
         background-color: var(--white-color);
-        background-image: url(../images/file-1.webp), url("../images/group-1.webp");
-        background-size: 8rem, 18rem;
-        background-position: left 10% top, right -120px top;
+        background-image: url(../images/file-1.webp), url(../images/speaker.webp);
+
+        background-size: 9rem, 15rem;
+        background-position: left 10% top, right -40px top;
     }
     .featured .hindi2 {
         margin-top: 20%;
@@ -372,9 +373,9 @@
     }
     .services {
         padding: 30px 0;
-        background-image: url("../images/mask-group-1.webp"), url("../images/mask-group-2.webp"), url("../imageleft-hand-star.webp");
+        background-image: url("../images/mask-group-1.webp"), url("../images/mask-group-2.webp"), url("../images/left-hand-with-star.webp");
         background-size: 6rem, 5rem, 10rem;
-        background-position: right -10% top 12%, left -5% bottom 35%, left -30% top 12%;
+        background-position: right -10% top 12%, left -5% bottom 35%, left -20% top 12%;
         background-repeat: no-repeat;
     }
     .faqs,
@@ -402,6 +403,20 @@
         position: static;
         margin: 0 auto;
         font-size: 0.8rem;
+    }.testimonial-box {
+         padding: 20px 25px;
+         min-height: 250px;
+     }
+    .testimonial-box p {
+        font-family: buzzlight !important;
+        font-size: 0.9rem;
+        border-bottom: 1px solid var(--gray);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
     }
     .testimonial-box .arrow-on-hover {
         display: inline-block;

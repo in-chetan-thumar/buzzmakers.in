@@ -205,7 +205,7 @@
                 <div>
                     <div class="careers-box mb-5 img-ui-icon-pen">
                         <div class="career-author">
-                            <label>Sr. Graphic Designer</label><br>
+                            <label>Sr. Graphic Designer </label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
                         <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
@@ -215,7 +215,7 @@
                 <div>
                     <div class="careers-box mb-5 img-ui-icon-camera">
                         <div class="career-author">
-                            <label>Sr. Social Media</label><br>
+                            <label>Sr. Social Media Manager</label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
                         <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
@@ -230,17 +230,6 @@
                             <span>3 to 4 Years Experience</span>
                         </div>
                         <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
-                        <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon"
-                            alt="title-point">
-                    </div>
-                </div>
-                <div>
-                    <div class="careers-box mb-5 img-ui-icon-camera">
-                        <div class="career-author">
-                            <label>Graphic Designer</label><br>
-                            <span>3 to 4 Years Experience</span>
-                        </div>
-                        <a href="#" class="btn btn-buzz">Apply Now</a>
                         <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon"
                             alt="title-point">
                     </div>

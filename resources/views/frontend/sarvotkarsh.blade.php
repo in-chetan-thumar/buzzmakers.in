@@ -2,6 +2,11 @@
 @section('title')webp
     Nutra Care
 @endsection
+@section('css')
+<link rel="stylesheet" href={{ asset('assets/frontend/profilescss/sarvotkarsh.css') }}>
+<link rel="stylesheet" href={{ asset('assets/frontend/profilescss/sarvotkarsh-responsive.css') }}>
+
+@endsection
 
 @section('main')
     {{-- <!-- collpase menu for mobile start -->
