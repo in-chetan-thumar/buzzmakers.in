@@ -124,7 +124,7 @@ class NewsController extends Controller
     {
         $data = [];
         try {
-            $newsdata = News::whereId($id)->select('id', 'title', 'description')->first();
+            $newsdata = News::whereId($id)->select('id', 'title','link', 'description')->first();
 
             $data['error'] = false;
             $data['view'] = view('admin.news.offcanvas', compact('newsdata'))->render();
