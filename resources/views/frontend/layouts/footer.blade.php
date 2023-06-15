@@ -28,4 +28,10 @@
     <div class="credits py-2">
       <label>Copyright &copy; BuzzMakers</label>
     </div>
-  </section>
+    <div class="wp-icon">
+        <a href="https://wa.link/t36hmg" target="_blank">
+{{--        <a href="https://wa.me/+919890393090" target="_blank">--}}
+            <img src="{{asset('assets/frontend/images/wp.png')}}" class="w-100" alt=""></a>
+    </div>
+
+</section>

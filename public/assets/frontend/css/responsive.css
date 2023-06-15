@@ -371,11 +371,12 @@
     .sliderfeature-secondary img {
         width: 60px;
     }
+
     .services {
         padding: 30px 0;
         background-image: url("../images/mask-group-1.webp"), url("../images/mask-group-2.webp"), url("../images/left-hand-with-star.webp");
         background-size: 6rem, 5rem, 10rem;
-        background-position: right -10% top 12%, left -5% bottom 35%, left -20% top 12%;
+        background-position: right -10% top 8%, left -5% bottom 33%, left -29% top 9%;
         background-repeat: no-repeat;
     }
     .faqs,
@@ -404,7 +405,7 @@
         margin: 0 auto;
         font-size: 0.8rem;
     }.testimonial-box {
-         padding: 20px 25px;
+         padding: 10px 10px;
          min-height: 250px;
      }
     .testimonial-box p {
@@ -414,10 +415,11 @@
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 5;
+        -webkit-line-clamp: 7;
         line-clamp: 3;
         -webkit-box-orient: vertical;
     }
+
     .testimonial-box .arrow-on-hover {
         display: inline-block;
     }
@@ -450,19 +452,25 @@
     }
     .footer-logo {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin-bottom: 5%;
+
+        gap: 30px;
     }
     .footer-menu {
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: start;
     }
     .footer-menu li {
-        padding: 0 1.5rem;
+        padding: 0 3rem;
+    }
+    .footer-menu li:last-child {
+        padding: 0 0rem;
     }
     .footer-logo img {
         width: 30%;
+        margin-left: 11%;
     }
     .social-icons {
         text-align: center !important;
@@ -470,6 +478,19 @@
         justify-content: center;
         gap: 4%;
         padding-left: 0;
+    }
+    .wp-icon{
+        width: 60px;
+        position: fixed;
+        right: 10px;
+        bottom:15px;
+        z-index: 10000;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+        padding:0px 20px;
+        transition: 0.3s;
     }
     .list-content {
         padding-left: 20%;
@@ -676,7 +697,7 @@
     }
     .about-header {
         background-color: var(--blue);
-        padding: 80px 0;
+        padding: 125px 0;
         text-align: center;
     }
     .section-description {
@@ -694,16 +715,17 @@
         width: 70px;
         left: 20%;
 
-        margin-top: 11%;
+        margin-top: 20%;
     }
     .about-header h1 {
         font-size: 1.3rem;
     }
     .about-content-yellow-bg {
         padding: 30px 0;
-        background-image: url("../images/About\ us/Path\ 45658.svg");
-        background-position: right center;
-        background-size: cover;
+        background-image: url("../images/Aboutus/blue_logo.png"),url("../images/Aboutus/Path\ 45658.svg");
+
+        background-position: top -4% left 6%,right center;
+        background-size: 5rem,cover;
         background-repeat: no-repeat;
     }
     .about-content-yellow-bg div {

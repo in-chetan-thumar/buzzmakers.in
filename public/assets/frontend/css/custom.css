@@ -427,7 +427,7 @@ h1 {
 .careers-box,
 .testimonial-box {
     border: 1px solid var(--gray);
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     box-shadow: 7px 7px 0 var(--yellow);
     transition: 0.5s;
@@ -539,11 +539,13 @@ h1 {
     border-radius: 7px !important;
     margin-bottom: 0;
     color: var(--white-color);
+    font-family:buzzlight;
 }
 .accordion-item .accordion-body {
     padding-top: 0;
     font-size: 13px;
     color: var(--white-color);
+    font-family:buzzlight;
 }
 .faq-content {
     margin-top: 8rem;
@@ -795,9 +797,9 @@ h1 {
 }
 .content-pattern-img-1 img  {
     position: absolute;
-   width: 70px;
+   height: 40px;
     transform: rotate(35deg);
-    margin-top: 9%;
+    margin-top: 10%;
 }
 .content-pattern-img-ribbon {
     position: absolute;
@@ -967,7 +969,7 @@ h1 {
 }
 .about-header {
     background-color: var(--blue);
-    padding: 80px 0;
+    padding: 130px 0;
 }
 .section-description {
     background: var(--yellow);
@@ -976,11 +978,11 @@ h1 {
 }
 .pattern-about-page img {
     position: absolute;
-    width: 20rem;
-    top: -2rem;
+    width: 25rem;
+    top: -4.7rem;
 }
 .about-center-section {
-    padding: 80px 0 0;
+    padding: 60px 0 0;
 }
 .about-content-yellow-bg {
     padding: 100px 0;
@@ -1235,14 +1237,26 @@ h1 {
 .social-icons a:hover {
     color: var(--yellow);
 }
+.social-icons{
+    display: flex;
+    justify-content: end;
+    gap:3rem;
+}
 .social-icons a {
     font-size: 1.2rem;
-    padding-left: 30px;
+    padding:0px 0px;
     transition: 0.3s;
 }
 .credits {
     text-align: center;
     background-color: var(--light-gray);
+}
+.wp-icon{
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10000;
 }
 
 @keyframes bounce {

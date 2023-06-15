@@ -87,9 +87,9 @@
       <li class="nav-item">
         <a class="nav-link" href={{route('frontend.contact')}}>Contact</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href={{route('frontend.blog')}}>Blogs</a>
-      </li>
+{{--      <li class="nav-item">--}}
+{{--        <a class="nav-link" href={{route('frontend.blog')}}>Blogs</a>--}}
+{{--      </li>--}}
       <li class="nav-item">
         <a class="nav-link" href={{route('frontend.news')}}>News</a>
       </li>
