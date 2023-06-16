@@ -43,7 +43,7 @@
                                 <h1 class="font-blue">Born to Leave an Impression, Raised with Experiences
                                 </h1>
                                 <p>
-                                    Experiences from the grassroots of India, magnanimous dreams, and an insatiable<br> interest in stories that make brands vividly alive—this is what our leadership <br>team brought to the city some years ago. And this is also what forms <br>the backbone of Buzz Makers today.
+                                    Experiences from the grassroots of India, magnanimous dreams, and an insatiable interest in stories that make brands vividly alive—this is what our leadership team brought to the city some years ago. And this is also what forms the backbone of Buzz Makers today.
 
 {{--                                    <br><br>--}}
 {{--                                    Our 95 designers, developers and strategists work from six creative hubs around--}}
@@ -103,8 +103,11 @@
                     <h1 class="font-blue"> Making the Foundation, the Buzz, and Everything in Between
                     </h1>
                     <p>
-                        With a common love for personal storytelling, every team member here shares an interest in all the sweat  <br>and soul that make a business a buzzing one. We are known to take that very raw essence of a brand <br> and use that to break the ceiling and how! In a nutshell, by offering end-to-end digital marketing  <br>services, we not only lead your business in the right direction but also make that journey<br> count.  We believe that to create a buzz in the industry, you must have<br>  a strong digital presence that speaks before you do.
+                        With a common love for personal storytelling, every team member here shares an interest in all the sweat  and soul that make a business a buzzing one. We are known to take that very raw essence of a brand  and use that to break the ceiling and how! In a nutshell, by offering end-to-end digital marketing  services, we not only lead your business in the right direction but also make that journey count.  We believe that to create a buzz in the industry, you must have a strong digital presence that speaks before you do.
                     </p>
+{{--                    <p>--}}
+{{--                        With a common love for personal storytelling, every team member here shares an interest in all the sweat  <br>and soul that make a business a buzzing one. We are known to take that very raw essence of a brand <br> and use that to break the ceiling and how! In a nutshell, by offering end-to-end digital marketing  <br>services, we not only lead your business in the right direction but also make that journey<br> count.  We believe that to create a buzz in the industry, you must have<br>  a strong digital presence that speaks before you do.--}}
+{{--                    </p>--}}
 {{--                    <p>Our 95 designers, developers and strategists work from six creative hubs around the<br> world.--}}
 {{--                        Our independent ownership and 40 year heritage of transforming--}}
 {{--                        brands<br> and business, center around collaboration, a personal approach, unbiased<br>--}}

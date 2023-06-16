@@ -48,7 +48,7 @@
             </div>
             <br><br>
             <div class="text-center mb-3 fw-bold faq-content  text-white">
-                <h2 class=" text-white">Now that you’ve scrolled to the bottom of the page,<br> we’d love to translate this conversion into a conversation.</h2>
+                <h2 class=" text-white">Now that you’ve scrolled to the bottom of the page, we’d love to translate this conversion into a conversation.</h2>
 
                 <h2 class=" text-white">Let’s talk!</h2>
 {{--                <h2>Now that you've scrolled to the bottom of the page.</h2>--}}

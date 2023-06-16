@@ -9,6 +9,7 @@ use App\Models\Page;
 use Illuminate\Http\Request;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\SEOTools;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -77,17 +78,22 @@ class ContactController extends Controller
             $params['services'] = $request->services;
             $params['competitors'] = $request->competitors;
             $params['reference'] = $request->reference;
-            // if ($request->file('documents')) {               
+            // if ($request->file('documents')) {
             //     $params['documents'] = $name;
             // }
             $params['schedule_date'] = $request->schedule_date;
             $params['timezone'] = $request->timezone;
             $params['schedule_time'] = $request->schedule_time;
 
-            $page = Contact::create($params);
+            $contact = Contact::create($params);
 
-            if (!empty($page)) {
+            if (!empty($contact)) {
 
+                $params = [];
+
+                $params['contact_details'] = view('email.SendMail', compact('contact'))->render();
+                //dd($params);
+                Mail::send(new \App\Mail\ContactMailNotification($params));
                 $data['error'] = false;
                 toastr()->success('Your query has been submitted successfully!');
                 DB::commit();

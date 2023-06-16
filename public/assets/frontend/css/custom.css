@@ -548,11 +548,19 @@ h1 {
     font-family:buzzlight;
 }
 .faq-content {
+    margin: 0 auto;
     margin-top: 8rem;
+    /*word-wrap: break-word !important;*/
+    max-width: 80%;
 }
 .faqs-secondary {
     margin-top: 50px;
     position: relative;
+}
+.faq-content-blog{
+    margin: 0 auto;
+
+    max-width: 80%;
 }
 .oneside-speaker-img-pc {
     position: absolute;
@@ -776,7 +784,9 @@ h1 {
     color: var(--white-color);
     font-family: buzzbold;
     text-align: center;
-    padding-top: 6%;
+    padding-top: 6% ;
+    padding-right: 14%;
+    padding-left: 14%;
 }
 .center-content {
     padding-bottom: 100px;
@@ -854,12 +864,12 @@ h1 {
 }
 .contact-left-side-content .side-pattern-border .dot-sign-one {
     position: absolute;
-    top: -5px;
+    top: -3px;
     left: -8px;
 }
 .contact-left-side-content .side-pattern-border .dot-sign-two {
     position: absolute;
-    top: 8rem;
+    top: 7.9rem;
     left: -8px;
 }
 .contact-left-side-content .side-pattern-border .dot-sign-three {
@@ -869,7 +879,7 @@ h1 {
 }
 .contact-left-side-content .side-pattern-border .dot-sign-four {
     position: absolute;
-    top: 23.5rem;
+    top: 23.4rem;
     left: -8px;
 }
 .contact-right-side-content {
@@ -1013,6 +1023,13 @@ h1 {
 }
 .center-content-news {
     margin-top: -13rem;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.center-content-news-second{
+    margin-right: 15px;
+    margin-left: 15px;
+
 }
 .center-content-news p {
     margin-top: 3%;
@@ -1294,6 +1311,18 @@ h1 {
     height: 500px;
 
 }
+select.one {
+    border: 1px solid #ccc;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='0,0 100,0 50,50'/></svg>")
+    no-repeat;
+    background-color: #ccc;
+}
+select.one {
+    background-size: 10px;
+    background-position: calc(100% - 20px) 17px;
+    background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 1200px) {
     .image-width{
         height: 180px;

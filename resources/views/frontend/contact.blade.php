@@ -20,18 +20,18 @@
 {{--                            your<br>--}}
 {{--                            project, request a quote or even<br> just to pick our brains.</h1><br>--}}
                         <h1 class="font-blue"><img src="{{ asset('assets/frontend/images/Contact/smiley.webp') }}" style="width:45px ;"
-                                 class="smiley" alt="">We only love the buzz and traffic when <br>it is driving towards your business.<br>
+                                 class="smiley" alt="">We only love the buzz and traffic when it is driving towards your business.
                             Let’s discuss the pathway?
                         </h1><br>
                         <div class="text-center btn-contact">
-                            <a href={{ route('frontend.contact') }} class="btn btn-buzz-connect-blue">Let's Connect</a>
+                            <a href="{{ route('frontend.contact') }}" class="btn btn-buzz-connect-blue" target="_blank">Let's Connect</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="pattern-contact-page">
                             <img src={{ asset('assets/frontend/images/Blogs/cross.svg') }} style="width:10% ;"
                                 class="pat-1" alt="cross">
-                            <img src={{ asset('assets/frontend/images/orange-ribbon.webp') }} style="width:30% ;"
+                            <img src="{{ asset('assets/frontend/images/orange-ribbon.webp') }}" style="width:30% ;"
                                 class="mt-5 pat-2" alt="orange-ribbon">
                         </div>
                     </div>
@@ -68,25 +68,25 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="mb-5">
-                                        <h5>1.Tell Us About You</h5>
+                                        <h5>1. Tell Us About You</h5>
                                         <p>Share a little about yourself, your business, and your goals with us.
                                         </p>
                                     </div>
                                     <div class="mb-5">
-                                        <h5>2.Schedule a Call
+                                        <h5>2. Schedule a Call
                                         </h5>
                                         <p>Our team will hop on a detailed call with you to dig deeper into your marketing needs and goals.
 
                                         </p>
                                     </div>
                                     <div>
-                                        <h5>3.Seal the Deal
+                                        <h5>3. Seal the Deal
                                         </h5>
                                         <p>A few more discussions until we all are convinced of the action plan. Next thing, we just put them in motion with a contract.
                                         </p>
                                     </div>
                                     <div>
-                                        <h5>4.Feel the Buzz
+                                        <h5>4. Feel the Buzz
                                         </h5>
                                         <p>Once you seal the deal, you sit back as our team moves things around to lead your business into the limelight. </p>
                                     </div>
@@ -169,11 +169,11 @@
                                 </div>
                             </div>
                             <div class="mb-4 reveal">
-                                <h4 class="text-white">3. What Services ar you interested in?</h4>
+                                <h4 class="text-white">3. What Services are you interested in?</h4>
                                 <div class="row">
                                     <div class="col-md-12">
                                         {!! Form::select('services', ['Option 1' => 'Option 1', 'Option 2' => 'Option 2', '3' => 'Option 3'], '', [
-                                            'class' => 'form-control dd',
+                                            'class' => 'form-control  dd  one',
                                         ]) !!}
                                         <span class="text-danger" style="font-size:15px">
                                             @error('services')
@@ -252,21 +252,21 @@
                                 </div>
                                 <div class="row">
                                     <label>Time Zone</label>
-                                    <div class="col-md-4">
-                                        {!! Form::select('timezone', ['EST' => 'EST', 'IST' => 'IST', '31' => 'Option3'], null, [
-                                            'class' => 'form-control dd',
+                                    <div class="col-md-4 contact-timezone-dropdown">
+                                        {!! Form::select('timezone', [ 'IST' => 'IST','EST' => 'EST', '31' => 'Option3'], null, [
+                                            'class' => 'form-control dd form-select one',
                                         ]) !!}
                                     </div>
                                     <div class="col-md-8">
                                         {!! Form::select(
                                             'schedule_time',
                                             [
-                                                '10:00AM-12:00PM' => 'Scheduled at - 10:00AM to 12:00PM',
-                                                '01:00PM-03:00PM' => 'Scheduled at - 01:00PM to 03:00PM',
+                                                '10:00AM-12:00PM' => 'Schedule at - 10:00AM to 12:00PM',
+                                                '01:00PM-03:00PM' => 'Schedule at - 01:00PM to 03:00PM',
                                                 '3' => 'Scheduled at - 04:00PM to 06:00PM',
                                             ],
                                             null,
-                                            ['class' => 'form-control dd'],
+                                            ['class' => 'form-control dd form-select one'],
                                         ) !!}
                                     </div>
                                 </div>

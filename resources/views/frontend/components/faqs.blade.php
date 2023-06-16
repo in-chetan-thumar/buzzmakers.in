@@ -108,7 +108,7 @@
         </div> -->
 
       <div class="text-center text-white mb-3 fw-bold faq-content-blog reveal">
-          <h2 class=" text-white">Now that you have seen some of our work in action, </br> here is a call to action to kickstart your journey with us.</h2>
+          <h2 class=" text-white">Now that you have seen some of our work in action, here is a call to action to kickstart your journey with us.</h2>
 
           <h2 class=" text-white">Let’s talk!</h2>
 

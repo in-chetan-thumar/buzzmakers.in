@@ -26,7 +26,7 @@
     <!-- center content -->
     <section class="center-content-news">
         <div class="container mt-5">
-            <h1 class="text-black">Latest News</h1>
+            <h1 class="text-black text-mb-center">Latest News</h1>
             <div class="row g-3">
                 @foreach ($newsContent->take(3) as $latestnews)
                     <div class="col-md-4">
@@ -65,7 +65,7 @@
     <!-- center content -->
     <section class="center-content-news-second reveal">
         <div class="container mt-5">
-            <h1 class="text-black">Recent Posts</h1>
+            <h1 class="text-black text-mb-center">Recent Posts</h1>
 
             @foreach ($newsContent->skip(3) as $news)
                 <div class="row mb-5">
@@ -81,14 +81,7 @@
                         <a href="{{ $news->link }}" target="_blank"><img
                                 src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
                                 class="arrow-img"></a>
-                        {{--                        <p style="white-space: pre-line;">--}}
-                        {{--                            {{ Str::limit($news->description, 250) }}--}}
-                        {{--                            @if (strlen($news->description) > 100)--}}
-                        {{--                                <span id="dots-{{$news->id}}"></span>--}}
-                        {{--                                <span id="more-{{$news->id}}" style="display: none;">{{ substr($news->description, 100) }}</span>--}}
-                        {{--                            @endif--}}
-                        {{--                        </p>--}}
-                        {{--                        <button onclick="myFunction({{$news->id}})" id="myBtn"  >Read more</button>--}}
+
                     </div>
                 </div>
 

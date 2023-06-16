@@ -45,9 +45,9 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href={{route('frontend.work')}}>Our Work</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
-            </li>
+{{--            <li class="nav-item">--}}
+{{--              <a class="nav-link" href="#">Blogs</a>--}}
+{{--            </li>--}}
             <li class="nav-item">
               <a class="nav-link" href={{route('frontend.news')}}>News & Media</a>
             </li>

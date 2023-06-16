@@ -6,17 +6,17 @@
     <!-- section header-image -->
     <section class="header-hero-section-work">
         <div class="container text-center responsive-container">
-            <h1 class="content-work">What’s a commitment without action,<br> and what’s a pitch without proof?<br>
+            <h1 class="content-work">What’s a commitment without action, and what’s  a pitch without proof?
 
                 Well, here is ours
             </h1>
 
-            <a href="{{route('frontend.contact')}}" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Contact Us</a>
+            <a href="{{route('frontend.contact')}}" class="btn btn-buzz mt-2" style="padding: 7px 20px !important" target="_blank">Contact Us</a>
             <div class="row w-100 img-container">
-                <div class="col-md-6">
-                    <img src={{ asset('assets/frontend/images/OurWork/pot.svg') }} class="img-one" alt="pot">
+                <div class="col-6">
+                    <img src={{ asset('assets/frontend/images/Banner_pot.svg') }} class="img-one" alt="pot">
                 </div>
-                <div class="col-md-6">
+                <div class="col-6">
                     <img src={{ asset('assets/frontend/images/OurWork/work-header.svg') }} class="img-two box-animate"
                         alt="work-header">
                 </div>

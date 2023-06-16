@@ -1,7 +1,22 @@
+/*@media screen and (max-device-width: 1500px) {*/
+/*    .faq-content {*/
+/*        word-wrap: break-word !important;*/
+/*        max-width: 67%;*/
+/*        margin-top: 4rem;*/
+
+/*    }*/
+/*}*/
+
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     body {
         max-width: 100%;
     }
+    /*.faq-content {*/
+    /*    word-wrap: break-word !important;*/
+    /*    max-width: 70%;*/
+    /*    margin-top: 10rem;*/
+
+    /*}*/
     .testimonials-content p {
         position: relative;
         margin: 0 auto;
@@ -23,8 +38,8 @@
         font-family: buzzbold;
         background-image: url("../images/group-1.webp");
         background-repeat: no-repeat;
-        background-position: right 10% bottom;
-        background-size: 23%;
+        background-position: right 0% top 31rem;
+        background-size: 26%;
     }
     .ind-tab-details .img-tabs-pattern {
         bottom: 35px;
@@ -65,14 +80,34 @@
         width: 1rem;
         margin-left: 12.4rem;
     }
+
 }
 @media only screen and (max-width: 992px) {
+
+    .text-mb-center{
+        text-align: center;
+    }
+
     .faqs,
     .featured,
     .home-header,
     .mobile-menu-area {
         background-repeat: no-repeat;
     }
+    .faq-content {
+        word-wrap: break-word !important;
+        max-width: 80%;
+    }
+    .faqs {
+        padding: 50px 0;
+        background-color: var(--blue);
+        font-family: buzzbold;
+        background-image: url("../images/group-1.webp");
+        background-repeat: no-repeat;
+        background-position: right -10% top 34rem;
+        background-size: 39%;
+    }
+
     .mobile-nav {
         display: flex;
         margin-bottom: 1rem;
@@ -162,21 +197,30 @@
         background-size: 8rem, 25rem;
         background-position: left 10% top, right -150px top;
     }
-    .faqs {
-        padding: 50px 0;
-        background-color: var(--blue);
-        font-family: buzzbold;
-        background-image: url("../images/group-1.webp");
-        background-position: right -2% bottom;
-        background-size: 35%;
-    }
+
 }
 @media only screen and (max-width: 768px) {
+    .header-hero-section-work .img-one {
+        width: 20%;
+        position: absolute;
+        bottom: -46px;
+        left: 10%;
+    }
+    .header-hero-section-work .img-two {
+        width: 125%;
+        position: relative;
+        bottom: -40px;
+    }
     .faqs,
     .featured,
     .home-header {
         background-repeat: no-repeat;
     }
+    .faq-content {
+        word-wrap: break-word !important;
+
+    }
+
     .home-header {
         height: 350px;
         background-image: url("../images/Path\ 1.svg"), url(../images/file0.webp), url("../images/layer32.webp");
@@ -210,6 +254,7 @@
     h1 {
         font-size: 1.7rem;
     }
+
     .list-content,
     .navbar-toggler,
     .why-content label,
@@ -306,7 +351,7 @@
     .contact-left-side-content,
     .content-pattern-img-steps,
     .desktop-menu,
-    .img-container,
+    /*.img-container,*/
     .oneside-speaker-img-pc,
     .pc-case-study,
     .pc-process,
@@ -321,6 +366,7 @@
     .mobile-case-study {
         display: block;
     }
+
     .case-studies {
         padding: 50px 0;
         background-color: var(--blue);
@@ -591,6 +637,8 @@
         text-align: center;
         padding-top: 22%;
         font-size: 1.5rem;
+        padding-right: 5%;
+        padding-left: 5%;
     }
     .contact-header h1,
     .content-blog {
@@ -605,9 +653,9 @@
     }
     .oneside-speaker-img-mobile {
         position: absolute;
-        top: -35%;
+        top: -31%;
         right: 0;
-        width: 12.6rem;
+        width: 11rem;
         display: block;
     }
     .content-pattern-img-ribbon {
@@ -722,11 +770,13 @@
     }
     .about-content-yellow-bg {
         padding: 30px 0;
+
         background-image: url("../images/Aboutus/blue_logo.png"),url("../images/Aboutus/Path\ 45658.svg");
 
         background-position: top -4% left 6%,right center;
         background-size: 5rem,cover;
         background-repeat: no-repeat;
+
     }
     .about-content-yellow-bg div {
         margin-left: 1rem;
@@ -736,10 +786,12 @@
     .about-content-yellow-bg p {
         font-family: buzzlight;
         margin-top: 30px;
+        max-width: 95%;
     }
     .descriptive-content {
         padding: 50px 0;
         text-align: center;
+        margin: 0px 10px 0px 10px;
     }
     .section-description {
         background: var(--yellow);

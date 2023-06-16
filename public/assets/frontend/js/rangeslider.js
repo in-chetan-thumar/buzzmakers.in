@@ -78,7 +78,7 @@ var rangeSlider = $("#facet-price-range-slider");
 0 < rangeSlider.length && rangeSlider.RangeSlider({
     output: {
         format: function (t) {
-            return t.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "₹";
+            return "₹" + t.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") ;
         }, suffix: function (t) {
             return t == parseInt($(t).attr("max")) ? this.config.maxSymbol : ""
         }
