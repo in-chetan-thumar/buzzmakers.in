@@ -82,12 +82,13 @@
               </div>
               <div class="col-md-9 col-9">
                 <p>
-                  Krishnaa and his team at Buzz Makers understand how to turn
+                  Krishna and his team at BuzzMakers understand how to turn
                   marketing objectives into creatives that deliver; we
                   associated with the agency for a range of requirements that
-                  included Print Ads, Campaign Landing pages, retailers, and
-                  social media creatives. Despite the volume of work, the quick
-                  turnaround time is also very commendable.
+                  included Print Ads,Campaign Landing pages, retailers, and
+                  social media creatives.
+{{--                    Despite the volume of work, the quick--}}
+{{--                  turnaround time is also very commendable.--}}
                 </p>
                 <div class="testimonial-author">
                   <label>Parvathy Raja</label><br >
