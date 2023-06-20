@@ -38,7 +38,7 @@
         font-family: buzzbold;
         background-image: url("../images/group-1.webp");
         background-repeat: no-repeat;
-        background-position: right 0% top 31rem;
+        background-position: right 100%;
         background-size: 26%;
     }
     .ind-tab-details .img-tabs-pattern {
@@ -404,7 +404,7 @@
         background-image: url(../images/file-1.webp), url(../images/speaker.webp);
 
         background-size: 9rem, 15rem;
-        background-position: left 10% top, right -40px top;
+        background-position: left 10% top, right -85px top;
     }
     .featured .hindi2 {
         margin-top: 20%;

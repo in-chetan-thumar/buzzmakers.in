@@ -879,7 +879,7 @@ h1 {
 }
 .contact-left-side-content .side-pattern-border .dot-sign-four {
     position: absolute;
-    top: 23.4rem;
+    top: 25.4rem;
     left: -8px;
 }
 .contact-right-side-content {
@@ -969,7 +969,7 @@ h1 {
     background-image: url("../images/Contact/Group\ 5517.svg");
     background-repeat: no-repeat;
     background-size: 14%;
-    background-position: left 20% bottom;
+    background-position: left 13% bottom;
 }
 .box-address {
     background: var(--white-color);

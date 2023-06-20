@@ -14,25 +14,28 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-{{--                        <h1><img src="{{ asset('assets/frontend/images/Contact/smiley.webp') }}" style="width:45px ;"--}}
-{{--                                class="smiley" alt=""> Get in--}}
-{{--                            touch to discuss--}}
-{{--                            your<br>--}}
-{{--                            project, request a quote or even<br> just to pick our brains.</h1><br>--}}
-                        <h1 class="font-blue"><img src="{{ asset('assets/frontend/images/Contact/smiley.webp') }}" style="width:45px ;"
-                                 class="smiley" alt="">We only love the buzz and traffic when it is driving towards your business.
+                        {{--                        <h1><img src="{{ asset('assets/frontend/images/Contact/smiley.webp') }}" style="width:45px ;"--}}
+                        {{--                                class="smiley" alt=""> Get in--}}
+                        {{--                            touch to discuss--}}
+                        {{--                            your<br>--}}
+                        {{--                            project, request a quote or even<br> just to pick our brains.</h1><br>--}}
+                        <h1 class="font-blue"><img src="{{ asset('assets/frontend/images/Contact/smiley.webp') }}"
+                                                   style="width:45px ;"
+                                                   class="smiley" alt="">We only love the buzz and traffic when it is
+                            driving towards your business.
                             Let’s discuss the pathway?
                         </h1><br>
                         <div class="text-center btn-contact">
-                            <a href="{{ route('frontend.contact') }}" class="btn btn-buzz-connect-blue" target="_blank">Let's Connect</a>
+                            <a href="{{ route('frontend.contact') }}" class="btn btn-buzz-connect-blue" target="_blank">Let's
+                                Connect</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="pattern-contact-page">
                             <img src={{ asset('assets/frontend/images/Blogs/cross.svg') }} style="width:10% ;"
-                                class="pat-1" alt="cross">
+                            class="pat-1" alt="cross">
                             <img src="{{ asset('assets/frontend/images/orange-ribbon.webp') }}" style="width:30% ;"
-                                class="mt-5 pat-2" alt="orange-ribbon">
+                                 class="mt-5 pat-2" alt="orange-ribbon">
                         </div>
                     </div>
                 </div>
@@ -56,14 +59,22 @@
                             <div class="mt-5 row">
                                 <div class="col-1">
                                     <div class="h-100 side-pattern-border">
-                                        <span class="dot-sign-one"><img src="{{asset('assets/frontend/images/Contact/dot.webp')}}" style="width:18px ;"
+                                        <span class="dot-sign-one"><img
+                                                src="{{asset('assets/frontend/images/Contact/dot.webp')}}"
+                                                style="width:18px ;"
                                                 alt=""></span>
-                                        <span class="dot-sign-two"><img src="{{asset('assets/frontend/images/Contact/dot.webp')}}" style="width:18px ;"
+                                        <span class="dot-sign-two"><img
+                                                src="{{asset('assets/frontend/images/Contact/dot.webp')}}"
+                                                style="width:18px ;"
                                                 alt=""></span>
-                                        <span class="dot-sign-three"><img src="{{asset('assets/frontend/images/Contact/dot.webp')}}" style="width:18px ;"
+                                        <span class="dot-sign-three"><img
+                                                src="{{asset('assets/frontend/images/Contact/dot.webp')}}"
+                                                style="width:18px ;"
                                                 alt=""></span>
-                                        <span class="dot-sign-four"><img src="{{asset('assets/frontend/images/Contact/dot.webp')}}" style="width:18px ;"
-                                                                          alt=""></span>
+                                        <span class="dot-sign-four"><img
+                                                src="{{asset('assets/frontend/images/Contact/dot.webp')}}"
+                                                style="width:18px ;"
+                                                alt=""></span>
                                     </div>
                                 </div>
                                 <div class="col-11">
@@ -75,20 +86,25 @@
                                     <div class="mb-5">
                                         <h5>2. Schedule a Call
                                         </h5>
-                                        <p>Our team will hop on a detailed call with you to dig deeper into your marketing needs and goals.
+                                        <p>Our team will hop on a detailed call with you to dig deeper into your
+                                            marketing needs and goals.
 
                                         </p>
                                     </div>
-                                    <div>
+                                    <div class="mb-5">
                                         <h5>3. Seal the Deal
                                         </h5>
-                                        <p>A few more discussions until we all are convinced of the action plan. Next thing, we just put them in motion with a contract.
+                                        <p>A few more discussions until we all are convinced of the action plan. Next
+                                            thing, we just put them in motion with a contract.
+
+
                                         </p>
                                     </div>
-                                    <div>
+                                    <div class="mb-5">
                                         <h5>4. Feel the Buzz
                                         </h5>
-                                        <p>Once you seal the deal, you sit back as our team moves things around to lead your business into the limelight. </p>
+                                        <p>Once you seal the deal, you sit back as our team moves things around to lead
+                                            your business into the limelight. </p>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +126,7 @@
                                         {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Your Name']) !!}
                                         <span class="text-danger" style="font-size:15px ; margin-top:0">
                                             @error('name')
-                                                {{ $message }}
+                                            {{ $message }}
                                             @enderror
                                         </span>
                                     </div>
@@ -119,7 +135,7 @@
                                         {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Your Email']) !!}
                                         <span class="text-danger" style="font-size:15px ; margin-top:3">
                                             @error('email')
-                                                {{ $message }}
+                                            {{ $message }}
                                             @enderror
                                         </span>
                                     </div>
@@ -128,7 +144,7 @@
                                         {!! Form::tel('phone', null, ['class' => 'form-control', 'placeholder' => 'Your Phone Number']) !!}
                                         <span class="text-danger" style="font-size:15px">
                                             @error('phone')
-                                                {{ $message }}
+                                            {{ $message }}
                                             @enderror
                                         </span>
                                     </div>
@@ -137,7 +153,7 @@
                                         {!! Form::text('website', null, ['class' => 'form-control', 'placeholder' => 'Company Website']) !!}
                                         <span class="text-danger" style="font-size:15px">
                                             @error('website')
-                                                {{ $message }}
+                                            {{ $message }}
                                             @enderror
                                         </span>
                                     </div>
@@ -152,7 +168,7 @@
                                         {!! Form::text('project', null, ['class' => 'form-control', 'placeholder' => 'Describe Your Project']) !!}
                                         <span class="text-danger" style="font-size:15px">
                                             @error('project')
-                                                {{ $message }}
+                                            {{ $message }}
                                             @enderror
                                         </span>
                                     </div>
@@ -161,9 +177,9 @@
                                         {{ Form::label('What\'s Your Budget') }}
                                         <section class="range-slider" id="facet-price-range-slider">
                                             <input name="range1" value="3000" min="3000" max="50000"
-                                                step="1" type="range">
+                                                   step="1" type="range">
                                             <input name="range2" value="50000" min="0" max="50000"
-                                                step="1" type="range">
+                                                   step="1" type="range">
                                         </section>
                                     </div>
                                 </div>
@@ -172,12 +188,12 @@
                                 <h4 class="text-white">3. What Services are you interested in?</h4>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        {!! Form::select('services', ['Option 1' => 'Option 1', 'Option 2' => 'Option 2', '3' => 'Option 3'], '', [
+                                        {!! Form::select('services', config('constants.SERVICE'), '', [
                                             'class' => 'form-control  dd  one',
                                         ]) !!}
                                         <span class="text-danger" style="font-size:15px">
                                             @error('services')
-                                                {{ $message }}
+                                            {{ $message }}
                                             @enderror
                                         </span>
                                     </div>
@@ -188,7 +204,7 @@
                                         ]) !!}
                                         <span class="text-danger" style="font-size:15px">
                                             @error('competitors')
-                                                {{ $message }}
+                                            {{ $message }}
                                             @enderror
                                         </span>
                                     </div>
@@ -199,7 +215,7 @@
                                         ]) !!}
                                         <span class="text-danger" style="font-size:15px">
                                             @error('reference')
-                                                {{ $message }}
+                                            {{ $message }}
                                             @enderror
                                         </span>
                                     </div>
@@ -208,14 +224,15 @@
                                         {!! Form::file('documents', ['class' => 'form-control d-none', 'id' => 'inputGroupFile01']) !!}
                                         <span class="text-danger" style="font-size:15px">
                                             @error('documents')
-                                                {{ $message }}
+                                            {{ $message }}
                                             @enderror
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-2 reveal">
-                                <h4 class="text-white">4. Schedule a call with our tech expert. Get a detailed tech consultation for
+                                <h4 class="text-white">4. Schedule a call with our tech expert. Get a detailed tech
+                                    consultation for
                                     free!</h4>
                                 <div class="my-4 radio-date-container">
                                     <div id="radio-example" class="radio-date-scroll">
@@ -230,7 +247,7 @@
 
 
                                             <label class="radioselect" for={{ 'radio' . $radioId }}>
-                                                <span>{{ $date->format('D') }}</span><br />
+                                                <span>{{ $date->format('D') }}</span><br/>
                                                 <b>{{ $date->format('M d') }}</b>
                                                 {{ Form::radio('schedule_date', $value, false, ['id' => 'radio' . $radioId]) }}
                                             </label>
@@ -238,7 +255,7 @@
 
                                         <span class="text-danger" style="font-size:15px">
                                             @error('schedule_date')
-                                                {{ $message }}
+                                            {{ $message }}
                                             @enderror
                                         </span>
                                         {{-- <label class="radioselect" for="radio8">
@@ -253,9 +270,11 @@
                                 <div class="row">
                                     <label>Time Zone</label>
                                     <div class="col-md-4 contact-timezone-dropdown">
-                                        {!! Form::select('timezone', [ 'IST' => 'IST','EST' => 'EST', '31' => 'Option3'], null, [
-                                            'class' => 'form-control dd form-select one',
-                                        ]) !!}
+                                        {!! Form::label('IST','IST' ,['class' => 'form-control dd ']) !!}
+                                        <input type="hidden" name="timezone" value="IST">
+{{--                                        {!! Form::select('timezone', [ 'IST' => 'IST','EST' => 'EST', '31' => 'Option3'], null, [--}}
+{{--                                            'class' => 'form-control dd form-select one',--}}
+{{--                                        ]) !!}--}}
                                     </div>
                                     <div class="col-md-8">
                                         {!! Form::select(
@@ -300,7 +319,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="box-address">
                         <h5>Nagpur</h5>
                         <p class="mb-0">Buzz Markers, Above Panino,<br>
@@ -327,7 +346,7 @@
 @endsection
 @section('script')
     <script>
-        $(".radioselect").click(function() {
+        $(".radioselect").click(function () {
             $(".radioselect").removeClass("radioselect-yellow");
             $(this).addClass("radioselect-yellow");
         });

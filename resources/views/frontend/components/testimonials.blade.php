@@ -32,7 +32,7 @@
                 </p>
                 <div class="testimonial-author">
                   <label>Sufiyan Khan</label><br >
-                  <span>Ex. Sr.Marketing Manager</span><br >
+                  <span>Ex. Sr. Marketing Manager</span><br >
                   <span>Junglee Pictures</span>
                 </div>
               </div>

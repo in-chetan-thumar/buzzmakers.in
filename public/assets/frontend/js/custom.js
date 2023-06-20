@@ -103,7 +103,9 @@ $(document).ready(function () {
         // nextArrow: !1,
         responsive: [
             { breakpoint: 992, settings: { slidesToShow: 4 } },
-            { breakpoint: 600, settings: { slidesToShow: 4} },
+            { breakpoint: 912, settings: { slidesToShow: 3 } },
+
+            { breakpoint: 600, settings: { slidesToShow: 2} },
         ],
     });
 })

@@ -102,6 +102,7 @@
                 <div class="col-md-8 reveal">
                     <h1 class="font-blue"> Making the Foundation, the Buzz, and Everything in Between
                     </h1>
+                    <br>
                     <p>
                         With a common love for personal storytelling, every team member here shares an interest in all the sweat  and soul that make a business a buzzing one. We are known to take that very raw essence of a brand  and use that to break the ceiling and how! In a nutshell, by offering end-to-end digital marketing  services, we not only lead your business in the right direction but also make that journey count.  We believe that to create a buzz in the industry, you must have a strong digital presence that speaks before you do.
                     </p>
