@@ -2,6 +2,8 @@
 
 <section class="featured responsive-container">
     <div class="container">
+        <br>
+        <br>
       <h2 class="hindi2"><span>#</span>रोटीकपड़ाऔरमकान</h2>
       <h1 class="font-blue">The Buzz Brands</h1>
       <div>
