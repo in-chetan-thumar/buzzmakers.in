@@ -8,6 +8,7 @@
         <div class="about-header">
             <div class="container position-relative">
                 <div class="row">
+
                     <div class="col-md-7">
                         <h1 class="text-white">Movers & shakers of the digital marketing hive, as they call us
                         </h1>
@@ -74,6 +75,7 @@
         <div class="container">
             <h1>Your Goal, Our Passion. Your Success, Our Badge of Honour
             </h1>
+            <br>
             <p>The first brick of Buzz Makers was laid back in 2014 with a small yet compact team of zealous, mighty, and inquisitive folks. We kicked off this fun ride with brands like Craftsvilla and Junglee Pictures, and over the years, moved up the ladder to bigger names and multinational companies; Viacom 18, Jio brands, LLumar, and Aegon Life are a few to name. </p>
             <p>Today, we are an end-to-end digital marketing agency with a hive in Mumbai and Nagpur, packed with a growing team of young professionals who love navigating the digital landscape. What fuels us to stay at it with a work-life balance that is rare to find these days? Well, it is the ice-breaking coffee breaks, easy but passion-driven work hours, and candid culture for us.</p>
 

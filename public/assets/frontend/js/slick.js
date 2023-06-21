@@ -139,10 +139,10 @@
         }))
     }, r.prototype.buildDots = function () {
         var i, e, t = this;
-        //if (!0 === t.options.dots && t.slideCount > t.options.slidesToShow) {
+        if (!0 === t.options.dots && t.slideCount > t.options.slidesToShow) {
             for (t.$slider.addClass("slick-dotted"), e = a("<ul />").addClass(t.options.dotsClass), i = 0; i <= t.getDotCount(); i += 1) e.append(a("<li />").append(t.options.customPaging.call(this, t, i)));
             t.$dots = e.appendTo(t.options.appendDots), t.$dots.find("li").first().addClass("slick-active")
-       // }
+       }
     }, r.prototype.buildOut = function () {
         var i = this;
         i.$slides = i.$slider.children(i.options.slide + ":not(.slick-cloned)").addClass("slick-slide"), i.slideCount = i.$slides.length, i.$slides.each(function (i, e) {

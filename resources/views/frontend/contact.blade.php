@@ -269,14 +269,14 @@
                                 </div>
                                 <div class="row">
                                     <label>Time Zone</label>
-                                    <div class="col-md-4 contact-timezone-dropdown">
+                                    <div class="col-lg-4 ">
                                         {!! Form::label('IST','IST' ,['class' => 'form-control dd ']) !!}
-                                        <input type="hidden" name="timezone" value="IST">
+                                        <input type="hidden" name="timezone" value="IST" >
 {{--                                        {!! Form::select('timezone', [ 'IST' => 'IST','EST' => 'EST', '31' => 'Option3'], null, [--}}
 {{--                                            'class' => 'form-control dd form-select one',--}}
 {{--                                        ]) !!}--}}
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-lg-8">
                                         {!! Form::select(
                                             'schedule_time',
                                             [
@@ -306,7 +306,7 @@
     <section class="section-address responsive-container">
         <div class="container">
             <div class="row justify-content-end reveal">
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div class="box-address">
                         <h5>Mumbai</h5>
 
@@ -319,7 +319,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div class="box-address">
                         <h5>Nagpur</h5>
                         <p class="mb-0">Buzz Markers, Above Panino,<br>

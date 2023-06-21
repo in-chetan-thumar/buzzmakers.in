@@ -117,17 +117,17 @@
                                                 target="_blank">www.buzzmakers.in</a></span><br></div>
         <div style="color:rgb(34,34,34)"><span style="color:rgb(53,28,117)"><br></span></div>
         <div style="color:rgb(34,34,34)"><a href="https://www.instagram.com/buzzmakersindia/" target="_blank"><img
-                    src="https://buzzmakers.in/assets/images/signature/social%20icons-01.png" width="34" alt=""></a>&nbsp;&nbsp;<a
+                    src="https://buzzmakers.in/assets/images/signature/social%20icons-01.png" width="31" alt=""></a>&nbsp;&nbsp;<a
                 href="https://www.youtube.com/@buzzmakers528" target="_blank"><img
-                    src="https://buzzmakers.in/assets/images/signature/social%20icons-04.png" width="34" alt=""></a>&nbsp;&nbsp;<a
+                    src="https://buzzmakers.in/assets/images/signature/social%20icons-04.png" width="31" alt=""></a>&nbsp;&nbsp;<a
                 href="https://wa.me/{{$detail['Number']}}" target="_blank"><img
-                    src="https://buzzmakers.in/assets/images/signature/social%20icons-05.png" width="34" alt=""></a>&nbsp;&nbsp;<a
+                    src="https://buzzmakers.in/assets/images/signature/social%20icons-05.png" width="31" alt=""></a>&nbsp;&nbsp;<a
                 href="https://twitter.com/buzzmakersindia" target="_blank"><img
-                    src="https://buzzmakers.in/assets/images/signature/social%20icons-02.png" width="34" alt=""></a>&nbsp;&nbsp;<a
+                    src="https://buzzmakers.in/assets/images/signature/social%20icons-02.png" width="31" alt=""></a>&nbsp;&nbsp;<a
                 href="https://www.facebook.com/BuzzMakersIndia" target="_blank"><img
-                    src="https://buzzmakers.in/assets/images/signature/social%20icons-06.png" width="34" alt=""></a>&nbsp;&nbsp;<a
+                    src="https://buzzmakers.in/assets/images/signature/social%20icons-06.png" width="31" alt=""></a>&nbsp;&nbsp;<a
                 href="https://www.linkedin.com/company/buzzmakersindia?originalSubdomain=in" target="_blank"><img
-                    src="https://buzzmakers.in/assets/images/signature/social%20icons-03.png" width="34" alt=""></a>&nbsp;&nbsp;<br>
+                    src="https://buzzmakers.in/assets/images/signature/social%20icons-03.png" width="31" alt=""></a>&nbsp;&nbsp;<br>
         </div>
         @endforeach
         <div style="color:rgb(34,34,34)"><br></div>
