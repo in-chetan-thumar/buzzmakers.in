@@ -969,13 +969,14 @@ h1 {
     background-image: url("../images/Contact/Group\ 5517.svg");
     background-repeat: no-repeat;
     background-size: 14%;
-    background-position: left 28% bottom;
+    background-position: left 11% bottom;
 }
 .box-address {
     background: var(--white-color);
     padding: 17px;
     border: 1px solid var(--black);
     transition: 0.3s;
+    /*min-width: 400px;*/
 }
 .about-header {
     background-color: var(--blue);

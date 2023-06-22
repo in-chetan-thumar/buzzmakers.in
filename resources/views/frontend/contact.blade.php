@@ -306,7 +306,7 @@
     <section class="section-address responsive-container">
         <div class="container">
             <div class="row justify-content-end reveal">
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="box-address">
                         <h5>Mumbai</h5>
 
@@ -319,7 +319,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="box-address">
                         <h5>Nagpur</h5>
                         <p class="mb-0">Buzz Markers, Above Panino,<br>
