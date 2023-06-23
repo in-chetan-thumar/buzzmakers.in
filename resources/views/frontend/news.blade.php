@@ -14,7 +14,7 @@
         <div class="container pt-5">
             <div class="row align-items-center">
                 <div class="col-md-8">
-                    <h1 class="content-news">It is a long established fact that<br> a reader will be Distracted</h1>
+                    <h1 class="content-news text-mb-center">It is a long established fact that a reader will be Distracted</h1>
                 </div>
                 <div class="col-md-4 img-news">
                     <img src={{ asset('assets/frontend/images/news/cross.svg') }} style="width:5%;" alt="cross">
@@ -35,7 +35,7 @@
                             <img src={{ asset("storage/images/news/$latestnews->cover_photo") }} class="w-100"
                                  alt="news1">
                             </a>
-                            <p>{{ $latestnews->title }}</p>
+                            <p class=" news-description">{{ $latestnews->title }}</p>
                             <a href="{{ $latestnews->link }}" target="_blank"><img
                                     src={{ asset('assets/frontend/images/Blogs/arrow.webp') }} alt="arrow"
                                     class="arrow-img"></a>
@@ -69,13 +69,15 @@
 
             @foreach ($newsContent->skip(3) as $news)
                 <div class="row mb-5">
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <a href="{{ $news->link }}" target="_blank">
-                        <img src={{ asset("storage/images/news/$news->cover_photo") }} class="w-100" alt="post1">
+                        <img src="{{ asset("storage/images/news/$news->cover_photo") }}" class="w-100" alt="post1">
                         </a>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-lg-8 news-description ">
+
                         <h3>{{ $news->title }}</h3>
+
                         <p>{{ Str::limit($news->description, 250) }}</p>
 
                         <a href="{{ $news->link }}" target="_blank"><img
