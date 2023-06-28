@@ -14,7 +14,7 @@
         <div class="container pt-5">
             <div class="row align-items-center">
                 <div class="col-md-8">
-                    <h1 class="content-news text-mb-center">It is a long established fact that a reader will be Distracted</h1>
+                    <h1 class="content-news text-mb-center">Where there is buzz, there is limelight</h1>
                 </div>
                 <div class="col-md-4 img-news">
                     <img src={{ asset('assets/frontend/images/news/cross.svg') }} style="width:5%;" alt="cross">

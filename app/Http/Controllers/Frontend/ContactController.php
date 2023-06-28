@@ -73,16 +73,16 @@ class ContactController extends Controller
             $params['phone'] = $request->phone;
             $params['website'] = $request->website;
             $params['project'] = $request->project;
-            $params['budget'] = $request->range1 . '-' . $request->range2;
+            $params['budget'] = $request->budget;
             $params['services'] = $request->services;
             $params['competitors'] = $request->competitors;
             $params['reference'] = $request->reference;
             // if ($request->file('documents')) {
             //     $params['documents'] = $name;
             // }
-            $params['schedule_date'] = $request->schedule_date;
-            $params['timezone'] = $request->timezone;
-            $params['schedule_time'] = $request->schedule_time;
+//            $params['schedule_date'] = $request->schedule_date ?? '';
+//            $params['timezone'] = $request->timezone;
+//            $params['schedule_time'] = $request->schedule_time;
 
             $contact = Contact::create($params);
 
@@ -91,7 +91,6 @@ class ContactController extends Controller
                 $params = [];
 
                 $params['contact_details'] = view('email.SendMail', compact('contact'))->render();
-                //dd($params);
                 Mail::send(new \App\Mail\ContactMailNotification($params));
                 $data['error'] = false;
                 toastr()->success('Your query has been submitted successfully!');

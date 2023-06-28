@@ -172,22 +172,36 @@
                                             @enderror
                                         </span>
                                     </div>
+
+                                </div>
+                            </div>
+                            <div class="mb-4 reveal">
+                                <h4 class="text-white">3. {{ Form::label('What\'s Your Budget') }}</h4>
+                                <div class="row">
+
                                     <div class="col-md-12">
-                                        {{-- <label>What's Your Budget</label> --}}
-                                        {{ Form::label('What\'s Your Budget') }}
-                                        <section class="range-slider" id="facet-price-range-slider">
-                                            <input name="range1" value="3000" min="3000" max="50000"
-                                                   step="1" type="range">
-                                            <input name="range2" value="50000" min="0" max="50000"
-                                                   step="1" type="range">
-                                        </section>
+
+                                        <h4 class="text-white"></h4>
+                                        {!! Form::text('budget', null, ['class' => 'form-control', 'placeholder' => 'Your Budget']) !!}
+                                        <span class="text-danger" style="font-size:15px">
+                                            @error('budget')
+                                            {{ $message }}
+                                            @enderror
+                                        </span>
+                                        {{--                                        <section class="range-slider" id="facet-price-range-slider">--}}
+                                        {{--                                            <input name="range1" value="3000" min="3000" max="50000"--}}
+                                        {{--                                                   step="1" type="range">--}}
+                                        {{--                                            <input name="range2" value="50000" min="0" max="50000"--}}
+                                        {{--                                                   step="1" type="range">--}}
+                                        {{--                                        </section>--}}
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-4 reveal">
-                                <h4 class="text-white">3. What Services are you interested in?</h4>
+                                <h4 class="text-white">4. What Services are you interested in?</h4>
                                 <div class="row">
                                     <div class="col-md-12">
+                                     
                                         {!! Form::select('services', config('constants.SERVICE'), '', [
                                             'class' => 'form-control  dd  one',
                                         ]) !!}
@@ -197,7 +211,11 @@
                                             @enderror
                                         </span>
                                     </div>
-                                    <h4 class="text-white">4. List-down Your Key Competitors</h4>
+                                </div>
+                            </div>
+                            <div class="mb-4 reveal">
+                                <div class="row">
+                                <h4 class="text-white">5. List-down Your Key Competitors</h4>
                                     <div class="col-md-12">
                                         {!! Form::text('competitors', null, [
                                             'class' => 'form-control',
@@ -208,9 +226,14 @@
                                             {{ $message }}
                                             @enderror
                                         </span>
-                                    </div>\
-                                    <h4 class="text-white">5. How did you get to know about us?</h4>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="mb-4 reveal">
+                                    <div class="row">
+                                    <h4 class="text-white">6. How did you get to know about us?</h4>
                                     <div class="col-md-12">
+
                                         {!! Form::text('reference', null, [
                                             'class' => 'form-control',
                                             'placeholder' => 'How did you get to know about us?',
@@ -221,77 +244,87 @@
                                             @enderror
                                         </span>
                                     </div>
+                                    </div>
+                                </div>
+                            <div class="mb-4 reveal">
+                                <div class="row">
                                     <div class="input-group">
-                                        {{ Form::label('inputGroupFile01', 'Attach Document (if Any)') }}
-                                        {!! Form::file('documents', ['class' => 'form-control d-none', 'id' => 'inputGroupFile01']) !!}
-                                        <span class="text-danger" style="font-size:15px">
+
+                                        {{ Form::label('inputGroupFile01', 'Attach Document (If Any)') }}
+                                        <div class="col-md-12">
+                                            {!! Form::file('documents', ['class' => 'form-control ']) !!}
+                                            <span class="text-danger" style="font-size:15px">
                                             @error('documents')
-                                            {{ $message }}
-                                            @enderror
+                                                {{ $message }}
+                                                @enderror
                                         </span>
+
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-2 reveal">
-                                <h4 class="text-white">6. Schedule a call with our tech expert. Get a detailed tech
-                                    consultation for
-                                    free!</h4>
-                                <div class="my-4 radio-date-container">
-                                    <div id="radio-example" class="radio-date-scroll">
 
-                                        @for ($day = 0; $day < 15; $day++)
-                                            @php
-                                                $today = Carbon\Carbon::now();
-                                                $date = $today->addDays($day);
-                                                $radioId = $date->format('d');
-                                                $value = $date->format('Y-m-d');
-                                            @endphp
+{{--                            <div class="mb-2 reveal">--}}
+{{--                                <h4 class="text-white">7. Schedule a call with our tech expert. Get a detailed tech--}}
+{{--                                    consultation for--}}
+{{--                                    free!</h4>--}}
+{{--                                <div class="my-4 radio-date-container">--}}
+{{--                                    <div id="radio-example" class="radio-date-scroll">--}}
 
-
-                                            <label class="radioselect" for={{ 'radio' . $radioId }}>
-                                                <span>{{ $date->format('D') }}</span><br/>
-                                                <b>{{ $date->format('M d') }}</b>
-                                                {{ Form::radio('schedule_date', $value, false, ['id' => 'radio' . $radioId]) }}
-                                            </label>
-                                        @endfor
-
-                                        <span class="text-danger" style="font-size:15px">
-                                            @error('schedule_date')
-                                            {{ $message }}
-                                            @enderror
-                                        </span>
-                                        {{-- <label class="radioselect" for="radio8">
-                                            <span>Mon</span><br />
-                                            <b>Mar 8</b>
-                                            <input type="radio" name="radio" id="radio8"/>
-                                          </label> --}}
+{{--                                        @for ($day = 0; $day < 15; $day++)--}}
+{{--                                            @php--}}
+{{--                                                $today = Carbon\Carbon::now();--}}
+{{--                                                $date = $today->addDays($day);--}}
+{{--                                                $radioId = $date->format('d');--}}
+{{--                                                $value = $date->format('Y-m-d');--}}
+{{--                                            @endphp--}}
 
 
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label>Time Zone</label>
-                                    <div class="col-lg-4 ">
-                                        {!! Form::label('IST','IST' ,['class' => 'form-control dd ']) !!}
-                                        <input type="hidden" name="timezone" value="IST" >
+{{--                                            <label class="radioselect" for={{ 'radio' . $radioId }}>--}}
+{{--                                                <span>{{ $date->format('D') }}</span><br/>--}}
+{{--                                                <b>{{ $date->format('M d') }}</b>--}}
+{{--                                                {{ Form::radio('schedule_date', $value, false, ['id' => 'radio' . $radioId]) }}--}}
+{{--                                            </label>--}}
+{{--                                        @endfor--}}
+
+{{--                                        <span class="text-danger" style="font-size:15px">--}}
+{{--                                            @error('schedule_date')--}}
+{{--                                            {{ $message }}--}}
+{{--                                            @enderror--}}
+{{--                                        </span>--}}
+{{--                                        --}}{{-- <label class="radioselect" for="radio8">--}}
+{{--                                            <span>Mon</span><br />--}}
+{{--                                            <b>Mar 8</b>--}}
+{{--                                            <input type="radio" name="radio" id="radio8"/>--}}
+{{--                                          </label> --}}
+
+
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="row">--}}
+{{--                                    <label>Time Zone</label>--}}
+{{--                                    <div class="col-lg-4 ">--}}
+{{--                                        {!! Form::label('IST','IST' ,['class' => 'form-control dd ']) !!}--}}
+{{--                                        <input type="hidden" name="timezone" value="IST" >--}}
 {{--                                        {!! Form::select('timezone', [ 'IST' => 'IST','EST' => 'EST', '31' => 'Option3'], null, [--}}
 {{--                                            'class' => 'form-control dd form-select one',--}}
 {{--                                        ]) !!}--}}
-                                    </div>
-                                    <div class="col-lg-8">
-                                        {!! Form::select(
-                                            'schedule_time',
-                                            [
-                                                '10:00AM-12:00PM' => 'Schedule at - 10:00AM to 12:00PM',
-                                                '01:00PM-03:00PM' => 'Schedule at - 01:00PM to 03:00PM',
-                                                '3' => 'Scheduled at - 04:00PM to 06:00PM',
-                                            ],
-                                            null,
-                                            ['class' => 'form-control dd form-select one'],
-                                        ) !!}
-                                    </div>
-                                </div>
-                            </div>
+{{--                                    </div>--}}
+{{--                                    <div class="col-lg-8">--}}
+{{--                                        {!! Form::select(--}}
+{{--                                            'schedule_time',--}}
+{{--                                            [--}}
+{{--                                                '10:00AM-12:00PM' => 'Schedule at - 10:00AM to 12:00PM',--}}
+{{--                                                '01:00PM-03:00PM' => 'Schedule at - 01:00PM to 03:00PM',--}}
+{{--                                                '3' => 'Scheduled at - 04:00PM to 06:00PM',--}}
+{{--                                            ],--}}
+{{--                                            null,--}}
+{{--                                            ['class' => 'form-control dd form-select one'],--}}
+{{--                                        ) !!}--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                             <div class="text-center reveal">
                                 {{ Form::submit('Submit', ['class' => 'btn btn-buzz-connect']) }}
                             </div>
@@ -344,6 +377,7 @@
 @section('js')
     <script src={{ asset('assets/frontend/js/rangeslider.js') }}></script>
     <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
+
     {{-- <script src="{{ asset('assets/frontend/js/toastr.min.js') }}"></script> --}}
 @endsection
 @section('script')

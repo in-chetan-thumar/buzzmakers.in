@@ -29,15 +29,15 @@ class ContactRequest extends FormRequest
             'phone' => 'required',
             'website' => 'required',
             'project' => 'required',
-            'range1' => 'required',
-            'range2' => 'required',
+            'budget' => 'required|numeric',
+//            'range2' => 'required',
             'services' => 'required',
             'competitors' => 'required',
             'reference' => 'required',
             'documents' => 'required|mimetypes:application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-            'schedule_date' => 'required',
-            'timezone' => 'required',
-            'schedule_time' => 'required',
+//            'schedule_date' => 'required',
+//            'timezone' => 'required',
+//            'schedule_time' => 'required',
         ];
     }
 }

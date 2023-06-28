@@ -27,22 +27,22 @@
         <td>Services</td>
         <td>{{$contact->services}}</td>
     </tr>
-    <tr>
-        <td>Schedule date</td>
-        <td>{{$contact->schedule_date}}</td>
-    </tr>
-    <tr>
-        <td>Schedule time</td>
-        <td>{{$contact->schedule_time}}</td>
-    </tr>
+{{--    <tr>--}}
+{{--        <td>Schedule date</td>--}}
+{{--        <td>{{$contact->schedule_date}}</td>--}}
+{{--    </tr>--}}
+{{--    <tr>--}}
+{{--        <td>Schedule time</td>--}}
+{{--        <td>{{$contact->schedule_time}}</td>--}}
+{{--    </tr>--}}
     <tr>
         <td>Competitors</td>
         {{$contact->competitors}}</td>
     </tr>
-    <tr>
-        <td>Timezone</td>
-        <td>{{$contact->timezone}}</td>
-    </tr>
+{{--    <tr>--}}
+{{--        <td>Timezone</td>--}}
+{{--        <td>{{$contact->timezone}}</td>--}}
+{{--    </tr>--}}
     <tr>
         <td>Reference</td>
         <td>{{$contact->reference}}</td>
