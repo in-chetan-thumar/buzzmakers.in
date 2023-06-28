@@ -69,7 +69,7 @@
                 <p class="mb-0">Buzz Makers adopts JioMeet brand identity by delivering a paradigm of digital marketing
                     solutions</p>
                 <p>with a devised social media strategy for their B2B as well as usual clients.</p>
-                <a href="#" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Explore More</a>
+{{--                <a href="#" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Explore More</a>--}}
             </div>
         </section>
     </div>

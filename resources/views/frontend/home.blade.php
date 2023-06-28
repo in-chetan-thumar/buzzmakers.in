@@ -10,38 +10,38 @@
         <div class="home-header">
             <div class="project-screens">
                 <div class="proj-1">
-                    <a href="{{route('frontend.nutra')}}">
-                    <img src={{ asset('assets/frontend/images/projects/proj4.webp') }} class="w-100 h-100" alt="proj4">
+                    <a href="{{route('frontend.nutra')}}" target="_blank">
+                    <img src="{{ asset('assets/frontend/images/projects/proj4.webp') }}" class="w-100 h-100" alt="proj4">
                     </a>
                 </div>
                 <div class="proj-2">
-                    <a href="{{route('frontend.poojaent')}}">
-                    <img src={{ asset('assets/frontend/images/projects/proj1.webp') }} class="w-100 h-100" alt="proj1">
+                    <a href="{{route('frontend.poojaent')}}" target="_blank">
+                    <img src="{{ asset('assets/frontend/images/projects/proj1.webp') }}" class="w-100 h-100" alt="proj1">
                     </a>
                 </div>
                 <div class="proj-3">
-                    <a href="{{route('frontend.salvi')}}">
-                    <img src={{ asset('assets/frontend/images/projects/proj5.webp') }} class="w-100 h-100" alt="proj5">
+                    <a href="{{route('frontend.salvi')}}" target="_blank">
+                    <img src="{{ asset('assets/frontend/images/projects/proj5.webp') }}" class="w-100 h-100" alt="proj5">
                     </a>
                 </div>
                 <div class="proj-4">
-                    <a href="{{route('frontend.jio')}}">
-                    <img src={{ asset('assets/frontend/images/projects/proj2.webp') }} class="w-100 h-100" alt="proj2">
+                    <a href="{{route('frontend.jio')}}" target="_blank">
+                    <img src="{{ asset('assets/frontend/images/projects/proj2.webp') }}" class="w-100 h-100" alt="proj2">
                     </a>
                 </div>
                 <div class="proj-5">
-                    <a href="{{route('frontend.sarvotkarsh')}}">
+                    <a href="{{route('frontend.sarvotkarsh')}}" target="_blank">
                     <img src="{{ asset('assets/frontend/images/projects/proj7.png') }}" class="w-100 h-100" alt="proj7">
                     </a>
                 </div>
                 <div class="proj-6">
-                    <a href="{{route('frontend.purusham')}}">
-                    <img src={{ asset('assets/frontend/images/projects/proj6.webp') }} class="w-100 h-100" alt="proj6">
+                    <a href="{{route('frontend.purusham')}}" target="_blank">
+                    <img src="{{ asset('assets/frontend/images/projects/proj6.webp') }}" class="w-100 h-100" alt="proj6">
                     </a>
                 </div>
                 <div class="proj-7">
-                    <a href="{{route('frontend.llumar')}}">
-                    <img src={{ asset('assets/frontend/images/projects/proj3.webp') }} class="w-100 h-100" alt="proj3">
+                    <a href="{{route('frontend.llumar')}}" target="_blank">
+                    <img src="{{ asset('assets/frontend/images/projects/proj3.webp') }}" class="w-100 h-100" alt="proj3">
                     </a>
                 </div>
             </div>

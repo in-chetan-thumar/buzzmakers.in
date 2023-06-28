@@ -71,7 +71,7 @@
             <p class="mb-0">We preserved the brand's ethos by unifying(marketing) elements and embodying them in our
                 logo design,</p>
             <p>Iconography, Brochures, Standees and other branding collaterals.</p>
-            <a href="#" class="btn btn-buzz mt-3" style="padding: 7px 20px !important">Explore More</a>
+{{--            <a href="#" class="btn btn-buzz mt-3" style="padding: 7px 20px !important">Explore More</a>--}}
         </div>
     </section>
 

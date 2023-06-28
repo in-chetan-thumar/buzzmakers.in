@@ -119,7 +119,7 @@
                                 'files' => true,
                             ]) !!}
                             <div class="mb-4 reveal ">
-                                <h4 class="text-white">1. Tell us about your company</h4>
+                                <h4 class="text-white">1. Tell us about you</h4>
                                 <div class="row">
                                     <div class="col-md-12">
                                         {{-- <input type="text" class="form-control" placeholder="Your Name"> --}}
@@ -197,6 +197,7 @@
                                             @enderror
                                         </span>
                                     </div>
+                                    <h4 class="text-white">4. List-down Your Key Competitors</h4>
                                     <div class="col-md-12">
                                         {!! Form::text('competitors', null, [
                                             'class' => 'form-control',
@@ -207,11 +208,12 @@
                                             {{ $message }}
                                             @enderror
                                         </span>
-                                    </div>
+                                    </div>\
+                                    <h4 class="text-white">5. How did you get to know about us?</h4>
                                     <div class="col-md-12">
                                         {!! Form::text('reference', null, [
                                             'class' => 'form-control',
-                                            'placeholder' => 'From where did you get to know about Buzzmakers?',
+                                            'placeholder' => 'How did you get to know about us?',
                                         ]) !!}
                                         <span class="text-danger" style="font-size:15px">
                                             @error('reference')
@@ -231,7 +233,7 @@
                                 </div>
                             </div>
                             <div class="mb-2 reveal">
-                                <h4 class="text-white">4. Schedule a call with our tech expert. Get a detailed tech
+                                <h4 class="text-white">6. Schedule a call with our tech expert. Get a detailed tech
                                     consultation for
                                     free!</h4>
                                 <div class="my-4 radio-date-container">

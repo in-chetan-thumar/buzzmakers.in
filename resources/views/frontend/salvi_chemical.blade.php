@@ -68,7 +68,7 @@
             <p class="mb-0">cost-effective solution. Buzz Makers reshapes the brand identity from a digital perception
             </p>
             <p>incorporating its core elements and ethos via thorough branding, marketing, and merchandising.</p>
-            <a href="#" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Explore More</a>
+{{--            <a href="#" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Explore More</a>--}}
         </div>
     </section>
 

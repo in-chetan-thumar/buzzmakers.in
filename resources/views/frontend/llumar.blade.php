@@ -68,7 +68,7 @@
                 <p class="mb-0">Business to autophiles, all are LLumar's prime customers and we incorporate its essence
                     with a</p>
                 <p>360 view over the digital media space and design marketing solutions.</p>
-                <a href="#" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Explore More</a>
+{{--                <a href="#" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Explore More</a>--}}
             </div>
         </section>
     </div>

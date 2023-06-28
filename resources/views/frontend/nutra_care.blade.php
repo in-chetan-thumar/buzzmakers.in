@@ -69,7 +69,7 @@
             <h1>Through Creatives & Marketing Strategies</h1>
             <p class="mb-0">Communiting the importance of health-amplifying products and building brand resonance</p>
             <p class="mb-0">with the audience via interactive web design, digital marketing, and branding.</p>
-            <a href="#" class="btn btn-buzz mt-5" style="padding: 7px 20px !important">Explore More</a>
+{{--            <a href="#" class="btn btn-buzz mt-5" style="padding: 7px 20px !important">Explore More</a>--}}
         </div>
     </section>
 

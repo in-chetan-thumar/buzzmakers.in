@@ -59,7 +59,6 @@ class ContactController extends Controller
 
         $data = $params = [];
         DB::beginTransaction();
-        // dd($request);
 
         try {
             if ($request->file('documents')) {

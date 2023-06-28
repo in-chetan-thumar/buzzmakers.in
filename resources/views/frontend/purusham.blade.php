@@ -74,7 +74,7 @@
                     <p class="mb-0">The need to be fulfilled was to depict Purusham's aesthetic of luxury and elegance
                         through its</p>
                     <p class="mb-0">digital presence via web design, social media outlook, and e-commerce front.</p>
-                    <a href="#" class="btn btn-buzz mt-3" style="padding: 7px 20px !important">Explore More</a>
+{{--                    <a href="#" class="btn btn-buzz mt-3" style="padding: 7px 20px !important">Explore More</a>--}}
                 </div>
 
                 <div class="mt-5">
