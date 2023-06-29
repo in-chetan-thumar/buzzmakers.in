@@ -34,10 +34,19 @@ class ContactRequest extends FormRequest
             'services' => 'required',
             'competitors' => 'required',
             'reference' => 'required',
-            'documents' => 'required|mimetypes:application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            'documents' => 'nullable|mimetypes:application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document',
 //            'schedule_date' => 'required',
 //            'timezone' => 'required',
 //            'schedule_time' => 'required',
+            'g-recaptcha-response' => 'required|captcha',
+
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'g-recaptcha-response.captcha' => 'Captcha verification failed',
+            'g-recaptcha-response.required' => 'Please complete the captcha'
         ];
     }
 }

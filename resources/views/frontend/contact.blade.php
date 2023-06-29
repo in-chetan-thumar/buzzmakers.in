@@ -3,7 +3,92 @@
     Contact
 @endsection
 @section('css')
-    <link rel="stylesheet" href={{ asset('assets/frontend/css/rangeslider.css') }}>
+{{--    <link rel="stylesheet" href={{ asset('assets/frontend/css/rangeslider.css') }}>--}}
+
+<style>
+    .select-style{
+        width: 100%;
+    }
+    .multiselect-dropdown{
+
+        display: inline-block;
+        padding: 2px 5px 0px 5px;
+        border-radius: 4px;
+        border: solid 1px #ced4da;
+        background-color: #5504B0;
+        position: relative;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right .75rem center;
+        background-size: 16px 12px;
+    }
+    .multiselect-dropdown span.optext, .multiselect-dropdown span.placeholder{
+        margin-right:0.5em;
+        margin-bottom:2px;
+        padding:1px 0;
+        border-radius: 4px;
+        display:inline-block;
+    }
+    .multiselect-dropdown span.optext{
+        padding:1px 0.75em;
+    }
+    .multiselect-dropdown span.optext .optdel {
+        float: right;
+        margin: 0 -6px 1px 5px;
+        font-size: 0.7em;
+        margin-top: 2px;
+        cursor: pointer;
+        color: #666;
+    }
+    .multiselect-dropdown span.optext .optdel:hover { color: #c66;}
+    .multiselect-dropdown span.placeholder{
+        color:white;
+        background-color: #5504B0;
+
+    }
+    .multiselect-dropdown-list-wrapper{
+        z-index: 100;
+        padding:2px;
+        border-radius: 4px;
+        display: none;
+        margin: -1px;
+        /*position: absolute;*/
+        top:0;
+        left: 0;
+        right: 0;
+        background-color: #5504B0;
+    }
+
+    .multiselect-dropdown-list{
+        padding:2px;
+        height: 15rem;
+        overflow-y:auto;
+        overflow-x: hidden;
+    }
+    .multiselect-dropdown-list::-webkit-scrollbar {
+        width: 6px;
+    }
+    .multiselect-dropdown-list::-webkit-scrollbar-thumb {
+        background-color: #bec4ca;
+        border-radius:3px;
+    }
+
+    .multiselect-dropdown-list div{
+        padding: 5px;
+    }
+    .multiselect-dropdown-list input{
+        height: 1.15em;
+        width: 1.15em;
+        margin-right: 0.35em;
+    }
+
+    .multiselect-dropdown-list div:hover{
+        background-color: #5504B0;
+    }
+    .multiselect-dropdown span.maxselected {width:100%;}
+    .multiselect-dropdown-all-selector {border-bottom:solid 1px #999;}
+</style>
+
 @endsection
 
 
@@ -201,10 +286,27 @@
                                 <h4 class="text-white">4. What Services are you interested in?</h4>
                                 <div class="row">
                                     <div class="col-md-12">
-                                     
-                                        {!! Form::select('services', config('constants.SERVICE'), '', [
-                                            'class' => 'form-control  dd  one',
-                                        ]) !!}
+                                        <select name="services[]" class="select select-style" multiple  multiselect-select-all="true"  >
+                                            <option value="Branding, Naming, and Positioning">Branding, Naming, and Positioning</option>
+                                            <option value="Graphic Design">Graphic Design</option>
+                                            <option value="Logo Design">Logo Design</option>
+                                            <option value="E-commerce Design Development">E-commerce Design Development</option>
+                                            <option value="Website Design Development">Website Design Development</option>
+                                            <option value="Email Marketing">Email Marketing</option>
+                                            <option value="Influencer Marketing  Growth Hacking">Influencer Marketing  Growth Hacking</option>
+                                            <option value="Social Media Marketing">Social Media Marketing</option>
+                                            <option value="Podcast Production">Podcast Production</option>
+                                            <option value="Digital Product Design  Development">Digital Product Design  Development</option>
+                                            <option value="Paid Search Ads (PPC)">Paid Search Ads (PPC)</option>
+                                            <option value="Content  Video Developmen">Content  Video Developmen</option>
+                                            <option value="Search Engine Optimization  Search Listening">Search Engine Optimization  Search Listening</option>
+                                            <option value="UIUX">UIUX</option>
+                                            <option value="Photography and Videography">Photography and Videography</option>
+                                            <option value="Shopify Website Development">Shopify Website Development</option>
+                                        </select>
+{{--                                        {!! Form::select('services', config('constants.SERVICE'), '', [--}}
+{{--                                            'class' => 'form-control  dd  one',--}}
+{{--                                        ]) !!}--}}
                                         <span class="text-danger" style="font-size:15px">
                                             @error('services')
                                             {{ $message }}
@@ -263,6 +365,20 @@
 
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="mb-4 reveal">
+                                <div class="row">
+                                    <div class="input-group">
+
+                            {!! NoCaptcha::display(['data-theme' => 'light' ]) !!}
+                            <span class="text-danger" style="font-size:15px">
+                                                    @error('g-recaptcha-response')
+                                {{ $message }}
+                                @enderror
+                            </span>
+                                    </div>
+                            </div>
                             </div>
 
 {{--                            <div class="mb-2 reveal">--}}
@@ -325,10 +441,12 @@
 {{--                                    </div>--}}
 {{--                                </div>--}}
 {{--                            </div>--}}
+
                             <div class="text-center reveal">
                                 {{ Form::submit('Submit', ['class' => 'btn btn-buzz-connect']) }}
                             </div>
                             {{ Form::close() }}
+
                         </div>
                     </div>
                 </div>
@@ -372,16 +490,20 @@
     {{-- @include('frontend.components.completefaqs') --}}
 
     {!! $table !!}
+
 @endsection
 
 @section('js')
     <script src={{ asset('assets/frontend/js/rangeslider.js') }}></script>
     <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
-
+    <script src={{ asset('assets/frontend/js/multi-select.js') }}></script>
+    {!! NoCaptcha::renderJs() !!}
+    {!! NoCaptcha::renderJs('fr', true, 'recaptchaCallback') !!}
     {{-- <script src="{{ asset('assets/frontend/js/toastr.min.js') }}"></script> --}}
 @endsection
 @section('script')
     <script>
+
         $(".radioselect").click(function () {
             $(".radioselect").removeClass("radioselect-yellow");
             $(this).addClass("radioselect-yellow");

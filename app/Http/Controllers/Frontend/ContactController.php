@@ -61,12 +61,12 @@ class ContactController extends Controller
         DB::beginTransaction();
 
         try {
-            if ($request->file('documents')) {
+            if (!empty($request->file('documents'))) {
                 $file = $request->file('documents');
                 $name = Str::random(16) . '.' . $file->getClientOriginalExtension();
                 $doc = $request->file('documents');
                 $doc->storeAs('public/documents/contacts', $name);
-                $params['documents'] = $name;
+                $params['documents'] = $name ;
             }
             $params['name'] = $request->name;
             $params['email'] = $request->email;
@@ -74,9 +74,11 @@ class ContactController extends Controller
             $params['website'] = $request->website;
             $params['project'] = $request->project;
             $params['budget'] = $request->budget;
-            $params['services'] = $request->services;
+
+            $params['services'] = implode('.', $request->services);
             $params['competitors'] = $request->competitors;
             $params['reference'] = $request->reference;
+
             // if ($request->file('documents')) {
             //     $params['documents'] = $name;
             // }

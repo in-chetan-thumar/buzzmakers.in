@@ -161,6 +161,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
+
 
         /*
          * Package Service Providers...
@@ -237,6 +239,7 @@ return [
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
         'Webp' => Buglinjo\LaravelWebp\Facades\Webp::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+        'NoCaptcha' => Anhskohbo\NoCaptcha\Facades\NoCaptcha::class,
 
 
     ],
