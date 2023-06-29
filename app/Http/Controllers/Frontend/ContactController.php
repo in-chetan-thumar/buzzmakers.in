@@ -59,7 +59,7 @@ class ContactController extends Controller
 
         $data = $params = [];
         DB::beginTransaction();
-
+//dd($request->all());
         try {
             if (!empty($request->file('documents'))) {
                 $file = $request->file('documents');
@@ -74,8 +74,15 @@ class ContactController extends Controller
             $params['website'] = $request->website;
             $params['project'] = $request->project;
             $params['budget'] = $request->budget;
+            if(!empty($request->others)){
+                $service=implode('.', $request->services);
+                $params['services'] = $service.'-'.$request->others;
 
-            $params['services'] = implode('.', $request->services);
+            }else{
+                $params['services'] = implode('.', $request->services);
+
+            }
+//            $params['services'] = implode('.', $request->services);
             $params['competitors'] = $request->competitors;
             $params['reference'] = $request->reference;
 

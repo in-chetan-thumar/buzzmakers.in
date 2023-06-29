@@ -14,10 +14,10 @@
         display: inline-block;
         padding: 2px 5px 0px 5px;
         border-radius: 4px;
-        border: solid 1px #ced4da;
+        border-bottom: solid 1px #ced4da;
         background-color: #5504B0;
         position: relative;
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
         background-repeat: no-repeat;
         background-position: right .75rem center;
         background-size: 16px 12px;
@@ -39,17 +39,19 @@
         margin-top: 2px;
         cursor: pointer;
         color: #666;
+
     }
     .multiselect-dropdown span.optext .optdel:hover { color: #c66;}
     .multiselect-dropdown span.placeholder{
         color:white;
         background-color: #5504B0;
 
+
     }
     .multiselect-dropdown-list-wrapper{
         z-index: 100;
         padding:2px;
-        border-radius: 4px;
+        /*border-radius: 4px;*/
         display: none;
         margin: -1px;
         /*position: absolute;*/
@@ -57,6 +59,7 @@
         left: 0;
         right: 0;
         background-color: #5504B0;
+
     }
 
     .multiselect-dropdown-list{
@@ -80,13 +83,14 @@
         height: 1.15em;
         width: 1.15em;
         margin-right: 0.35em;
+        border: 1px;
+
     }
 
     .multiselect-dropdown-list div:hover{
         background-color: #5504B0;
     }
-    .multiselect-dropdown span.maxselected {width:100%;}
-    .multiselect-dropdown-all-selector {border-bottom:solid 1px #999;}
+    .multiselect-dropdown span.maxselected {width:100%; }
 </style>
 
 @endsection
@@ -286,8 +290,8 @@
                                 <h4 class="text-white">4. What Services are you interested in?</h4>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <select name="services[]" class="select select-style" multiple  multiselect-select-all="true"  >
-                                            <option value="Branding, Naming, and Positioning">Branding, Naming, and Positioning</option>
+                                        <select name="services[]" class="select select-style outcomes" multiple  multiselect-select-all="true" id="outcomes" >
+                                            <option value="Branding, Naming, and Positioning" id="chk1">Branding, Naming, and Positioning</option>
                                             <option value="Graphic Design">Graphic Design</option>
                                             <option value="Logo Design">Logo Design</option>
                                             <option value="E-commerce Design Development">E-commerce Design Development</option>
@@ -303,7 +307,11 @@
                                             <option value="UIUX">UIUX</option>
                                             <option value="Photography and Videography">Photography and Videography</option>
                                             <option value="Shopify Website Development">Shopify Website Development</option>
+                                            <option value="others">Others</option>
+
                                         </select>
+                                        <span id="outcomeaddress" style="margin-top: 29px; margin-left: 275px; color: red;"></span>
+                                        <div id="div1"></div>
 {{--                                        {!! Form::select('services', config('constants.SERVICE'), '', [--}}
 {{--                                            'class' => 'form-control  dd  one',--}}
 {{--                                        ]) !!}--}}

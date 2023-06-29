@@ -137,3 +137,22 @@ function MultiselectDropdown(options){
 window.addEventListener('load',()=>{
     MultiselectDropdown(window.MultiselectDropdownOptions);
 });
+
+
+
+$("#outcomes").change(function() {
+    var selected = $(this).val(); //array of the selected values in drop box
+    var isSelected = false;
+
+    for(var i=0; i < selected.length; i++) {
+        if (selected[i] == "others") {
+            isSelected = true;
+        }
+    }
+
+    if (isSelected) {
+        $("#div1").html('<input type="text"  id="others" name="others" autocomplete="off" class="form-control" placeholder="Enter services are you interested"/>');
+    } else {
+        $("#div1").html('');
+    }
+});
