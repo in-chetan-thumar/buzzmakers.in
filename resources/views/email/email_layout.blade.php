@@ -307,16 +307,13 @@
                                     <div class="nhsuk-footer" id="nhsuk-footer">
                                         <div class="nhsuk-width-container">
                                             <center>
-                                                <p class="nhsuk-footer__copyright">Powered by {!! config('constants.DEVELOPED_BY') !!}
-                                                    version {{config('constants.APP_VERSION')}}
+                                                <p class="nhsuk-footer__copyright">
+
                                                     <a class="nhsuk-footer__list-item-link" target="_blank"
-                                                       href="https://caprihealthcare.co.uk/"
+                                                       href="{{env('APP_URL')}}"
                                                        alt="{{config('constants.APP_NAME')}}">
+                                                       {!! config('constants.APP_NAME') !!}
                                                     </a>
-                                                    <img
-                                                            src="{{asset('images'.DIRECTORY_SEPARATOR.config('constants.CAPRI_HELTH_CARE_LOGO_FILE_NAME'))}}"
-                                                            alt="{{config('constants.APP_NAME')}}" height="40"
-                                                            style="vertical-align: middle"/>
                                                 </p>
                                             </center>
                                         </div>
