@@ -33,6 +33,7 @@
     <meta name="base_url" content="{{ \Illuminate\Support\Facades\URL::to('/') }}"/>
   @yield('css')
   @include('frontend.layouts.header-css')
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TYDY0D3XL"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-5TYDY0D3XL'); </script>
 </head>
 
 <body>
