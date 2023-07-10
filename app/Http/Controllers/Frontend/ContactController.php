@@ -94,7 +94,7 @@ class ContactController extends Controller
 //            $params['schedule_time'] = $request->schedule_time;
 
             $contact = Contact::create($params);
-dd($contact);
+
             if (!empty($contact)) {
 
                 $params = [];
