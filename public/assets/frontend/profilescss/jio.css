@@ -62,8 +62,8 @@ body {
 .post-container-inner-2 {
     position: relative;
     z-index: 10;
-    margin-top: -30px;
-    right: -30px;
+    /*margin-top: -30px;*/
+    right: -15px;
 }
 
 /* mob-post-container */
@@ -81,8 +81,9 @@ body {
 
 .mobile-screen{
     position:absolute;
-    top: -30%;
-    width: 260px;
+    top: -40%;
+    width: 305px;
+
     margin: 0 auto;
 }
 
@@ -124,7 +125,9 @@ body {
 
 /* reels-container */
 .reels-container{
-    background-image: url(../images/profile/jio/reelsback.webp);
+    background-color: var(--yellow);
+
+    /*background-image: url(../images/profile/jio/reelsback.webp);*/
     background-repeat: no-repeat;
     background-position: center;
     padding: 80px 40px 80px 80px;

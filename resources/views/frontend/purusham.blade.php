@@ -94,7 +94,7 @@
 {{--            <span class="video-icon" id="circle-play-b">--}}
 {{--                <img src="{{ asset('assets/frontend/images/profile/purusham/video.webp')}}" alt="video-icon" class="w-100">--}}
 {{--            </span>--}}
-        <video class="w-100 "  controls autoplay>
+        <video class="w-100 "  controls >
             <source src="{{asset('assets/frontend/video/Regal.mp4')}}" type="video/mp4">
             <source src="{{asset('assets/frontend/video/Regal.mp4')}}" type="video/ogg">
         </video>
@@ -265,12 +265,12 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="aspect-r-11">
-                        <img src="{{ asset('assets/frontend/images/profile/purusham/insta.webp')}}" class="w-100" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/purusham/IMG-5897.PNG')}}" class="w-100" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="aspect-r-11">
-                        <img src="{{ asset('assets/frontend/images/profile/purusham/insta1.webp')}}" class="w-100" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/purusham/IMG-5899.PNG')}}" class="w-100" alt="">
                     </div>
                 </div>
             </div>
