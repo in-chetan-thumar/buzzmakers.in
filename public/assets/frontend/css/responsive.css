@@ -246,6 +246,15 @@
         background-position: right -30% bottom;
         background-size: 40%;
     }
+    .heading-bar.mobile_view {
+        display: block;
+        width: 92%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .heading-bar.mobile_hide{
+        display: none;
+    }
 }
 @media only screen and (max-width: 600px) {
     .case-studies,

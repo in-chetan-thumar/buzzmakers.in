@@ -26,7 +26,7 @@
                   <div></div>
                 </li>
                 <li>
-                  <a class="dropdown-item" href={{route('frontend.services.strategy')}}>Strategy</a>
+                  <a class="dropdown-item" href={{route('frontend.services.strategy')}}>Branding</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href={{route('frontend.services.content')}}>Marketing</a>
@@ -71,7 +71,7 @@
           Services
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href={{route('frontend.services.strategy')}}>Strategy</a></li>
+          <li><a class="dropdown-item" href={{route('frontend.services.strategy')}}>Branding</a></li>
           <li><a class="dropdown-item" href={{route('frontend.services.content')}}>Marketing</a></li>
           <li><a class="dropdown-item" href={{route('frontend.services.technology')}}>Technology</a></li>
           <li><a class="dropdown-item" href={{route('frontend.services.design')}}>Design</a></li>

@@ -632,9 +632,9 @@ h1 {
 .featured-secondary-slider {
     width: 80%;
     text-align: center;
-    /*padding: 100px 0;*/
+    padding: 100px 0;
     margin-top: 5%;
-    /*background-image: url("../images/file-1copy.webp");*/
+    background-image: url("../images/file-1copy.webp");
     background-size: 10rem;
     background-position: left 0 top 0;
     background-repeat: no-repeat;
@@ -1333,6 +1333,7 @@ select.one {
 .image-radius{
     border-radius: 25px;
 }
-/*.font-blue{*/
-/*    color: var(--blue);;*/
-/*}*/
+
+.heading-bar.mobile_view {
+    display: none;
+}

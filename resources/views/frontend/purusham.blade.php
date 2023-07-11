@@ -215,8 +215,8 @@
                     <div class="aspect-r-11">
 {{--                        <img src="{{ asset('assets/frontend/images/profile/purusham/photov2.webp')}}" class="w-100" alt="">--}}
                         <video class="w-100 "  controls poster="{{ asset('assets/frontend/images/profile/purusham/photov2.webp')}}">
-                            <source src="{{asset('assets/frontend/video/Reve.mp4')}}" type="video/mp4">
-                            <source src="{{asset('assets/frontend/video/Reve.mp4')}}" type="video/ogg">
+                            <source src="{{asset('assets/frontend/video/1.mp4')}}" type="video/mp4">
+                            <source src="{{asset('assets/frontend/video/1.mp4')}}" type="video/ogg">
                         </video>
                     </div>
                 </div>
@@ -224,8 +224,8 @@
                     <div class="aspect-r-11">
 {{--                        <img src="{{ asset('assets/frontend/images/profile/purusham/photov.webp')}}" class="w-100" alt="">--}}
                         <video class="w-100 "  controls poster="{{ asset('assets/frontend/images/profile/purusham/photov.webp')}}">
-                            <source src="{{asset('assets/frontend/video/Threads For Humanity.mp4')}}" type="video/mp4">
-                            <source src="{{asset('assets/frontend/video/Threads For Humanity.mp4')}}" type="video/ogg">
+                            <source src="{{asset('assets/frontend/video/2.mp4')}}" type="video/mp4">
+                            <source src="{{asset('assets/frontend/video/2.mp4')}}" type="video/ogg">
                         </video>
                     </div>
                 </div>
@@ -265,12 +265,12 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="aspect-r-11">
-                        <img src="{{ asset('assets/frontend/images/profile/purusham/IMG-5897.PNG')}}" class="w-100" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/purusham/IMG-5897.webp')}}" class="w-100" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="aspect-r-11">
-                        <img src="{{ asset('assets/frontend/images/profile/purusham/IMG-5899.PNG')}}" class="w-100" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/purusham/IMG-5899.webp')}}" class="w-100" alt="">
                     </div>
                 </div>
             </div>
