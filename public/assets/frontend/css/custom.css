@@ -647,10 +647,10 @@ h1 {
 }
 .case-studies {
     background-color: var(--blue);
-    background-image: url("../images/mask-group-2.webp"), url("../images/mask-group-1.webp");
+    background-image: url("../images/mask-group-2.webp"), url("../images/mask-group-1.webp"),url(../images/mask-group-2.webp);
     background-repeat: no-repeat;
-    background-position: center bottom, right 20% top;
-    background-size: 8rem, 8rem;
+    background-position: center bottom, right 20% top,top 20% right;
+    background-size: 8rem, 8rem,5rem;
 }
 .case-studies .casestudies {
     margin-left: 8%;
@@ -694,6 +694,11 @@ h1 {
 .header-hero-section-marketing,
 .header-hero-section-tech {
     background-color: var(--yellow);
+    background-image: url(../images/mask-group-2.webp);
+    background-repeat: no-repeat;
+    background-position: top 20% right;
+    background-size: 5rem;
+
 }
 .header-hero-section-blog,
 .header-hero-section-design,

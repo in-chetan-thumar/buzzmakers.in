@@ -39,7 +39,7 @@
         background-image: url("../images/group-1.webp");
         background-repeat: no-repeat;
         background-position: right 100%;
-        background-size: 26%;
+        /*background-size: 26%;*/
     }
     .ind-tab-details .img-tabs-pattern {
         bottom: 35px;
