@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 
 @section('title')
-    Strategy
+    Branding
 @endsection
 
 @section('main')
@@ -11,18 +11,18 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="content-of-strategy text-white">
-                        <h1>Strategy</h1>
+                        <h1>Branding</h1>
                         <p>
-                            You can create a masterpiece worth millions, but it is the right branding, that distinct identity that will lead it to leave a lasting impression
+                            We add wings to your ideas and fire them up with strategy and a distinct identity, all to let your business put its best foot forward.
 
                             {{--                            It is A Long Established Fact That A Reader Will Be Distracted--}}
 {{--                            By The Readable Content Of A Page When Looking At Its Layout.--}}
                         </p>
-                        <a href={{route('frontend.contact')}} class="btn btn-buzz-connect">Let's Connect</a>
+                        <a href="{{route('frontend.contact')}}" class="btn btn-buzz-connect">Let's Connect</a>
                     </div>
                 </div>
                 <div class="col-md-6 strategy-img-container text-end">
-                    <img src={{ asset('assets/frontend/images/stratey/strategy-header.svg') }}
+                    <img src="{{ asset('assets/frontend/images/stratey/strategy-header.svg') }}"
                         class="strategy-img box-animate" alt="strategy-header">
                 </div>
             </div>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-md-7 content-strategy">
                     <h1 class="font-blue">Brand Strategy</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         We believe that a powerful brand is the result of a powerful
                         strategy. The key is to find way into the hearts and minds of your
                         customers, redefine and own the conversation in your industry, and
@@ -62,7 +62,7 @@
                 </div>
                 <div class="col-md-7 content-strategy">
                     <h1 class="font-blue">Brand Identity Design</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         The Identity of the brand is the most important visible symbol
                         representing the very values of the brand. It goes beyond the
                         logo, and manifests itself in every Graphic, every element, tone
@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-md-7 content-strategy">
                     <h1 class="font-blue">Brand Management</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         Helping companies monitor, plan and review their brands over a
                         longer period of time and ensuring that there is a synergy in
                         everything that goes out. We operate like an offshoot of the

@@ -17,16 +17,16 @@
               <a class="nav-link" href={{route('frontend.about')}}>About Us</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false" >
-                Services
-              </a>
+{{--              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"--}}
+{{--                aria-expanded="false" >--}}
+{{--                Services--}}
+{{--              </a>--}}
               <ul class="dropdown-menu">
                 <li class="arrow-up">
                   <div></div>
                 </li>
                 <li>
-                  <a class="dropdown-item" href={{route('frontend.services.strategy')}}>Strategy</a>
+                  <a class="dropdown-item" href={{route('frontend.services.strategy')}}>Branding</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href={{route('frontend.services.content')}}>Marketing</a>
@@ -67,11 +67,11 @@
     <img src="{{asset('assets/frontend/images/logo.svg')}} "style="width:125px; aspect-ratio: 16/9;" alt="logo">
     <ul class="navbar-nav ms-auto mb-lg-0">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Services
-        </a>
+{{--        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--          Services--}}
+{{--        </a>--}}
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href={{route('frontend.services.strategy')}}>Strategy</a></li>
+          <li><a class="dropdown-item" href={{route('frontend.services.strategy')}}>Branding</a></li>
           <li><a class="dropdown-item" href={{route('frontend.services.content')}}>Marketing</a></li>
           <li><a class="dropdown-item" href={{route('frontend.services.technology')}}>Technology</a></li>
           <li><a class="dropdown-item" href={{route('frontend.services.design')}}>Design</a></li>
