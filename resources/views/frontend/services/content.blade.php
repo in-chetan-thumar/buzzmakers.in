@@ -39,7 +39,7 @@
                     <img src={{ asset('assets/frontend/images/Marketing/social-media-marketing.svg') }} style="width:80% ;"
                         alt="social-media-marketing">
                 </div>
-                <div class="col-md-7 content-marketing">
+                <div class="col-md-7 content-marketing content-strategy">
                     <h1 class="font-blue">Social Media marketing</h1>
                     <p class="text-muted">
                         We craft social-first strategies for our brands. Through social
@@ -60,7 +60,7 @@
                     <img src="{{ asset('assets/frontend/images/Marketing/influencer-marketing.svg') }}" style="width:60% ;"
                         alt="influencer-marketing">
                 </div>
-                <div class="col-md-7 content-marketing">
+                <div class="col-md-7 content-marketing content-strategy">
                     <h1 class="font-blue">Influencer Marketing</h1>
                     <p class="text-muted">
                         Right selection of influencers with the correct communication
@@ -82,7 +82,7 @@
                     <img src="{{ asset('assets/frontend/images/Marketing/performance-marketing.svg') }}" class="w-75"
                         alt="performance-marketing">
                 </div>
-                <div class="col-md-7 content-marketing">
+                <div class="col-md-7 content-marketing content-strategy">
                     <h1 class="font-blue">Performance Marketing</h1>
                     <p class="text-muted">
                         Using our vast experience in running performance campaigns, we

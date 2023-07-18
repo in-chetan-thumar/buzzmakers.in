@@ -577,6 +577,10 @@ h1 {
 .header-hero-section {
     height: 40%;
     background-color: var(--blue);
+    background-image: url(../images/mask-group-2.webp);
+    background-repeat: no-repeat;
+    background-position: top 20% right;
+    background-size: 5rem;
 }
 .header-hero-section .content-of-strategy {
     margin-top: 20%;
@@ -705,6 +709,10 @@ h1 {
 .header-hero-section-studio,
 .header-hero-section-work {
     background-color: var(--blue);
+    background-image: url(../images/mask-group-2.webp);
+    background-repeat: no-repeat;
+    background-position: top 20% right;
+    background-size: 5rem;
 }
 .header-hero-section-marketing .content-of-marketing,
 .header-hero-section-tech .content-of-tech {
@@ -1341,4 +1349,14 @@ select.one {
 
 .heading-bar.mobile_view {
     display: none;
+}
+.case-studies-img{
+    width: 95%;
+    border-radius: 25px;
+
+}
+.case-studies-img-mobile{
+    width: 80%;
+    border-radius: 25px;
+
 }

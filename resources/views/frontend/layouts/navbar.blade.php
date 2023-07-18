@@ -66,6 +66,9 @@
   <div class="collapse mobile-menu-area" id="buzzmenu">
     <img src="{{asset('assets/frontend/images/logo.svg')}} "style="width:125px; aspect-ratio: 16/9;" alt="logo">
     <ul class="navbar-nav ms-auto mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href={{route('frontend.about')}}>About Us</a>
+        </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Services
@@ -78,9 +81,7 @@
           <li><a class="dropdown-item" href={{route('frontend.services.studio')}}>Buzz Studio</a></li>
         </ul>
       </li>
-        <li class="nav-item">
-            <a class="nav-link" href={{route('frontend.about')}}>About Us</a>
-        </li>
+
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href={{route('frontend.work')}}>Our Work</a>
       </li>

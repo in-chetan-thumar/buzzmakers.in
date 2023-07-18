@@ -35,12 +35,12 @@
         <div class="container">
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/Studio/video-explainer.svg') }} style="width:60%;"
+                    <img src="{{ asset('assets/frontend/images/Studio/video-explainer.svg') }}" style="width:60%;"
                         alt="video-explainer">
                 </div>
-                <div class="col-md-7 content-studio">
+                <div class="col-md-7 content-studio content-strategy">
                     <h1 class="font-blue">Explainer Video</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         From product awareness to demand generation, our animated explainer video production helps you tell
                         great
                         stories to simplify your
