@@ -73,10 +73,10 @@ $(document).ready(function () {
     }),
     $(document).ready(function () {
         $(".casestudies").slick({
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 2,
             rows: 1,
-            autoplaySpeed: 1e3,
+            autoplaySpeed: 5000,
             autoplay: !0,
             dots: !1,
             prevArrow: !1,

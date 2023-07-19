@@ -651,10 +651,10 @@ h1 {
 }
 .case-studies {
     background-color: var(--blue);
-    background-image: url("../images/mask-group-2.webp"), url("../images/mask-group-1.webp"),url(../images/mask-group-2.webp);
+    background-image: url("../images/mask-group-2.webp"), url("../images/mask-group-1.webp");
     background-repeat: no-repeat;
-    background-position: center bottom, right 20% top,top 20% right;
-    background-size: 8rem, 8rem,5rem;
+    background-position: center bottom, right 20% top;
+    background-size: 8rem, 8rem;
 }
 .case-studies .casestudies {
     margin-left: 8%;
@@ -1360,3 +1360,16 @@ select.one {
     border-radius: 25px;
 
 }
+.casestudies .slick-track {
+    margin-left: -75px;
+
+}
+
+.justify-content-end{
+    background-image: url("../images/hand_star.webp");
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: left 35px center;
+
+}
+

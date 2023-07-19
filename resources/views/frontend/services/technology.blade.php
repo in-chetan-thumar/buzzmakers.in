@@ -46,7 +46,7 @@
                         market today, we can help you determine what is best for your needs.
                     </p>
                     <ul class="list-content ">
-                        <li>shopify Website Development Service</li>
+                        <li>Shopify Website Development Service</li>
                         <li>Corporate/Brand Website Development Service</li>
                     </ul>
                 </div>

@@ -7,7 +7,7 @@
           <div class="casestudies reveal">
               <div>
                   <a href="{{ route('frontend.poojaent') }}" target="_blank" >
-                      <img src="{{ asset('assets/frontend/images/projects/proj1.webp') }}" class="case-studies-img"
+                      <img src="{{ asset('assets/frontend/images/projects/proj1.webp') }}"  class="case-studies-img"
                           alt="snap1">
                   </a>
               </div>
