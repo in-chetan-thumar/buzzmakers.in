@@ -37,9 +37,9 @@
                 <div class="col-md-5 text-center">
                     <img src={{ asset('assets/frontend/images/Design/uiux.svg') }} style="width:60% ;" alt="uiux">
                 </div>
-                <div class="col-md-7 content-design">
+                <div class="col-md-7 content-design content-strategy">
                     <h1 class="font-blue">UIUX</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         At Buzz Makers, we believe that a great design that elevates user experience is the key to success
                         of any business or organization. Keeping this in mind, here's
                         what we can do for you.
@@ -53,13 +53,13 @@
                 </div>
             </div>
             <div class="row list-columns align-items-center reveal">
-                <div class="col-md-5 text-center">
+                <div class="col-md-5 text-center ">
                     <img src={{ asset('assets/frontend/images/Design/graphic-designer.svg') }} style="width:60% ;"
                         alt="graphic-designer">
                 </div>
-                <div class="col-md-7 content-design">
+                <div class="col-md-7 content-design content-strategy">
                     <h1 class="font-blue">Graphic Design</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         The roots of Buzz Makers are in graphic design, and we follow traditional principles of classic
                         design, with extremely high standards. But it's more than traditions and
                         rules. Because only after you master the rules are you in a position to bend and break them.And
@@ -76,9 +76,9 @@
                 <div class="col-md-5 text-center">
                     <img src={{ asset('assets/frontend/images/Design/packaging.svg') }} style="width:60% ;" alt="packaging">
                 </div>
-                <div class="col-md-7 content-design">
+                <div class="col-md-7 content-design content-strategy">
                     <h1 class="font-blue">Packaging</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         Packaging Designs speak louder than the packaged product itself. You just get a few seconds to
                         impress
                         your comsumer with the visual appeal of your product and nudge them towards impulsive buying.Buzz

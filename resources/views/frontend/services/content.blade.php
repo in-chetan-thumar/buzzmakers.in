@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 marketing-img-container text-end">
-                    <img src={{ asset('assets/frontend/images/Marketing/marketing-header.svg') }}
+                    <img src="{{ asset('assets/frontend/images/Marketing/marketing-header.svg') }}"
                         class="marketing-img box-animate" alt="marketing-header">
                 </div>
             </div>
@@ -39,9 +39,9 @@
                     <img src={{ asset('assets/frontend/images/Marketing/social-media-marketing.svg') }} style="width:80% ;"
                         alt="social-media-marketing">
                 </div>
-                <div class="col-md-7 content-marketing">
+                <div class="col-md-7 content-marketing content-strategy">
                     <h1 class="font-blue">Social Media marketing</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         We craft social-first strategies for our brands. Through social
                         listening, in-house research and community engagement we stay
                         ahead of the ever-changing landscape and deliver an unparalleled
@@ -57,12 +57,12 @@
             </div>
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/Marketing/influencer-marketing.svg') }} style="width:60% ;"
+                    <img src="{{ asset('assets/frontend/images/Marketing/influencer-marketing.svg') }}" style="width:60% ;"
                         alt="influencer-marketing">
                 </div>
-                <div class="col-md-7 content-marketing">
+                <div class="col-md-7 content-marketing content-strategy">
                     <h1 class="font-blue">Influencer Marketing</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         Right selection of influencers with the correct communication
                         strategy can do wonders for your social reach.We help brands do
                         just that! We select the right influencers using various
@@ -79,12 +79,12 @@
             </div>
             <div class="row list-columns align-items-center reveal">
                 <div class="col-md-5 text-center">
-                    <img src={{ asset('assets/frontend/images/Marketing/performance-marketing.svg') }} class="w-75"
+                    <img src="{{ asset('assets/frontend/images/Marketing/performance-marketing.svg') }}" class="w-75"
                         alt="performance-marketing">
                 </div>
-                <div class="col-md-7 content-marketing">
+                <div class="col-md-7 content-marketing content-strategy">
                     <h1 class="font-blue">Performance Marketing</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         Using our vast experience in running performance campaigns, we
                         provide an array of services to use the most popular platforms &
                         tactics to achieve leads and conversations for your business.

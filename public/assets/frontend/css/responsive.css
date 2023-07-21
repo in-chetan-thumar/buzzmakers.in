@@ -39,7 +39,7 @@
         background-image: url("../images/group-1.webp");
         background-repeat: no-repeat;
         background-position: right 100%;
-        background-size: 26%;
+        /*background-size: 26%;*/
     }
     .ind-tab-details .img-tabs-pattern {
         bottom: 35px;
@@ -83,6 +83,11 @@
 
 }
 @media only screen and (max-width: 992px) {
+    .justify-content-end{
+        background-image: none;
+
+    }
+
     .news-description{
         padding-top: 20px;
     }
@@ -566,7 +571,7 @@
     }
     .featured-secondary-slider {
         background-image: none;
-        padding-top: 50px;
+        padding-top: 90px;
     }
     .header-hero-section {
         background-color: var(--blue-light);

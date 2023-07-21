@@ -2,7 +2,8 @@
   <section class="why-buzz">
     <div class="container">
       <h1>Why<br >Buzz Makers?</h1>
-      <div class="row justify-content-end gy-3 reveal">
+
+        <div class="row justify-content-end gy-3 reveal justify-content-end-image">
         <div class="col-md-5">
           <div class="why-content">
             <label>Clear communication</label>
