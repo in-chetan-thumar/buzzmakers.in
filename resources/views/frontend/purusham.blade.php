@@ -265,7 +265,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="aspect-r-11">
-                        <img src="{{ asset('assets/frontend/images/profile/purusham/IMG-5897.webp')}}" class="w-100" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/purusham/PURUSHAM_FINAL.png')}}" class="w-100" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4">
