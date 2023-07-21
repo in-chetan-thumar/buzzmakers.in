@@ -130,3 +130,7 @@ body {
     background-image: url(../images/profile/poojaent/bottom-line.webp);
     margin-top: 3rem;
 }
+
+.mobile_view_eye {
+    display: none;
+}
