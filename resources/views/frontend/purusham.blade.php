@@ -94,7 +94,7 @@
 {{--            <span class="video-icon" id="circle-play-b">--}}
 {{--                <img src="{{ asset('assets/frontend/images/profile/purusham/video.webp')}}" alt="video-icon" class="w-100">--}}
 {{--            </span>--}}
-        <video class="w-100 "  controls >
+        <video class="w-100 "  controls poster="{{asset('assets/frontend/video/cover_top.png')}}">
             <source src="{{asset('assets/frontend/video/Regal.mp4')}}" type="video/mp4">
             <source src="{{asset('assets/frontend/video/Regal.mp4')}}" type="video/ogg">
         </video>
