@@ -1,5 +1,5 @@
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-    
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -40,8 +40,8 @@
     .section-text {
         background-image: url(../images/profile/jio/horn-copy.webp);
         background-repeat: no-repeat;
-        background-size: 8rem;
-        background-position: bottom left;
+        background-size: 7rem;
+        background-position: bottom -5% left;
     }
 
     .box-mob-img-container{

@@ -38,15 +38,15 @@
                     <img src={{ asset('assets/frontend/images/Tech/web-development.svg') }} style="width:60% ;"
                         alt="web-development">
                 </div>
-                <div class="col-md-7 content-tech">
+                <div class="col-md-7 content-tech content-strategy">
                     <h1 class="font-blue">Website Development</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         Buzz Makers utilizes web development technologies that are both proven and practical. With the
                         options available in the
                         market today, we can help you determine what is best for your needs.
                     </p>
-                    <ul class="list-content">
-                        <li>shopify Website Development Service</li>
+                    <ul class="list-content ">
+                        <li>Shopify Website Development Service</li>
                         <li>Corporate/Brand Website Development Service</li>
                     </ul>
                 </div>
@@ -56,9 +56,9 @@
                     <img src={{ asset('assets/frontend/images/Tech/app-development.svg') }} style="width:60% ;"
                         alt="app-development">
                 </div>
-                <div class="col-md-7 content-tech">
+                <div class="col-md-7 content-tech content-strategy">
                     <h1 class="font-blue">Mobile App Development</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         Our team of expert software engineers and developers craft Scalable and reliable mobile app
                         solutionsto improve your business
                         capabilities.We have powered several B2B applications by integrating modern technologies like
@@ -76,12 +76,12 @@
                 </div>
             </div>
             <div class="row list-columns align-items-center reveal">
-                <div class="col-md-5 text-center">
+                <div class="col-md-5 text-center ">
                     <img src={{ asset('assets/frontend/images/Tech/seo.svg') }} style="width:60% ;" alt="seo">
                 </div>
-                <div class="col-md-7 content-tech">
+                <div class="col-md-7 content-tech content-strategy">
                     <h1 class="font-blue">Search Engine Optimization</h1>
-                    <p class="font-blue">
+                    <p class="text-muted">
                         With Buzz Makers, you will not be outsourcing your SEO Project but will be getting a Search Engine
                         Optimization(SEO) Partner
                         to work with you and help you indentify the right internet marketing plan.
