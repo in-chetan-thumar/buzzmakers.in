@@ -506,7 +506,7 @@
     <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
     <script src={{ asset('assets/frontend/js/multi-select.js') }}></script>
     {!! NoCaptcha::renderJs() !!}
-    {!! NoCaptcha::renderJs('fr', true, 'recaptchaCallback') !!}
+    {!! NoCaptcha::renderJs('en', true, 'recaptchaCallback') !!}
     {{-- <script src="{{ asset('assets/frontend/js/toastr.min.js') }}"></script> --}}
 @endsection
 @section('script')
