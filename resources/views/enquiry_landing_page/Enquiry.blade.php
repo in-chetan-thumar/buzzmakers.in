@@ -1,0 +1,359 @@
+@extends('enquiry_landing_page.layouts.master')
+
+@section('title')
+    {{ $content->title ?? "" }}
+@endsection
+<style>
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+</style>
+@section('main')
+    <!-- section header-image -->
+    <a name="home"></a>
+
+    <section class="pt-5 mb-5 responsive-container">
+        <div class="row">
+        <div class="col-md-8">
+
+        </div>
+
+
+            <div class="col-md-4">
+            <div class="contact-right-side-content">
+                <h4 class="text-white">Approach for buzz</h4>
+                {!! Form::open([
+                               'url' => route('enquiry.landing.page.store'),
+                               'method' => 'POST',
+                               'id' => 'contact-form',
+                               'files' => true,
+                           ]) !!}
+                    <div class="row">
+                        <div class="col-md-12">
+                            {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name']) !!}
+                            <span class="text-danger" style="font-size:15px ; margin-top:0">
+                                @error('name')
+                                {{ $message }}
+                                @enderror
+                            </span>
+                        </div>
+                        <div class="col-md-12">
+                            {!! Form::text('surname', null, ['class' => 'form-control', 'placeholder' => 'Surname']) !!}
+                            <span class="text-danger" style="font-size:15px ; margin-top:0">
+                                @error('surname')
+                                {{ $message }}
+                                @enderror
+                            </span>
+                        </div>
+                        <div class="col-md-12">
+                            {!! Form::number('mobile', null, ['class' => 'form-control', 'placeholder' => 'Mobile',           'oninput'=>"javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                    ",
+                    'maxlength' => "10",]) !!}
+                            <span class="text-danger" style="font-size:15px">
+                                @error('mobile')
+                                {{ $message }}
+                                @enderror
+                            </span>
+                        </div>
+                        <div class="col-md-12">
+                            {!! Form::text('business_name', null, ['class' => 'form-control', 'placeholder' => 'Business Name']) !!}
+                            <span class="text-danger" style="font-size:15px ; margin-top:0">
+                                @error('business_name')
+                                {{ $message }}
+                                @enderror
+                            </span>
+                        </div>
+                        <div class="col-md-12">
+                            {!! Form::text('website', null, ['class' => 'form-control', 'placeholder' => 'Website']) !!}
+                            <span class="text-danger" style="font-size:15px ; margin-top:3">
+                                @error('website')
+                                {{ $message }}
+                                @enderror
+                            </span>
+                        </div>
+
+                        <div class="col-md-12">
+                            {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Message','rows'=>'3']) !!}
+                            <span class="text-danger" style="font-size:15px ; margin-top:3">
+                                @error('message')
+                                {{ $message }}
+                                @enderror
+                            </span>
+                        </div>
+                        <div class="col-md-12">
+                            {!! NoCaptcha::display(['data-theme' => 'light' ]) !!}
+                            <span class="text-danger" style="font-size:15px">
+                                                    @error('g-recaptcha-response')
+                                {{ $message }}
+                                @enderror
+                            </span>
+                        </div>
+                            <div class="col-md-12">
+                            {{ Form::submit('Submit', ['class' => 'btn btn-buzz-connect']) }}
+                        </div>
+                    </div>
+                {{ Form::close() }}
+
+            </div>
+                </div>
+
+            </div>
+    </section>
+
+    <a name="clients"></a>
+
+    @include('frontend.components.home_featured')
+    <a name="services"></a>
+    <!-- section services -->
+    <section class="services responsive-container">
+        <div class="container reveal">
+            <div class="text-center mb-5">
+                <h2 class="hindi2 "><span>#</span>बाजार</h2>
+                <h1 class="font-blue">The Buzz Menu</h1>
+                <div>
+                    <p class="title-tags">
+                        Pick a service to download your success
+
+                        {{--                        Master of all, jack of none<br>--}}
+{{--                        We've mastered the art of buzz through a holistic approach to<br>--}}
+{{--                        branding and marketing.Pick a service to get buzzing!--}}
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center service-container reveal">
+                <div class="col-md-4 mb-3">
+                    <div class="service-box">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src={{ asset('assets/frontend/images/woman-doing-conversation.svg') }}
+                                    class="feature-img-one" alt="woman-doing-conversation">
+                            </div>
+                            <div class="col-8">
+                                <label>Strategy</label>
+                                <div class="service-description-one">
+                                    <span>Business & Brand Consulting</span><br>
+                                    <span>Branding and Identity</span><br>
+                                    <span>Branding and Camping Planning</span>
+                                </div>
+                                <div>
+                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }} class="go-icon-one"
+                                        alt="yellow-arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="service-box">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src={{ asset('assets/frontend/images/indian-wife-talking-on-the-telephone.svg') }}
+                                    class="feature-img-two" alt="indian-wife-talking-on-the-telephone">
+                            </div>
+                            <div class="col-7">
+                                <label>Content</label>
+                                <div class="service-description-two">
+                                    <span>Social Media</span><br>
+                                    <span>Influencer Marketing</span><br>
+                                    <span>Blogs</span><br>
+                                    <span>Website Content</span>
+                                </div>
+                                <div>
+                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }} class="go-icon-two"
+                                        alt="yellow-arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center service-container reveal">
+                <div class="col-md-4 mb-3">
+                    <div class="service-box">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src={{ asset('assets/frontend/images/bald-man-listening-to-gramophone.svg') }}
+                                    class="feature-img-three" alt="bald-man-listening-to-gramophone">
+                            </div>
+                            <div class="col-6">
+                                <label>Technology</label>
+                                <div class="service-description-three">
+                                    <span>Website</span><br>
+                                    <span>Mobile Application</span><br>
+                                    <span>Business Solutions</span><br>
+                                    <span>AR VR</span>
+                                </div>
+                                <div>
+                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }} class="go-icon-three"
+                                        alt="yellow-arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="service-box">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src={{ asset('assets/frontend/images/girl-doing-paiting-on-the-canvas.svg') }}
+                                    class="feature-img-four" alt="girl-doing-paiting-on-the-canvas">
+                            </div>
+                            <div class="col-7">
+                                <label>Design</label>
+                                <div class="service-description-four">
+                                    <span>UI / UX</span><br>
+                                    <span>Illustration</span><br>
+                                    <span>Print and Digital</span><br>
+                                    <span>Logo and Merchandising</span>
+                                </div>
+                                <div>
+                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }} class="go-icon-four"
+                                        alt="yellow-arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="service-box">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src={{ asset('assets/frontend/images/man-taking-photo.svg') }}
+                                    class="feature-img-five" alt="man-taking-photo">
+                            </div>
+                            <div class="col-7">
+                                <label>Buzz Studio</label>
+                                <div class="service-description-five">
+                                    <span>Photoraphy & Videography</span><br>
+                                    <span>Corporate Film</span><br>
+                                    <span>Live Event Coverage</span>
+                                </div>
+                                <div>
+                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }} class="go-icon-five"
+                                        alt="yellow-arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="creative-canvas"></a>
+
+    <section class="creative-canvas responsive-container">
+        <div class="container reveal">
+            <div class="text-center mb-5">
+                <h2 class="hindi2 "><span>#</span>बाजार</h2>
+                <h1 class="font-blue">Our Creative Canvas</h1>
+                <div>
+                    <p class="title-tags">
+                        Action backs commitment, proof fuels our pitch.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mb-5 reveal">
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                        <img src="{{ asset('assets/frontend/images/image1.png') }}" class="w-90 h-90" alt="proj4">
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <img src="{{ asset('assets/frontend/images/image2.png') }}" class="w-90 h-90" alt="proj4">
+
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <img src="{{ asset('assets/frontend/images/image3.png') }}" class="w-90 h-90" alt="proj4">
+                    </div>
+
+                </div>
+                <div class="mt-3">
+
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                        <img src="{{ asset('assets/frontend/images/image4.png') }}" class="w-90 h-90" alt="proj4">
+
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <img src="{{ asset('assets/frontend/images/image5.png') }}" class="w-90 h-90" alt="proj4">
+
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <img src="{{ asset('assets/frontend/images/image6.png') }}" class="w-90 h-90" alt="proj4">
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a name="testimonials"></a>
+
+    @include('frontend.components.testimonials')
+    <a name="careers"></a>
+
+    <section class="careers">
+        <div class="text-center mt-3 reveal">
+            <h2 class="hindi2"><span>#</span>उड़ान</h2>
+            <h1 class="font-blue"> The Buzz Dream</h1>
+            <div class="careers-content">
+                <p class="title-tags">
+                    Think you got what it takes to get buzzing with us? Apply Now!
+                </p>
+            </div>
+        </div>
+        <div class="container reveal">
+            <div class="careersslider pt-3">
+                <div>
+                    <div class="careers-box mb-5 img-ui-icon-pen">
+                        <div class="career-author">
+                            <label>Sr. Graphic Designer </label><br>
+                            <span>3 to 4 Years Experience</span>
+                        </div>
+                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
+                        <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon" alt="title-point">
+                    </div>
+                </div>
+                <div>
+                    <div class="careers-box mb-5 img-ui-icon-camera">
+                        <div class="career-author">
+                            <label>Sr. Social Media Manager</label><br>
+                            <span>3 to 4 Years Experience</span>
+                        </div>
+                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
+                        <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon" alt="title-point">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="careers-box mb-5 img-ui-icon-pen">
+                        <div class="career-author">
+                            <label>Sr. Content Writer</label><br>
+                            <span>3 to 4 Years Experience</span>
+                        </div>
+                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
+                        <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon"
+                            alt="title-point">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+    <a name="faq"></a>
+
+    {!! $table !!}
+
+    {{-- @include('frontend.components.completefaqs') --}}
+@endsection
+
+@section('js')
+    <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
+    {!! NoCaptcha::renderJs() !!}
+    {!! NoCaptcha::renderJs('en', true, 'recaptchaCallback') !!}
+@endsection
+

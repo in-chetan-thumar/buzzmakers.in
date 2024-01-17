@@ -44,6 +44,9 @@ Route::get('/services-design', [\App\Http\Controllers\Frontend\Services\DesignCo
 Route::get('/services-studio', [\App\Http\Controllers\Frontend\Services\StudioController::class, 'index'])->name('frontend.services.studio');
 Route::get('signature/{name}',[\App\Http\Controllers\Frontend\HomeController::class, 'signatureName'])->name('signature.name');
 
+Route::get('/enquiry-landing-page', [\App\Http\Controllers\Enquiry\EnquiryController::class, 'index'])->name('enquiry.landing.page');
+Route::post('/enquiry-landing-page/store', [\App\Http\Controllers\Enquiry\EnquiryController::class, 'store'])->name('enquiry.landing.page.store');
+
 // End Front End Route
 
 
