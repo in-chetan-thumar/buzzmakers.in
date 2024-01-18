@@ -82,6 +82,13 @@
     }
 
 }
+
+@media screen and (min-width:992px) {
+.landing_html {height: 100%;}
+.landing_page_template {width: 100%;float: left;height: 100%;}
+.landing_page { height: 100%;min-height: 790px;}
+}
+
 @media only screen and (max-width: 992px) {
     .justify-content-end{
         background-image: none;
@@ -204,7 +211,8 @@
         background-size: 8rem, 25rem;
         background-position: left 10% top, right -150px top;
     }
-
+    .landing_form {padding: 50px 30px 90px 30px;}
+    .landing_banner figcaption p {  font-size: 31px;}
 }
 @media only screen and (max-width: 768px) {
     .header-hero-section-work .img-one {
@@ -260,6 +268,12 @@
     .heading-bar.mobile_hide{
         display: none;
     }
+    .landing_form {min-width: 100%; }
+    .landing_banner figcaption {text-align: center;}
+    ul#scene2 { margin-bottom: 0; position: absolute !important; right: 0;  top: 129px;}
+    .landing_banner figcaption p {  font-size: 30px;}
+    ul#scene2 li img {  width: 90px;}
+    .landing_page {padding-top: 150px;}
 }
 @media only screen and (max-width: 600px) {
     .case-studies,
@@ -962,4 +976,11 @@ width: 100vw;
     .cross-ui{
         width: 5% !important;
     }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+ul#scene2 {top: 109px;}
+.landing_banner figcaption h2 {  font-size: 60px;}
 }

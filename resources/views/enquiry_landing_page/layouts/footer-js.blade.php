@@ -3,6 +3,7 @@
 <script src={{asset('assets/frontend/js/bootstrap.js')}}></script>
 <script src={{asset('assets/frontend/js/slick.js')}}></script>
 <script src={{asset('assets/frontend/js/custom.js')}}></script>
+<script src={{asset('assets/frontend/js/jquery.parallax.min.js')}}></script>
 
 <script>
     $(document).ready(function() {

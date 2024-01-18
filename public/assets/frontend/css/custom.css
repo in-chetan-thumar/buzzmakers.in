@@ -1365,7 +1365,7 @@ select.one {
 
 }
 
-.justify-content-image{
+.justify-content-end{
     background-image: url("../images/hand_star.webp");
     background-repeat: no-repeat;
     background-size: 15%;
@@ -1373,3 +1373,93 @@ select.one {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+
+@font-face {
+    font-family: buzz;
+    font-display: swap;
+    src: url(https://www.buzzmakers.in/assets/frontend/fonts/VinkaDuscha.ttf);
+}
+@font-face {
+    font-family: buzzlight;
+    font-display: swap;
+    src: url(https://www.buzzmakers.in/assets/frontend/fonts/VisbyCF-Regular.otf);
+}
+@font-face {
+    font-family: buzzbold;
+    font-display: swap;
+    src: url(https://www.buzzmakers.in/assets/frontend/fonts/VisbyCF-Bold.otf);
+}
+@font-face {
+    font-family: buzzhindi;
+    font-display: swap;
+    /*src: url(../fonts/Fontspring-DEMO-visbycf-bold.otf);*/
+    src: url(https://www.buzzmakers.in/assets/frontend/fonts/Fontspring-DEMO-visbycf-bold.otf);
+}
+
+
+
+.landing_page { width: 100%;padding-top: 90px; background-color: #FBD206;display: flex; justify-content: center; align-items: end;}
+.landing_page .navbar { background: #ffffff;}
+.landing_banner {  min-width: 1320px;}
+.landing_banner figcaption {}
+.landing_banner figcaption h2 {font-size: 75px;color: #ffffff;text-shadow: 3px 3px 0px #5504B0;}
+.landing_banner figcaption p {font-size: 40px;line-height: normal;}
+
+.landing_form {
+    max-width: 407px;
+    background-color: #5504B0;
+    padding: 50px 50px 90px 50px;
+    float: right;
+    position: relative;
+}
+.landing_form form {}
+.landing_form h4.text-white {color: #FBD206 !important;font-size: 31px;}
+.landing_form.contact-right-side-content .form-control {padding-left: 0px;padding-right: 0px;color: #ffffff;border-color: #ffffff;box-shadow: none;margin-bottom: 10px;}
+.landing_form.contact-right-side-content textarea.form-control {height: 50px;}
+.landing_form .btn-buzz-connect { max-width: 147px; width: 100%; height: 50px;  font-size: 16px;}
+.landing_form .captcha_img { max-width: 227px; margin: 30px 0 20px;}
+
+
+#scene1 .layer1, #scene3 .layer1, #scene2 .layer1 { -webkit-animation:spin 25s linear infinite;-moz-animation:spin 25s linear infinite; animation:spin 25s linear infinite;}
+ul#scene3 { margin-left: 140px; display: inline-block;}
+ul#scene2 { margin-bottom: 50px;display: inline-block;margin-left: 50px;}
+ul#scene1 { }
+.landing_form:after {
+    position: absolute;
+    content: "";
+    width: 61px;
+    height: 66px;
+    background-image: url(assets/frontend/images/formimg.png);
+    left: -32px;
+    bottom: 30px;
+}
+ul#scene1 {
+    margin: 0;
+    position: absolute !important;
+    padding: 0;
+    right: -55px;
+    bottom: 120px;
+}
+
+
+@media screen and (max-width:1300px) {
+.landing_banner { min-width: 100%;}
+}

@@ -36,7 +36,7 @@
     <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TYDY0D3XL"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-5TYDY0D3XL'); </script>
 </head>
 
-<body>
+<body class="landing_page_template">
   @include('enquiry_landing_page.layouts.navbar')
   <!-- collpase menu for mobile end -->
 

@@ -15,94 +15,113 @@
 @section('main')
     <!-- section header-image -->
     <a name="home"></a>
-
-    <section class="pt-5 mb-5 responsive-container">
-        <div class="row">
-        <div class="col-md-8">
-
-        </div>
+    <div class="landing_page " style="background-image:url(assets/frontend/images/formimg1.png);background-repeat:no-repeat;background-position: left 50px bottom 80px;">
+    <section class="landing_banner responsive-container " style="background-image: url(assets/frontend/images/b-1.png);background-repeat: no-repeat;background-position: center bottom;">
 
 
-            <div class="col-md-4">
-            <div class="contact-right-side-content">
-                <h4 class="text-white">Approach for buzz</h4>
-                {!! Form::open([
-                               'url' => route('enquiry.landing.page.store'),
-                               'method' => 'POST',
-                               'id' => 'contact-form',
-                               'files' => true,
-                           ]) !!}
-                    <div class="row">
-                        <div class="col-md-12">
-                            {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name']) !!}
-                            <span class="text-danger" style="font-size:15px ; margin-top:0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                        <figcaption>
+                            <ul id="scene2">
+                                <li class="layer" data-depth="0.8">
+                                    <div class="layer1"><img src="{{asset('assets/frontend/images/line1.png')}}"></div>
+                                </li>
+                            </ul>
+                            <h2>Missing<br> the buzz?</h2>
+                            <p>You're in the right place.<br>Let's create it!</p>
+                            <ul id="scene3">
+                                <li class="layer" data-depth="0.8">
+                                    <div class="layer1"><img src="{{asset('assets/frontend/images/line2.png')}}"></div>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                        <div class="landing_form contact-right-side-content ">
+                            <h4 class="text-white">Approach for Buzz</h4>
+                            {!! Form::open([
+                                 'url' => route('enquiry.landing.page.store'),
+                                 'method' => 'POST',
+                                 'id' => 'contact-form',
+                                 'files' => true,
+                             ]) !!}
+                            <div class="row">
+                                <div class="col-md-12">
+                                    {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name']) !!}
+                                    <span class="text-danger" style="font-size:15px ; margin-top:0">
                                 @error('name')
-                                {{ $message }}
-                                @enderror
+                                        {{ $message }}
+                                        @enderror
                             </span>
-                        </div>
-                        <div class="col-md-12">
-                            {!! Form::text('surname', null, ['class' => 'form-control', 'placeholder' => 'Surname']) !!}
-                            <span class="text-danger" style="font-size:15px ; margin-top:0">
+                                </div>
+                                <div class="col-md-12">
+                                    {!! Form::text('surname', null, ['class' => 'form-control', 'placeholder' => 'Surname']) !!}
+                                    <span class="text-danger" style="font-size:15px ; margin-top:0">
                                 @error('surname')
-                                {{ $message }}
-                                @enderror
+                                        {{ $message }}
+                                        @enderror
                             </span>
-                        </div>
-                        <div class="col-md-12">
-                            {!! Form::number('mobile', null, ['class' => 'form-control', 'placeholder' => 'Mobile',           'oninput'=>"javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
-                    ",
-                    'maxlength' => "10",]) !!}
-                            <span class="text-danger" style="font-size:15px">
+                                </div>
+                                <div class="col-md-12">
+                                    {!! Form::number('mobile', null, ['class' => 'form-control', 'placeholder' => 'Mobile',           'oninput'=>"javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                            ",
+                            'maxlength' => "10",]) !!}
+                                    <span class="text-danger" style="font-size:15px">
                                 @error('mobile')
-                                {{ $message }}
-                                @enderror
+                                        {{ $message }}
+                                        @enderror
                             </span>
-                        </div>
-                        <div class="col-md-12">
-                            {!! Form::text('business_name', null, ['class' => 'form-control', 'placeholder' => 'Business Name']) !!}
-                            <span class="text-danger" style="font-size:15px ; margin-top:0">
+                                </div>
+                                <div class="col-md-12">
+                                    {!! Form::text('business_name', null, ['class' => 'form-control', 'placeholder' => 'Business Name']) !!}
+                                    <span class="text-danger" style="font-size:15px ; margin-top:0">
                                 @error('business_name')
-                                {{ $message }}
-                                @enderror
+                                        {{ $message }}
+                                        @enderror
                             </span>
-                        </div>
-                        <div class="col-md-12">
-                            {!! Form::text('website', null, ['class' => 'form-control', 'placeholder' => 'Website']) !!}
-                            <span class="text-danger" style="font-size:15px ; margin-top:3">
+                                </div>
+                                <div class="col-md-12">
+                                    {!! Form::text('website', null, ['class' => 'form-control', 'placeholder' => 'Website']) !!}
+                                    <span class="text-danger" style="font-size:15px ; margin-top:3">
                                 @error('website')
-                                {{ $message }}
-                                @enderror
+                                        {{ $message }}
+                                        @enderror
                             </span>
-                        </div>
+                                </div>
 
-                        <div class="col-md-12">
-                            {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Message','rows'=>'3']) !!}
-                            <span class="text-danger" style="font-size:15px ; margin-top:3">
+                                <div class="col-md-12">
+                                    {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Message','rows'=>'4']) !!}
+                                    <span class="text-danger" style="font-size:15px ; margin-top:3">
                                 @error('message')
-                                {{ $message }}
-                                @enderror
+                                        {{ $message }}
+                                        @enderror
                             </span>
-                        </div>
-                        <div class="col-md-12">
-                            {!! NoCaptcha::display(['data-theme' => 'light' ]) !!}
-                            <span class="text-danger" style="font-size:15px">
+                                </div>
+                                <div class="col-md-12">
+                                    {!! NoCaptcha::display(['data-theme' => 'light' ]) !!}
+                                    <span class="text-danger" style="font-size:15px">
                                                     @error('g-recaptcha-response')
-                                {{ $message }}
-                                @enderror
+                                        {{ $message }}
+                                        @enderror
                             </span>
-                        </div>
-                            <div class="col-md-12">
-                            {{ Form::submit('Submit', ['class' => 'btn btn-buzz-connect']) }}
+                                </div>
+                                <div class="col-md-12">
+                                    {{ Form::submit('Submit', ['class' => 'btn btn-buzz-connect']) }}
+                                </div>
+                            </div>
+                            {{ Form::close() }}
+                            <ul id="scene1">
+                                <li class="layer" data-depth="0.8">
+                                    <div class="layer1"><img src="{{asset('assets/frontend/images/formline3.png')}}"></div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                {{ Form::close() }}
-
-            </div>
                 </div>
-
             </div>
     </section>
+    </div>
 
     <a name="clients"></a>
 
@@ -249,7 +268,10 @@
     <section class="creative-canvas responsive-container">
         <div class="container reveal">
             <div class="text-center mb-5">
-                <h2 class="hindi2 "><span>#</span>बाजार</h2>
+                <h2 class="hindi2 "><span>#</span>ज़रा हटके ज़रा बचके
+
+
+                </h2>
                 <h1 class="font-blue">Our Creative Canvas</h1>
                 <div>
                     <p class="title-tags">
@@ -291,6 +313,7 @@
             </div>
         </div>
     </section>
+
     <a name="testimonials"></a>
 
     @include('frontend.components.testimonials')
@@ -355,5 +378,10 @@
     <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
     {!! NoCaptcha::renderJs() !!}
     {!! NoCaptcha::renderJs('en', true, 'recaptchaCallback') !!}
+    <script type="text/javascript">
+        $('#scene1').parallax();
+        $('#scene2').parallax();
+        $('#scene3').parallax();
+    </script>
 @endsection
 
