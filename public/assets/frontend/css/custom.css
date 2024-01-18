@@ -1448,7 +1448,7 @@ ul#scene1 { }
     content: "";
     width: 61px;
     height: 66px;
-    background-image: url(assets/frontend/images/formimg.png);
+    background-image: url(../images/formimg.png);
     left: -32px;
     bottom: 30px;
 }
