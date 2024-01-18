@@ -108,6 +108,7 @@ h1 {
 .navbar {
     background: linear-gradient(#fff 50%, transparent);
     padding: 10px 30px;
+    padding-bottom: 50px;
 }
 .featured,
 .home-header {
