@@ -2,18 +2,27 @@
     <div class="container">
       <div class="row justify-content-between py-4">
         <div class="col-md-6 footer-logo">
-          <a href={{route('frontend.home')}}><img src={{asset('assets/frontend/images/logo.svg')}} style="width:20% ;" alt="logo"></a><br >
+          <a href=#home><img src="{{asset('assets/frontend/images/logo.svg')}}" style="width:20% ;" alt="logo"></a><br>
 {{--          <label>info@buzzmakers.in</label>--}}
         </div>
         <div class="col-md-6">
           <div class="text-end">
-            <ul class="footer-menu">
-              <li><a href="{{route('frontend.home')}}">Home</a></li>
-              <li><a href="{{route('frontend.about')}}">About Us</a></li>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="{{route('frontend.contact')}}">Contact</a></li>
 
-            </ul>
+              <ul class="footer-menu">
+                  <li class="nav-item">
+                      <a href="#home" class="nav-link">Home</a></li>
+                  <li class="nav-item">
+                      <a href="#clients" class="nav-link">Clients</a></li>
+                  <li class="nav-item">
+                      <a href="#services" class="nav-link">Services</a></li>
+                  <li class="nav-item">
+                      <a href="#creative-canvas" class="nav-link">Our Creative Canvas</a></li>
+                  <li class="nav-item">
+                      <a href="#testimonials" class="nav-link">Testimonials</a></li>
+                  <li class="nav-item">
+                      <a href="#faq" class="nav-link">FAQs</a></li>
+                  <!-- Add more links for other sections -->
+              </ul>
           </div>
           <div class="social-icons text-end">
             <a href="https://www.facebook.com/BuzzMakersIndia" target="_blank"><i class="bi bi-facebook"></i></a>

@@ -30,7 +30,7 @@ class HomeRepository
     }
 
 
-    public function renderHtmlTable($params) 
+    public function renderHtmlTable($params)
     {
         $tableData = $this->filter($params);
 
@@ -38,12 +38,19 @@ class HomeRepository
         return view('frontend.components.completefaqs', compact('tableData'))->render();
     }
 
- 
+    public function renderHtmlTableEnquiry($params)
+    {
+        $tableData = $this->filter($params);
+
+        // echo var_dump($tableData);
+        return view('enquiry_landing_page.completefaqs', compact('tableData'))->render();
+    }
+
 
     public function filter($params)
     {
         return $this->model
             ->all()
-            ->where('category','home' )->where('is_active','Y' )->take(20);       
+            ->where('category','home' )->where('is_active','Y' )->take(20);
     }
 }

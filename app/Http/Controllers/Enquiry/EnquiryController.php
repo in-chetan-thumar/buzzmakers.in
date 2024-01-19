@@ -28,7 +28,7 @@ class EnquiryController extends Controller
     public function index(Request $request)
     {
         $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
-        $table = resolve('home-repo')->renderHtmlTable($request);
+        $table = resolve('home-repo')->renderHtmlTableEnquiry($request);
 //        SEOTools::setTitle($content->title);
 //        SEOTools::setDescription($content->meta_description);
 //        SEOMeta::addKeyword($content->meta_keywords);

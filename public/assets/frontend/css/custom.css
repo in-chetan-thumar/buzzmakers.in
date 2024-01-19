@@ -1452,6 +1452,17 @@ ul#scene1 { }
     left: -32px;
     bottom: 30px;
 }
+
+.landing_form:before {
+    position: absolute;
+    content: "";
+    width: 77px;
+    height: 30px;
+    background-image: url(../images/for_top.png);
+    left: -32px;
+    top: 30px;
+}
+
 ul#scene1 {
     margin: 0;
     position: absolute !important;

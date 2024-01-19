@@ -317,55 +317,7 @@
     <a name="testimonials"></a>
 
     @include('frontend.components.testimonials')
-    <a name="careers"></a>
 
-    <section class="careers">
-        <div class="text-center mt-3 reveal">
-            <h2 class="hindi2"><span>#</span>उड़ान</h2>
-            <h1 class="font-blue"> The Buzz Dream</h1>
-            <div class="careers-content">
-                <p class="title-tags">
-                    Think you got what it takes to get buzzing with us? Apply Now!
-                </p>
-            </div>
-        </div>
-        <div class="container reveal">
-            <div class="careersslider pt-3">
-                <div>
-                    <div class="careers-box mb-5 img-ui-icon-pen">
-                        <div class="career-author">
-                            <label>Sr. Graphic Designer </label><br>
-                            <span>3 to 4 Years Experience</span>
-                        </div>
-                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
-                        <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon" alt="title-point">
-                    </div>
-                </div>
-                <div>
-                    <div class="careers-box mb-5 img-ui-icon-camera">
-                        <div class="career-author">
-                            <label>Sr. Social Media Manager</label><br>
-                            <span>3 to 4 Years Experience</span>
-                        </div>
-                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
-                        <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon" alt="title-point">
-                    </div>
-                </div>
-
-                <div>
-                    <div class="careers-box mb-5 img-ui-icon-pen">
-                        <div class="career-author">
-                            <label>Sr. Content Writer</label><br>
-                            <span>3 to 4 Years Experience</span>
-                        </div>
-                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
-                        <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon"
-                            alt="title-point">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- end -->
     <a name="faq"></a>
 
