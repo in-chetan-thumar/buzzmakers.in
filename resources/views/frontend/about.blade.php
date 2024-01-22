@@ -96,7 +96,7 @@
     <!-- section address start -->
     <section class="section-description">
         <div class="container">
-            <div class="row justify-content-end">
+            <div class="row justify-content-end-about">
                 <div class="col-md-4 text-center reveal">
                     <img src={{ asset('assets/frontend/images/Aboutus/establishment-spring-arrow.webp') }} class="w-75"
                         alt="establishment-spring-arrow">

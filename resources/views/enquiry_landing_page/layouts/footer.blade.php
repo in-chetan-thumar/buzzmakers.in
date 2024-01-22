@@ -17,8 +17,6 @@
                     <a href="#clients" class="nav-link">Clients</a></li>
                 <li class="nav-item">
                     <a href="#testimonials" class="nav-link">Testimonials</a></li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a></li>
                   <!-- Add more links for other sections -->
               </ul>
           </div>

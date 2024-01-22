@@ -250,7 +250,7 @@ h1 {
     background-image: url(../images/file-1.webp), url(../images/speaker.webp);
     background-size: 15rem, 20rem;
     background-position: left 10% top 8%,right top;
-    margin-top: 8%;
+    margin-top: 4%;
 }
 .sliderfeature {
     width: 90%;
@@ -1367,6 +1367,13 @@ select.one {
 }
 
 .justify-content-end{
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: left 35px center;
+
+}
+
+.justify-content-end-about{
     background-image: url("../images/hand_star.webp");
     background-repeat: no-repeat;
     background-size: 15%;
@@ -1421,8 +1428,8 @@ select.one {
 .landing_page .navbar { background: #ffffff;}
 .landing_banner {  min-width: 1320px;}
 .landing_banner figcaption {}
-.landing_banner figcaption h2 {font-size: 75px;color: #ffffff;text-shadow: 3px 3px 0px #5504B0;}
-.landing_banner figcaption p {font-size: 40px;line-height: normal;}
+.landing_banner figcaption h2 {font-size: 75px;color: #ffffff;text-shadow: 5px 5px 0px #5504B0; font-family: buzzbold; line-height: 80px;}
+.landing_banner figcaption p {font-size: 40px;line-height: normal; font-family: buzzbold; line-height: 46px; color: #000}
 
 .landing_form {
     max-width: 407px;
@@ -1432,7 +1439,7 @@ select.one {
     position: relative;
 }
 .landing_form form {}
-.landing_form h4.text-white {color: #FBD206 !important;font-size: 31px;}
+.landing_form h4.text-white {color: #FBD206 !important;font-size: 31px; font-family: buzzhindi; line-height: 80px;}
 .landing_form.contact-right-side-content .form-control {padding-left: 0px;padding-right: 0px;color: #ffffff;border-color: #ffffff;box-shadow: none;margin-bottom: 10px;}
 .landing_form.contact-right-side-content textarea.form-control {height: 50px;}
 .landing_form .btn-buzz-connect { max-width: 147px; width: 100%; height: 50px;  font-size: 16px;}

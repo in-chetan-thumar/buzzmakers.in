@@ -261,34 +261,29 @@
             </div>
             <div class="text-center mb-5 reveal">
                 <div class="row">
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-5">
                         <img src="{{ asset('assets/frontend/images/image1.png') }}" class="w-90 h-90" alt="proj4">
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-5">
                         <img src="{{ asset('assets/frontend/images/image2.png') }}" class="w-90 h-90" alt="proj4">
 
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-5">
                         <img src="{{ asset('assets/frontend/images/image3.png') }}" class="w-90 h-90" alt="proj4">
                     </div>
-
-                </div>
-                <div class="mt-3">
-
-                <div class="row">
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-5">
                         <img src="{{ asset('assets/frontend/images/image4.png') }}" class="w-90 h-90" alt="proj4">
 
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-5">
                         <img src="{{ asset('assets/frontend/images/image5.png') }}" class="w-90 h-90" alt="proj4">
 
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-5">
                         <img src="{{ asset('assets/frontend/images/image6.png') }}" class="w-90 h-90" alt="proj4">
 
                     </div>
-                </div>
+
                 </div>
             </div>
         </div>
@@ -299,7 +294,7 @@
     @include('frontend.components.testimonials')
 
     <!-- end -->
-    
+    <a name="contact"></a>
     <!-- section address start -->
     <section class="section-address responsive-container">
         <div class="container">
