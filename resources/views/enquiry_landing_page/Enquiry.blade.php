@@ -158,10 +158,6 @@
                                     <span>Branding and Identity</span><br>
                                     <span>Branding and Camping Planning</span>
                                 </div>
-                                <div>
-                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }} class="go-icon-one"
-                                        alt="yellow-arrow">
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -180,10 +176,6 @@
                                     <span>Influencer Marketing</span><br>
                                     <span>Blogs</span><br>
                                     <span>Website Content</span>
-                                </div>
-                                <div>
-                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }} class="go-icon-two"
-                                        alt="yellow-arrow">
                                 </div>
                             </div>
                         </div>
@@ -206,10 +198,6 @@
                                     <span>Business Solutions</span><br>
                                     <span>AR VR</span>
                                 </div>
-                                <div>
-                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }} class="go-icon-three"
-                                        alt="yellow-arrow">
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -229,10 +217,6 @@
                                     <span>Print and Digital</span><br>
                                     <span>Logo and Merchandising</span>
                                 </div>
-                                <div>
-                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }} class="go-icon-four"
-                                        alt="yellow-arrow">
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -250,10 +234,6 @@
                                     <span>Photoraphy & Videography</span><br>
                                     <span>Corporate Film</span><br>
                                     <span>Live Event Coverage</span>
-                                </div>
-                                <div>
-                                    <img src={{ asset('assets/frontend/images/yellow-arrow.webp') }} class="go-icon-five"
-                                        alt="yellow-arrow">
                                 </div>
                             </div>
                         </div>
@@ -319,11 +299,45 @@
     @include('frontend.components.testimonials')
 
     <!-- end -->
+    
+    <!-- section address start -->
+    <section class="section-address responsive-container">
+        <div class="container">
+            <div class="row justify-content-end reveal">
+                <div class="col-md-5">
+                    <div class="box-address">
+                        <h5>Mumbai</h5>
+
+                        <p class="mb-0">Conwood Paragon,
+                            Opp Indian Oil Petrol Pump,<br>
+                            Near Cama Industrial Estate,
+                            Goregaon East,<br>
+                            Mumbai, Maharashtra - 400063<br>
+                            +919890393090
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="box-address">
+                        <h5>Nagpur</h5>
+                        <p class="mb-0">Buzz Markers, Above Panino,<br>
+                            Wardhman Nagar Colony,<br>
+                            Nagpur - 440012<br>
+                            +919028999566
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section address ends -->
+    
     <a name="faq"></a>
 
     {!! $table !!}
 
     {{-- @include('frontend.components.completefaqs') --}}
+
 @endsection
 
 @section('js')
