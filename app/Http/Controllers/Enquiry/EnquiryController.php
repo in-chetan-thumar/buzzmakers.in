@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Enquiry;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\EnquiryRequest;
 use App\Models\EnquiryLandingPage;
+use App\Models\Faqs;
 use App\Models\Page;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
@@ -128,12 +129,14 @@ class EnquiryController extends Controller
     {
         //
     }
-    public function thankYou(){
+    public function thankYou(Request $request){
         $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
-        return view('enquiry_landing_page.thank_you',compact('content'));
+        $table = resolve('home-repo')->renderHtmlTableEnquiry($request);
+
+        return view('enquiry_landing_page.thank_you',compact('content','table'));
 
     }
 }
