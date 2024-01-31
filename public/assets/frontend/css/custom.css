@@ -1482,3 +1482,15 @@ ul#scene1 {
 @media screen and (max-width:1300px) {
 .landing_banner { min-width: 100%;}
 }
+.thank-you ul#scene3 { margin-left: 140px; display: inline-block;}
+.thank-you ul#scene2 { margin-bottom: 50px;display: inline-block;margin-left: 50px;}
+.thank-you ul#scene1 { }
+.thankyou_page { width: 100%;padding-top: 90px; background-color: #FBD206;display: flex; justify-content: center; align-items: end;}
+.thankyou_page .navbar { background: #ffffff;}
+.thankyou_page figcaption p {
+    font-size: 40px;
+    line-height: normal;
+    font-family: buzzbold;
+    line-height: 46px;
+    color: #000;
+}

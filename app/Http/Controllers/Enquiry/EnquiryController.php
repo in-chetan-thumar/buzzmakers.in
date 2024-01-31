@@ -29,9 +29,9 @@ class EnquiryController extends Controller
     {
         $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
         $table = resolve('home-repo')->renderHtmlTableEnquiry($request);
-//        SEOTools::setTitle($content->title);
-//        SEOTools::setDescription($content->meta_description);
-//        SEOMeta::addKeyword($content->meta_keywords);
+        SEOTools::setTitle($content->title);
+        SEOTools::setDescription($content->meta_description);
+        SEOMeta::addKeyword($content->meta_keywords);
         return view('enquiry_landing_page.Enquiry', compact('content', 'table'));
     }
 
@@ -69,6 +69,8 @@ class EnquiryController extends Controller
                 Mail::send(new \App\Mail\EnquiryMailNotification($params));
                 toastr()->success('Your enquiry has been submitted successfully!');
                 DB::commit();
+                return redirect()->route('thank.you');
+
             } else {
                 toastr()->error('Oops! Something went wrong!', 'Please Contact on 8785455245');
             }
@@ -126,6 +128,12 @@ class EnquiryController extends Controller
     {
         //
     }
+    public function thankYou(){
+        $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
+        SEOTools::setTitle($content->title);
+        SEOTools::setDescription($content->meta_description);
+        SEOMeta::addKeyword($content->meta_keywords);
+        return view('enquiry_landing_page.thank_you',compact('content'));
 
-
+    }
 }

@@ -22,7 +22,7 @@ class EnquiryMailNotification extends TemplateMailable
     {
         $this->NAME = 'Krishnaa D Jajoo';
        if( env('APP_ENV') == 'production') {
-           $this->TO = 'krishnaa@buzzmakers.in';
+           $this->TO = 'bd@buzzmakers.in';
        }else{
            $this->TO = 'kajal.baldha@tiez.nl';
        }

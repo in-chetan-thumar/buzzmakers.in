@@ -166,7 +166,7 @@
                     <div class="service-box">
                         <div class="row">
                             <div class="col-5">
-                                <img src={{ asset('assets/frontend/images/indian-wife-talking-on-the-telephone.svg') }}
+                                <img src="{{ asset('assets/frontend/images/indian-wife-talking-on-the-telephone.svg') }}"
                                     class="feature-img-two" alt="indian-wife-talking-on-the-telephone">
                             </div>
                             <div class="col-7">
@@ -296,7 +296,7 @@
 
     <a name="contact"></a>
 <br><br><br><br>
-    
+
     <!-- section address start -->
     <section class="section-address responsive-container">
         <div class="container">
@@ -305,7 +305,7 @@
                     <div class="box-address">
                         <h5>Mumbai</h5>
 
-                        <p class="mb-0">Conwood Paragon,
+                        <p class="mb-0">Buzz Markers, Conwood Paragon,
                             Opp Indian Oil Petrol Pump,<br>
                             Near Cama Industrial Estate,
                             Goregaon East,<br>
@@ -328,7 +328,7 @@
         </div>
     </section>
     <!-- section address ends -->
-    
+
     <a name="faq"></a>
 
     {!! $table !!}

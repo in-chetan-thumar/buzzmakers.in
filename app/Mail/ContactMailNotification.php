@@ -21,7 +21,7 @@ class ContactMailNotification extends TemplateMailable
     public function __construct($params)
     {
         $this->NAME = 'Krishnaa D Jajoo';
-        $this->TO = 'krishnaa@buzzmakers.in';
+        $this->TO = 'bd@buzzmakers.in';
         $this->CONTACT_DETAILS  = $params['contact_details'];
         $this->PRACTICE_NAME = config('constants.APP_NAME');
     }

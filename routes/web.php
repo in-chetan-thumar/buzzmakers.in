@@ -46,6 +46,7 @@ Route::get('signature/{name}',[\App\Http\Controllers\Frontend\HomeController::cl
 
 Route::get('/enquiry-landing-page', [\App\Http\Controllers\Enquiry\EnquiryController::class, 'index'])->name('enquiry.landing.page');
 Route::post('/enquiry-landing-page/store', [\App\Http\Controllers\Enquiry\EnquiryController::class, 'store'])->name('enquiry.landing.page.store');
+Route::get('thank-you',[\App\Http\Controllers\Enquiry\EnquiryController::class,'thankYou'])->name('thank.you');
 
 // End Front End Route
 

@@ -999,3 +999,9 @@ width: 100vw;
 ul#scene2 {top: 109px;}
 .landing_banner figcaption h2 {  font-size: 60px;}
 }
+@media screen and (min-width: 992px){
+    .thankyou_page {
+        height: auto;
+        min-height: 550px;
+    }
+}
