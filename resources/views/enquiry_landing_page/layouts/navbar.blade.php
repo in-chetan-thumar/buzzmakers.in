@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid responsive-container">
         <div class="mobile-nav">
-          <a class="navbar-brand pt-0" href="#home">
+          <a class="navbar-brand pt-0" href={{route('enquiry.landing.page')}}>
             <img src={{asset('assets/frontend/images/logo.svg')}} class="logo" alt="logo">
           </a>
 
