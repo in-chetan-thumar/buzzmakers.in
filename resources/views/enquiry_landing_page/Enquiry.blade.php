@@ -11,6 +11,89 @@
         appearance: none;
         margin: 0;
     }
+    .select-style{
+        width: 100%;
+    }
+    .multiselect-dropdown{
+        width: 306px !important;
+        display: inline-block;
+        border-bottom: solid 1px #ced4da;
+        background-color: #5504B0;
+        position: relative;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right .75rem center;
+        background-size: 16px 12px;
+    }
+    .multiselect-dropdown span.optext, .multiselect-dropdown span.placeholder{
+        margin-right:0.5em;
+        margin-bottom:2px;
+        padding:1px 0;
+        border-radius: 4px;
+        display:inline-block;
+    }
+    .multiselect-dropdown span.optext{
+        padding:1px 0.75em;
+    }
+    .multiselect-dropdown span.optext .optdel {
+        float: right;
+        margin: 0 -6px 1px 5px;
+        font-size: 0.7em;
+        margin-top: 2px;
+        cursor: pointer;
+        color: #666;
+
+    }
+    .multiselect-dropdown span.optext .optdel:hover { color: #c66;}
+    .multiselect-dropdown span.placeholder{
+        color:white;
+        background-color: #5504B0;
+        font-size: 14px;
+
+    }
+    .multiselect-dropdown-list-wrapper{
+        z-index: 100;
+        padding:2px;
+        /*border-radius: 4px;*/
+        display: none;
+        margin: -1px;
+        /*position: absolute;*/
+        top:0;
+        left: 0;
+        right: 0;
+        background-color: #5504B0;
+
+    }
+
+    .multiselect-dropdown-list{
+        height: 15rem;
+        overflow-y:auto;
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+    .multiselect-dropdown-list::-webkit-scrollbar {
+        width: 6px;
+    }
+    .multiselect-dropdown-list::-webkit-scrollbar-thumb {
+        background-color: #bec4ca;
+        border-radius:3px;
+    }
+
+    .multiselect-dropdown-list div{
+        padding: 5px;
+    }
+    .multiselect-dropdown-list input{
+        height: 1.15em;
+        width: 1.15em;
+        margin-right: 0.35em;
+        border: 1px;
+
+    }
+
+    .multiselect-dropdown-list div:hover{
+        background-color: #5504B0;
+    }
+    .multiselect-dropdown span.maxselected {width:100%; }
 </style>
 @section('main')
     <!-- section header-image -->
@@ -48,7 +131,7 @@
                              ]) !!}
                             <div class="row">
                                 <div class="col-md-12">
-                                    {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name']) !!}
+                                    {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => ' Full Name']) !!}
                                     <span class="text-danger" style="font-size:15px ; margin-top:0">
                                 @error('name')
                                         {{ $message }}
@@ -56,9 +139,9 @@
                             </span>
                                 </div>
                                 <div class="col-md-12">
-                                    {!! Form::text('surname', null, ['class' => 'form-control', 'placeholder' => 'Surname']) !!}
+                                    {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
                                     <span class="text-danger" style="font-size:15px ; margin-top:0">
-                                @error('surname')
+                                @error('email')
                                         {{ $message }}
                                         @enderror
                             </span>
@@ -98,6 +181,36 @@
                                         @enderror
                             </span>
                                 </div>
+                                <div class="col-md-12 mb-3">
+                                    <select name="services[]" class="select select-style outcomes" multiple  multiselect-select-all="true" id="outcomes" >
+                                        <option value="Branding, Naming, and Positioning" id="chk1">Branding, Naming, and Positioning</option>
+                                        <option value="Graphic Design">Graphic Design</option>
+                                        <option value="Logo Design">Logo Design</option>
+                                        <option value="E-commerce Design Development">E-commerce Design Development</option>
+                                        <option value="Website Design Development">Website Design Development</option>
+                                        <option value="Email Marketing">Email Marketing</option>
+                                        <option value="Influencer Marketing  Growth Hacking">Influencer Marketing  Growth Hacking</option>
+                                        <option value="Social Media Marketing">Social Media Marketing</option>
+                                        <option value="Podcast Production">Podcast Production</option>
+                                        <option value="Digital Product Design  Development">Digital Product Design  Development</option>
+                                        <option value="Paid Search Ads (PPC)">Paid Search Ads (PPC)</option>
+                                        <option value="Content  Video Developmen">Content  Video Developmen</option>
+                                        <option value="Search Engine Optimization  Search Listening">Search Engine Optimization  Search Listening</option>
+                                        <option value="UIUX">UIUX</option>
+                                        <option value="Photography and Videography">Photography and Videography</option>
+                                        <option value="Shopify Website Development">Shopify Website Development</option>
+                                        <option value="others">Others</option>
+
+                                    </select>
+                                    <span id="outcomeaddress" style="margin-top: 29px; margin-left: 275px; color: red;"></span>
+                                    <div id="div1"></div>
+                                    <span class="text-danger" style="font-size:15px">
+                                            @error('services')
+                                        {{ $message }}
+                                        @enderror
+                                        </span>
+                                </div>
+
                                 <div class="col-md-12">
                                     {!! NoCaptcha::display(['data-theme' => 'light' ]) !!}
                                     <span class="text-danger" style="font-size:15px">
@@ -338,6 +451,8 @@
 @endsection
 
 @section('js')
+    <script src={{ asset('assets/frontend/js/multi-select.js') }}></script>
+
     <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
     {!! NoCaptcha::renderJs() !!}
     {!! NoCaptcha::renderJs('en', true, 'recaptchaCallback') !!}

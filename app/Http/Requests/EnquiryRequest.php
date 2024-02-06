@@ -25,11 +25,12 @@ class EnquiryRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'surname' => 'required',
+            'email' => 'required|email',
             'mobile' => 'required|numeric',
             'business_name' => 'required',
             'website' => 'required',
             'message' => 'required',
+            'services' => 'required',
             'g-recaptcha-response' => 'required|captcha',
 
         ];

@@ -1,11 +1,11 @@
-<table border="1">
+<table border="1" width="500">
     <tr>
         <td>Name</td>
         <td>{{$enquiry->name}}</td>
     </tr>
     <tr>
-        <td>Surname</td>
-        <td>{{$enquiry->surname}}</td>
+        <td>Email</td>
+        <td>{{$enquiry->email}}</td>
     </tr>
     <tr>
         <td>Mobile</td>
@@ -24,5 +24,10 @@
         <td>Message</td>
         <td>{{$enquiry->message}}</td>
     </tr>
-
+    <tr>
+        <td>Services</td>
+        <td><?php
+            echo str_replace('.', ',<br>', $enquiry->services);
+            ?></td>
+    </tr>
 </table>

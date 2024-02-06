@@ -12,11 +12,12 @@ class EnquiryLandingPage extends Model
     protected $fillable = [
         'id',
         'name',
-        'surname',
+        'email',
         'mobile',
         'website',
         'business_name',
         'message',
+        'services',
         'created_at',
         'created_by',
         'updated_at',

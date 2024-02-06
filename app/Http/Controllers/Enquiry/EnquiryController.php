@@ -57,11 +57,18 @@ class EnquiryController extends Controller
         try {
         $params = [];
         $params['name'] = $request->name;
-        $params['surname'] = $request->surname;
+        $params['email'] = $request->email;
         $params['mobile'] = $request->mobile;
         $params['business_name'] = $request->business_name;
         $params['website'] = $request->website;
         $params['message'] = $request->message;
+        if(!empty($request->others)){
+            $service=implode('.', $request->services);
+            $params['services'] = $service.'-'.$request->others;
+
+        }else{
+            $params['services'] = implode('.', $request->services);
+        }
 
         $enquiry = EnquiryLandingPage::create($params);
 
