@@ -33,10 +33,16 @@
     <meta name="base_url" content="{{ \Illuminate\Support\Facades\URL::to('/') }}"/>
   @yield('css')
   @include('frontend.layouts.header-css')
-    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TYDY0D3XL"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-5TYDY0D3XL'); </script>
+    
+  <!-- AMP Analytics --><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TYDY0D3XL"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11155012136'); </script>
 </head>
 
 <body>
+  
+  <!-- Google Tag Manager -->
+  <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-TNLW8FB6&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+
   @include('frontend.layouts.navbar')
   <!-- collpase menu for mobile end -->
 
