@@ -26,7 +26,7 @@ class EnquiryRequest extends FormRequest
         return [
             'name' => 'required',
             'email' => 'required|email',
-            'mobile' => 'required|numeric',
+            'mobile' => 'required|numeric|digits:10',
             'business_name' => 'required',
             'website' => 'required',
             'message' => 'required',
