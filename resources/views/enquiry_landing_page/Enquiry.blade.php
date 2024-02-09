@@ -180,7 +180,7 @@
                                         <option value="Performance Marketing">Performance Marketing</option>
                                         <option value="UIUX Designing">UIUX Designing</option>
                                         <option value="Mobile App Design & Development">Mobile App Design & Development</option>
-                                        <option value="Photography/ Videography">Photography/ Videography</option>
+                                        <option value="Photography/ Videography">Photography / Videography</option>
                                         <option value="Reel Production">Reel Production</option>
                                         <option value="Influencer Marketing">Influencer Marketing</option>
                                     </select>
