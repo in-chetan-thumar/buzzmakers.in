@@ -291,23 +291,15 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <select name="services[]" class="select select-style outcomes" multiple  multiselect-select-all="true" id="outcomes" >
-                                            <option value="Branding, Naming, and Positioning" id="chk1">Branding, Naming, and Positioning</option>
-                                            <option value="Graphic Design">Graphic Design</option>
-                                            <option value="Logo Design">Logo Design</option>
-                                            <option value="E-commerce Design Development">E-commerce Design Development</option>
-                                            <option value="Website Design Development">Website Design Development</option>
-                                            <option value="Email Marketing">Email Marketing</option>
-                                            <option value="Influencer Marketing  Growth Hacking">Influencer Marketing  Growth Hacking</option>
                                             <option value="Social Media Marketing">Social Media Marketing</option>
-                                            <option value="Podcast Production">Podcast Production</option>
-                                            <option value="Digital Product Design  Development">Digital Product Design  Development</option>
-                                            <option value="Paid Search Ads (PPC)">Paid Search Ads (PPC)</option>
-                                            <option value="Content  Video Developmen">Content  Video Developmen</option>
-                                            <option value="Search Engine Optimization  Search Listening">Search Engine Optimization  Search Listening</option>
-                                            <option value="UIUX">UIUX</option>
-                                            <option value="Photography and Videography">Photography and Videography</option>
-                                            <option value="Shopify Website Development">Shopify Website Development</option>
-                                            <option value="others">Others</option>
+                                            <option value="Website Design and Development">Website Design and Development</option>
+                                            <option value="Branding">Branding</option>
+                                            <option value="Performance Marketing">Performance Marketing</option>
+                                            <option value="UIUX Designing">UIUX Designing</option>
+                                            <option value="Mobile App Design & Development">Mobile App Design & Development</option>
+                                            <option value="Photography/ Videography">Photography/ Videography</option>
+                                            <option value="Reel Production">Reel Production</option>
+                                            <option value="Influencer Marketing">Influencer Marketing</option>
 
                                         </select>
                                         <span id="outcomeaddress" style="margin-top: 29px; margin-left: 275px; color: red;"></span>

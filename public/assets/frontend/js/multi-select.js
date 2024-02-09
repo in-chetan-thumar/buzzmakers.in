@@ -48,6 +48,25 @@ function MultiselectDropdown(options){
         el.loadOptions=()=>{
             list.innerHTML='';
 
+
+            Array.from(el.options).map(o=>{
+                var op=newEl('div',{class:o.selected?'checked':'',optEl:o})
+                var ic=newEl('input',{type:'checkbox',checked:o.selected});
+                op.appendChild(ic);
+                op.appendChild(newEl('label',{text:o.text}));
+
+                op.addEventListener('click',()=>{
+                    op.classList.toggle('checked');
+                    op.querySelector("input").checked=!op.querySelector("input").checked;
+                    op.optEl.selected=!!!op.optEl.selected;
+                    el.dispatchEvent(new Event('change'));
+                });
+                ic.addEventListener('click',(ev)=>{
+                    ic.checked=!ic.checked;
+                });
+                o.listitemEl=op;
+                list.appendChild(op);
+            });
             if(el.attributes['multiselect-select-all']?.value=='true'){
                 var op=newEl('div',{class:'multiselect-dropdown-all-selector'})
                 var ic=newEl('input',{type:'checkbox'});
@@ -71,24 +90,6 @@ function MultiselectDropdown(options){
                 list.appendChild(op);
             }
 
-            Array.from(el.options).map(o=>{
-                var op=newEl('div',{class:o.selected?'checked':'',optEl:o})
-                var ic=newEl('input',{type:'checkbox',checked:o.selected});
-                op.appendChild(ic);
-                op.appendChild(newEl('label',{text:o.text}));
-
-                op.addEventListener('click',()=>{
-                    op.classList.toggle('checked');
-                    op.querySelector("input").checked=!op.querySelector("input").checked;
-                    op.optEl.selected=!!!op.optEl.selected;
-                    el.dispatchEvent(new Event('change'));
-                });
-                ic.addEventListener('click',(ev)=>{
-                    ic.checked=!ic.checked;
-                });
-                o.listitemEl=op;
-                list.appendChild(op);
-            });
             div.listEl=listWrap;
 
             div.refresh=()=>{
