@@ -66,9 +66,8 @@
         <section class="responsive-container section-text">
             <div class="container text-center py-5">
                 <h1>Getting Filmy Over The Internet</h1>
-                <p class="mb-0">Buzz Makers adopts JioMeet brand identity by delivering a paradigm of digital marketing
-                    solutions</p>
-                <p>with a devised social media strategy for their B2B as well as usual clients.</p>
+                <p class="mb-0">We integrate the brand's ‘No.1’ flagship identity and entwine it with our creative social media narratives</p>
+                <p>that resonate with the audience and depict the core characteristics of Pooja Entertainment.</p>
 {{--                <a href="#" class="btn btn-buzz mt-2" style="padding: 7px 20px !important">Explore More</a>--}}
             </div>
         </section>
