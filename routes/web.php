@@ -23,12 +23,12 @@ Auth::routes();
 Route::get('/', [\App\Http\Controllers\Frontend\HomeController::class, 'index'])->name('frontend.home');
 Route::get('/about', [\App\Http\Controllers\Frontend\AboutController::class, 'index'])->name('frontend.about');
 Route::get('/blogs', [\App\Http\Controllers\Frontend\BlogController::class, 'index'])->name('frontend.blog');
-Route::get('/blogs-content/{id}',[\App\Http\Controllers\Frontend\BlogController::class,'blogsContent'])->name('blogs.content');
+Route::get('/blogs-content/{id}', [\App\Http\Controllers\Frontend\BlogController::class, 'blogsContent'])->name('blogs.content');
 Route::get('/career', [\App\Http\Controllers\Frontend\CareersController::class, 'index'])->name('frontend.careers');
 Route::get('/contact', [\App\Http\Controllers\Frontend\ContactController::class, 'index'])->name('frontend.contact');
 Route::post('/contact-store', [\App\Http\Controllers\Frontend\ContactController::class, 'store'])->name('frontend.contact.store');
 Route::get('/news', [\App\Http\Controllers\Frontend\NewsController::class, 'index'])->name('frontend.news');
-Route::get('/news-content/{id}',[\App\Http\Controllers\Frontend\NewsController::class,'newsContent'])->name('news.content');
+Route::get('/news-content/{id}', [\App\Http\Controllers\Frontend\NewsController::class, 'newsContent'])->name('news.content');
 Route::get('/our-work', [\App\Http\Controllers\Frontend\WorkController::class, 'index'])->name('frontend.work');
 Route::get('/pooja-entertainment', [\App\Http\Controllers\Frontend\PoojaentController::class, 'index'])->name('frontend.poojaent');
 Route::get('/jiomeet', [\App\Http\Controllers\Frontend\JioController::class, 'index'])->name('frontend.jio');
@@ -37,16 +37,17 @@ Route::get('/salvi-chemical', [\App\Http\Controllers\Frontend\SalviController::c
 Route::get('/nutra-care', [\App\Http\Controllers\Frontend\NutraCareController::class, 'index'])->name('frontend.nutra');
 Route::get('/sarvotkarsh', [\App\Http\Controllers\Frontend\SarvotkarshController::class, 'index'])->name('frontend.sarvotkarsh');
 Route::get('/purusham', [\App\Http\Controllers\Frontend\PurushamController::class, 'index'])->name('frontend.purusham');
+Route::get('/vdc', [\App\Http\Controllers\Frontend\VdcController::class, 'index'])->name('frontend.vdc');
 Route::get('/services-strategy', [\App\Http\Controllers\Frontend\Services\StrategyController::class, 'index'])->name('frontend.services.strategy');
 Route::get('/services-content', [\App\Http\Controllers\Frontend\Services\ContentController::class, 'index'])->name('frontend.services.content');
 Route::get('/services-technology', [\App\Http\Controllers\Frontend\Services\TechnologyController::class, 'index'])->name('frontend.services.technology');
 Route::get('/services-design', [\App\Http\Controllers\Frontend\Services\DesignController::class, 'index'])->name('frontend.services.design');
 Route::get('/services-studio', [\App\Http\Controllers\Frontend\Services\StudioController::class, 'index'])->name('frontend.services.studio');
-Route::get('signature/{name}',[\App\Http\Controllers\Frontend\HomeController::class, 'signatureName'])->name('signature.name');
+Route::get('signature/{name}', [\App\Http\Controllers\Frontend\HomeController::class, 'signatureName'])->name('signature.name');
 
 Route::get('/enquiry-landing-page', [\App\Http\Controllers\Enquiry\EnquiryController::class, 'index'])->name('enquiry.landing.page');
 Route::post('/enquiry-landing-page/store', [\App\Http\Controllers\Enquiry\EnquiryController::class, 'store'])->name('enquiry.landing.page.store');
-Route::get('thank-you',[\App\Http\Controllers\Enquiry\EnquiryController::class,'thankYou'])->name('thank.you');
+Route::get('thank-you', [\App\Http\Controllers\Enquiry\EnquiryController::class, 'thankYou'])->name('thank.you');
 
 // End Front End Route
 
