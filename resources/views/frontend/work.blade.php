@@ -73,11 +73,11 @@
                             src="{{ asset('assets/frontend/images/OurWork/salvi.jpg') }}" class="w-100 image-radius"
                             alt="snap1"></a>
                 </div>
-                <div class="col-md-6">
+                {{-- <div class="col-md-6">
                     <a href={{ route('frontend.vdc') }}><img
                             src="{{ asset('assets/frontend/images/vdc/casestudybanner.webp') }}" class="w-100 image-radius"
                             alt="snap1"></a>
-                </div>
+                </div> --}}
             </div>
         </div>
         </div>
