@@ -1437,6 +1437,7 @@ select.one {
     padding: 50px 50px 90px 50px;
     float: right;
     position: relative;
+	overflow: hidden;
 }
 .landing_form form {}
 .landing_form h4.text-white {color: #FBD206 !important;font-size: 31px; font-family: buzzhindi; line-height: 80px;}
