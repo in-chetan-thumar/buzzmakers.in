@@ -24,10 +24,10 @@
                             Action <i class="mdi mdi-chevron-down"></i>
                         </button>
                         <div class="dropdown-menu">
-                            @can('page-list.edit')
-                                <a class="dropdown-item" onclick="showPageEditModal(event)"
-                                    href="{{ route('page-list.edit', $row->id) }}">Edit</a>
-                            @endcan
+                            {{-- @can('page-list.edit') --}}
+                            <a class="dropdown-item" onclick="showPageEditModal(event)"
+                                href="{{ route('page-list.edit', $row->id) }}">Edit</a>
+                            {{-- @endcan --}}
                         </div>
                     </div>
                 </td>

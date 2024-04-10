@@ -10,38 +10,45 @@
         <div class="home-header">
             <div class="project-screens">
                 <div class="proj-1">
-                    <a href="{{route('frontend.nutra')}}" target="_blank">
-                    <img src="{{ asset('assets/frontend/images/projects/proj4.webp') }}" class="w-100 h-100" alt="proj4">
+                    <a href="{{ route('frontend.nutra') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/proj4.webp') }}" class="w-100 h-100"
+                            alt="proj4">
                     </a>
                 </div>
                 <div class="proj-2">
-                    <a href="{{route('frontend.poojaent')}}" target="_blank">
-                    <img src="{{ asset('assets/frontend/images/projects/proj1.webp') }}" class="w-100 h-100" alt="proj1">
+                    <a href="{{ route('frontend.poojaent') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/proj1.webp') }}" class="w-100 h-100"
+                            alt="proj1">
                     </a>
                 </div>
                 <div class="proj-3">
-                    <a href="{{route('frontend.salvi')}}" target="_blank">
-                    <img src="{{ asset('assets/frontend/images/projects/proj5.webp') }}" class="w-100 h-100" alt="proj5">
+                    <a href="{{ route('frontend.salvi') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/proj5.webp') }}" class="w-100 h-100"
+                            alt="proj5">
                     </a>
                 </div>
                 <div class="proj-4">
-                    <a href="{{route('frontend.jio')}}" target="_blank">
-                    <img src="{{ asset('assets/frontend/images/projects/proj2.webp') }}" class="w-100 h-100" alt="proj2">
+                    <a href="{{ route('frontend.jio') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/proj2.webp') }}" class="w-100 h-100"
+                            alt="proj2">
                     </a>
                 </div>
                 <div class="proj-5">
-                    <a href="{{route('frontend.sarvotkarsh')}}" target="_blank">
-                    <img src="{{ asset('assets/frontend/images/projects/proj7.png') }}" class="w-100 h-100" alt="proj7">
+                    <a href="{{ route('frontend.sarvotkarsh') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/proj7.png') }}" class="w-100 h-100"
+                            alt="proj7">
                     </a>
                 </div>
                 <div class="proj-6">
-                    <a href="{{route('frontend.purusham')}}" target="_blank">
-                    <img src="{{ asset('assets/frontend/images/projects/proj6.webp') }}" class="w-100 h-100" alt="proj6">
+                    <a href="{{ route('frontend.purusham') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/proj6.webp') }}" class="w-100 h-100"
+                            alt="proj6">
                     </a>
                 </div>
                 <div class="proj-7">
-                    <a href="{{route('frontend.llumar')}}" target="_blank">
-                    <img src="{{ asset('assets/frontend/images/projects/proj3.webp') }}" class="w-100 h-100" alt="proj3">
+                    <a href="{{ route('frontend.llumar') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/proj3.webp') }}" class="w-100 h-100"
+                            alt="proj3">
                     </a>
                 </div>
             </div>
@@ -61,9 +68,9 @@
                     <p class="title-tags">
                         Pick a service to download your success
 
-                        {{--                        Master of all, jack of none<br>--}}
-{{--                        We've mastered the art of buzz through a holistic approach to<br>--}}
-{{--                        branding and marketing.Pick a service to get buzzing!--}}
+                        {{--                        Master of all, jack of none<br> --}}
+                        {{--                        We've mastered the art of buzz through a holistic approach to<br> --}}
+                        {{--                        branding and marketing.Pick a service to get buzzing! --}}
                     </p>
                 </div>
             </div>
@@ -208,8 +215,10 @@
                             <label>Sr. Graphic Designer </label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
-                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
-                        <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon" alt="title-point">
+                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank"
+                            class="btn btn-buzz">Apply Now</a>
+                        <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon"
+                            alt="title-point">
                     </div>
                 </div>
                 <div>
@@ -218,8 +227,10 @@
                             <label>Sr. Social Media Manager</label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
-                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
-                        <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon" alt="title-point">
+                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank"
+                            class="btn btn-buzz">Apply Now</a>
+                        <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon"
+                            alt="title-point">
                     </div>
                 </div>
 
@@ -229,7 +240,8 @@
                             <label>Sr. Content Writer</label><br>
                             <span>3 to 4 Years Experience</span>
                         </div>
-                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank" class="btn btn-buzz">Apply Now</a>
+                        <a href=https://www.linkedin.com/company/buzzmakersindia/jobs/ target="_blank"
+                            class="btn btn-buzz">Apply Now</a>
                         <img src={{ asset('assets/frontend/images/title-point.svg') }} class="img-icon"
                             alt="title-point">
                     </div>
@@ -247,4 +259,3 @@
 @section('js')
     <script src={{ asset('assets/frontend/js/faqs.js') }}></script>
 @endsection
-

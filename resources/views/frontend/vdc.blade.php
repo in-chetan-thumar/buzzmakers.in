@@ -7,13 +7,11 @@
     <link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/responsive.css') }}>
 @endsection
 @section('main')
-    <!-- Example section post start-->
     <section class="page_banner section_padding section-post pb0">
         <div class="container text-center">
             <img src="{{ asset('assets/frontend/images/vdc/casestudybanner.webp') }}" alt="" />
         </div>
     </section>
-    <!-- Example section post end-->
 
     <section class="explore_section section_padding">
         <div class="container">
@@ -156,28 +154,49 @@
                 <h1>Social Media Design</h1>
             </div>
         </div>
-        <img src="{{ asset('assets/frontend/images/vdc/socialMediaDesign.webp') }}" alt="" />
+        <div class="row g-0">
+            <div class="col">
+                <div class="instagram_box"><img src="{{ asset('assets/frontend/images/vdc/instagram1.jpg') }}"
+                        alt=""></div>
+            </div>
+            <div class="col">
+                <div class="instagram_box"><img src="{{ asset('assets/frontend/images/vdc/instagram2.png') }}"
+                        alt=""></div>
+            </div>
+            <div class="col">
+                <div class="instagram_box"><img src="{{ asset('assets/frontend/images/vdc/instagram3.jpg') }}"
+                        alt=""></div>
+            </div>
+            <div class="col">
+                <div class="instagram_box"><img src="{{ asset('assets/frontend/images/vdc/instagram4.jpg') }}"
+                        alt=""></div>
+            </div>
+            <div class="col">
+                <div class="instagram_box"><img src="{{ asset('assets/frontend/images/vdc/instagram5.jpg') }}"
+                        alt=""></div>
+            </div>
+        </div>
     </section>
 
-    <section class="socialmediadesign section_padding section2 pt0">
+    <section class="section_padding section2 ">
         <div class="container">
-            <div class="row">
-                <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-4">
+            <div class="row g-2 g-xxl-4 g-lg-4 g-md-3 g-sm-2">
+                <div class="col-6 col-xxl-3 col-lg-3 col-md-3 col-sm-6">
                     <figure class="video_box">
                         <video controls src="{{ asset('assets/frontend/images/vdc/video/VDCGame.mp4') }}"></video>
                     </figure>
                 </div>
-                <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-4">
+                <div class="col-6 col-xxl-3 col-lg-3 col-md-3 col-sm-6">
                     <figure class="video_box">
                         <video controls src="{{ asset('assets/frontend/images/vdc/video/VDCGym.mp4') }}"></video>
                     </figure>
                 </div>
-                <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-4">
+                <div class="col-6 col-xxl-3 col-lg-3 col-md-3 col-sm-6">
                     <figure class="video_box">
                         <video controls src="{{ asset('assets/frontend/images/vdc/video/VDCHoli.mp4') }}"></video>
                     </figure>
                 </div>
-                <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-4">
+                <div class="col-6 col-xxl-3 col-lg-3 col-md-3 col-sm-6">
                     <figure class="video_box">
                         <video controls
                             src="{{ asset('assets/frontend/images/vdc/video/VDCStopMotionReel.mp4') }}"></video>
