@@ -501,7 +501,7 @@
         new Splide('.splide', {
             type: 'loop',
             autoplay: true, // Enable autoplay
-            interval: 1000, // Set autoplay interval (in milliseconds)
+            interval: 3000, // Set autoplay interval (in milliseconds)
             perPage: 3,
             focus: 'center',
             gap: 100,

@@ -80,7 +80,6 @@
         width: 1rem;
         margin-left: 12.4rem;
     }
-
 }
 
 @media only screen and (max-width: 1199px) {
@@ -97,22 +96,30 @@
     }
 }
 
-@media screen and (min-width:992px) {
-.landing_html {height: 100%;}
-.landing_page_template {width: 100%;float: left;height: 100%;}
-.landing_page { height: auto;min-height: 720px;}
+@media screen and (min-width: 992px) {
+    .landing_html {
+        height: 100%;
+    }
+    .landing_page_template {
+        width: 100%;
+        float: left;
+        height: 100%;
+    }
+    .landing_page {
+        height: auto;
+        min-height: 720px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
-    .justify-content-end{
+    .justify-content-end {
         background-image: none;
-
     }
 
-    .news-description{
+    .news-description {
         padding-top: 20px;
     }
-    .text-mb-center{
+    .text-mb-center {
         text-align: center;
     }
 
@@ -212,7 +219,8 @@
     }
     .home-header {
         height: 350px;
-        background-image: url("../images/Path\ 1.svg"), url(../images/file0.webp), url("../images/layer32.webp");
+        background-image: url("../images/Path\ 1.svg"),
+            url(../images/file0.webp), url("../images/layer32.webp");
         background-size: 10rem, 5rem, 5rem;
         background-position: center, left top, bottom right 35%;
         position: relative;
@@ -221,12 +229,17 @@
         padding: 60px 0;
         background-color: var(--white-color);
         text-align: center;
-        background-image: url(../images/file-1.webp), url("../images/group-1.webp");
+        background-image: url(../images/file-1.webp),
+            url("../images/group-1.webp");
         background-size: 8rem, 25rem;
         background-position: left 10% top, right -150px top;
     }
-    .landing_form {padding: 50px 30px 90px 30px;}
-    .landing_banner figcaption p {  font-size: 31px;}
+    .landing_form {
+        padding: 50px 30px 90px 30px;
+    }
+    .landing_banner figcaption p {
+        font-size: 31px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -248,12 +261,12 @@
     }
     .faq-content {
         word-wrap: break-word !important;
-
     }
 
     .home-header {
         height: 350px;
-        background-image: url("../images/Path\ 1.svg"), url(../images/file0.webp), url("../images/layer32.webp");
+        background-image: url("../images/Path\ 1.svg"),
+            url(../images/file0.webp), url("../images/layer32.webp");
         background-size: 10rem, 5rem, 5rem;
         background-position: center, left top, bottom right 35%;
         position: relative;
@@ -262,7 +275,8 @@
         padding: 60px 0;
         background-color: var(--white-color);
         text-align: center;
-        background-image: url(../images/file-1.webp), url("../images/group-1.webp");
+        background-image: url(../images/file-1.webp),
+            url("../images/group-1.webp");
         background-size: 8rem, 25rem;
         background-position: left 10% top, right -150px top;
     }
@@ -280,15 +294,31 @@
         margin: 0 auto;
         margin-bottom: 30px;
     }
-    .heading-bar.mobile_hide{
+    .heading-bar.mobile_hide {
         display: none;
     }
-    .landing_form {min-width: 100%; }
-    .landing_banner figcaption {text-align: center;}
-    ul#scene2 { margin-bottom: 0; position: absolute !important; right: 0;  top: 129px;}
-    .landing_banner figcaption p {  font-size: 30px;}
-    ul#scene2 li img {  width: 90px;}
-    .landing_page {padding-top: 150px;}
+    .landing_form {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .landing_banner figcaption {
+        text-align: center;
+    }
+    ul#scene2 {
+        margin-bottom: 0;
+        position: absolute !important;
+        right: 0;
+        top: 129px;
+    }
+    .landing_banner figcaption p {
+        font-size: 30px;
+    }
+    ul#scene2 li img {
+        width: 90px;
+    }
+    .landing_page {
+        padding-top: 150px;
+    }
 }
 @media only screen and (max-width: 600px) {
     .case-studies,
@@ -415,13 +445,15 @@
     .case-studies {
         padding: 50px 0;
         background-color: var(--blue);
-        background-image: url("../images/mask-group-2.webp"), url("../images/mask-group-1.webp");
+        background-image: url("../images/mask-group-2.webp"),
+            url("../images/mask-group-1.webp");
         background-position: center bottom, right 10% top -5%;
         background-size: 4rem, 4rem;
     }
     .home-header {
         height: 350px;
-        background-image: url("../images/Path\ 1.svg"), url(../images/file0.webp), url("../images/layer32.webp");
+        background-image: url("../images/Path\ 1.svg"),
+            url(../images/file0.webp), url("../images/layer32.webp");
         background-size: 10rem, 5rem, 5rem;
         background-position: center, left top, bottom right 35%;
         position: relative;
@@ -446,7 +478,8 @@
     .featured {
         padding: 60px 0;
         background-color: var(--white-color);
-        background-image: url(../images/file-1.webp), url(../images/speaker.webp);
+        background-image: url(../images/file-1.webp),
+            url(../images/speaker.webp);
 
         background-size: 9rem, 15rem;
         background-position: left 10% top, right -85px top;
@@ -465,9 +498,12 @@
 
     .services {
         padding: 30px 0;
-        background-image: url("../images/mask-group-1.webp"), url("../images/mask-group-2.webp"), url("../images/left-hand-with-star.webp");
+        background-image: url("../images/mask-group-1.webp"),
+            url("../images/mask-group-2.webp"),
+            url("../images/left-hand-with-star.webp");
         background-size: 6rem, 5rem, 10rem;
-        background-position: right -10% top 8%, left -5% bottom 33%, left -29% top 9%;
+        background-position: right -10% top 8%, left -5% bottom 33%,
+            left -29% top 9%;
         background-repeat: no-repeat;
     }
     .faqs,
@@ -482,7 +518,8 @@
         margin-bottom: 0;
     }
     .testimonials {
-        background-image: url("../images/layer33.webp"), url("../images/layer333.webp");
+        background-image: url("../images/layer33.webp"),
+            url("../images/layer333.webp");
         background-size: 10%, 10%;
         background-position: top left 20%, bottom 5% right 40%;
     }
@@ -495,10 +532,11 @@
         position: static;
         margin: 0 auto;
         font-size: 0.8rem;
-    }.testimonial-box {
-         padding: 10px 10px;
-         min-height: 250px;
-     }
+    }
+    .testimonial-box {
+        padding: 10px 10px;
+        min-height: 250px;
+    }
     .testimonial-box p {
         font-family: buzzlight !important;
         font-size: 0.9rem;
@@ -570,17 +608,17 @@
         gap: 4%;
         padding-left: 0;
     }
-    .wp-icon{
+    .wp-icon {
         width: 60px;
         position: fixed;
         right: 10px;
-        bottom:15px;
+        bottom: 15px;
         z-index: 10000;
     }
 
     .social-icons a {
         font-size: 1.2rem;
-        padding:0px 20px;
+        padding: 0px 20px;
         transition: 0.3s;
     }
     .list-content {
@@ -671,7 +709,9 @@
     }
     .header-hero-section-work {
         height: 450px;
-        background-image: url("../images/OurWork/Group\ 5506.svg"), url("../images/OurWork/Group\ 5521.svg"), url("../images/OurWork/Group\ 5522.svg");
+        background-image: url("../images/OurWork/Group\ 5506.svg"),
+            url("../images/OurWork/Group\ 5521.svg"),
+            url("../images/OurWork/Group\ 5522.svg");
         background-position: right 10% bottom, left 10% bottom, center left 30%;
         background-size: 13rem, 5rem, 100%;
         background-repeat: no-repeat;
@@ -803,12 +843,12 @@
         right: 6rem;
         top: 0rem;
     }
-    .content-pattern-img-1 img  {
+    .content-pattern-img-1 img {
         position: absolute;
         height: 40px;
         margin-top: -20%;
     }
-    .content-pattern-img-1   {
+    .content-pattern-img-1 {
         position: absolute;
         width: 70px;
         left: 20%;
@@ -819,18 +859,18 @@
         font-size: 1.3rem;
         max-width: 97%;
     }
-    .about-title{
+    .about-title {
         margin-top: -60px;
     }
     .about-content-yellow-bg {
         padding: 30px 0;
         margin-top: -30px;
-        background-image: url("../images/Aboutus/blue_logo.png"),url("../images/Aboutus/Path\ 45658.svg");
+        background-image: url("../images/Aboutus/blue_logo.png"),
+            url("../images/Aboutus/Path\ 45658.svg");
 
-        background-position: top -4% left 6%,right center;
-        background-size: 5rem,cover;
+        background-position: top -4% left 6%, right center;
+        background-size: 5rem, cover;
         background-repeat: no-repeat;
-
     }
     .about-content-yellow-bg div {
         margin-left: 1rem;
@@ -984,22 +1024,24 @@
         width: 25%;
     }
     /* career section */
-    .center-content-career{
-margin-top: -2rem;
-width: 100vw;
+    .center-content-career {
+        margin-top: -2rem;
+        width: 100vw;
     }
-    .cross-ui{
+    .cross-ui {
         width: 5% !important;
     }
 }
 
-
-
 @media only screen and (max-width: 480px) {
-ul#scene2 {top: 109px;}
-.landing_banner figcaption h2 {  font-size: 60px;}
+    ul#scene2 {
+        top: 109px;
+    }
+    .landing_banner figcaption h2 {
+        font-size: 60px;
+    }
 }
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
     .thankyou_page {
         height: auto;
         min-height: 550px;
