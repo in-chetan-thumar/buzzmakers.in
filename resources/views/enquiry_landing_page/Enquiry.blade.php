@@ -1,8 +1,9 @@
 @extends('enquiry_landing_page.layouts.master')
 
 @section('title')
-    {{ $content->title ?? "" }}
+    {{ $content->title ?? '' }}
 @endsection
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/css/splide.min.css">
 <style>
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button {
@@ -11,10 +12,12 @@
         appearance: none;
         margin: 0;
     }
-    .select-style{
+
+    .select-style {
         width: 100%;
     }
-    .multiselect-dropdown{
+
+    .multiselect-dropdown {
         width: 306px !important;
         display: inline-block;
         border-bottom: solid 1px #ced4da;
@@ -25,16 +28,20 @@
         background-position: right .75rem center;
         background-size: 16px 12px;
     }
-    .multiselect-dropdown span.optext, .multiselect-dropdown span.placeholder{
-        margin-right:0.5em;
-        margin-bottom:2px;
-        padding:1px 0;
+
+    .multiselect-dropdown span.optext,
+    .multiselect-dropdown span.placeholder {
+        margin-right: 0.5em;
+        margin-bottom: 2px;
+        padding: 1px 0;
         border-radius: 4px;
-        display:inline-block;
+        display: inline-block;
     }
-    .multiselect-dropdown span.optext{
-        padding:1px 0.75em;
+
+    .multiselect-dropdown span.optext {
+        padding: 1px 0.75em;
     }
+
     .multiselect-dropdown span.optext .optdel {
         float: right;
         margin: 0 -6px 1px 5px;
@@ -44,45 +51,53 @@
         color: #666;
 
     }
-    .multiselect-dropdown span.optext .optdel:hover { color: #c66;}
-    .multiselect-dropdown span.placeholder{
-        color:white;
+
+    .multiselect-dropdown span.optext .optdel:hover {
+        color: #c66;
+    }
+
+    .multiselect-dropdown span.placeholder {
+        color: white;
         background-color: #5504B0;
         font-size: 14px;
 
     }
-    .multiselect-dropdown-list-wrapper{
+
+    .multiselect-dropdown-list-wrapper {
         z-index: 100;
-        padding:2px;
+        padding: 2px;
         /*border-radius: 4px;*/
         display: none;
         margin: -1px;
         /*position: absolute;*/
-        top:0;
+        top: 0;
         left: 0;
         right: 0;
         background-color: #5504B0;
 
     }
 
-    .multiselect-dropdown-list{
+    .multiselect-dropdown-list {
         height: 15rem;
-        overflow-y:auto;
+        overflow-y: auto;
         overflow-x: hidden;
         font-size: 14px;
     }
+
     .multiselect-dropdown-list::-webkit-scrollbar {
         width: 6px;
     }
+
     .multiselect-dropdown-list::-webkit-scrollbar-thumb {
         background-color: #bec4ca;
-        border-radius:3px;
+        border-radius: 3px;
     }
 
-    .multiselect-dropdown-list div{
+    .multiselect-dropdown-list div {
         padding: 5px;
     }
-    .multiselect-dropdown-list input{
+
+    .multiselect-dropdown-list input {
         height: 1.15em;
         width: 1.15em;
         margin-right: 0.35em;
@@ -90,16 +105,74 @@
 
     }
 
-    .multiselect-dropdown-list div:hover{
+    .multiselect-dropdown-list div:hover {
         background-color: #5504B0;
     }
-    .multiselect-dropdown span.maxselected {width:100%; }
+
+    .multiselect-dropdown span.maxselected {
+        width: 100%;
+    }
+
+    /* Adjust arrow styles */
+    .splide__arrows {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    .custom-arrow {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    /* Adjust arrow styles */
+    .splide__arrows {
+        position: absolute;
+        top: -70px;
+        /* Adjust top position */
+        right: 20px;
+        /* Adjust right position */
+    }
+
+    /* .custom-arrow {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 100px;
+        /* Set arrow width */
+    height: 100px;
+    background-color: black;
+    /* Set arrow height */
+    }
+
+    */ .splide__arrow--prev {
+        position: absolute;
+        left: 90%;
+        width: 60px;
+        height: 60px;
+        /* Adjust left position */
+    }
+
+    .splide__arrow--next {
+        position: absolute;
+        right: 0px;
+        width: 60px;
+        height: 60px;
+        /* Adjust right position */
+    }
 </style>
 @section('main')
     <!-- section header-image -->
+
     <a name="home"></a>
-    <div class="landing_page " style="background-image:url(assets/frontend/images/formimg1.png);background-repeat:no-repeat;background-position: left 50px bottom 80px;">
-    <section class="landing_banner responsive-container " style="background-image: url(assets/frontend/images/b-1.png);background-repeat: no-repeat;background-position: center bottom;">
+    <div class="landing_page "
+        style="background-image:url(assets/frontend/images/formimg1.png);background-repeat:no-repeat;background-position: left 50px bottom 80px;">
+        <section class="landing_banner responsive-container "
+            style="background-image: url(assets/frontend/images/b-1.png);background-repeat: no-repeat;background-position: center bottom;">
 
 
             <div class="container">
@@ -108,14 +181,14 @@
                         <figcaption>
                             <ul id="scene2">
                                 <li class="layer" data-depth="0.8">
-                                    <div class="layer1"><img src="{{asset('assets/frontend/images/line1.png')}}"></div>
+                                    <div class="layer1"><img src="{{ asset('assets/frontend/images/line1.png') }}"></div>
                                 </li>
                             </ul>
                             <h2>Missing<br> the buzz?</h2>
                             <p>You're in the right place.<br>Let's create it!</p>
                             <ul id="scene3">
                                 <li class="layer" data-depth="0.8">
-                                    <div class="layer1"><img src="{{asset('assets/frontend/images/line2.png')}}"></div>
+                                    <div class="layer1"><img src="{{ asset('assets/frontend/images/line2.png') }}"></div>
                                 </li>
                             </ul>
                         </figcaption>
@@ -124,91 +197,99 @@
                         <div class="landing_form contact-right-side-content ">
                             <h4 class="text-white">Approach for Buzz</h4>
                             {!! Form::open([
-                                 'url' => route('enquiry.landing.page.store'),
-                                 'method' => 'POST',
-                                 'id' => 'contact-form',
-                                 'files' => true,
-                             ]) !!}
+                                'url' => route('enquiry.landing.page.store'),
+                                'method' => 'POST',
+                                'id' => 'contact-form',
+                                'files' => true,
+                            ]) !!}
                             <div class="row">
                                 <div class="col-md-12">
                                     {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => ' Full Name']) !!}
                                     <span class="text-danger" style="font-size:15px ; margin-top:0">
-                                @error('name')
-                                        {{ $message }}
+                                        @error('name')
+                                            {{ $message }}
                                         @enderror
-                            </span>
+                                    </span>
                                 </div>
                                 <div class="col-md-12">
                                     {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
                                     <span class="text-danger" style="font-size:15px ; margin-top:0">
-                                @error('email')
-                                        {{ $message }}
+                                        @error('email')
+                                            {{ $message }}
                                         @enderror
-                            </span>
+                                    </span>
                                 </div>
                                 <div class="col-md-12">
-                                    {!! Form::number('mobile', null, ['class' => 'form-control', 'placeholder' => 'Mobile',           'oninput'=>"javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
-                            ",
-                            'maxlength' => "10",]) !!}
+                                    {!! Form::number('mobile', null, [
+                                        'class' => 'form-control',
+                                        'placeholder' => 'Mobile',
+                                        'oninput' => "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+                                        'maxlength' => '10',
+                                    ]) !!}
                                     <span class="text-danger" style="font-size:15px">
-                                @error('mobile')
-                                        {{ $message }}
+                                        @error('mobile')
+                                            {{ $message }}
                                         @enderror
-                            </span>
+                                    </span>
                                 </div>
                                 <div class="col-md-12">
                                     {!! Form::text('business_name', null, ['class' => 'form-control', 'placeholder' => 'Business Name']) !!}
                                     <span class="text-danger" style="font-size:15px ; margin-top:0">
-                                @error('business_name')
-                                        {{ $message }}
+                                        @error('business_name')
+                                            {{ $message }}
                                         @enderror
-                            </span>
+                                    </span>
                                 </div>
                                 <div class="col-md-12">
                                     {!! Form::text('website', null, ['class' => 'form-control', 'placeholder' => 'Website']) !!}
                                     <span class="text-danger" style="font-size:15px ; margin-top:3">
-                                @error('website')
-                                        {{ $message }}
+                                        @error('website')
+                                            {{ $message }}
                                         @enderror
-                            </span>
+                                    </span>
                                 </div>
                                 <div class="col-md-12 mb-3">
-                                    <select name="services[]" class="select select-style outcomes" multiple  multiselect-select-all="true" id="outcomes" >
-                                      <option value="Social Media Marketing">Social Media Marketing</option>
-                                        <option value="Website Design and Development">Website Design and Development</option>
+                                    <select name="services[]" class="select select-style outcomes" multiple
+                                        multiselect-select-all="true" id="outcomes">
+                                        <option value="Social Media Marketing">Social Media Marketing</option>
+                                        <option value="Website Design and Development">Website Design and Development
+                                        </option>
                                         <option value="Branding">Branding</option>
                                         <option value="Performance Marketing">Performance Marketing</option>
                                         <option value="UIUX Designing">UIUX Designing</option>
-                                        <option value="Mobile App Design & Development">Mobile App Design & Development</option>
+                                        <option value="Mobile App Design & Development">Mobile App Design & Development
+                                        </option>
                                         <option value="Photography/ Videography">Photography / Videography</option>
                                         <option value="Reel Production">Reel Production</option>
                                         <option value="Influencer Marketing">Influencer Marketing</option>
                                     </select>
-                                    <span id="outcomeaddress" style="margin-top: 29px; margin-left: 275px; color: red;"></span>
+                                    <span id="outcomeaddress"
+                                        style="margin-top: 29px; margin-left: 275px; color: red;"></span>
                                     <div id="div1"></div>
                                     <span class="text-danger" style="font-size:15px">
-                                            @error('services')
-                                        {{ $message }}
+                                        @error('services')
+                                            {{ $message }}
                                         @enderror
-                                        </span>
+                                    </span>
                                 </div>
 
                                 <div class="col-md-12">
-                                    {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Message','rows'=>'4']) !!}
+                                    {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Message', 'rows' => '4']) !!}
                                     <span class="text-danger" style="font-size:15px ; margin-top:3">
-                                @error('message')
-                                        {{ $message }}
+                                        @error('message')
+                                            {{ $message }}
                                         @enderror
-                            </span>
+                                    </span>
                                 </div>
 
                                 <div class="col-md-12">
-                                    {!! NoCaptcha::display(['data-theme' => 'light' ]) !!}
+                                    {!! NoCaptcha::display(['data-theme' => 'light']) !!}
                                     <span class="text-danger" style="font-size:15px">
-                                                    @error('g-recaptcha-response')
-                                        {{ $message }}
+                                        @error('g-recaptcha-response')
+                                            {{ $message }}
                                         @enderror
-                            </span>
+                                    </span>
                                 </div>
                                 <div class="col-md-12">
                                     {{ Form::submit('Submit', ['class' => 'btn btn-buzz-connect']) }}
@@ -217,14 +298,15 @@
                             {{ Form::close() }}
                             <ul id="scene1">
                                 <li class="layer" data-depth="0.8">
-                                    <div class="layer1"><img src="{{asset('assets/frontend/images/formline3.png')}}"></div>
+                                    <div class="layer1"><img src="{{ asset('assets/frontend/images/formline3.png') }}">
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
     </div>
 
     <a name="clients"></a>
@@ -241,9 +323,9 @@
                     <p class="title-tags">
                         Pick a service to download your success
 
-                        {{--                        Master of all, jack of none<br>--}}
-{{--                        We've mastered the art of buzz through a holistic approach to<br>--}}
-{{--                        branding and marketing.Pick a service to get buzzing!--}}
+                        {{--                        Master of all, jack of none<br> --}}
+                        {{--                        We've mastered the art of buzz through a holistic approach to<br> --}}
+                        {{--                        branding and marketing.Pick a service to get buzzing! --}}
                     </p>
                 </div>
             </div>
@@ -393,13 +475,15 @@
         </div>
     </section>
 
+    @include('frontend.components.insta_reels')
+
     <a name="testimonials"></a>
 
     @include('frontend.components.testimonials')
     <!-- end -->
 
     <a name="contact"></a>
-<br><br><br><br>
+    <br><br><br><br>
 
     <!-- section address start -->
     <section class="section-address responsive-container">
@@ -438,7 +522,6 @@
     {!! $table !!}
 
     {{-- @include('frontend.components.completefaqs') --}}
-
 @endsection
 
 @section('js')
@@ -453,4 +536,3 @@
         $('#scene3').parallax();
     </script>
 @endsection
-
