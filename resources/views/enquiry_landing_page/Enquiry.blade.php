@@ -448,23 +448,32 @@
             <div class="text-center mb-5 reveal">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-5">
-                        <img src="{{ asset('assets/frontend/images/pooja.png') }}" class="w-90 h-90" alt="proj4">
+                        <a href="{{ route('frontend.poojaent') }}">
+                            <img src="{{ asset('assets/frontend/images/pooja.png') }}" class="w-90 h-90" alt="proj4">
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
-                        <img src="{{ asset('assets/frontend/images/purusham.png') }}" class="w-90 h-90" alt="proj4">
-
+                        <a href="{{ route('frontend.purusham') }}">
+                            <img src="{{ asset('assets/frontend/images/purusham.png') }}" class="w-90 h-90"
+                                alt="proj4">
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
-                        <img src="{{ asset('assets/frontend/images/vdc.png') }}" class="w-90 h-90" alt="proj4">
+                        <a href="{{ route('frontend.vdc') }}">
+                            <img src="{{ asset('assets/frontend/images/vdc.png') }}" class="w-90 h-90" alt="proj4">
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
-                        <img src="{{ asset('assets/frontend/images/Nutra-care.png') }}" class="w-90 h-90"
-                            alt="proj4">
-
+                        <a href="{{ route('frontend.nutra') }}">
+                            <img src="{{ asset('assets/frontend/images/Nutra-care.png') }}" class="w-90 h-90"
+                                alt="proj4">
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
-                        <img src="{{ asset('assets/frontend/images/jiomeet.png') }}" class="w-90 h-90" alt="proj4">
-
+                        <a href="{{ route('frontend.jio') }}">
+                            <img src="{{ asset('assets/frontend/images/jiomeet.png') }}" class="w-90 h-90"
+                                alt="proj4">
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
                         <img src="{{ asset('assets/frontend/images/image6.png') }}" class="w-90 h-90" alt="proj4">
