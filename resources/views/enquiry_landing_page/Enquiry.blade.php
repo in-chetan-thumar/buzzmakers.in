@@ -138,18 +138,18 @@
         /* Adjust right position */
     }
 
-    /* .custom-arrow {
+    .custom-arrow {
         background-color: transparent;
         border: none;
         cursor: pointer;
         width: 100px;
         /* Set arrow width */
-    height: 100px;
-    background-color: black;
-    /* Set arrow height */
+        height: 100px;
+        background-color: black;
+        /* Set arrow height */
     }
 
-    */ .splide__arrow--prev {
+    .splide__arrow--prev {
         position: absolute;
         left: 90%;
         width: 60px;
