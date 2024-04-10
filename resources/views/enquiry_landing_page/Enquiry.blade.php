@@ -448,29 +448,29 @@
             <div class="text-center mb-5 reveal">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-5">
-                        <a href="{{ route('frontend.poojaent') }}">
+                        <a href="{{ route('frontend.poojaent') }}" target="blank">
                             <img src="{{ asset('assets/frontend/images/pooja.png') }}" class="w-90 h-90" alt="proj4">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
-                        <a href="{{ route('frontend.purusham') }}">
+                        <a href="{{ route('frontend.purusham') }}" target="blank">
                             <img src="{{ asset('assets/frontend/images/purusham.png') }}" class="w-90 h-90"
                                 alt="proj4">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
-                        <a href="{{ route('frontend.vdc') }}">
+                        <a href="{{ route('frontend.vdc') }}" target="blank">
                             <img src="{{ asset('assets/frontend/images/vdc.png') }}" class="w-90 h-90" alt="proj4">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
-                        <a href="{{ route('frontend.nutra') }}">
+                        <a href="{{ route('frontend.nutra') }}" target="blank">
                             <img src="{{ asset('assets/frontend/images/Nutra-care.png') }}" class="w-90 h-90"
                                 alt="proj4">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
-                        <a href="{{ route('frontend.jio') }}">
+                        <a href="{{ route('frontend.jio') }}" target="blank">
                             <img src="{{ asset('assets/frontend/images/jiomeet.png') }}" class="w-90 h-90"
                                 alt="proj4">
                         </a>
