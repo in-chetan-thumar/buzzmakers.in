@@ -151,7 +151,7 @@
 
     .splide__arrow--prev {
         position: absolute;
-        left: 80%;
+        left: 87%;
         width: 60px;
         height: 60px;
         /* Adjust left position */
