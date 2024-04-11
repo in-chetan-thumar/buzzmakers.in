@@ -26,7 +26,7 @@
                     Explore our journey with VDC - Vegan Drink Company, from logo design to digital marketing. Discover how
                     our services elevated their brand presence and engaged conscious consumers.
                 </p>
-                <a href="" class="btn btn-buzz btn_xl mt-2">Explore More</a>
+                {{-- <a href="" class="btn btn-buzz btn_xl mt-2">Explore More</a> --}}
             </div>
         </div>
     </section>
