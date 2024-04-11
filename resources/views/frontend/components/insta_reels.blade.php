@@ -18,7 +18,7 @@
             </div>
 
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="margin-left: 10px">
+                <div class="swiper-slide" style="margin-left: 12px">
                     <blockquote class="instagram-media"
                         data-instgrm-permalink="https://www.instagram.com/reel/C3IJNZiBmPq/?utm_source=ig_embed&amp;utm_campaign=loading"
                         data-instgrm-version="14"></blockquote>
