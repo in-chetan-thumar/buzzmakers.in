@@ -5,6 +5,7 @@
 @section('css')
     <link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/custom.css') }}>
     <link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/responsive.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/swiper-bundle.min.css') }}>
 @endsection
 @section('main')
     <section class="page_banner section_padding section-post pb0">
@@ -154,55 +155,190 @@
                 <h1>Social Media Design</h1>
             </div>
         </div>
-        <div class="row g-0">
-            <div class="col">
-                <div class="instagram_box"><img src="{{ asset('assets/frontend/images/vdc/instagram1.jpg') }}"
-                        alt=""></div>
-            </div>
-            <div class="col">
-                <div class="instagram_box"><img src="{{ asset('assets/frontend/images/vdc/instagram2.png') }}"
-                        alt=""></div>
-            </div>
-            <div class="col">
-                <div class="instagram_box"><img src="{{ asset('assets/frontend/images/vdc/instagram3.jpg') }}"
-                        alt=""></div>
-            </div>
-            <div class="col">
-                <div class="instagram_box"><img src="{{ asset('assets/frontend/images/vdc/instagram4.jpg') }}"
-                        alt=""></div>
-            </div>
-            <div class="col">
-                <div class="instagram_box"><img src="{{ asset('assets/frontend/images/vdc/instagram5.jpg') }}"
-                        alt=""></div>
+        <div class="swiper mySwiper_instagram">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="instagram_box">
+                        <a href="#"><img src="{{ asset('assets/frontend/images/vdc/instagram1.jpg') }}"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram_box">
+                        <a href="#"><img src="{{ asset('assets/frontend/images/vdc/instagram2.png') }}"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram_box">
+                        <a href="#"><img src="{{ asset('assets/frontend/images/vdc/instagram3.jpg') }}"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram_box">
+                        <a href="#"><img src="{{ asset('assets/frontend/images/vdc/instagram4.jpg') }}"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="instagram_box">
+                        <a href="#"><img src="{{ asset('assets/frontend/images/vdc/instagram5.jpg') }}"
+                                alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section_padding section2 ">
+
+    <section class="section_padding section2 video_slider">
         <div class="container">
-            <div class="row g-2 g-xxl-4 g-lg-4 g-md-3 g-sm-2">
-                <div class="col-6 col-xxl-3 col-lg-3 col-md-3 col-sm-6">
-                    <figure class="video_box">
-                        <video controls src="{{ asset('assets/frontend/images/vdc/video/VDCGame.mp4') }}"></video>
-                    </figure>
+            <div class="swiper mySwiper_video">
+                <div class="main_arrow">
+                    <div class="swiper-button-prev swiper-button-prev-video">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path d="M14.6 6L16 7.4L11.4 12L16 16.6L14.6 18L8.6 12L14.6 6Z" fill="white" />
+                        </svg>
+                    </div>
+
+                    <div class="swiper-button-next swiper-button-next-video">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <rect width="24" height="24" rx="12" fill="#a1cc39" />
+                            <path d="M9.4 18L8 16.6L12.6 12L8 7.4L9.4 6L15.4 12L9.4 18Z" fill="white" />
+                        </svg>
+                    </div>
                 </div>
-                <div class="col-6 col-xxl-3 col-lg-3 col-md-3 col-sm-6">
-                    <figure class="video_box">
-                        <video controls src="{{ asset('assets/frontend/images/vdc/video/VDCGym.mp4') }}"></video>
-                    </figure>
-                </div>
-                <div class="col-6 col-xxl-3 col-lg-3 col-md-3 col-sm-6">
-                    <figure class="video_box">
-                        <video controls src="{{ asset('assets/frontend/images/vdc/video/VDCHoli.mp4') }}"></video>
-                    </figure>
-                </div>
-                <div class="col-6 col-xxl-3 col-lg-3 col-md-3 col-sm-6">
-                    <figure class="video_box">
-                        <video controls
-                            src="{{ asset('assets/frontend/images/vdc/video/VDCStopMotionReel.mp4') }}"></video>
-                    </figure>
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video class="insta-video" controls="" id="reel1"
+                            poster="{{ asset('assets/frontend/images/vdc/videothumb1.webp') }}">
+                            <source src="{{ asset('assets/frontend/images/vdc/video/VDCGame.mp4') }}" type="video/mp4" />
+                            <source src="{{ asset('assets/frontend/images/vdc/video/VDCGame.mp4') }}" type="video/ogg" />
+                        </video>
+                        <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reel1">
+                            <img src="{{ asset('assets/frontend/images/vdc/video-icon.webp') }}" alt="video-icon" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="insta-video" controls="" id="reel2"
+                            poster="{{ asset('assets/frontend/images/vdc/videothumb2.webp') }}">
+                            <source src="{{ asset('assets/frontend/images/vdc/video/VDCGym.mp4') }}" type="video/mp4" />
+                            <source src="{{ asset('assets/frontend/images/vdc/video/VDCGym.mp4') }}" type="video/ogg" />
+                        </video>
+                        <div class="video-controls1 video-icon insta-play-icon reel2" data-reel="reel2">
+                            <img src="{{ asset('assets/frontend/images/vdc/video-icon.webp') }}" alt="video-icon" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="insta-video" controls="" id="reel3"
+                            poster="{{ asset('assets/frontend/images/vdc/videothumb3.webp') }}">
+                            <source src="{{ asset('assets/frontend/images/vdc/video/VDCHoli.mp4') }}" type="video/mp4" />
+                            <source src="{{ asset('assets/frontend/images/vdc/video/VDCHoli.mp4') }}" type="video/ogg" />
+                        </video>
+                        <div class="video-controls1 video-icon insta-play-icon reel3" data-reel="reel3">
+                            <img src="{{ asset('assets/frontend/images/vdc/video-icon.webp') }}" alt="video-icon" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="insta-video" controls="" id="reel4"
+                            poster="{{ asset('assets/frontend/images/vdc/videothumb4.webp') }}">
+                            <source src="{{ asset('assets/frontend/images/vdc/video/VDCStopMotionReel.mp4') }}"
+                                type="video/mp4" />
+                            <source src="{{ asset('assets/frontend/images/vdc/video/VDCStopMotionReel.mp4') }}"
+                                type="video/ogg" />
+                        </video>
+                        <div class="video-controls1 video-icon insta-play-icon reel4" data-reel="reel4">
+                            <img src="{{ asset('assets/frontend/images/vdc/video-icon.webp') }}" alt="video-icon" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+@endsection
+@section('js')
+    <script src={{ asset('assets/frontend/js/vdc/swiper-bundle.min.js') }}></script>
+    <script src={{ asset('assets/frontend/js/vdc/custom.js') }}></script>
+    <script>
+        var swiperverticals = new Swiper(".mySwiper_video", {
+            //autoplay:2000,
+            speed: 1000,
+
+            slidesPerView: 4,
+            spaceBetween: 40,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next-video",
+                prevEl: ".swiper-button-prev-video",
+            },
+            breakpoints: {
+                1200: {
+                    //centeredSlides: true,
+                    spaceBetween: 30,
+                },
+
+                991: {
+                    slidesPerView: 4,
+                    centeredSlides: true,
+                    spaceBetween: 30,
+                },
+                767: {
+                    slidesPerView: 3,
+                    centeredSlides: true,
+                    spaceBetween: 20,
+                },
+                575: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+
+    <script>
+        var swiperinstagram = new Swiper(".mySwiper_instagram", {
+            autoplay: true,
+            speed: 1000,
+
+            slidesPerView: 5,
+            spaceBetween: 0,
+            breakpoints: {
+                1200: {
+                    //centeredSlides: true,
+                    spaceBetween: 0,
+                },
+
+                991: {
+                    slidesPerView: 5,
+                },
+                767: {
+                    slidesPerView: 3,
+                },
+                575: {
+                    slidesPerView: 2,
+                },
+                480: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 2,
+                },
+            },
+        });
+    </script>
 @endsection

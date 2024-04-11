@@ -4,6 +4,9 @@
     {{ $content->title ?? '' }}
 @endsection
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/css/splide.min.css">
+<link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/custom.css') }}>
+<link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/responsive.css') }}>
+<link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/swiper-bundle.min.css') }}>
 <style>
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button {
@@ -113,56 +116,13 @@
         width: 100%;
     }
 
-    /* Adjust arrow styles */
-    .splide__arrows {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        transform: translateY(-50%);
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: #FBD206;
     }
 
-    .custom-arrow {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    /* Adjust arrow styles */
-    .splide__arrows {
-        position: absolute;
-        top: -70px;
-        /* Adjust top position */
-        right: 20px;
-        /* Adjust right position */
-    }
-
-    .custom-arrow {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        width: 100px;
-        /* Set arrow width */
-        height: 100px;
-        background-color: black;
-        /* Set arrow height */
-    }
-
-    .splide__arrow--prev {
-        position: absolute;
-        left: 87%;
-        width: 60px;
-        height: 60px;
-        /* Adjust left position */
-    }
-
-    .splide__arrow--next {
-        position: absolute;
-        right: 0px;
-        width: 60px;
-        height: 60px;
-        /* Adjust right position */
+    element.style {
+        margin-left: 20px !important;
     }
 </style>
 @section('main')
