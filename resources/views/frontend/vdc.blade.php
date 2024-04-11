@@ -19,14 +19,12 @@
             <div class="title_1 text-center">
                 <div class="title_green">
                     <h1>
-                        Lorem ipsum dolor sit<br />
-                        amet, consectetur adipiscing elit
+                        Crafting the Complete Brand Experience
                     </h1>
                 </div>
                 <p class="title-tags">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                    ipsum
+                    Explore our journey with VDC - Vegan Drink Company, from logo design to digital marketing. Discover how
+                    our services elevated their brand presence and engaged conscious consumers.
                 </p>
                 <a href="" class="btn btn-buzz btn_xl mt-2">Explore More</a>
             </div>
