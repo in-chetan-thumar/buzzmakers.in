@@ -73,11 +73,17 @@
                             src="{{ asset('assets/frontend/images/OurWork/salvi.jpg') }}" class="w-100 image-radius"
                             alt="snap1"></a>
                 </div>
-                {{-- <div class="col-md-6">
-                    <a href={{ route('frontend.vdc') }}><img
-                            src="{{ asset('assets/frontend/images/vdc/casestudybanner.webp') }}" class="w-100 image-radius"
-                            alt="snap1"></a>
-                </div> --}}
+                <div class="col-md-6">
+                    <a href="{{ route('frontend.sarvotkarsh') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/unnamed.png') }}" class="w-100 image-radius">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="{{ route('frontend.vdc') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/vdc-case-study.png') }}"
+                            class="w-100 image-radius">
+                    </a>
+                </div>
             </div>
         </div>
         </div>

@@ -193,7 +193,7 @@
                                         @enderror
                                     </span>
                                 </div>
-                                <div class="col-md-12">
+                                {{-- <div class="col-md-12">
                                     {!! Form::text('business_name', null, ['class' => 'form-control', 'placeholder' => 'Business Name']) !!}
                                     <span class="text-danger" style="font-size:15px ; margin-top:0">
                                         @error('business_name')
@@ -232,7 +232,7 @@
                                             {{ $message }}
                                         @enderror
                                     </span>
-                                </div>
+                                </div> --}}
 
                                 <div class="col-md-12">
                                     {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Message', 'rows' => '4']) !!}
@@ -409,35 +409,37 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-5">
                         <a href="{{ route('frontend.poojaent') }}" target="blank">
-                            <img src="{{ asset('assets/frontend/images/pooja.png') }}" class="w-90 h-90" alt="proj4">
+                            <img src="{{ asset('assets/frontend/images/pooja.png') }}" class="w-90 h-90" alt="poojaent">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
                         <a href="{{ route('frontend.purusham') }}" target="blank">
                             <img src="{{ asset('assets/frontend/images/purusham.png') }}" class="w-90 h-90"
-                                alt="proj4">
+                                alt="purusham">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
                         <a href="{{ route('frontend.vdc') }}" target="blank">
-                            <img src="{{ asset('assets/frontend/images/vdc.png') }}" class="w-90 h-90" alt="proj4">
+                            <img src="{{ asset('assets/frontend/images/vdc.png') }}" class="w-90 h-90" alt="vdc">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
                         <a href="{{ route('frontend.nutra') }}" target="blank">
                             <img src="{{ asset('assets/frontend/images/Nutra-care.png') }}" class="w-90 h-90"
-                                alt="proj4">
+                                alt="nutra">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
                         <a href="{{ route('frontend.jio') }}" target="blank">
                             <img src="{{ asset('assets/frontend/images/jiomeet.png') }}" class="w-90 h-90"
-                                alt="proj4">
+                                alt="jio">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5">
-                        <img src="{{ asset('assets/frontend/images/image6.png') }}" class="w-90 h-90" alt="proj4">
-
+                        <a href="{{ route('frontend.sarvotkarsh') }}" target="blank">
+                            <img src="{{ asset('assets/frontend/images/image6.png') }}" class="w-90 h-90"
+                                alt="sarvotkarsh">
+                        </a>
                     </div>
 
                 </div>

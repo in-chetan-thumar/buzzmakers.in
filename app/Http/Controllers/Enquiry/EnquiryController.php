@@ -55,22 +55,22 @@ class EnquiryController extends Controller
     public function store(EnquiryRequest $request)
     {
         try {
-        $params = [];
-        $params['name'] = $request->name;
-        $params['email'] = $request->email;
-        $params['mobile'] = $request->mobile;
-        $params['business_name'] = $request->business_name;
-        $params['website'] = $request->website;
-        $params['message'] = $request->message;
-        if(!empty($request->others)){
-            $service=implode('.', $request->services);
-            $params['services'] = $service.'-'.$request->others;
+            $params = [];
+            $params['name'] = $request->name;
+            $params['email'] = $request->email;
+            $params['mobile'] = $request->mobile;
+            // $params['business_name'] = $request->business_name;
+            // $params['website'] = $request->website;
+            $params['message'] = $request->message;
+            // if(!empty($request->others)){
+            //     $service=implode('.', $request->services);
+            //     $params['services'] = $service.'-'.$request->others;
 
-        }else{
-            $params['services'] = implode('.', $request->services);
-        }
+            // }else{
+            //     $params['services'] = implode('.', $request->services);
+            // }
 
-        $enquiry = EnquiryLandingPage::create($params);
+            $enquiry = EnquiryLandingPage::create($params);
 
             if (!empty($enquiry)) {
                 $params['enquiry_details'] = view('email.Enquiry', compact('enquiry'))->render();
@@ -136,14 +136,15 @@ class EnquiryController extends Controller
     {
         //
     }
-    public function thankYou(Request $request){
+    public function thankYou(Request $request)
+    {
         $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
         $table = resolve('home-repo')->renderHtmlTableEnquiry($request);
 
-        return view('enquiry_landing_page.thank_you',compact('content','table'));
+        return view('enquiry_landing_page.thank_you', compact('content', 'table'));
 
     }
 }

@@ -50,7 +50,7 @@
     </section>
 
     <section class="vdc_section section_padding p0">
-        <img src="{{ asset('assets/frontend/images/vdc/middlebanner.webp') }}" alt="" />
+        <img src="{{ asset('assets/frontend/images/vdc/middlebanner.gif') }}" alt="" />
     </section>
 
     <section class="mid_section section_padding p0">
@@ -117,7 +117,7 @@
     </section>
 
     <section class="section2 p0">
-        <img src="{{ asset('assets/frontend/images/vdc/column_full_img.webp') }}" alt="" />
+        <img src="{{ asset('assets/frontend/images/vdc/section_pro.gif') }}" alt="" />
     </section>
 
     <section class="section2 p0">

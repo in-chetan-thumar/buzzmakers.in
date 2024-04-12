@@ -27,10 +27,10 @@ class EnquiryRequest extends FormRequest
             'name' => 'required',
             'email' => 'required|email',
             'mobile' => 'required|numeric|digits:10',
-            'business_name' => 'required',
-            'website' => 'required',
+            // 'business_name' => 'required',
+            // 'website' => 'required',
             'message' => 'required',
-            'services' => 'required',
+            // 'services' => 'required',
             'g-recaptcha-response' => 'required|captcha',
 
         ];
