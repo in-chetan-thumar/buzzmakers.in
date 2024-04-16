@@ -68,7 +68,7 @@
     </section>
 
     <section class="section2">
-        <img src="{{ asset('assets/frontend/images/vdc/section2.webp') }}" alt="" />
+        <img src="{{ asset('assets/frontend/images/vdc/section.2.gif') }}" alt="" />
     </section>
 
     <section class="column_section">
