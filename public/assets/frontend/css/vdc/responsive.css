@@ -82,6 +82,19 @@
     }
 
 }
+@media only screen and (max-width: 1600px) {
+.pr_rgt {  margin: 0;}    
+}
+
+@media only screen and (max-width: 1399px) {
+    .film_banner h2 {font-size: 40px;}
+    .ks_banner.film_banner h2 {left: 23%;top: 23%;}
+    .first_row {  margin-top: -220px;}
+    .first_row {  margin-top: -160px;}
+    .movie_poster {  background-size: 100%;}
+    .reel_top .reel_title {  padding-right: 0;}
+    .pr_lft {  margin-top: 0;}
+}
 
 @media only screen and (max-width: 1199px) {
     .faqs {
@@ -90,6 +103,15 @@
     }
     .title_green h1 { font-size: 55px;}
     .title_1 .title-tags {  font-size: 20px;}
+    .slider_wrapper { width: calc(100% - 150px); margin: 0 auto;  float: none;}
+    .logo_wrpr img {  max-width: 200px;}
+    .logo_wrpr {height: 340px;}
+    .heading_1 .heading {  font-size: 55px;}
+    .ratanshibanner_img figcaption { top: 60px;}
+    .story_box h2 {  font-size: 20px;}
+    
+    .section_padding {padding: 90px 0;}
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -97,6 +119,10 @@
         background-position: right -11% bottom;
         background-size: 240px;
     }
+    .column_sec_box p {  font-size: 21px;}
+    .column_sec_sub .heading_1 .heading {  font-size: 35px;}
+    .designscreen .heading_1 .heading {  font-size: 90px;}
+    .designscreen .heading_1 h3 {  font-size: 30px;}
 }
 
 @media screen and (min-width:992px) {
@@ -236,6 +262,20 @@
     .lft_img { margin-bottom: 150px;}
     .rgt_img { margin-top: 150px;}
     .socialmediadesign .title_1 { margin-bottom: 70px;}
+    .film_banner h2 {  font-size: 30px;}
+    .middle_cnt h2 {  font-size: 30px;}
+    .middle_cnt p {  font-size: 16px;}
+    .title_2 h2 {  font-size: 33px;}
+    .webdesign_wrpr { position: static;  transform: none;  top: auto;  left: auto;}
+    .first_row {  margin-top: 0;}
+
+    .movie_poster {background-image:none !important;}
+    .ratanshibanner_img figcaption { top: 0px;}
+    .heading_1 .heading { font-size: 45px;}
+    .video-icon img { max-width: 120px;}
+    .column_sec_sub [class*="col-"]+[class*="col-"] { border-left: none;  border-top: 3px solid #742025;  padding-top: 15px;}
+    .influencer_arketing .heading_1 .heading { font-size: 70px;}
+    .influencer_arketing .heading_1 {  margin-bottom: 50px;}
 }
 
 @media only screen and (max-width: 768px) {
@@ -306,6 +346,24 @@
     .lft_img { margin-bottom: 0px;}
     .rgt_img { margin-top: 0px;}
     .socialmediadesign .title_1 { margin-bottom: 50px;}
+    .film_banner h2 {  font-size: 25px;}
+    .title_2 h2 br {display: none;}
+    .swiper-button-next, .swiper-button-prev {width: 40px; height: 40px;}
+    .logo_wrpr { height: 250px;}
+    .logo_design .title_2 h2 {  font-size: 40px;}
+    .movie_poster {  padding-bottom: 130px !important;}
+    .movie_poster p {  font-size: 16px;}
+
+    .instagram_wrpr {padding: 30px;}
+    .video-icon img { max-width: 90px;}
+    .influencer_arketing .heading_1 .heading { font-size: 60px;}
+    .result p {font-size: 20px;}
+    .heading_1 p {  font-size: 20px;}
+    .designscreen .heading_1 .heading { font-size: 70px;}
+    .designscreen .heading_1 h3 {  font-size: 25px;}
+    .designscreen .heading_1 {  margin-bottom: 50px;}
+    .designscreen .heading_1 h3:after {width: 350px;}
+    .videosec_cnt .heading_1 p {  font-size: 20px;}
 }
 @media only screen and (max-width: 600px) {
     .case-studies,
@@ -842,7 +900,7 @@
     .about-content-yellow-bg {
         padding: 30px 0;
         margin-top: -30px;
-        background-image: url("../images/Aboutus/blue_logo.png"),url("../images/Aboutus/Path\ 45658.svg");
+        background-image: url("../images/Aboutus/blue_logo.webp"),url("../images/Aboutus/Path\ 45658.svg");
 
         background-position: top -4% left 6%,right center;
         background-size: 5rem,cover;
@@ -1008,6 +1066,7 @@ width: 100vw;
     .cross-ui{
         width: 5% !important;
     }
+    .logo_poster .section_padding {  padding-top: 140px;}
 }
 
 
@@ -1016,6 +1075,27 @@ width: 100vw;
 .section_padding {  padding: 60px 0;}
 .page_banner {  margin-bottom: -50px;}
 .socialmediadesign .title_1 {  margin-bottom: 30px;}
+.slider_wrapper {  width: calc(100% - 120px);}
+.slider_wrapper .swiper-button-prev { left: -55px;}
+.slider_wrapper .swiper-button-next {  right: -55px;}
+.screenshot_main {  margin-top: -450px;}
+.film_banner h2 {  font-size: 20px;}
+.instagram_wrpr {  padding: 20px 15px;}
+.instagram_wrpr .title_2 h2 {   font-size: 22px;}
+.movie_pramotion .title_2 p {font-size: 15px;}
+.title_2 {margin-bottom: 20px;}
+.middle_cnt h2 {  font-size: 26px;}
+.title_2 h2 {  font-size: 26px;}
+.heading_1 .heading {  font-size: 35px;}
+.videosec_cnt .heading_1 p { font-size: 27px;}
+
+.designscreen .heading_1 .heading {  font-size: 55px;}
+.designscreen .heading_1 h3 {  font-size: 21px;}
+.heading_1 p {  font-size: 18px;}
+.designscreen .heading_1 {  margin-bottom: 40px;}
+.heading_1 p br {display: none;}
+.webpagedesign .heading_1 .heading {  font-size: 45px;}
+.webpagedesign .heading_1 { margin-bottom: 50px;}
 }
 
 
@@ -1023,7 +1103,30 @@ width: 100vw;
 ul#scene2 {top: 109px;}
 .landing_banner figcaption h2 {  font-size: 60px;}
 .video_slider .main_arrow {  margin-bottom: 30px;}
+.swiper-button-next, .swiper-button-prev { width: 30px;  height: 30px;}
+.slider_wrapper {  width: calc(100% - 80px);}
+.slider_wrapper .swiper-button-prev {  left: -40px;}
+.slider_wrapper .swiper-button-next {  right: -45px;}
+.logo_wrpr img {  max-width: 160px;}
+.logo_wrpr {  height: 200px;}
+.film_banner h2 {  font-size: 18px;bottom: 5%;right: 12%;}
+.heading_1 p {  font-size: 20px;}
+.videosec_cnt .heading_1 p { font-size: 23px;}
+.influencer_arketing .heading_1 .heading {  font-size: 50px;}
+.result p {font-size: 18px;    margin-bottom: 20px;}
+.heading_1 p {  font-size: 18px;}
+.designscreen .heading_1 h3:after {  width: 250px;}
+.heading_1 .heading {  font-size: 30px;}
+.ratanshibanner_img figcaption {  top: -10px;}
+.videosec_cnt .heading_1 p {  font-size: 18px;}
+.video-icon img {  max-width: 60px;}
 }
+
+@media only screen and (max-width: 380px) {
+.ratanshibanner_img .heading_1 .heading { font-size: 25px;}    
+}
+
+
 @media screen and (min-width: 992px){
     .thankyou_page {
         height: auto;

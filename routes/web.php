@@ -38,6 +38,9 @@ Route::get('/nutra-care', [\App\Http\Controllers\Frontend\NutraCareController::c
 Route::get('/sarvotkarsh', [\App\Http\Controllers\Frontend\SarvotkarshController::class, 'index'])->name('frontend.sarvotkarsh');
 Route::get('/purusham', [\App\Http\Controllers\Frontend\PurushamController::class, 'index'])->name('frontend.purusham');
 Route::get('/vdc', [\App\Http\Controllers\Frontend\VdcController::class, 'index'])->name('frontend.vdc');
+Route::get('/ks-cheema', [\App\Http\Controllers\Frontend\KSCheemaController::class, 'index'])->name('frontend.ks.cheema');
+Route::get('/drishyam-films', [\App\Http\Controllers\Frontend\DrishyamFilmsController::class, 'index'])->name('frontend.drishyam.films');
+Route::get('/ratanshi', [\App\Http\Controllers\Frontend\RatanshiController::class, 'index'])->name('frontend.ratanshi');
 Route::get('/services-strategy', [\App\Http\Controllers\Frontend\Services\StrategyController::class, 'index'])->name('frontend.services.strategy');
 Route::get('/services-content', [\App\Http\Controllers\Frontend\Services\ContentController::class, 'index'])->name('frontend.services.content');
 Route::get('/services-technology', [\App\Http\Controllers\Frontend\Services\TechnologyController::class, 'index'])->name('frontend.services.technology');
