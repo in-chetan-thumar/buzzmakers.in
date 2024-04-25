@@ -14,7 +14,7 @@ class SalviController extends Controller
      */
     public function index()
     {
-        return view('frontend.salvi_chemical');
+        return view('frontend.case_studies.salvi_chemical');
     }
 
     /**

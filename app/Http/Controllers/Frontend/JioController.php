@@ -14,7 +14,7 @@ class JioController extends Controller
      */
     public function index()
     {
-        return view('frontend.jio');
+        return view('frontend.case_studies.jio');
     }
 
     /**

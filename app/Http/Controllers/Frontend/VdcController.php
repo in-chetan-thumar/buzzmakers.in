@@ -10,7 +10,7 @@ class VdcController extends Controller
 
     public function index()
     {
-        return view('frontend.vdc');
+        return view('frontend.case_studies.vdc');
     }
 
     /**

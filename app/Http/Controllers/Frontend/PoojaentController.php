@@ -14,7 +14,7 @@ class PoojaentController extends Controller
      */
     public function index()
     {
-        return view('frontend.poojaent');
+        return view('frontend.case_studies.poojaent');
     }
 
     /**

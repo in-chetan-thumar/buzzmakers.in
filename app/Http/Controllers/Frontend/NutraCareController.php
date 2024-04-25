@@ -14,7 +14,7 @@ class NutraCareController extends Controller
      */
     public function index()
     {
-        return view('frontend.nutra_care');
+        return view('frontend.case_studies.nutra_care');
     }
 
     /**

@@ -14,7 +14,7 @@ class PurushamController extends Controller
      */
     public function index()
     {
-        return view('frontend.purusham');
+        return view('frontend.case_studies.purusham');
     }
 
     /**

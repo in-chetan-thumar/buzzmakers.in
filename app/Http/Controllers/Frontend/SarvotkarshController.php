@@ -14,7 +14,7 @@ class SarvotkarshController extends Controller
      */
     public function index()
     {
-        return view('frontend.sarvotkarsh');
+        return view('frontend.case_studies.sarvotkarsh');
     }
 
     /**

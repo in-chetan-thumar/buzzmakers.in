@@ -3,9 +3,9 @@
     Ratanshi
 @endsection
 @section('css')
-    <link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/custom.css') }}>
-    <link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/responsive.css') }}>
-    <link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/swiper-bundle.min.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ratanshi/css/custom.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ratanshi/css/responsive.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ratanshi/css/swiper-bundle.min.css') }}>
 @endsection
 @section('main')
     <section class="ratanshibanner section_padding">
@@ -17,7 +17,7 @@
                         Ratanshi kheraj .
                     </div>
                 </figcaption>
-                <img src="{{ asset('assets/frontend/images/vdc/ratanshibanner.webp') }}" alt="" />
+                <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/ratanshibanner.webp') }}" alt="" />
             </div>
         </div>
     </section>
@@ -40,12 +40,12 @@
     <section class="video_full">
         <div class="video_wrapper">
             <video class="insta-video" controls="false" id="reel1"
-                poster="assets/frontend/images/vdc/videowrapper.webp">
+                poster="assets/frontend/case_studies/ratanshi/images/videowrapper.webp">
                 <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/mp4" />
                 <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/ogg" />
             </video>
             <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reel1">
-                <img src="{{ asset('assets/frontend/images/vdc/video_btn.webp') }}" alt="video-icon" />
+                <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/video_btn.webp') }}" alt="video-icon" />
             </div>
         </div>
     </section>
@@ -72,55 +72,64 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="story_box">
-                            <img src="{{ asset('assets/frontend/images/vdc/storyimg1.webp') }}" alt="" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/storyimg1.webp') }}"
+                                alt="" />
                             <h2>Couture 2024</h2>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="story_box">
-                            <img src="{{ asset('assets/frontend/images/vdc/storyimg2.webp') }}" alt="" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/storyimg2.webp') }}"
+                                alt="" />
                             <h2>Featured</h2>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="story_box">
-                            <img src="{{ asset('assets/frontend/images/vdc/storyimg3.webp') }}" alt="" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/storyimg3.webp') }}"
+                                alt="" />
                             <h2>Nazaakat</h2>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="story_box">
-                            <img src="{{ asset('assets/frontend/images/vdc/storyimg4.webp') }}" alt="" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/storyimg4.webp') }}"
+                                alt="" />
                             <h2>Gulmohar</h2>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="story_box">
-                            <img src="{{ asset('assets/frontend/images/vdc/storyimg5.webp') }}" alt="" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/storyimg5.webp') }}"
+                                alt="" />
                             <h2>Roop</h2>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="story_box">
-                            <img src="{{ asset('assets/frontend/images/vdc/storyimg6.webp') }}" alt="" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/storyimg6.webp') }}"
+                                alt="" />
                             <h2>Weaves</h2>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="story_box">
-                            <img src="{{ asset('assets/frontend/images/vdc/storyimg6.webp') }}" alt="" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/storyimg6.webp') }}"
+                                alt="" />
                             <h2>Baatein</h2>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="story_box">
-                            <img src="{{ asset('assets/frontend/images/vdc/storyimg6.webp') }}" alt="" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/storyimg6.webp') }}"
+                                alt="" />
                             <h2>Weaves</h2>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="story_box">
-                            <img src="{{ asset('assets/frontend/images/vdc/storyimg6.webp') }}" alt="" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/storyimg6.webp') }}"
+                                alt="" />
                             <h2>Baatein</h2>
                         </div>
                     </div>
@@ -133,47 +142,59 @@
         <div class="container">
             <div class="row g-2 g-xxl-4 g-xl-4 g-lg-4 g-md-3 g-sm-3">
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg1.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg1.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg2.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg2.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg3.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg3.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg4.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg4.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg5.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg5.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg6.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg6.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg7.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg7.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg8.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg8.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg9.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg9.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg10.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg10.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg11.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg11.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/columnimg12.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/columnimg12.webp') }}"
+                        alt="" />
                 </div>
             </div>
         </div>
     </section>
 
     <section class="fullwidthbanner section_padding">
-        <img src="{{ asset('assets/frontend/images/vdc/fullwidth.png') }}" alt="" />
+        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/fullwidth.png') }}" alt="" />
     </section>
 
     <section class="videosec_cnt fullwidthbanner section_padding pt0">
@@ -197,12 +218,12 @@
     <section class="video_full">
         <div class="video_wrapper">
             <video class="insta-video" controls="false" id="reel2"
-                poster="assets/frontend/images/vdc/videowrapper2.webp">
+                poster="assets/frontend/case_studies/ratanshi/images/videowrapper2.webp">
                 <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/mp4" />
                 <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/ogg" />
             </video>
             <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reel2">
-                <img src="{{ asset('assets/frontend/images/vdc/video_btn.png') }}" alt="video-icon" />
+                <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/video_btn.png') }}" alt="video-icon" />
             </div>
         </div>
     </section>
@@ -211,31 +232,40 @@
         <div class="container">
             <div class="row g-2 g-xxl-4 g-xl-4 g-lg-4 g-md-3 g-sm-3">
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/gulmoharimg1.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/gulmoharimg1.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/gulmoharimg2.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/gulmoharimg2.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/gulmoharimg3.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/gulmoharimg3.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/gulmoharimg4.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/gulmoharimg4.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/gulmoharimg5.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/gulmoharimg5.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/gulmoharimg6.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/gulmoharimg6.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/gulmoharimg7.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/gulmoharimg7.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/gulmoharimg8.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/gulmoharimg8.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/gulmoharimg9.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/gulmoharimg9.webp') }}"
+                        alt="" />
                 </div>
             </div>
         </div>
@@ -263,10 +293,12 @@
                         <div class="reel_top_rgt">
                             <div class="row g-4">
                                 <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                                    <img src="{{ asset('assets/frontend/images/vdc/reelimg1.png') }}" alt="" />
+                                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/reelimg1.png') }}"
+                                        alt="" />
                                 </div>
                                 <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                                    <img src="{{ asset('assets/frontend/images/vdc/reelimg2.png') }}" alt="" />
+                                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/reelimg2.png') }}"
+                                        alt="" />
                                 </div>
                             </div>
                         </div>
@@ -283,42 +315,45 @@
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                         <div class="video_wrapper">
                             <video class="insta-video" controls="false" id="reelv1"
-                                poster="assets/frontend/images/vdc/reelvideo1.webp">
+                                poster="assets/frontend/case_studies/ratanshi/images/reelvideo1.webp">
                                 <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                     type="video/mp4" />
                                 <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                     type="video/ogg" />
                             </video>
                             <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reelv1">
-                                <img src="{{ asset('assets/frontend/images/vdc/video_btn.png') }}" alt="video-icon" />
+                                <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/video_btn.png') }}"
+                                    alt="video-icon" />
                             </div>
                         </div>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                         <div class="video_wrapper">
                             <video class="insta-video" controls="false" id="reelv2"
-                                poster="assets/frontend/images/vdc/reelvideo2.webp">
+                                poster="assets/frontend/case_studies/ratanshi/images/reelvideo2.webp">
                                 <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                     type="video/mp4" />
                                 <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                     type="video/ogg" />
                             </video>
                             <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reelv2">
-                                <img src="{{ asset('assets/frontend/images/vdc/video_btn.png') }}" alt="video-icon" />
+                                <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/video_btn.png') }}"
+                                    alt="video-icon" />
                             </div>
                         </div>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                         <div class="video_wrapper">
                             <video class="insta-video" controls="false" id="reelv3"
-                                poster="assets/frontend/images/vdc/reelvideo3.webp">
+                                poster="assets/frontend/case_studies/ratanshi/images/reelvideo3.webp">
                                 <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                     type="video/mp4" />
                                 <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                     type="video/ogg" />
                             </video>
                             <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reelv3">
-                                <img src="{{ asset('assets/frontend/images/vdc/video_btn.png') }}" alt="video-icon" />
+                                <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/video_btn.png') }}"
+                                    alt="video-icon" />
                             </div>
                         </div>
                     </div>
@@ -334,13 +369,13 @@
             </div>
             <div class="row g-2 g-xxl-4 g-xl-4 g-lg-4 g-md-3 g-sm-3">
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/pmimg1.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/pmimg1.webp') }}" alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/pmimg2.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/pmimg2.webp') }}" alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/pmimg3.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/pmimg3.webp') }}" alt="" />
                 </div>
             </div>
         </div>
@@ -361,7 +396,8 @@
             <div class="about_brand_sub">
                 <div class="row g-4 align-items-center flex-row-reverse">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                        <img src="{{ asset('assets/frontend/images/vdc/abimg.webp') }}" alt="" />
+                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/abimg.webp') }}"
+                            alt="" />
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                         <div class="heading_1">
@@ -463,42 +499,45 @@
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                     <div class="video_wrapper">
                         <video class="insta-video" controls="false" id="reelim1"
-                            poster="assets/frontend/images/vdc/imvideo1.webp">
+                            poster="assets/frontend/case_studies/ratanshi/images/imvideo1.webp">
                             <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                 type="video/mp4" />
                             <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                 type="video/ogg" />
                         </video>
                         <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reelim1">
-                            <img src="{{ asset('assets/frontend/images/vdc/video_btn.png') }}" alt="video-icon" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/video_btn.png') }}"
+                                alt="video-icon" />
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                     <div class="video_wrapper">
                         <video class="insta-video" controls="false" id="reelim2"
-                            poster="assets/frontend/images/vdc/imvideo2.webp">
+                            poster="assets/frontend/case_studies/ratanshi/images/imvideo2.webp">
                             <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                 type="video/mp4" />
                             <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                 type="video/ogg" />
                         </video>
                         <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reelim2">
-                            <img src="{{ asset('assets/frontend/images/vdc/video_btn.png') }}" alt="video-icon" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/video_btn.png') }}"
+                                alt="video-icon" />
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                     <div class="video_wrapper">
                         <video class="insta-video" controls="false" id="reelim3"
-                            poster="assets/frontend/images/vdc/imvideo3.webp">
+                            poster="assets/frontend/case_studies/ratanshi/images/imvideo3.webp">
                             <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                 type="video/mp4" />
                             <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
                                 type="video/ogg" />
                         </video>
                         <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="reelim3">
-                            <img src="{{ asset('assets/frontend/images/vdc/video_btn.png') }}" alt="video-icon" />
+                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/video_btn.png') }}"
+                                alt="video-icon" />
                         </div>
                     </div>
                 </div>
@@ -515,12 +554,13 @@
         <div class="video_full">
             <div class="video_wrapper">
                 <video class="insta-video" controls="false" id="videothumbmain1"
-                    poster="assets/frontend/images/vdc/videothumbmain.webp">
+                    poster="assets/frontend/case_studies/ratanshi/images/videothumbmain.webp">
                     <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/mp4" />
                     <source src="https://cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/ogg" />
                 </video>
                 <div class="video-controls1 video-icon insta-play-icon reel1" data-reel="videothumbmain1">
-                    <img src="{{ asset('assets/frontend/images/vdc/video_btn.png') }}" alt="video-icon" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/video_btn.png') }}"
+                        alt="video-icon" />
                 </div>
             </div>
         </div>
@@ -530,22 +570,28 @@
         <div class="container">
             <div class="row g-2 g-xxl-4 g-xl-4 g-lg-4 g-md-3 g-sm-3">
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/postimg1.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/postimg1.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/postimg2.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/postimg2.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/postimg3.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/postimg3.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/postimg4.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/postimg4.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/postimg5.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/postimg5.webp') }}"
+                        alt="" />
                 </div>
                 <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="{{ asset('assets/frontend/images/vdc/postimg6.webp') }}" alt="" />
+                    <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/postimg6.webp') }}"
+                        alt="" />
                 </div>
             </div>
         </div>
@@ -553,7 +599,7 @@
 
     <section class="pr section_padding"
         style="
-        background-image: url(assets/frontend/images/vdc/pr_bg.webp);
+        background-image: url(assets/frontend/case_studies/ratanshi/images/pr_bg.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -575,7 +621,8 @@
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
                     <div class="pr_rgt">
-                        <img src="{{ asset('assets/frontend/images/vdc/primg.webp') }}" alt="" />
+                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/primg.webp') }}"
+                            alt="" />
                     </div>
                 </div>
             </div>
@@ -598,7 +645,8 @@
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6">
-                    <div class="imgcnt_img"><img src="{{ asset('assets/frontend/images/vdc/noimg.webp') }}"
+                    <div class="imgcnt_img"><img
+                            src="{{ asset('assets/frontend/case_studies/ratanshi/images/noimg.webp') }}"
                             alt="" /></div>
                 </div>
             </div>
@@ -617,7 +665,7 @@
                 </p>
             </div>
 
-            <img src="{{ asset('assets/frontend/images/vdc/designscreen.png') }}" alt="" />
+            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/designscreen.png') }}" alt="" />
         </div>
     </section>
 
@@ -626,7 +674,8 @@
             <div class="row align-items-end justify-content-between">
                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12">
                     <div class="webpagedesign_lft">
-                        <img src="{{ asset('assets/frontend/images/vdc/webpagedesignimg1.png') }}" alt="" />
+                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/webpagedesignimg1.png') }}"
+                            alt="" />
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
@@ -638,11 +687,13 @@
                                 do eiusmod tempor incididunt ut labore et
                             </p>
                         </div>
-                        <img src="{{ asset('assets/frontend/images/vdc/webpagedesignimg2.webp') }}" alt="" />
+                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/webpagedesignimg2.webp') }}"
+                            alt="" />
                         <div class="heading_1 text-center mt-5">
                             <div class="heading">Lorem ipsum</div>
                         </div>
-                        <img src="{{ asset('assets/frontend/images/vdc/webpagedesignimg3.webp') }}" alt="" />
+                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/webpagedesignimg3.webp') }}"
+                            alt="" />
                     </div>
                 </div>
             </div>
@@ -661,28 +712,28 @@
                 </p>
             </div>
         </div>
-        <img src="{{ asset('assets/frontend/images/vdc/packaging_design_img.png') }}" alt="" />
+        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/packaging_design_img.png') }}" alt="" />
     </section>
 
     <section class="reference text-center section_padding">
         <div class="container">
-            <img src="{{ asset('assets/frontend/images/vdc/referenceimg.png') }}" alt="" />
+            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/referenceimg.png') }}" alt="" />
         </div>
     </section>
 
     <section class="reference text-center section_padding pt0">
-        <img src="{{ asset('assets/frontend/images/vdc/pattern.png') }}" alt="" />
+        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/pattern.png') }}" alt="" />
     </section>
 
     <section class="bottom_img">
-        <img src="{{ asset('assets/frontend/images/vdc/bottomimg1.webp') }}" alt="" />
-        <img src="{{ asset('assets/frontend/images/vdc/bottomimg2.webp') }}" alt="" />
-        <img src="{{ asset('assets/frontend/images/vdc/bottomimg3.webp') }}" alt="" />
+        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/bottomimg1.webp') }}" alt="" />
+        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/bottomimg2.webp') }}" alt="" />
+        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/bottomimg3.webp') }}" alt="" />
     </section>
 @endsection
 @section('js')
-    <script src={{ asset('assets/frontend/images/vdc/swiper-bundle.min.js') }}></script>
-    <script src={{ asset('assets/frontend/images/vdc/custom.js') }}></script>
+    <script src={{ asset('assets/frontend/case_studies/ratanshi/js/swiper-bundle.min.js') }}></script>
+    <script src={{ asset('assets/frontend/case_studies/ratanshi/js/custom.js') }}></script>
     <script>
         var swiperstory = new Swiper(".mySwiper_story", {
             autoplay: true,
