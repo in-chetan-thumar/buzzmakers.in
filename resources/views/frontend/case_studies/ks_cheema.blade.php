@@ -3,14 +3,14 @@
     Ks Cheema
 @endsection
 @section('css')
-    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ratanshi/css/custom.css') }}>
-    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ratanshi/css/responsive.css') }}>
-    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ratanshi/css/swiper-bundle.min.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ks/css/custom.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ks/css/responsive.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ks/css/swiper-bundle.min.css') }}>
 @endsection
 @section('main')
     <section class="page_banner section_padding section-post film_banner ks_banner pb0">
         <div class="container text-center">
-            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/ksbanner.svg') }}" alt="" />
+            <img src="{{ asset('assets/frontend/case_studies/ks/images/ksbanner.svg') }}" alt="" />
             <h2>
                 A future ready<br />
                 automobile business
@@ -39,8 +39,8 @@
         </div>
         <div class="logo_design section_padding pb0"
             style="
-          background: url(assets/frontend/case_studies/ratanshi/images/rotate_img2.webp),
-            url('assets/frontend/case_studies/ratanshi/images/logosliderbg.webp');
+          background: url(assets/frontend/case_studies/ks/images/rotate_img2.webp),
+            url('assets/frontend/case_studies/ks/images/logosliderbg.webp');
           background-repeat: no-repeat, no-repeat;
           background-size: 100% auto, cover;
           background-position: bottom -1px center, center;
@@ -56,19 +56,19 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="logo_wrpr">
-                                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/sliderlogo1.webp') }}"
+                                            <img src="{{ asset('assets/frontend/case_studies/ks/images/sliderlogo1.webp') }}"
                                                 alt="" />
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="logo_wrpr">
-                                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/sliderlogo1.webp') }}"
+                                            <img src="{{ asset('assets/frontend/case_studies/ks/images/sliderlogo1.webp') }}"
                                                 alt="" />
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="logo_wrpr">
-                                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/sliderlogo1.webp') }}"
+                                            <img src="{{ asset('assets/frontend/case_studies/ks/images/sliderlogo1.webp') }}"
                                                 alt="" />
                                         </div>
                                     </div>
@@ -112,13 +112,13 @@
             <div class="row g-0">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-6">
                     <div class="photography_img">
-                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/photographyimg1.webp') }}"
+                        <img src="{{ asset('assets/frontend/case_studies/ks/images/photographyimg1.webp') }}"
                             alt="" />
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-6">
                     <div class="photography_img">
-                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/photographyimg2.webp') }}"
+                        <img src="{{ asset('assets/frontend/case_studies/ks/images/photographyimg2.webp') }}"
                             alt="" />
                     </div>
                 </div>
@@ -126,13 +126,13 @@
             <div class="row">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-6">
                     <div class="photography_img">
-                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/photographyimg3.webp') }}"
+                        <img src="{{ asset('assets/frontend/case_studies/ks/images/photographyimg3.webp') }}"
                             alt="" />
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-6">
                     <div class="photography_img">
-                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/photographyimg4.webp') }}"
+                        <img src="{{ asset('assets/frontend/case_studies/ks/images/photographyimg4.webp') }}"
                             alt="" />
                     </div>
                 </div>
@@ -156,13 +156,13 @@
                 <div class="row align-items-center">
                     <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                         <div class="photography_img">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/cardimg1.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/ks/images/cardimg1.webp') }}"
                                 alt="" />
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                         <div class="photography_img">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/cardimg2.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/ks/images/cardimg2.webp') }}"
                                 alt="" />
                         </div>
                     </div>
@@ -173,7 +173,7 @@
 
     <section class="webdesignmain"
         style="
-        background: url(assets/frontend/case_studies/ratanshi/images/webdesignbg.webp);
+        background: url(assets/frontend/case_studies/ks/images/webdesignbg.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -200,7 +200,7 @@
             <div class="row justify-content-end">
                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12">
                     <div class="wd_img">
-                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/webdesignimg.webp') }}"
+                        <img src="{{ asset('assets/frontend/case_studies/ks/images/webdesignimg.webp') }}"
                             alt="" />
                     </div>
                 </div>
@@ -214,34 +214,34 @@
                 <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <div class="first_row">
                         <div class="screenshot noshadow">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/screenshot1.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/ks/images/screenshot1.webp') }}"
                                 alt="" />
                         </div>
                         <div class="screenshot">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/screenshot2.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/ks/images/screenshot2.webp') }}"
                                 alt="" />
                         </div>
                         <div class="screenshot">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/screenshot3.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/ks/images/screenshot3.webp') }}"
                                 alt="" />
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <div class="screenshot">
-                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/screenshot4.webp') }}"
+                        <img src="{{ asset('assets/frontend/case_studies/ks/images/screenshot4.webp') }}"
                             alt="" />
                     </div>
                     <div class="screenshot">
-                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/screenshot5.webp') }}"
+                        <img src="{{ asset('assets/frontend/case_studies/ks/images/screenshot5.webp') }}"
                             alt="" />
                     </div>
                     <div class="screenshot">
-                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/screenshot6.webp') }}"
+                        <img src="{{ asset('assets/frontend/case_studies/ks/images/screenshot6.webp') }}"
                             alt="" />
                     </div>
                     <div class="screenshot noshadow">
-                        <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/screenshot7.webp') }}"
+                        <img src="{{ asset('assets/frontend/case_studies/ks/images/screenshot7.webp') }}"
                             alt="" />
                     </div>
                 </div>
@@ -253,8 +253,8 @@
     </div> --}}
 @endsection
 @section('js')
-    <script src={{ asset('assets/frontend/case_studies/ratanshi/js/swiper-bundle.min.js') }}></script>
-    <script src={{ asset('assets/frontend/case_studies/ratanshi/js/custom.js') }}></script>
+    <script src={{ asset('assets/frontend/case_studies/ks/js/swiper-bundle.min.js') }}></script>
+    <script src={{ asset('assets/frontend/case_studies/ks/js/custom.js') }}></script>
     <script>
         var swiperlogo = new Swiper(".mySwiper_logo", {
             autoplay: true,
