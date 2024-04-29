@@ -8,6 +8,7 @@
     <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ks/css/swiper-bundle.min.css') }}>
 @endsection
 @section('main')
+    <!-- Example section post start-->
     <section class="page_banner section_padding section-post film_banner ks_banner pb0">
         <div class="container text-center">
             <img src="{{ asset('assets/frontend/case_studies/ks/images/ksbanner.svg') }}" alt="" />
@@ -17,6 +18,7 @@
             </h2>
         </div>
     </section>
+    <!-- Example section post end-->
 
     <section class="middle_cnt section_padding p0">
         <div class="container">
@@ -37,7 +39,7 @@
                 </h2>
             </div>
         </div>
-        <div class="logo_design section_padding pb0"
+        <div class="logo_design section_padding"
             style="
           background: url(assets/frontend/case_studies/ks/images/rotate_img2.webp),
             url('assets/frontend/case_studies/ks/images/logosliderbg.webp');
@@ -248,9 +250,6 @@
             </div>
         </div>
     </section>
-    {{-- <div class="footer">
-        <div class="footer-line p-3"></div>
-    </div> --}}
 @endsection
 @section('js')
     <script src={{ asset('assets/frontend/case_studies/ks/js/swiper-bundle.min.js') }}></script>

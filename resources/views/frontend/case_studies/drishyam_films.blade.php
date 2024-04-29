@@ -3,15 +3,15 @@
     Drishyam films
 @endsection
 @section('css')
-    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ratanshi/css/custom.css') }}>
-    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ratanshi/css/responsive.css') }}>
-    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ratanshi/css/swiper-bundle.min.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/drishyam_films/css/custom.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/drishyam_films/css/responsive.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/drishyam_films/css/swiper-bundle.min.css') }}>
 @endsection
 @section('main')
     <!-- Example section post start-->
     <section class="page_banner section_padding section-post film_banner pb0">
         <div class="container text-center">
-            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/filmbanner.webp') }}" alt="" />
+            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/filmbanner.webp') }}" alt="" />
             <h2>
                 Lorem Ipsum<br />
                 is simply dummy text
@@ -32,8 +32,8 @@
 
     <section class="movie_poster section_padding pt0"
         style="
-        background-image: url(assets/frontend/case_studies/ratanshi/images/toppattern1.webp),
-          url(assets/frontend/case_studies/ratanshi/images/bottompattern2.webp);
+        background-image: url(assets/frontend/case_studies/drishyam_films/images/toppattern1.webp),
+          url(assets/frontend/case_studies/drishyam_films/images/bottompattern2.webp);
         background-repeat: no-repeat, no-repeat;
         background-position: right top 170px, bottom left;
       ">
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="belt">
-            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/belt1.webp') }}" alt="" />
+            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/belt1.webp') }}" alt="" />
         </div>
         <div class="container">
             <div class="row g-4 align-items-center justify-content-between">
@@ -61,11 +61,11 @@
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-7">
                     <div class="row align-items-center">
                         <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/visphot.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/visphot.webp') }}"
                                 alt="" />
                         </div>
                         <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/Tamso.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/Tamso.webp') }}"
                                 alt="" />
                         </div>
                     </div>
@@ -76,24 +76,24 @@
 
     <section class="movie_poster song_poster section_padding pt0"
         style="
-        background-image: url(assets/frontend/case_studies/ratanshi/images/toppattern2.webp),
-          url(assets/frontend/case_studies/ratanshi/images/toppattern3.webp);
+        background-image: url(assets/frontend/case_studies/drishyam_films/images/toppattern2.webp),
+          url(assets/frontend/case_studies/drishyam_films/images/toppattern3.webp);
         background-repeat: no-repeat, no-repeat;
         background-position: right top 140px, bottom left;
       ">
         <div class="belt">
-            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/belt2.svg') }}" alt="" />
+            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/belt2.svg') }}" alt="" />
         </div>
         <div class="container">
             <div class="row g-4 align-items-center justify-content-between">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-7">
                     <div class="row align-items-center">
                         <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/Dhakaad.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/Dhakaad.webp') }}"
                                 alt="" />
                         </div>
                         <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/EkakiMann.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/EkakiMann.webp') }}"
                                 alt="" />
                         </div>
                     </div>
@@ -112,7 +112,7 @@
 
     <section class="movie_pramotion section_padding pb0"
         style="
-        background-image: url(assets/frontend/case_studies/ratanshi/images/bgsection.webp);
+        background-image: url(assets/frontend/case_studies/drishyam_films/images/bgsection.webp);
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100% auto;
@@ -134,8 +134,11 @@
                 <div class="row justify-content-center">
                     <div class="col-xxl-8 col-xl-8">
                         <div class="video_img">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/videoimg.webp') }}"
-                                alt="" />
+                            <div class="videowrapper">
+                                <iframe src="https://www.youtube.com/embed/9xwazD5SyVg" title="" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -145,7 +148,7 @@
 
     <section class="pramotion_poster section_padding"
         style="
-        background-image: url(assets/frontend/case_studies/ratanshi/images/shape.webp);
+        background-image: url(assets/frontend/case_studies/drishyam_films/images/shape.webp);
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100% auto;
@@ -155,15 +158,15 @@
                 <div class="col-xxl-8 col-xl-8">
                     <div class="row g-xxl-4 g-xl-4 g-lg-4 g-md-4 g-2 justify-content-center">
                         <div class="col-6 col-xxl-4 col-xl-4 col-lg-4 col-ms-4 col-sm-4">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/poster1.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/poster1.webp') }}"
                                 alt="" />
                         </div>
                         <div class="col-6 col-xxl-4 col-xl-4 col-lg-4 col-ms-4 col-sm-4">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/poster2.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/poster2.webp') }}"
                                 alt="" />
                         </div>
                         <div class="col-6 col-xxl-4 col-xl-4 col-lg-4 col-ms-4 col-sm-4">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/poster3.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/poster3.webp') }}"
                                 alt="" />
                         </div>
                     </div>
@@ -175,9 +178,9 @@
     <section class="logo_poster p0">
         <section class="section_padding pb0"
             style="
-          background-image: url(assets/frontend/case_studies/ratanshi/images/rotate_img.webp), url(assets/frontend/case_studies/ratanshi/images/logobg.svg);
+          background-image: url(assets/frontend/case_studies/drishyam_films/images/rotate_img.webp), url(assets/frontend/case_studies/drishyam_films/images/logobg.svg);
           background-repeat: no-repeat, no-repeat;
-          background-position: bottom center, top center;
+          background-position: bottom -1px center, top center;
           background-size: 100% auto, cover;
         ">
             <div class="container">
@@ -196,31 +199,31 @@
                 <div class="row justify-content-center g-xxl-4 g-xl-4 g-lg-4 g-md-2 g-1">
                     <div class="col">
                         <div class="logo_box">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/logo1.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/logo1.webp') }}"
                                 alt="" />
                         </div>
                     </div>
                     <div class="col">
                         <div class="logo_box">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/logo2.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/logo2.webp') }}"
                                 alt="" />
                         </div>
                     </div>
                     <div class="col">
                         <div class="logo_box">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/logo3.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/logo3.webp') }}"
                                 alt="" />
                         </div>
                     </div>
                     <div class="col">
                         <div class="logo_box">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/logo4.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/logo4.webp') }}"
                                 alt="" />
                         </div>
                     </div>
                     <div class="col">
                         <div class="logo_box">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/logo5.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/logo5.webp') }}"
                                 alt="" />
                         </div>
                     </div>
@@ -234,7 +237,7 @@
             <div class="title_2">
                 <div class="row justify-content-center">
                     <div class="col-xxl-8 col-xl-8">
-                        <h2>Social Media</h2>
+                        <h2><span class="titleicon">Social Media</span></h2>
                         <p>
                             It is a long established fact that a reader will be distracted
                             by the readable content of a page when looking at its layout,
@@ -247,7 +250,7 @@
         </div>
         <div class="social_img_wrpr"
             style="
-          background-image: url(assets/frontend/case_studies/ratanshi/images/social_bg.svg);
+          background-image: url(assets/frontend/case_studies/drishyam_films/images/social_bg.svg);
           background-repeat: no-repeat;
           background-position: center center;
           background-size: cover;
@@ -256,25 +259,25 @@
                 <div class="row g-xxl-4 g-xl-4 g-lg-4 g-md-4 g-2">
                     <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                         <div class="social_img">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/socialimg1.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/socialimg1.webp') }}"
                                 alt="" />
                         </div>
                     </div>
                     <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                         <div class="social_img">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/socialimg2.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/socialimg2.webp') }}"
                                 alt="" />
                         </div>
                     </div>
                     <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                         <div class="social_img">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/socialimg3.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/socialimg3.webp') }}"
                                 alt="" />
                         </div>
                     </div>
                     <div class="col-6 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
                         <div class="social_img">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/socialimg4.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/socialimg4.webp') }}"
                                 alt="" />
                         </div>
                     </div>
@@ -292,19 +295,19 @@
                 <div class="row g-xxl-4 g-xl-4 g-lg-4 g-md-4 g-2">
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
                         <div class="insta_box">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/instaimg1.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/instaimg1.webp') }}"
                                 alt="" />
                         </div>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
                         <div class="insta_box">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/instaimg2.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/instaimg2.webp') }}"
                                 alt="" />
                         </div>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
                         <div class="insta_box">
-                            <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/instaimg3.webp') }}"
+                            <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/instaimg3.webp') }}"
                                 alt="" />
                         </div>
                     </div>
@@ -312,11 +315,10 @@
             </div>
         </div>
     </section>
-    {{-- <div class="footer-line p-3"></div> --}}
 @endsection
 @section('js')
-    <script src={{ asset('assets/frontend/case_studies/ratanshi/js/swiper-bundle.min.js') }}></script>
-    <script src={{ asset('assets/frontend/case_studies/ratanshi/js/custom.js') }}></script>
+    <script src={{ asset('assets/frontend/case_studies/drishyam_films/js/swiper-bundle.min.js') }}></script>
+    <script src={{ asset('assets/frontend/case_studies/drishyam_films/js/custom.js') }}></script>
     <script>
         var swiperverticals = new Swiper(".mySwiper_video", {
             //autoplay:2000,
