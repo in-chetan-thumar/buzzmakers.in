@@ -13,8 +13,7 @@
         <div class="container text-center">
             <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/filmbanner.webp') }}" alt="" />
             <h2>
-                Lorem Ipsum<br />
-                is simply dummy text
+                Bringing The Magic<br /> of Real India on the Reel
             </h2>
         </div>
     </section>
@@ -22,10 +21,12 @@
 
     <section class="middle_cnt section_padding">
         <div class="container">
-            <h2>It is a long established fact that a reader</h2>
+            <h2>Lights Camera & we jump to Action</h2>
             <p>
-                It is a long established fact that a reader will be distracted by the
-                readable content of a page when looking at its layout.
+                Drishyam Films brings the magic of Real India on our screens, capturing the real deal – everyday stories
+                that tug at your heartstrings.
+                {{-- We teamed up with them, thrilled to create a campaign that mirrors their
+                vision. From designing posters to promos and more, we built excitement, offline and beyond. --}}
             </p>
         </div>
     </section>
@@ -40,8 +41,8 @@
         <div class="container">
             <div class="title_2">
                 <h2>
-                    There are many variations of passages<br />
-                    of Lorem Ipsum available,
+                    We teamed up with them, thrilled to create a campaign that mirrors their vision. From designing posters
+                    to promos and more, we built excitement, offline and beyond.
                 </h2>
             </div>
         </div>
@@ -51,11 +52,11 @@
         <div class="container">
             <div class="row g-4 align-items-center justify-content-between">
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-5">
+                    <h2> Always Judge a movie by its poster &#9786; &#9786;</h2>
                     <p>
-                        It is a long established fact that a reader will be distracted by
-                        the readable content of a page when looking at its layout. It is a
-                        long established fact that a reader will be distracted by the
-                        readable content.
+                        First impressions matter, and posters do exactly that. So we made sure our movies get the
+                        posters they deserve. From concept to production, we got high (on thoughts) and left no stone(r)
+                        unturned to bring out the magic in every detail.
                     </p>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-7">
@@ -100,10 +101,8 @@
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-5">
                     <p>
-                        It is a long established fact that a reader will be distracted by
-                        the readable content of a page when looking at its layout. It is a
-                        long established fact that a reader will be distracted by the
-                        readable content.
+                        Drishyam Play’s melodies deserved the spotlight, and that’s where we came in. Whether it was a
+                        catchy hook translated into a bold graphic or a melody expressed in a soft, muted palette.
                     </p>
                 </div>
             </div>
@@ -122,11 +121,13 @@
                 <div class="title_2">
                     <div class="row justify-content-center">
                         <div class="col-xxl-8 col-xl-8">
+                            <h2 class="text-light">
+                                Adding Emotion in the Promotion
+                            </h2>
                             <p>
-                                It is a long established fact that a reader will be distracted
-                                by the readable content of a page when looking at its layout,
-                                established fact that a reader will be distracted by the
-                                readable content.
+                                Anyone can shout and grab attention - but can everyone make the whispers standout? With a
+                                journalistic video we transformed the whisper into a powerful roar, sparking a groundswell
+                                of support and meaningful conversations.
                             </p>
                         </div>
                     </div>
@@ -189,11 +190,11 @@
                 <div class="title_2">
                     <div class="row justify-content-center">
                         <div class="col-xxl-8 col-xl-8">
+                            <h2>Phir Bhi Dil Hai Hindustani…</h2>
                             <p>
-                                It is a long established fact that a reader will be distracted
-                                by the readable content of a page when looking at its layout,
-                                established fact that a reader will be distracted by the
-                                readable content.
+                                When our client decided to go international they wanted a new identity for themselves, but
+                                here's the catch: they still wanted to make sure they were rooted to their origins. Take a
+                                look at the options we designed for them.
                             </p>
                         </div>
                     </div>
@@ -239,12 +240,10 @@
             <div class="title_2">
                 <div class="row justify-content-center">
                     <div class="col-xxl-8 col-xl-8">
-                        <h2><span class="titleicon">Social Media</span></h2>
+                        <h2><span class="titleicon">We are all about the Gram</span></h2>
                         <p>
-                            It is a long established fact that a reader will be distracted
-                            by the readable content of a page when looking at its layout,
-                            established fact that a reader will be distracted by the
-                            readable content.
+                            From jumping on trends to creating trends, we have done it all for Drishyam Films. We wanted to
+                            create a social media space that felt like a window into their world.
                         </p>
                     </div>
                 </div>
@@ -292,7 +291,7 @@
         <div class="container">
             <div class="instagram_wrpr">
                 <div class="title_2 text-left">
-                    <h2>It is a long established fact that a reader</h2>
+                    <h2>Fostered a strong community of people that are just as passionate about the movies.</h2>
                 </div>
                 <div class="row g-xxl-4 g-xl-4 g-lg-4 g-md-4 g-2">
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6">
