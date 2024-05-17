@@ -84,6 +84,12 @@
                             class="w-100 image-radius">
                     </a>
                 </div>
+                <div class="col-md-6">
+                    <a href="{{ route('frontend.drishyam.films') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/drishyam.png') }}"
+                            class="w-100 image-radius">
+                    </a>
+                </div>
             </div>
         </div>
         </div>
