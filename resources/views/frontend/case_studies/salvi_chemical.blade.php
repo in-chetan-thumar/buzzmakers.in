@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 @section('title')
-    Salvi Chemical
+    {{ $content->title }}
 @endsection
 @section('css')
     <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/salvi.css') }}>

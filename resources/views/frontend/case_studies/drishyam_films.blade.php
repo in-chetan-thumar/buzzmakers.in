@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 @section('title')
-    Drishyam films
+    {{ $content->title }}
 @endsection
 @section('css')
     <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/drishyam_films/css/custom.css') }}>

@@ -1,11 +1,10 @@
 @extends('frontend.layouts.master')
-@section('title')webp
-    Nutra Care
+@section('title')
+    {{ $content->title }}
 @endsection
 @section('css')
-<link rel="stylesheet" href={{ asset('assets/frontend/profilescss/sarvotkarsh.css') }}>
-<link rel="stylesheet" href={{ asset('assets/frontend/profilescss/sarvotkarsh-responsive.css') }}>
-
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/sarvotkarsh.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/sarvotkarsh-responsive.css') }}>
 @endsection
 
 @section('main')
@@ -57,7 +56,7 @@
     <section class="responsive-container">
         <div class="container">
             <div class="img-header-container">
-                <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/top-banner.webp')}}" class="w-100" />
+                <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/top-banner.webp') }}" class="w-100" />
             </div>
         </div>
     </section>
@@ -71,38 +70,38 @@
             <p class="mb-0">We preserved the brand's ethos by unifying(marketing) elements and embodying them in our
                 logo design,</p>
             <p>Iconography, Brochures, Standees and other branding collaterals.</p>
-{{--            <a href="#" class="btn btn-buzz mt-3" style="padding: 7px 20px !important">Explore More</a>--}}
+            {{--            <a href="#" class="btn btn-buzz mt-3" style="padding: 7px 20px !important">Explore More</a> --}}
         </div>
     </section>
 
     <!--  -->
     <section>
-        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/brochure.webp')}}" class="w-100" alt="">
+        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/brochure.webp') }}" class="w-100" alt="">
     </section>
 
     <!--  -->
     <section>
-        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/book.webp')}}" class="w-100" alt="">
+        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/book.webp') }}" class="w-100" alt="">
     </section>
 
     <!--  -->
     <section>
-        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/id.webp')}}" class="w-100" alt="">
+        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/id.webp') }}" class="w-100" alt="">
     </section>
 
     <!--  -->
     <section>
-        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/badge.webp')}}" class="w-100" alt="">
+        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/badge.webp') }}" class="w-100" alt="">
     </section>
 
     <!--  -->
     <section>
-        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/hall.webp')}}" class="w-100" alt="">
+        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/hall.webp') }}" class="w-100" alt="">
     </section>
 
     <!--  -->
     <section>
-        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/road-photo.webp')}}" class="w-100" alt="">
+        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/road-photo.webp') }}" class="w-100" alt="">
     </section>
 
     <!-- social -->
@@ -114,18 +113,22 @@
                 </div>
                 <div class="row gx-5 justify-content-center mb-5">
                     <div class="col-lg-4">
-                        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/post1.webp')}}" class="w-100 shadow" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/post1.webp') }}" class="w-100 shadow"
+                            alt="">
                     </div>
                     <div class="col-lg-4">
-                        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/post2.webp')}}" class="w-100 shadow" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/post2.webp') }}"
+                            class="w-100 shadow" alt="">
                     </div>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-4">
-                        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/post3.webp')}}" class="w-100 shadow" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/post3.webp') }}"
+                            class="w-100 shadow" alt="">
                     </div>
                     <div class="col-lg-4">
-                        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/post4.webp')}}" class="w-100 shadow" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/sarvotkarsh/post4.webp') }}"
+                            class="w-100 shadow" alt="">
                     </div>
                 </div>
             </div>

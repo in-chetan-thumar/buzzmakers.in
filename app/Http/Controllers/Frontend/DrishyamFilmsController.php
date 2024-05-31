@@ -4,17 +4,22 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Page;
+use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\SEOTools;
+use Illuminate\Support\Facades\Route;
 
 class DrishyamFilmsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        return view('frontend.case_studies.drishyam_films');
+        $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
+        SEOTools::setTitle($content->title);
+        SEOTools::setDescription($content->meta_description);
+        SEOMeta::addKeyword($content->meta_keywords);
+        SEOTools::opengraph()->addImage(url('assets/frontend/case_studies/drishyam_films/images/filmbanner.webp'));
+        return view('frontend.case_studies.drishyam_films', compact('content'));
     }
 
     /**

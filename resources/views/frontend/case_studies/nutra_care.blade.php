@@ -1,12 +1,10 @@
 @extends('frontend.layouts.master')
 @section('title')
-    Nutra Care
+    {{ $content->title }}
 @endsection
 @section('css')
     <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/nutra.css') }}>
     <link rel="stylesheet" href={{ asset('assets/frontend/profilescss/nutra-responsive.css') }}>
-
-
 @endsection
 @section('main')
     {{-- <!-- collpase menu for mobile start -->
@@ -57,7 +55,7 @@
     <section class="responsive-container">
         <div class="container">
             <div class="img-header-container">
-                <img src="{{ asset('assets/frontend/images/profile/nutra/top-banner.webp')}}" class="w-100" />
+                <img src="{{ asset('assets/frontend/images/profile/nutra/top-banner.webp') }}" class="w-100" />
             </div>
         </div>
     </section>
@@ -69,14 +67,14 @@
             <h1>Through Creatives & Marketing Strategies</h1>
             <p class="mb-0">Communiting the importance of health-amplifying products and building brand resonance</p>
             <p class="mb-0">with the audience via interactive web design, digital marketing, and branding.</p>
-{{--            <a href="#" class="btn btn-buzz mt-5" style="padding: 7px 20px !important">Explore More</a>--}}
+            {{--            <a href="#" class="btn btn-buzz mt-5" style="padding: 7px 20px !important">Explore More</a> --}}
         </div>
     </section>
 
     <!--  -->
     <section>
         <div class="website-screens">
-            <img src="{{ asset('assets/frontend/images/profile/nutra/second-post.webp')}}" class="w-100" alt="">
+            <img src="{{ asset('assets/frontend/images/profile/nutra/second-post.webp') }}" class="w-100" alt="">
         </div>
     </section>
 
@@ -87,18 +85,22 @@
                 <h2 class="text-center mb-5">Consistently Creative</h2>
                 <div class="row gx-5 justify-content-center mb-5">
                     <div class="col-lg-4">
-                        <img src="{{ asset('assets/frontend/images/profile/nutra/post1.webp')}}" class="w-100 shadow" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/nutra/post1.webp') }}" class="w-100 shadow"
+                            alt="">
                     </div>
                     <div class="col-lg-4">
-                        <img src="{{ asset('assets/frontend/images/profile/nutra/post2.webp')}}" class="w-100 shadow" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/nutra/post2.webp') }}" class="w-100 shadow"
+                            alt="">
                     </div>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-4">
-                        <img src="{{ asset('assets/frontend/images/profile/nutra/post3.webp')}}" class="w-100 shadow" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/nutra/post3.webp') }}" class="w-100 shadow"
+                            alt="">
                     </div>
                     <div class="col-lg-4">
-                        <img src="{{ asset('assets/frontend/images/profile/nutra/post4.webp')}}" class="w-100 shadow" alt="">
+                        <img src="{{ asset('assets/frontend/images/profile/nutra/post4.webp') }}" class="w-100 shadow"
+                            alt="">
                     </div>
                 </div>
             </div>
@@ -107,13 +109,15 @@
 
     <!-- books -->
     <section>
-        <div><img src="{{ asset('assets/frontend/images/profile/nutra/brochure.webp')}}" class="w-100" alt=""></div>
+        <div><img src="{{ asset('assets/frontend/images/profile/nutra/brochure.webp') }}" class="w-100" alt="">
+        </div>
     </section>
 
     <!-- brochure -->
     <section>
         <div class="brochure">
-            <img src="{{ asset('assets/frontend/images/profile/nutra/brochure-green.webp')}}" class="w-100" alt="">
+            <img src="{{ asset('assets/frontend/images/profile/nutra/brochure-green.webp') }}" class="w-100"
+                alt="">
         </div>
     </section>
 

@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 @section('title')
-    Ks Cheema
+    {{ $content->title }}
 @endsection
 @section('css')
     <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/ks/css/custom.css') }}>
