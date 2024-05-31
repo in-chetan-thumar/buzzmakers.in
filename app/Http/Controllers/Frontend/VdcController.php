@@ -4,13 +4,21 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Page;
+use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\SEOTools;
+use Illuminate\Support\Facades\Route;
 
 class VdcController extends Controller
 {
 
     public function index()
     {
-        return view('frontend.case_studies.vdc');
+        $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
+        SEOTools::setTitle($content->title);
+        SEOTools::setDescription($content->meta_description);
+        SEOMeta::addKeyword($content->meta_keywords);
+        return view('frontend.case_studies.vdc', compact('content'));
     }
 
     /**

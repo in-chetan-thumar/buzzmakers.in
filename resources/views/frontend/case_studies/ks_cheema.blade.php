@@ -13,8 +13,7 @@
         <div class="container text-center">
             <img src="{{ asset('assets/frontend/case_studies/ks/images/ksbanner.svg') }}" alt="" />
             <h2>
-                A future ready<br />
-                automobile business
+                Keeping Up With The Cheemas: <br> Creating A Unified Digital Brand <br> Identity.
             </h2>
         </div>
     </section>
@@ -22,10 +21,11 @@
 
     <section class="middle_cnt section_padding p0">
         <div class="container">
-            <h2>It is a long established fact that a reader</h2>
+            <h2>Creating A BRAND New Digital World for KS Cheema</h2>
             <p>
-                It is a long established fact that a reader will be distracted by the
-                readable content of a page when looking at its layout.
+                KS Cheema- a business with a kaleidoscope of offerings, and we became their partners in crime (the digital
+                kind, of course) and built them a website, logo, and much more from scratch. Fueled by countless cups of
+                coffee, and a sprinkle of genius (okay, mostly coffee!), their story is now digital.
             </p>
         </div>
     </section>
@@ -34,8 +34,7 @@
         <div class="container">
             <div class="title_2">
                 <h2>
-                    There are many variations of passages<br />
-                    of Lorem Ipsum available,
+                    Lets take a Look at Their Digital Transformation
                 </h2>
             </div>
         </div>
@@ -106,9 +105,7 @@
             <div class="title_2">
                 <h2>Photography</h2>
                 <p>
-                    It is a long established fact that a reader will be distracted by
-                    the readable<br />
-                    content of a page when looking at its layout.
+                    From Concept To Click - We Curated A Visual Narrative For Their Online Presence.
                 </p>
             </div>
             <div class="row g-0">
@@ -145,11 +142,11 @@
     <section class="photography_card section_padding">
         <div class="container">
             <div class="title_2">
-                <h2>Photography</h2>
+                <h2>Business Collaterals. Creating Brand Assets</h2>
                 <p>
-                    It is a long established fact that a reader will be distracted by
-                    the readable<br />
-                    content of a page when looking at its layout.
+                    We leveled up their networking game with sleek visiting cards. created with a built-in digital portal -
+                    a scannable code that opens the door to their online world.
+                    edit
                 </p>
             </div>
         </div>
@@ -187,11 +184,12 @@
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12">
                             <div class="webdesign_cnt">
                                 <div class="title_2 text-left">
-                                    <h2>webdesign</h2>
+                                    <h2>Web Design</h2>
                                     <p>
-                                        It is a long established fact that a reader will be
-                                        distracted by the readable content of a page when looking
-                                        at its layout.
+                                        We wove a digital saga for KS Cheema! Crafting an immersive online space that
+                                        reflects their core values tells their unique story, and unifies their diverse
+                                        business portfolio.
+
                                     </p>
                                 </div>
                             </div>

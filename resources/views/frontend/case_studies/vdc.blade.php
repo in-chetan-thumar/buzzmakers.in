@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 @section('title')
-    VDC
+    {{ $content->title }}
 @endsection
 @section('css')
     <link rel="stylesheet" href={{ asset('assets/frontend/case_studies/vdc/css/custom.css') }}>
