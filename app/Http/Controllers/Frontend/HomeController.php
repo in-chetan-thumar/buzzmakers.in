@@ -29,6 +29,7 @@ class HomeController extends Controller
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
+        SEOTools::opengraph()->addImage(url('assets/frontend/images/logo.svg'));
         return view('frontend.home', compact('content', 'table'));
 
 
@@ -106,51 +107,51 @@ class HomeController extends Controller
         $array = ([
             'krishnajajoo' => [
                 "name" => "Krishnaa D Jajoo",
-                "Designation"=>"Founder & Intern",
+                "Designation" => "Founder & Intern",
                 "Number" => "+919890393090",
-                "Whatsapp"=>"https://wa.me/+919890393090"
+                "Whatsapp" => "https://wa.me/+919890393090"
             ],
             'bhaktikothari' => [
                 "name" => "Bhakti Kothari",
-                "Designation"=>"Performance & Social Media Executive",
+                "Designation" => "Performance & Social Media Executive",
                 "Number" => "+918976365578",
-                "Whatsapp"=>"https://wa.me/+918976365578 "
+                "Whatsapp" => "https://wa.me/+918976365578 "
             ],
             'tanmaydeshpande' => [
                 "name" => "Tanmay Deshpande",
-                "Designation"=>"Social Media Executive",
+                "Designation" => "Social Media Executive",
                 "Number" => "+917276159703",
-                "Whatsapp"=>"https://wa.me/+917276159703 "
+                "Whatsapp" => "https://wa.me/+917276159703 "
             ],
             'rahuljain' => [
                 "name" => "Rahul Jain",
-                "Designation"=>"Social Media Manager",
+                "Designation" => "Social Media Manager",
                 "Number" => "+917249032020",
-                "Whatsapp"=>"https://wa.me/+917249032020"
+                "Whatsapp" => "https://wa.me/+917249032020"
             ],
             'jahnvivira' => [
                 "name" => "Jahnvi Vira",
-                "Designation"=>"Content & Client Servicing Executive",
+                "Designation" => "Content & Client Servicing Executive",
                 "Number" => "+919967402437",
-                "Whatsapp"=>"https://wa.me/+919967402437"
+                "Whatsapp" => "https://wa.me/+919967402437"
             ],
             'amolthotam' => [
                 "name" => "Amol Thotam",
-                "Designation"=>"Motion Graphic & Video Editor",
+                "Designation" => "Motion Graphic & Video Editor",
                 "Number" => "  ",
-                "Whatsapp"=>"  "
+                "Whatsapp" => "  "
             ],
             'abdulkhan' => [
                 "name" => "Abdul Khan",
-                "Designation"=>"Copywriter",
+                "Designation" => "Copywriter",
                 "Number" => "+917738260090",
-                "Whatsapp"=>"https://wa.me/+917738260090"
+                "Whatsapp" => "https://wa.me/+917738260090"
             ],
             'kinalborana' => [
                 "name" => "Kinal Borana",
-                "Designation"=>"Social Media Executive",
+                "Designation" => "Social Media Executive",
                 "Number" => "+917249031818",
-                "Whatsapp"=>"https://wa.me/+917249031818"
+                "Whatsapp" => "https://wa.me/+917249031818"
             ],
         ]);
 
