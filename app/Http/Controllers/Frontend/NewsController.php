@@ -20,12 +20,13 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $newsContent = News::select('id','title','description','cover_photo','link')->orderBy('id', 'desc')->get();
-        $content = Page::select('id','title','meta_keywords','meta_description')->whereRouteName(Route::currentRouteName())->first();
+        $newsContent = News::select('id', 'title', 'description', 'cover_photo', 'link')->orderBy('id', 'desc')->get();
+        $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
-        return view('frontend.news',compact('content','newsContent'));
+        SEOTools::opengraph()->addImage(url('assets/frontend/images/logoold.png'));
+        return view('frontend.news', compact('content', 'newsContent'));
     }
 
     /**
@@ -93,9 +94,10 @@ class NewsController extends Controller
     {
         //
     }
-    public function newsContent($id){
-        $news=resolve('news-repo')->findByID($id);
+    public function newsContent($id)
+    {
+        $news = resolve('news-repo')->findByID($id);
 
-        return view('frontend.news_content',compact('news'));
+        return view('frontend.news_content', compact('news'));
     }
 }

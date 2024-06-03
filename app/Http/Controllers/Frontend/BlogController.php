@@ -22,12 +22,13 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogContent=Blog::select('id','title','description','cover_photo','is_article','is_featured','is_conversation')->orderBy('id', 'desc')->get();
-        $content =Page::select('id','title','meta_keywords','meta_description')->whereRouteName(Route::currentRouteName())->first();
+        $blogContent = Blog::select('id', 'title', 'description', 'cover_photo', 'is_article', 'is_featured', 'is_conversation')->orderBy('id', 'desc')->get();
+        $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
-        return view('frontend.blog',compact('content','blogContent'));
+        SEOTools::opengraph()->addImage(url('assets/frontend/images/logoold.png'));
+        return view('frontend.blog', compact('content', 'blogContent'));
     }
 
     /**
@@ -95,9 +96,10 @@ class BlogController extends Controller
     {
         //
     }
-    public function blogsContent($id){
-        $blog=resolve('blog-repo')->findByID($id);
+    public function blogsContent($id)
+    {
+        $blog = resolve('blog-repo')->findByID($id);
 
-        return view('frontend.blog_content',compact('blog'));
+        return view('frontend.blog_content', compact('blog'));
     }
 }

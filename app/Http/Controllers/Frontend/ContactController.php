@@ -31,7 +31,8 @@ class ContactController extends Controller
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
-        return view('frontend.contact', compact('content','table'));
+        SEOTools::opengraph()->addImage(url('assets/frontend/images/logoold.png'));
+        return view('frontend.contact', compact('content', 'table'));
     }
 
     /**
@@ -59,14 +60,14 @@ class ContactController extends Controller
 
         $data = $params = [];
         DB::beginTransaction();
-//dd($request->all());
+        //dd($request->all());
         try {
             if (!empty($request->file('documents'))) {
                 $file = $request->file('documents');
                 $name = Str::random(16) . '.' . $file->getClientOriginalExtension();
                 $doc = $request->file('documents');
                 $doc->storeAs('public/documents/contacts', $name);
-                $params['documents'] = $name ;
+                $params['documents'] = $name;
             }
             $params['name'] = $request->name;
             $params['email'] = $request->email;
@@ -74,15 +75,15 @@ class ContactController extends Controller
             $params['website'] = $request->website;
             $params['project'] = $request->project;
             $params['budget'] = $request->budget;
-            if(!empty($request->others)){
-                $service=implode('.', $request->services);
-                $params['services'] = $service.'-'.$request->others;
+            if (!empty($request->others)) {
+                $service = implode('.', $request->services);
+                $params['services'] = $service . '-' . $request->others;
 
-            }else{
+            } else {
                 $params['services'] = implode('.', $request->services);
 
             }
-//            $params['services'] = implode('.', $request->services);
+            //            $params['services'] = implode('.', $request->services);
             $params['competitors'] = $request->competitors;
             $params['reference'] = $request->reference;
 
