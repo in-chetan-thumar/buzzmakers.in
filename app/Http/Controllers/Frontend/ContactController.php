@@ -31,7 +31,9 @@ class ContactController extends Controller
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
-        SEOTools::opengraph()->addImage(url('assets/frontend/images/logoold.png'));
+        SEOTools::opengraph()->setUrl(url()->current());
+        SEOTools::setCanonical(url()->current());
+        SEOTools::opengraph()->addImage(url('assets/frontend/images/metaShere.jpg'));
         return view('frontend.contact', compact('content', 'table'));
     }
 

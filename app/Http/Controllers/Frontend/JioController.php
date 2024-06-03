@@ -18,6 +18,8 @@ class JioController extends Controller
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
+        SEOTools::opengraph()->setUrl(url()->current());
+        SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addImage(url('assets/frontend/images/OurWork/jiomeet.jpg'));
         return view('frontend.case_studies.jio', compact('content'));
     }
