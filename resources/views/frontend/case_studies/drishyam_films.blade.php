@@ -13,7 +13,7 @@
         <div class="container text-center">
             <img src="{{ asset('assets/frontend/case_studies/drishyam_films/images/filmbanner.webp') }}" alt="" />
             <h2>
-                Bringing The Magic<br /> of Real India on the Reel
+                Bringing The Magic <br> of Real India on the Reel
             </h2>
         </div>
     </section>
@@ -24,7 +24,8 @@
             <h2>Lights Camera & we jump to Action</h2>
             <p>
                 Drishyam Films brings the magic of Real India on our screens, capturing the real deal – everyday stories
-                that tug at your heartstrings.
+                that tug at your heartstrings. We teamed up with them, thrilled to create a campaign that mirrors their
+                vision. From designing posters to promos and more, we built excitement, offline and beyond.
                 {{-- We teamed up with them, thrilled to create a campaign that mirrors their
                 vision. From designing posters to promos and more, we built excitement, offline and beyond. --}}
             </p>
@@ -54,9 +55,9 @@
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-5">
                     <h2> Always Judge a movie by its poster &#9786; &#9786;</h2>
                     <p>
-                        First impressions matter, and posters do exactly that. So we made sure our movies get the
-                        posters they deserve. From concept to production, we got high (on thoughts) and left no stone(r)
-                        unturned to bring out the magic in every detail.
+                        First impressions matter, and posters do exactly that. So we made sure our movies get the posters
+                        they deserve. From concept to production, we got high (on thoughts) and left no stone(r) unturned to
+                        bring out the magic in every detail.
                     </p>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-7">

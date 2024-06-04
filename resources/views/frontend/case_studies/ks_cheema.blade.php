@@ -13,7 +13,7 @@
         <div class="container text-center">
             <img src="{{ asset('assets/frontend/case_studies/ks/images/ksbanner.svg') }}" alt="" />
             <h2>
-                Keeping Up With The Cheemas: <br> Creating A Unified Digital Brand <br> Identity.
+                Crafting A Digital presence <br> for KS Cheema Group of Companies
             </h2>
         </div>
     </section>
@@ -21,11 +21,10 @@
 
     <section class="middle_cnt section_padding p0">
         <div class="container">
-            <h2>Creating A BRAND New Digital World for KS Cheema</h2>
+            <h2>Creating A BRAND New Digital World for KS Cheema Group of Companies</h2>
             <p>
-                KS Cheema- a business with a kaleidoscope of offerings, and we became their partners in crime (the digital
-                kind, of course) and built them a website, logo, and much more from scratch. Fueled by countless cups of
-                coffee, and a sprinkle of genius (okay, mostly coffee!), their story is now digital.
+                We brewed them a digital brand identity (website, logo, the works!) for KS Cheema's diverse offerings.
+                Countless coffees (and maybe a sprinkle of genius) brought their story to life online.
             </p>
         </div>
     </section>
@@ -105,7 +104,8 @@
             <div class="title_2">
                 <h2>Photography</h2>
                 <p>
-                    From Concept To Click - We Curated A Visual Narrative For Their Online Presence.
+                    From Concept To Click - Going beyond stock images, we curated a digital narrative that brings
+                    authenticity to their story!
                 </p>
             </div>
             <div class="row g-0">
@@ -144,9 +144,7 @@
             <div class="title_2">
                 <h2>Business Collaterals. Creating Brand Assets</h2>
                 <p>
-                    We leveled up their networking game with sleek visiting cards. created with a built-in digital portal -
-                    a scannable code that opens the door to their online world.
-                    edit
+                    <b>Sleek Cards & A Digital Portal:</b> Leveled up their networking with digital visiting cards.
                 </p>
             </div>
         </div>
@@ -186,9 +184,8 @@
                                 <div class="title_2 text-left">
                                     <h2>Web Design</h2>
                                     <p>
-                                        We wove a digital saga for KS Cheema! Crafting an immersive online space that
-                                        reflects their core values tells their unique story, and unifies their diverse
-                                        business portfolio.
+                                        We crafted a website that seamlessly extends their brand story, drawing inspiration
+                                        from their logo..
 
                                     </p>
                                 </div>
