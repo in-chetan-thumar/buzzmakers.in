@@ -13,8 +13,7 @@
             <div class="ratanshibanner_img">
                 <figcaption class="heading_1">
                     <div class="heading">
-                        Lorem Isum,<br />
-                        Ratanshi kheraj .
+                        Crafting a Digital Talefor a<br> Century-Old Handloom Legacy
                     </div>
                 </figcaption>
                 <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/ratanshibanner.webp') }}" alt="" />
@@ -27,10 +26,8 @@
             <div class="heading_1 text-center">
                 <div class="heading">Digital Marketing</div>
                 <p>
-                    Lorem ipsum is women's apparel brand with it’s roots in ethnic and
-                    indo-fusion fashion.<br />
-                    The need to be fulfilled was to depict Purusham’s aesthetic of
-                    luxury and
+                    We built their digital story, bringing their timeless luxury into their online presence.
+                    {{-- edit --}}
                 </p>
                 <a href="" class="btn btn-buzz btn_xl mt-2">Explore More</a>
             </div>
@@ -200,14 +197,12 @@
     <section class="videosec_cnt fullwidthbanner section_padding pt0">
         <div class="container">
             <div class="heading_1 text-center">
-                <div class="heading">Lorem <span>ipsum</span> dolor</div>
+                <div class="heading">A <span>Story of Their</span> Treasures</div>
                 <div class="row justify-content-center">
                     <div class="col-xl-10 col-lg-10">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                            ipsum suspendisse ultrices gravida. Risus commodo viverra
-                            maecenas accumsan lacus vel facilisis.
+                            From concept to captivating visuals, we gave their collection context, name, and digital
+                            narrative.
                         </p>
                     </div>
                 </div>
@@ -281,13 +276,13 @@
                         <div class="reel_title">
                             <div class="heading_1">
                                 <div class="heading">
-                                    Lorem<br />
-                                    Copy here!
+                                    Social<br />
+                                    Media Saga.
                                 </div>
-                                <p>
+                                {{-- <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                     do eiusmod tempor incididunt ut labore
-                                </p>
+                                </p> --}}
                             </div>
                         </div>
                     </div>
@@ -715,7 +710,7 @@
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12">
                         <div class="column_sec_box">
                             <div class="heading_1 text-center">
-                                <div class="heading">Challanges</div>
+                                <div class="heading">Challenges</div>
                                 <p>
                                     Weak social following Weak social engagement No online sales
                                 </p>
@@ -1190,10 +1185,8 @@
                         <div class="heading_1">
                             <div class="heading">PR</div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                                maecenas accumsan lacus vel facilisis.
+                                Created a Buzz for Ratanshi Kheraj in the fashion scene with the right celebrity and
+                                magazine partnerships.
                             </p>
                         </div>
                     </div>
@@ -1208,7 +1201,7 @@
         </div>
     </section>
 
-    <section class="imgcnt section_padding">
+    {{-- <section class="imgcnt section_padding">
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-xxl-6 col-xl-6">
@@ -1230,17 +1223,16 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="designscreen section_padding pb0">
         <div class="container">
             <div class="heading_1 text-center">
-                <div class="heading">Lorem ipsum</div>
-                <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+                <div class="heading">Website Design </div>
+                {{-- <h3>Lorem ipsum dolor sit amet, consectetur</h3> --}}
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing<br />
-                    elit, sed do eiusmod tempor incididunt
+                    Remastered their timeless legacy for the digital age
                 </p>
             </div>
 
@@ -1260,16 +1252,15 @@
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
                     <div class="webpagedesign_rgt">
                         <div class="heading_1 text-center">
-                            <div class="heading">Lorem ipsum</div>
+                            <div class="heading">Digital Shop</div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et
+                                We transformed their vast catalog into an immersive shopping experience.
                             </p>
                         </div>
                         <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/webpagedesignimg2.webp') }}"
                             alt="" />
                         <div class="heading_1 text-center mt-5">
-                            <div class="heading">Lorem ipsum</div>
+                            {{-- <div class="heading">Lorem ipsum</div> --}}
                         </div>
                         <img src="{{ asset('assets/frontend/case_studies/ratanshi/images/webpagedesignimg3.webp') }}"
                             alt="" />
@@ -1284,10 +1275,7 @@
             <div class="heading_1 text-center">
                 <div class="heading">Packaging Design</div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                    ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                    accumsan lacus vel facilisis.
+                    From bags to boxes, we made sure the packaging reflected Banaras' royal heritage.
                 </p>
             </div>
         </div>

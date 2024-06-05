@@ -86,8 +86,17 @@
                 </div>
                 <div class="col-md-6">
                     <a href="{{ route('frontend.drishyam.films') }}" target="_blank">
-                        <img src="{{ asset('assets/frontend/images/projects/drishyam.png') }}"
-                            class="w-100 image-radius">
+                        <img src="{{ asset('assets/frontend/images/projects/drishyam.png') }}" class="w-100 image-radius">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="{{ route('frontend.ks.cheema') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/ks-cheema.png') }}" class="w-100 image-radius">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="{{ route('frontend.ratanshi') }}" target="_blank">
+                        <img src="{{ asset('assets/frontend/images/projects/ratanshi.png') }}" class="w-100 image-radius">
                     </a>
                 </div>
             </div>
