@@ -33,7 +33,7 @@ class ContactController extends Controller
         SEOMeta::addKeyword($content->meta_keywords);
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
-        SEOTools::opengraph()->addImage(url('assets/frontend/images/metaShere.jpg'));
+        SEOTools::opengraph()->addImage(url('assets/frontend/images/metaShere.png'));
         return view('frontend.contact', compact('content', 'table'));
     }
 
