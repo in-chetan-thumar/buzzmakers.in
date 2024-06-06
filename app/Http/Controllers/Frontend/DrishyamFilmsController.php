@@ -20,7 +20,7 @@ class DrishyamFilmsController extends Controller
         SEOMeta::addKeyword($content->meta_keywords);
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
-        SEOTools::opengraph()->addImage(url('assets/frontend/case_studies/drishyam_films/images/filmbanner.webp'));
+        SEOTools::opengraph()->addImage(url('assets/frontend/images/projects/drishyam.png'));
         return view('frontend.case_studies.drishyam_films', compact('content'));
     }
 

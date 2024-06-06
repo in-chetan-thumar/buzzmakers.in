@@ -20,7 +20,7 @@ class KSCheemaController extends Controller
         SEOMeta::addKeyword($content->meta_keywords);
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
-        SEOTools::opengraph()->addImage(url('assets/frontend/images/metaShere.jpg'));
+        SEOTools::opengraph()->addImage(url('assets/frontend/images/projects/ks-cheema.png'));
         return view('frontend.case_studies.ks_cheema', compact('content'));
     }
 

@@ -20,7 +20,7 @@ class RatanshiController extends Controller
         SEOMeta::addKeyword($content->meta_keywords);
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
-        SEOTools::opengraph()->addImage(url('assets/frontend/case_studies/ratanshi/images/ratanshibanner.webp'));
+        SEOTools::opengraph()->addImage(url('assets/frontend/images/projects/ratanshi.png'));
         return view('frontend.case_studies.ratanshi', compact('content'));
     }
 
