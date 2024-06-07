@@ -16,22 +16,16 @@ use Illuminate\Support\Facades\Route;
 class HomeController extends Controller
 {
 
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index(Request $request)
     {
         $content = Page::select('id', 'title', 'meta_keywords', 'meta_description')->whereRouteName(Route::currentRouteName())->first();
-        $table = resolve('home-repo')->renderHtmlTable($request);
         SEOTools::setTitle($content->title);
         SEOTools::setDescription($content->meta_description);
         SEOMeta::addKeyword($content->meta_keywords);
         SEOTools::opengraph()->setUrl(url()->current());
         SEOTools::setCanonical(url()->current());
         SEOTools::opengraph()->addImage(url('assets/frontend/images/metaShere.png'));
+        $table = resolve('home-repo')->renderHtmlTable($request);
         return view('frontend.home', compact('content', 'table'));
 
 

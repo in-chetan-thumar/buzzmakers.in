@@ -13,11 +13,7 @@ use Illuminate\Support\Facades\DB;
 
 class NewsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         $newsContent = News::select('id', 'title', 'description', 'cover_photo', 'link')->orderBy('id', 'desc')->get();

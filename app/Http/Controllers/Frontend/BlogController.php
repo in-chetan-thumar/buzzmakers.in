@@ -13,13 +13,7 @@ use Illuminate\Support\Facades\DB;
 
 class BlogController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     *
-     * if($request->blog_type=='is_article'){
-     */
+
     public function index()
     {
         $blogContent = Blog::select('id', 'title', 'description', 'cover_photo', 'is_article', 'is_featured', 'is_conversation')->orderBy('id', 'desc')->get();
