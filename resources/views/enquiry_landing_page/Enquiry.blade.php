@@ -4,9 +4,9 @@
     {{ $content->title ?? '' }}
 @endsection
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/css/splide.min.css">
-<link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/custom.css') }}>
-<link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/responsive.css') }}>
-<link rel="stylesheet" href={{ asset('assets/frontend/css/vdc/swiper-bundle.min.css') }}>
+<link rel="stylesheet" href={{ asset('assets/frontend/case_studies/vdc/css/custom.css') }}>
+<link rel="stylesheet" href={{ asset('assets/frontend/case_studies/vdc/css/responsive.css') }}>
+<link rel="stylesheet" href={{ asset('assets/frontend/case_studies/vdc/css/swiper-bundle.min.css') }}>
 <style>
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button {
