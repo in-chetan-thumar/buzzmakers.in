@@ -34,7 +34,6 @@ return [
         'Photography and Videography'=>'Photography and Videography',
         'Shopify Website Development'=>'Shopify Website Development',
         'All of the above'=>'All of the above',
-
     ]
 
 ];
