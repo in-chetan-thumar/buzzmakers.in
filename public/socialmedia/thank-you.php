@@ -75,38 +75,79 @@
         <link rel="stylesheet" href="assets/css/color.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TYDY0D3XL"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5TYDY0D3XL');
+        </script>
     </head>
     <body >
-    <?php  
-
-    //     $to = "krishnaa@buzzmakers.in"; // Receiver's email
-    //     $subject = "New Landing Page Enquiry";
-        
-    //     $body = "You have received a new enquiry:\n\n";
-    //     $body .= "Name: Buzzmakers User\n";
-    //     $body .= "Email: Buzzmakers@buzzmakers.in\n";
-    //     $body .= "Message: I'm interested in learning more about your services.\n";
-    //     $body .= "Source: Landing Page - April 2025 Campaign\n";
-        
-    //     $headers = 'From: Buzzmakers <bd@buzzmakers.in>' . "\r\n";
-    //     $headers = 'From: Buzzmakers <bd@buzzmakers.in>' . "\r\n";
-
-    //     if (mail($to, $subject, $body, $headers)) {
-    //         echo "1";
-    //     }
-    //     else{
-    //         echo "0";
-    //     }
-       
-    // ?>
+   
         <!-- Back To Top Start -->
-      
+        <button id="back-top" class="back-to-top">
+            <i class="fa-regular fa-arrow-up"></i>
+        </button>
+
+        <!--<< Mouse Cursor Start >>-->  
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
+
+       
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-1 bg-white">
+            <div class="container-fluid">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="logo">
+                            <a href="https://buzzmakers.in/" class="header-logo">
+                                <img style="width: 120px;" src="assets/img/logo.png" alt="logo-img">
+                            </a>
+                            <a href="https://buzzmakers.in/" class="header-logo-2">
+                                <img  style="width: 100px;" src="assets/img/logo.png" alt="logo-img">
+                            </a>
+                        </div>
+					
+					   <div class="header-right d-flex justify-content-end align-items-center"></div>
+                            <div class="header__hamburger d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- Hero Section Start -->
+    <section id="home" style="height:100vh" class="sec-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hero-content text-center">    
+                        <h1 class="wow fadeInUp thankH1" data-wow-delay=".3s">
+                          Thank You
+                        </h1>
+                        <h4 class="wow fadeInUp thankH4" data-wow-delay=".5s">
+                         Thank you for contacting us. We will connect with you soon.
+                        </h4>   
+                    </div>
+                </div>
+		   </div>
+        </div>
+    </section>
+        <!-- Footer Section Start -->
+        <section class="footer-section footer-bg fix">       
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-wrapper d-flex align-items-center justify-content-between">
+                        <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
+                            © All Copyright 2024 by Buzzmakers
+                        </p>     
+                    </div>
+                </div>     
+            </div>
+        </section>     
     </body>
 </html>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5TYDY0D3XL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-5TYDY0D3XL');
-</script>

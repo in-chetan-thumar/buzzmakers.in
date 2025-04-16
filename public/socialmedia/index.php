@@ -32,11 +32,14 @@
         <link rel="stylesheet" href="assets/css/color.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5TYDY0D3XL');
+        </script>
     </head>
     <body >
-
-
-
         <!-- Back To Top Start -->
         <button id="back-top" class="back-to-top">
             <i class="fa-regular fa-arrow-up"></i>
