@@ -65,8 +65,7 @@
                                 <i class="fas fa-times"></i>
                                 </button>
                             </div>
-                        </div>
-                      
+                        </div>     
                         <div class="mobile-menu fix mb-3"></div>
 						
 				  </div>
@@ -90,8 +89,7 @@
                         <div class="mean__menu-wrapper">
                             <div class="main-menu">
                                 <nav id="mobile-menu">
-                                    <ul>
-                                       
+                                    <ul>           
                                         <li>
                                             <a href="#about">about</a>
                                         </li>
@@ -117,8 +115,7 @@
                                 </nav>
                             </div>
                         </div>
-                     <div class="header-right d-flex justify-content-end align-items-center">
-                           
+                     <div class="header-right d-flex justify-content-end align-items-center">                   
                             <div class="header__hamburger d-xl-none my-auto">
                                 <div class="sidebar__toggle">
                                     <i class="fas fa-bars"></i>
@@ -149,7 +146,7 @@
                             <div class="col-xl-12">
                                 <div class="contact-form-area ">
                                     <h3 class="text-center">Let's Elevate Your Social Game!</h3>
-                                   <form  method="post" id="contact_form" autocomplete="off">	
+                                   <form  method="post" id="contact_form" action="thank-you.php" autocomplete="off">	
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="form-clt">
@@ -166,13 +163,12 @@
                                             <div class="col-lg-12">
                                                 <div class="form-clt">
                                                   <input class="form-control" placeholder="Email ID*" name="email" id="email" type="text">
-											<span class="error error-pop" id="email_error">Invalid Email</span> 
+											        <span class="error error-pop" id="email_error">Invalid Email</span> 
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-clt">
                                                   <input class="form-control" placeholder="Company Website" name="website" id="website" type="text">
-											
                                                 </div>
                                             </div>
                                             <div class="col-12">
@@ -193,12 +189,9 @@
                                     </form>
                                 </div>
                             </div>
-                         
                         </div>
                     </div>
-                </div>
-				
-                   
+                </div>  
             </div>
         </div>
 		</div>

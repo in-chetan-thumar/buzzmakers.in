@@ -29,29 +29,70 @@ function onlyAlphabets(e, r) {
 }
 //done
 $("#contactform").click(function () {
-	$("#contact_success").hide(), disval = 1;
-	var e = $("#name").val(),
-		r = $("#mobile").val(),
-		a = $("#email").val();
-	if (("" == e || "" == a || "" == r) && ($("#name_error").show(), $("#email_error").show(), $("#mobile_error").show(), disval = 0), 
-    "" == e ? ($("#name_error").show(), disval = 0) : $("#name_error").hide(), 
-    "" != a && isValidEmailAddress(a) ? $("#email_error").hide() : ($("#email_error").show(), disval = 0), 
-    "" != r && isValidMobileNumber(r) ? $("#mobile_error").hide() : ($("#mobile_error").show(), disval = 0), 
-    1 == disval) {
-		return dataString = $("#contact_form").serialize(), $.ajax({
-			type: "POST",
-			url: "process_middle.php",
-			data: dataString,
-			beforeSend: function () {
-				$("#contactform").attr("disabled", !0)
-			},
-			success: function (e) {
-				$("#contactform").attr("disabled", !1), $("#contact_form")[0].reset(), 1 == e ? window.location.replace("thank-you.php") : ($("#contact_widget").hide(), $("#contact_error").html(e), $("#contact_success").show())
-			}
-		}), !1
-	}
-	return !1
-}),
+    $("#contact_success").hide();
+    let disval = 1;
+
+    var name = $("#name").val().trim(),
+        mobile = $("#mobile").val().trim(),
+        email = $("#email").val().trim(),
+        website = $("#website").val().trim(),
+        message = $("#Message").val().trim();
+    // Basic validation
+    if (name === "") {
+        $("#name_error").show();
+        disval = 0;
+    } else {
+        $("#name_error").hide();
+    }
+
+    if (email === "" || !isValidEmailAddress(email)) {
+        $("#email_error").show();
+        disval = 0;
+    } else {
+        $("#email_error").hide();
+    }
+
+    if (mobile === "" || !isValidMobileNumber(mobile)) {
+        $("#mobile_error").show();
+        disval = 0;
+    } else {
+        $("#mobile_error").hide();
+    }
+
+    if (disval === 1) {
+        var dataString = $("#contact_form").serialize();
+
+        $.ajax({
+            type: "POST",
+            url: "process_middle.php", // used only to return '1' or error
+            data: dataString,
+            beforeSend: function () {
+                $("#contactform").attr("disabled", true);
+            },
+            success: function (response) {
+                $("#contactform").attr("disabled", false);
+                $("#contact_form")[0].reset();
+
+                if (response == "1") {
+					alert('fgd')
+                    // Redirect with form data in query string
+                    window.location.href = "thank-you.php?" +
+                        "name=" + encodeURIComponent(name) +
+                        "&email=" + encodeURIComponent(email) +
+                        "&mobile=" + encodeURIComponent(mobile) +
+                        "&website=" + encodeURIComponent(website) +
+                        "&message=" + encodeURIComponent(message);
+                } else {
+                    $("#contact_widget").hide();
+                    $("#contact_error").html(response);
+                    $("#contact_success").show();
+                }
+            }
+        });
+    }
+
+    return false;
+});
 //done
  $("#contactform1").click(function () {
 	$("#contact_success").hide(), disval = 1;
