@@ -24,8 +24,7 @@ use PHPMailer\PHPMailer\Exception;
 
         // Recipients
         $mail->setFrom('bd@buzzmakers.in','Buzzmakers');             // Sender's email and name
-        //$mail->addAddress('krishnaa@buzzmakers.in');                  // Receiver's email
-        $mail->addAddress('komalgagiya64@gmail.com');                  // Receiver's email
+        $mail->addAddress('krishnaa@buzzmakers.in');                  // Receiver's email
 
         // Content
         $mail->isHTML(false);                                         // Set email format to plain text
