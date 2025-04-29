@@ -74,7 +74,6 @@ $("#contactform").click(function () {
                 $("#contact_form")[0].reset();
 
                 if (response == "1") {
-					alert('fgd')
                     // Redirect with form data in query string
                     window.location.href = "thank-you.php?" +
                         "name=" + encodeURIComponent(name) +
