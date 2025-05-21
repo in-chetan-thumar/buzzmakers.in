@@ -151,7 +151,7 @@
                                             <div class="col-lg-12">
                                                 <div class="form-clt">
                                                    <input class="form-control" placeholder="Name*" name="name" id="name" type="text" onkeypress="return onlyAlphabets(event, this);">
-												<span class="error error-pop" id="name_error">Invalid Name</span>
+												    <span class="error error-pop" id="name_error">Invalid Name</span>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
