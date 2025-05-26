@@ -13,44 +13,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     // Check if required fields are filled
     if (empty($name) || empty($email) || empty($mobile)) {
-        exit;
-    }
+        
+    } else {
+		// Create a new PHPMailer instance
+		$mail = new PHPMailer(true);
 
-    // Create a new PHPMailer instance
-    $mail = new PHPMailer(true);
+		try {
+			// Server settings
+			$mail->isSMTP();
+			$mail->Host       = 'smtp.gmail.com';
+			$mail->SMTPAuth   = true;
+			$mail->Username   = 'bd@buzzmakers.in';
+			$mail->Password   = 'aagk sphk dcyb wldw';
+			$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+			$mail->Port       = 587;
 
-    try {
-        // Server settings
-        $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'bd@buzzmakers.in';
-        $mail->Password   = 'aagk sphk dcyb wldw';
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port       = 587;
+			// Recipients
+			$mail->setFrom('bd@buzzmakers.in', 'Buzzmakers');
+			$mail->addAddress('komalgagiya64@gmail.com');
 
         // Recipients
         $mail->setFrom('bd@buzzmakers.in', 'Buzzmakers');
         $mail->addAddress('krishnaa@buzzmakers.in');
 
-        // Content
-        $mail->isHTML(false);
-        $mail->Subject = 'New Landing Page Enquiry';
-        $mail->Body    = "You have received a new enquiry\n\n"
-                       . "Name: $name\n"
-                       . "Email: $email\n"
-                       . "Mobile: $mobile\n"
-                       . "Company website: $website\n"
-                       . "Message: $message\n";
-
-        if ($mail->send()) {
-            echo "1";
-        } else {
-            echo "0";
-        }
-    } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    }
+			if ($mail->send()) {
+				echo "1";
+			} else {
+				echo "0";
+			}
+		} catch (Exception $e) {
+			echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+		}
+	}
 }
 ?>
 
