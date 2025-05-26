@@ -28,13 +28,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 			$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 			$mail->Port       = 587;
 
-			// Recipients
-			$mail->setFrom('bd@buzzmakers.in', 'Buzzmakers');
-			$mail->addAddress('komalgagiya64@gmail.com');
-
-        // Recipients
-        $mail->setFrom('bd@buzzmakers.in', 'Buzzmakers');
-        $mail->addAddress('krishnaa@buzzmakers.in');
+		
+            // Recipients
+            $mail->setFrom('bd@buzzmakers.in', 'Buzzmakers');
+            $mail->addAddress('krishnaa@buzzmakers.in');
 
 			if ($mail->send()) {
 				echo "1";
