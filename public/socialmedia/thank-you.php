@@ -31,8 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             // Recipients
             $mail->setFrom('bd@buzzmakers.in', 'Buzzmakers');
             $mail->addAddress('krishnaa@buzzmakers.in');
-
-           // Content
+           
+			// Content
 			$mail->isHTML(false);
 			$mail->Subject = 'New Landing Page Enquiry';
 			$mail->Body    = "You have received a new enquiry\n\n"
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 						   . "Mobile: $mobile\n"
 						   . "Company website: $website\n"
 						   . "Message: $message\n";
-                
+
 			if ($mail->send()) {
 				echo "1";
 			} else {
