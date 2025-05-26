@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     // Check if required fields are filled
     if (empty($name) || empty($email) || empty($mobile)) {
-        
+          exit;
     } else {
 		// Create a new PHPMailer instance
 		$mail = new PHPMailer(true);
@@ -28,11 +28,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 			$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 			$mail->Port       = 587;
 
-		
             // Recipients
             $mail->setFrom('bd@buzzmakers.in', 'Buzzmakers');
             $mail->addAddress('krishnaa@buzzmakers.in');
 
+           // Content
+			$mail->isHTML(false);
+			$mail->Subject = 'New Landing Page Enquiry';
+			$mail->Body    = "You have received a new enquiry\n\n"
+						   . "Name: $name\n"
+						   . "Email: $email\n"
+						   . "Mobile: $mobile\n"
+						   . "Company website: $website\n"
+						   . "Message: $message\n";
+                
 			if ($mail->send()) {
 				echo "1";
 			} else {
