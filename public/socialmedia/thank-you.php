@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
         // Recipients
         $mail->setFrom('bd@buzzmakers.in', 'Buzzmakers');
-        $mail->addAddress('komalgagiya64@gmail.com');
+        $mail->addAddress('krishnaa@buzzmakers.in');
 
         // $mail->addAddress('krishnaa@buzzmakers.in');
 
